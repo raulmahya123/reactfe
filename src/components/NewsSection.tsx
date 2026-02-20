@@ -27,20 +27,20 @@ const NewsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
 
-          {/* LEFT - NEWS */}
-          <div className="relative bg-[#5a0000] text-white p-10 rounded-md overflow-hidden">
+          {/* LEFT - NOW GOLD BACKGROUND */}
+          <div className="relative bg-yellow-400 text-[#5a0000] p-10 rounded-md overflow-hidden">
 
-            <div className="absolute right-6 top-20 w-2 h-52 bg-yellow-400 rounded-full"></div>
+            <div className="absolute right-6 top-20 w-2 h-52 bg-[#5a0000] rounded-full"></div>
 
-            <p className="uppercase text-xs tracking-widest text-yellow-400 mb-6">
+            <p className="uppercase text-xs tracking-widest text-[#5a0000] mb-6">
               {t("newsLabel")}
             </p>
 
             <div className="space-y-6">
               {newsData.map((news, index) => (
-                <div key={index} className="border-b border-white/30 pb-5">
+                <div key={index} className="border-b border-[#5a0000]/30 pb-5">
 
-                  <p className="text-sm text-white/70 mb-1">
+                  <p className="text-sm text-[#5a0000]/70 mb-1">
                     {news.date}
                   </p>
 
@@ -48,20 +48,20 @@ const NewsSection = () => {
                     {t(news.key)}
                   </h3>
 
-                  <button className="mt-3 text-yellow-400 font-semibold hover:underline">
+                  <button className="mt-3 text-[#5a0000] font-semibold hover:underline">
                     {t("download")} →
                   </button>
                 </div>
               ))}
             </div>
 
-            <button className="mt-6 bg-yellow-400 text-[#5a0000] px-6 py-2 font-semibold rounded-full hover:scale-105 transition">
+            <button className="mt-6 bg-[#5a0000] text-yellow-400 px-6 py-2 font-semibold rounded-full hover:scale-105 transition">
               {t("viewAll")}
             </button>
           </div>
 
-          {/* RIGHT - PRESS RELEASE */}
-          <div className="relative bg-[#8b5c5c] text-white p-10 rounded-md overflow-hidden">
+          {/* RIGHT - NOW MAROON BACKGROUND */}
+          <div className="relative bg-[#5a0000] text-white p-10 rounded-md overflow-hidden">
 
             <div className="absolute right-6 top-20 w-2 h-52 bg-yellow-400 rounded-full"></div>
 
