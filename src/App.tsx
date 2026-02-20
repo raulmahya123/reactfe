@@ -6,11 +6,15 @@ import Home from "./Home";
 import About from "./pages/about/About";
 import Contact from "./pages/kontak/ContactSection";
 
-// ⬇ IMPORT TAMBAHAN
+// GOVERNANCE
 import Committees from "./pages/governance/Committees";
 import CorporateSecretary from "./pages/governance/CorporateSecretary";
 import GovernanceInformation from "./pages/governance/GovernanceInformation";
-import BudgetDocument from "./pages/governance/budgetDocument"; // ← TAMBAHAN
+import BudgetDocument from "./pages/governance/BudgetDocument";
+
+// CSR
+import CsrInformation from "./pages/csr/CsrInformation";
+
 export default function App() {
   return (
     <>
@@ -25,9 +29,10 @@ export default function App() {
         <Route path="/governance/committees" element={<Committees />} />
         <Route path="/governance/secretary" element={<CorporateSecretary />} />
         <Route path="/governance/information" element={<GovernanceInformation />} />
+        <Route path="/governance/budget" element={<BudgetDocument />} />
 
-        {/* CSR ROUTE */}
-        <Route path="/governance/budget" element={<BudgetDocument />} /> {/* ← TAMBAHAN */}
+        {/* CSR ROUTES */}
+        <Route path="/csr/information" element={<CsrInformation />} />
 
       </Routes>
 

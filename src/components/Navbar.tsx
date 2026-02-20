@@ -33,15 +33,16 @@ const menuItems = [
     
     ],
   },
-  {
-    name: "csr",
-    path: "/csr",
-    submenu: [
-      { name: "policy", path: "/csr/policy" },
-      { name: "communityDevelopment", path: "/csr/community" },
-      { name: "environment", path: "/csr/environment" },
-    ],
-  },
+{
+  name: "csr",
+  path: "/csr",
+  submenu: [
+    { name: "policy", path: "/csr/policy" },
+    { name: "communityDevelopment", path: "/csr/community" },
+    { name: "environment", path: "/csr/environment" },
+    { name: "csrInformation", path: "/csr/information" }, // ← TAMBAHAN
+  ],
+},
   {
     name: "news",
     path: "/news",

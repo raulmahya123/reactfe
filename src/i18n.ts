@@ -224,7 +224,25 @@ i18n.use(initReactI18next).init({
         governanceInformationDesc:
           "The Company is committed to implementing Good Corporate Governance (GCG) principles consistently and sustainably in accordance with applicable regulations.",
         governanceDocumentList: "Corporate Governance Documents",
+        csrInformation: "Corporate Social Responsibility Information",
+        csrInformationDesc:
+          "Disclosure of CSR policies, program types, and expenditures in accordance with regulatory requirements.",
 
+        csrEnvironment: "Environmental Responsibility",
+        csrEnvironmentDesc:
+          "Policies, programs, and expenditures related to environmental management, emissions control, land rehabilitation, and sustainable mining practices.",
+
+        csrLabor: "Labor Practices, Health & Safety",
+        csrLaborDesc:
+          "Employee welfare programs, occupational health and safety initiatives, training development, and workforce protection measures.",
+
+        csrSocial: "Social & Community Development",
+        csrSocialDesc:
+          "Community empowerment programs, local infrastructure development, education support, and social investment initiatives.",
+
+        csrProduct: "Product & Service Responsibility",
+        csrProductDesc:
+          "Quality assurance standards, customer protection policies, responsible service delivery, and compliance with industry regulations.",
         boardManual: "Board of Directors and Board of Commissioners Charter",
         corporateSecretaryAppointment:
           "Appointment, dismissal, and/or vacancy of the Corporate Secretary",
@@ -251,10 +269,10 @@ i18n.use(initReactI18next).init({
         announcement: "Announcement",
         presentation: "Presentation",
 
-        addressLine1: "Andalan Tower 15th Floor",
-        addressLine2: "South Jakarta 12950",
-        addressCountry: "Indonesia",
-        telephone: "Tel",
+        addressLine1: "PT Andalan Artha Primanusa",
+        addressLine2: "Tanah Andalan Tanah Andalan Kebon Melati, Tanah Abang",
+        addressCountry: "Jakarta Pusat 10230 DKI Jakarta – Indonesia",
+        telephone: "Telepon +62 21 6669 2917 | Fax: +62 21 6669 2918",
         allRightsReserved: "All Rights Reserved.",
         vision: "Vision",
         mission: "Mission",
@@ -388,14 +406,14 @@ i18n.use(initReactI18next).init({
         whistleblowing: "Sistem Pelaporan Pelanggaran",
         antiCorruption: "Kebijakan Anti Korupsi",
         supplierPolicy: "Kebijakan Seleksi & Pengembangan Vendor",
-budgetDocument: "Dokumen Anggaran Dasar",
-budgetDocumentDesc:
-  "Anggaran Dasar merupakan dasar hukum yang mengatur struktur, tata kelola, dan kegiatan operasional Perseroan.",
-effectiveDate: "Tanggal Berlaku",
-notarialDeed: "Informasi Akta Notaris",
-documentOverview: "Ringkasan Dokumen",
-budgetDocumentFullDesc:
-  "Anggaran Dasar Perseroan memuat tujuan dan kegiatan usaha, struktur permodalan, hak pemegang saham, mekanisme tata kelola, serta ketentuan lainnya sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia.",
+        budgetDocument: "Dokumen Anggaran Dasar",
+        budgetDocumentDesc:
+          "Anggaran Dasar merupakan dasar hukum yang mengatur struktur, tata kelola, dan kegiatan operasional Perseroan.",
+        effectiveDate: "Tanggal Berlaku",
+        notarialDeed: "Informasi Akta Notaris",
+        documentOverview: "Ringkasan Dokumen",
+        budgetDocumentFullDesc:
+          "Anggaran Dasar Perseroan memuat tujuan dan kegiatan usaha, struktur permodalan, hak pemegang saham, mekanisme tata kelola, serta ketentuan lainnya sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia.",
         /* ================= SUSTAINABILITY (POJK Pasal 6 ayat 4) ================= */
         environment: "Tanggung Jawab Lingkungan",
         laborPractices: "Praktik Ketenagakerjaan & K3",
@@ -474,6 +492,35 @@ budgetDocumentFullDesc:
         footerMilestones: "Tonggak Sejarah",
         footerManagement: "Manajemen",
         footerContactUs: "Hubungi Kami",
+        csrInformation: "Informasi Tanggung Jawab Sosial Perusahaan",
+        csrInformationDesc:
+          "Pengungkapan kebijakan, jenis program, dan biaya yang dikeluarkan Perseroan terkait Tanggung Jawab Sosial sesuai peraturan yang berlaku.",
+
+        csrEnvironment: "Aspek Lingkungan Hidup",
+        csrEnvironmentDesc:
+          "Kebijakan pengelolaan lingkungan, program pengendalian emisi, reklamasi lahan, dan inisiatif pertambangan berkelanjutan.",
+        csrEnvironmentBudget:
+          "Total Alokasi: Rp 5.000.000.000 (Tahun Buku 2025)",
+
+        csrLabor: "Praktik Ketenagakerjaan, K3",
+        csrLaborDesc:
+          "Program kesejahteraan karyawan, inisiatif kesehatan dan keselamatan kerja, pelatihan, dan perlindungan tenaga kerja.",
+        csrLaborBudget: "Total Alokasi: Rp 3.500.000.000 (Tahun Buku 2025)",
+
+        csrSocial: "Pengembangan Sosial & Kemasyarakatan",
+        csrSocialDesc:
+          "Program pemberdayaan masyarakat, dukungan pendidikan, pembangunan infrastruktur, dan investasi sosial.",
+        csrSocialBudget: "Total Alokasi: Rp 4.200.000.000 (Tahun Buku 2025)",
+
+        csrProduct: "Tanggung Jawab Produk & Layanan",
+        csrProductDesc:
+          "Standar jaminan mutu, kebijakan perlindungan pelanggan, dan kepatuhan terhadap regulasi industri.",
+        csrProductBudget: "Total Alokasi: Rp 1.800.000.000 (Tahun Buku 2025)",
+
+        csrBudget: "Biaya Program",
+        csrSupportingDocument: "Laporan Keberlanjutan",
+        csrSupportingDocumentDesc:
+          "Informasi lengkap mengenai kinerja CSR tersedia dalam Laporan Keberlanjutan Perseroan.",
 
         footerInvestor: "Hubungan Investor",
         footerFinancial: "Laporan Keuangan",
@@ -579,10 +626,10 @@ budgetDocumentFullDesc:
         announcement: "Pengumuman",
         presentation: "Presentasi",
 
-        addressLine1: "Gedung Andalan Tower Lt. 15",
-        addressLine2: "Jakarta Selatan 12950",
-        addressCountry: "Indonesia",
-        telephone: "Telp",
+          addressLine1: "PT Andalan Artha Primanusa",
+        addressLine2: "Tanah Andalan Tanah Andalan Kebon Melati, Tanah Abang",
+        addressCountry: "Jakarta Pusat 10230 DKI Jakarta – Indonesia",
+        telephone: "Telepon +62 21 6669 2917 | Fax: +62 21 6669 2918",
         allRightsReserved: "Seluruh Hak Cipta Dilindungi.",
         visionText:
           "Menjadi kontraktor pertambangan yang terkemuka dan terpercaya di Indonesia dengan kredibilitas dan komitmen yang unggul dalam memberikan hasil, didukung oleh fondasi operasi pertambangan yang solid, sistem terintegrasi, dan kerja tim yang luar biasa.",
