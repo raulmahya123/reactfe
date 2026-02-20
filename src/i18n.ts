@@ -200,7 +200,29 @@ annualReports: {
   "2022": "Ready for Sustainable Growth",
   "2021": "Rebounding Stronger"
 },        
-  
+  ompanyProfile: "Company Profile",
+      goodCorporateGovernance: "Good Corporate Governance",
+      sustainability: "Sustainability",
+      newsDisclosure: "News & Disclosure",
+
+      milestones: "Milestones",
+      management: "Management",
+
+      financialStatements: "Financial Statements",
+      stockPerformance: "Stock Performance",
+
+
+      policy: "Sustainability Policy",
+      communityDevelopment: "Community Development",
+
+      announcement: "Announcement",
+      presentation: "Presentation",
+
+      addressLine1: "Andalan Tower 15th Floor",
+      addressLine2: "South Jakarta 12950",
+      addressCountry: "Indonesia",
+      telephone: "Tel",
+      allRightsReserved: "All Rights Reserved."
 }
       },
 
@@ -400,6 +422,30 @@ annualReports: {
   "2022": "Siap untuk Pertumbuhan Berkelanjutan",
   "2021": "Bangkit Lebih Kuat"
 },
+
+  companyProfile: "Profil Perusahaan",
+      goodCorporateGovernance: "Tata Kelola Perusahaan",
+      sustainability: "Keberlanjutan",
+      newsDisclosure: "Berita & Keterbukaan Informasi",
+
+      milestones: "Tonggak Sejarah",
+      management: "Manajemen",
+
+      financialStatements: "Laporan Keuangan",
+      stockPerformance: "Performa Saham",
+
+
+      policy: "Kebijakan Keberlanjutan",
+      communityDevelopment: "Pengembangan Masyarakat",
+
+      announcement: "Pengumuman",
+      presentation: "Presentasi",
+
+      addressLine1: "Gedung Andalan Tower Lt. 15",
+      addressLine2: "Jakarta Selatan 12950",
+      addressCountry: "Indonesia",
+      telephone: "Telp",
+      allRightsReserved: "Seluruh Hak Cipta Dilindungi."
 },
 
       }

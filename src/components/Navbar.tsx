@@ -1,15 +1,52 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import CompanyLogo from "../assets/logo-andalan.png";
 
-const sections = [
-  "home",
-  "about",
-  "investor",
-  "governance",
-  "csr",
-  "news",
-  "contact",
+const menuItems = [
+  {
+    name: "about",
+    path: "/about",
+    submenu: [
+      { name: "visionMission", path: "/about/vision" },
+      { name: "milestones", path: "/about/milestones" },
+      { name: "management", path: "/about/management" },
+    ],
+  },
+  {
+    name: "investor",
+    path: "/investor",
+    submenu: [
+      { name: "financialStatements", path: "/investor/financial" },
+      { name: "annualReports", path: "/investor/annual" },
+      { name: "stockPerformance", path: "/investor/stock" },
+    ],
+  },
+  {
+    name: "governance",
+    path: "/governance",
+    submenu: [
+      { name: "committees", path: "/governance/committees" },
+      { name: "corporateSecretary", path: "/governance/secretary" },
+    ],
+  },
+  {
+    name: "csr",
+    path: "/csr",
+    submenu: [
+      { name: "policy", path: "/csr/policy" },
+      { name: "communityDevelopment", path: "/csr/community" },
+      { name: "environment", path: "/csr/environment" },
+    ],
+  },
+  {
+    name: "news",
+    path: "/news",
+  },
+  {
+    name: "contact",
+    path: "/contact",
+  },
 ];
 
 const Navbar = () => {
@@ -29,17 +66,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleClick = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      window.scrollTo({
-        top: el.offsetTop - 90,
-        behavior: "smooth",
-      });
-      setMobileOpen(false);
-    }
-  };
-
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
@@ -48,8 +74,8 @@ const Navbar = () => {
     >
       <div className="max-w-[1700px] mx-auto px-6 py-5 flex items-center">
         
-        {/* LEFT - LOGO */}
-        <div className="flex items-center gap-6">
+        {/* LOGO */}
+        <Link to="/" className="flex items-center gap-6">
           <img
             src={CompanyLogo}
             alt="PT Andalan Artha Primanusa Tbk"
@@ -72,25 +98,46 @@ const Navbar = () => {
               PRIMANUSA TBK
             </span>
           </div>
-        </div>
+        </Link>
 
-        {/* RIGHT SIDE */}
+        {/* DESKTOP MENU */}
         <div className="hidden xl:flex items-center gap-12 ml-auto">
-
-          {/* MENU */}
           <div className="flex items-center gap-10 text-[14px] font-medium uppercase tracking-[0.08em]">
-            {sections.map((section) => (
-              <button
-                key={section}
-                onClick={() => handleClick(section)}
-                className={`transition-all duration-300 ${
-                  scrolled
-                    ? "text-gray-700 hover:text-[#8B0000]"
-                    : "text-white hover:text-white/80"
-                }`}
-              >
-                {t(section)}
-              </button>
+            {menuItems.map((item) => (
+              <div key={item.name} className="relative group">
+                <Link
+                  to={item.path}
+                  className={`transition-all duration-300 ${
+                    scrolled
+                      ? "text-gray-700 hover:text-[#8B0000]"
+                      : "text-white hover:text-white/80"
+                  }`}
+                >
+                  {t(item.name)}
+                </Link>
+
+                {/* SUBMENU */}
+                {item.submenu && (
+                  <div
+                    className="absolute left-0 top-full mt-6 w-64 
+                    bg-gradient-to-r from-[#C6A75E] to-[#D4B76A]
+                    shadow-xl rounded-md
+                    opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible
+                    transition-all duration-300 z-50"
+                  >
+                    {item.submenu.map((sub) => (
+                      <Link
+                        key={sub.name}
+                        to={sub.path}
+                        className="block px-6 py-3 text-sm text-white hover:bg-[#B8954F] transition"
+                      >
+                        {t(sub.name)}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
@@ -142,14 +189,31 @@ const Navbar = () => {
       {/* MOBILE MENU */}
       {mobileOpen && (
         <div className="xl:hidden bg-white shadow-lg px-8 py-6 space-y-5">
-          {sections.map((section) => (
-            <button
-              key={section}
-              onClick={() => handleClick(section)}
-              className="block w-full text-left uppercase text-sm font-medium text-gray-700 hover:text-[#8B0000]"
-            >
-              {t(section)}
-            </button>
+          {menuItems.map((item) => (
+            <div key={item.name}>
+              <Link
+                to={item.path}
+                onClick={() => setMobileOpen(false)}
+                className="block uppercase text-sm font-medium text-gray-700 hover:text-[#8B0000]"
+              >
+                {t(item.name)}
+              </Link>
+
+              {item.submenu && (
+                <div className="pl-4 mt-2 space-y-2">
+                  {item.submenu.map((sub) => (
+                    <Link
+                      key={sub.name}
+                      to={sub.path}
+                      onClick={() => setMobileOpen(false)}
+                      className="block text-sm text-gray-500 hover:text-[#8B0000]"
+                    >
+                      {t(sub.name)}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
 
           <div className="pt-4 border-t flex gap-4">
