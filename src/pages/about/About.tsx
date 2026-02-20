@@ -1,21 +1,42 @@
+import { useTranslation } from "react-i18next";
 import Navbar from "../../components/Navbar";
 import VisionMission from "./VisionMission";
 import Milestones from "./Milestones";
 import Management from "./Management";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Navbar />
 
       <main>
 
-        {/* HERO */}
-        <section className="pt-40 pb-24 bg-[#4A0404] text-white text-center">
-          <div className="max-w-6xl mx-auto px-6">
-            <h1 className="text-5xl font-bold uppercase tracking-wide">
-              Company Profile
+        {/* HERO SECTION */}
+        <section className="relative pt-40 pb-28 bg-[#4A0404] text-white overflow-hidden">
+          
+          {/* Gold Overlay Accent */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#4A0404] via-[#5a0707] to-[#2e0202] opacity-95"></div>
+
+          {/* Decorative Gold Line */}
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#C6A75E] via-[#D4B76A] to-[#C6A75E]"></div>
+
+          <div className="relative max-w-6xl mx-auto px-6 text-center">
+            
+            {/* Breadcrumb */}
+            <p className="text-sm text-white/70 tracking-widest uppercase mb-6">
+              Home / {t("companyProfile")}
+            </p>
+
+            {/* Title */}
+            <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider">
+              {t("companyProfile")}
             </h1>
+
+            {/* Gold Divider */}
+            <div className="w-24 h-1 bg-[#C6A75E] mx-auto mt-8"></div>
+
           </div>
         </section>
 
@@ -25,7 +46,6 @@ const About = () => {
         <Management />
 
       </main>
-
     </>
   );
 };

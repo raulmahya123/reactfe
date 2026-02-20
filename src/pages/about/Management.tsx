@@ -21,30 +21,48 @@ const Management = () => {
   return (
     <section
       id="management"
-      className="py-24 bg-gray-50 scroll-mt-40"
+      className="py-28 bg-gradient-to-b from-white to-gray-50 scroll-mt-40"
     >
       <div className="max-w-6xl mx-auto px-6">
 
-        <h2 className="text-3xl font-bold text-[#4A0404] mb-16 uppercase tracking-wide">
-          {t("management")}
-        </h2>
+        {/* Section Title */}
+        <div className="text-center mb-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#4A0404] uppercase tracking-wider">
+            {t("management")}
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#C6A75E] to-[#D4B76A] mx-auto mt-6"></div>
+        </div>
 
+        {/* Cards */}
         <div className="grid md:grid-cols-3 gap-12">
           {team.map((member, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg p-8 text-center hover:shadow-xl transition duration-300"
+              className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-500 overflow-hidden"
             >
-              {/* Avatar Placeholder */}
-              <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-6"></div>
+              
+              {/* Top Accent Bar */}
+              <div className="h-2 bg-gradient-to-r from-[#4A0404] to-[#8B0000]"></div>
 
-              <h3 className="text-xl font-semibold text-[#4A0404]">
-                {member.name}
-              </h3>
+              <div className="p-10 text-center">
 
-              <p className="text-[#8B0000] mt-2">
-                {member.position}
-              </p>
+                {/* Avatar */}
+                <div className="w-32 h-32 mx-auto rounded-full border-4 border-[#C6A75E] bg-gray-200 mb-6 flex items-center justify-center text-3xl font-bold text-[#4A0404]">
+                  {member.name.charAt(0)}
+                </div>
+
+                <h3 className="text-xl font-semibold text-[#4A0404]">
+                  {member.name}
+                </h3>
+
+                <p className="text-[#C6A75E] font-medium mt-3 tracking-wide">
+                  {member.position}
+                </p>
+
+                {/* Gold Divider */}
+                <div className="w-12 h-[2px] bg-[#C6A75E] mx-auto mt-6 opacity-70"></div>
+
+              </div>
             </div>
           ))}
         </div>

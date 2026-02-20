@@ -222,7 +222,27 @@ annualReports: {
       addressLine2: "South Jakarta 12950",
       addressCountry: "Indonesia",
       telephone: "Tel",
-      allRightsReserved: "All Rights Reserved."
+      allRightsReserved: "All Rights Reserved.",
+vision: "Vision",
+mission: "Mission",
+visionText:
+  "To become a leading and sustainable mining company that creates long-term value for stakeholders.",
+mission1:
+  "Deliver sustainable growth and maximize shareholder value.",
+mission2:
+  "Operate responsibly with strong corporate governance.",
+mission3:
+  "Contribute positively to communities and the environment.",
+
+milestone1: "Company established.",
+milestone2: "Expansion of mining operations.",
+milestone3: "Listed on the stock exchange.",
+milestone4: "Strengthened international partnerships.",
+milestone5: "Enhanced ESG commitment and sustainability initiatives.",
+
+presidentDirector: "President Director",
+financeDirector: "Finance Director",
+operationsDirector: "Operations Director",
 }
       },
 
@@ -445,7 +465,27 @@ annualReports: {
       addressLine2: "Jakarta Selatan 12950",
       addressCountry: "Indonesia",
       telephone: "Telp",
-      allRightsReserved: "Seluruh Hak Cipta Dilindungi."
+      allRightsReserved: "Seluruh Hak Cipta Dilindungi.",
+vision: "Visi",
+mission: "Misi",
+visionText:
+  "Menjadi perusahaan pertambangan terkemuka dan berkelanjutan yang menciptakan nilai jangka panjang bagi para pemangku kepentingan.",
+mission1:
+  "Mewujudkan pertumbuhan berkelanjutan dan memaksimalkan nilai pemegang saham.",
+mission2:
+  "Beroperasi secara bertanggung jawab dengan tata kelola perusahaan yang kuat.",
+mission3:
+  "Memberikan kontribusi positif bagi masyarakat dan lingkungan.",
+
+milestone1: "Perusahaan didirikan.",
+milestone2: "Ekspansi operasional pertambangan.",
+milestone3: "Melantai di bursa saham.",
+milestone4: "Memperkuat kemitraan internasional.",
+milestone5: "Meningkatkan komitmen ESG dan keberlanjutan.",
+
+presidentDirector: "Direktur Utama",
+financeDirector: "Direktur Keuangan",
+operationsDirector: "Direktur Operasional",
 },
 
       }
