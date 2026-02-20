@@ -28,6 +28,9 @@ const menuItems = [
     submenu: [
       { name: "committees", path: "/governance/committees" },
       { name: "corporateSecretary", path: "/governance/secretary" },
+      { name: "governanceInformation", path: "/governance/information" }, // ← TAMBAHAN
+      { name: "budgetDocument", path: "/governance/budget" }, // ← TAMBAHAN BARU
+    
     ],
   },
   {
@@ -73,7 +76,6 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-[1700px] mx-auto px-6 py-5 flex items-center">
-
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-6">
           <img
@@ -102,10 +104,8 @@ const Navbar = () => {
         {/* DESKTOP MENU */}
         <div className="hidden xl:flex items-center gap-12 ml-auto">
           <div className="flex items-center gap-10 text-[14px] font-medium uppercase tracking-[0.08em]">
-
             {menuItems.map((item) => (
               <div key={item.name} className="relative group">
-
                 <Link
                   to={item.path}
                   className={`transition-all duration-300 ${
@@ -119,7 +119,8 @@ const Navbar = () => {
 
                 {/* SUBMENU */}
                 {item.submenu && (
-                  <div className="absolute left-0 top-full mt-6 w-64 
+                  <div
+                    className="absolute left-0 top-full mt-6 w-64 
                     bg-gradient-to-r from-[#C6A75E] to-[#D4B76A]
                     shadow-xl rounded-md
                     opacity-0 invisible
@@ -137,10 +138,8 @@ const Navbar = () => {
                     ))}
                   </div>
                 )}
-
               </div>
             ))}
-
           </div>
 
           {/* LANGUAGE */}
@@ -153,8 +152,8 @@ const Navbar = () => {
                     ? "bg-[#8B0000] text-white"
                     : "bg-white text-[#8B0000]"
                   : scrolled
-                  ? "text-gray-700 hover:text-[#8B0000]"
-                  : "text-white hover:text-white/80"
+                    ? "text-gray-700 hover:text-[#8B0000]"
+                    : "text-white hover:text-white/80"
               }`}
             >
               ID
@@ -168,14 +167,13 @@ const Navbar = () => {
                     ? "bg-[#8B0000] text-white"
                     : "bg-white text-[#8B0000]"
                   : scrolled
-                  ? "text-gray-700 hover:text-[#8B0000]"
-                  : "text-white hover:text-white/80"
+                    ? "text-gray-700 hover:text-[#8B0000]"
+                    : "text-white hover:text-white/80"
               }`}
             >
               EN
             </button>
           </div>
-
         </div>
 
         {/* MOBILE TOGGLE */}
@@ -187,7 +185,6 @@ const Navbar = () => {
         >
           {mobileOpen ? "✕" : "☰"}
         </button>
-
       </div>
     </nav>
   );

@@ -10,11 +10,18 @@ i18n.use(initReactI18next).init({
         about: "Company Profile",
         investor: "Investor Relations",
         governance: "Good Corporate Governance",
-        csr: "Sustainability",
+        csr: "Investor",
         news: "News & Disclosure",
         contact: "Contact",
         welcome: "Reliable Energy Solutions",
-
+        budgetDocument: "Articles of Association",
+        budgetDocumentDesc:
+          "The Articles of Association serve as the legal foundation governing the Company's structure, governance framework, and operational activities.",
+        effectiveDate: "Effective Date",
+        notarialDeed: "Notarial Deed Information",
+        documentOverview: "Document Overview",
+        budgetDocumentFullDesc:
+          "The Articles of Association outline the Company's objectives, scope of business activities, capital structure, shareholder rights, governance mechanisms, and other statutory provisions in accordance with Indonesian corporate law and applicable regulations.",
         /* ================= COMPANY PROFILE ================= */
         companyOverview: "Company Overview",
         visionMission: "Vision & Mission",
@@ -211,10 +218,30 @@ i18n.use(initReactI18next).init({
         goodCorporateGovernance: "Good Corporate Governance",
         sustainability: "Sustainability",
         newsDisclosure: "News & Disclosure",
-
+        governanceInformation: "Governance Information",
         milestones: "Milestones",
         management: "Management",
+        governanceInformationDesc:
+          "The Company is committed to implementing Good Corporate Governance (GCG) principles consistently and sustainably in accordance with applicable regulations.",
+        governanceDocumentList: "Corporate Governance Documents",
 
+        boardManual: "Board of Directors and Board of Commissioners Charter",
+        corporateSecretaryAppointment:
+          "Appointment, dismissal, and/or vacancy of the Corporate Secretary",
+        internalAuditCharter: "Internal Audit Charter",
+        codeOfEthics: "Code of Ethics",
+        committeeGuidelines: "Committee Charter",
+        auditCommitteeAppointment:
+          "Appointment and dismissal of Audit Committee members",
+        nominationRemunerationProcedure:
+          "Nomination and remuneration procedures (if no nomination and remuneration committee is established)",
+        riskManagementPolicy: "Risk Management Policy",
+        whistleblowingSystem: "Whistleblowing System Policy (if any)",
+        antiCorruptionPolicy: "Anti-Corruption Policy (if any)",
+        supplierCreditorPolicy:
+          "Supplier selection and creditor rights policy (if any)",
+        vendorDevelopmentPolicy:
+          "Vendor capability development policy (if any)",
         financialStatements: "Financial Statements",
         stockPerformance: "Stock Performance",
 
@@ -305,7 +332,7 @@ i18n.use(initReactI18next).init({
         about: "Profil Perusahaan",
         investor: "Hubungan Investor",
         governance: "Tata Kelola Perusahaan",
-        csr: "Keberlanjutan",
+        csr: "Investor",
         news: "Berita & Keterbukaan Informasi",
         contact: "Kontak",
         welcome: "Solusi Energi Terpercaya",
@@ -330,7 +357,29 @@ i18n.use(initReactI18next).init({
         dividendPolicy: "Kebijakan Dividen",
         corporateAction: "Aksi Korporasi",
         materialInformation: "Keterbukaan Informasi / Fakta Material",
+        governanceInformation: "Informasi Tata Kelola Perusahaan",
+        governanceInformationDesc:
+          "Perseroan berkomitmen menerapkan prinsip Tata Kelola Perusahaan yang Baik (Good Corporate Governance) secara konsisten dan berkelanjutan sesuai dengan ketentuan peraturan yang berlaku.",
+        governanceDocumentList: "Daftar Dokumen Tata Kelola",
 
+        boardManual: "Pedoman kerja Direksi dan Dewan Komisaris",
+        corporateSecretaryAppointment:
+          "Pengangkatan, pemberhentian, dan/atau kekosongan Sekretaris Perusahaan",
+        internalAuditCharter: "Piagam Unit Audit Internal",
+        codeOfEthics: "Kode Etik",
+        committeeGuidelines: "Pedoman kerja komite",
+        auditCommitteeAppointment:
+          "Pengangkatan dan pemberhhentian anggota Komite Audit",
+        nominationRemunerationProcedure:
+          "Uraian prosedur nominasi dan remunerasi (apabila tidak dibentuk komite nominasi dan remunerasi)",
+        riskManagementPolicy: "Kebijakan Manajemen Risiko",
+        whistleblowingSystem:
+          "Kebijakan mekanisme sistem pelaporan pelanggaran (jika ada)",
+        antiCorruptionPolicy: "Kebijakan Anti Korupsi (jika ada)",
+        supplierCreditorPolicy:
+          "Kebijakan terkait seleksi pemasok dan hak kreditur (jika ada)",
+        vendorDevelopmentPolicy:
+          "Kebijakan dalam peningkatan kemampuan vendor (jika ada)",
         /* ================= GOVERNANCE (POJK Pasal 6 ayat 3) ================= */
         boardCharter: "Piagam Direksi & Dewan Komisaris",
         internalAudit: "Piagam Audit Internal",
@@ -339,13 +388,19 @@ i18n.use(initReactI18next).init({
         whistleblowing: "Sistem Pelaporan Pelanggaran",
         antiCorruption: "Kebijakan Anti Korupsi",
         supplierPolicy: "Kebijakan Seleksi & Pengembangan Vendor",
-
+budgetDocument: "Dokumen Anggaran Dasar",
+budgetDocumentDesc:
+  "Anggaran Dasar merupakan dasar hukum yang mengatur struktur, tata kelola, dan kegiatan operasional Perseroan.",
+effectiveDate: "Tanggal Berlaku",
+notarialDeed: "Informasi Akta Notaris",
+documentOverview: "Ringkasan Dokumen",
+budgetDocumentFullDesc:
+  "Anggaran Dasar Perseroan memuat tujuan dan kegiatan usaha, struktur permodalan, hak pemegang saham, mekanisme tata kelola, serta ketentuan lainnya sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia.",
         /* ================= SUSTAINABILITY (POJK Pasal 6 ayat 4) ================= */
         environment: "Tanggung Jawab Lingkungan",
         laborPractices: "Praktik Ketenagakerjaan & K3",
         socialDev: "Tanggung Jawab Sosial & Masyarakat",
         sustainabilityReport: "Laporan Keberlanjutan",
-
         heroTitle: "Solusi Energi Terpercaya",
         heroSubtitle: "Mendorong Pertumbuhan Berkelanjutan untuk Indonesia",
         viewAnnualReport: "Lihat Laporan Tahunan",
@@ -355,7 +410,6 @@ i18n.use(initReactI18next).init({
         netProfit: "Laba Bersih",
         production: "Volume Produksi",
         assets: "Total Aset",
-
         businessTitle: "Lini Bisnis Kami",
         mining: "Operasi Pertambangan",
         trading: "Perdagangan Batubara",
