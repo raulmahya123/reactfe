@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import {
   FaInstagram,
   FaFacebookF,
@@ -15,32 +14,33 @@ const Footer = () => {
     <footer className="bg-[#4A0404] text-white pt-20 pb-10">
       <div className="max-w-[1400px] mx-auto px-8">
 
-        {/* Accent Line */}
-        <div className="w-20 h-1 bg-yellow-400 mb-12"></div>
+        {/* Gold Accent Line */}
+        <div className="w-20 h-1 bg-gradient-to-r from-[#C6A75E] to-[#D4B76A] mb-12"></div>
 
-        {/* Grid */}
+        {/* GRID */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12">
 
           {/* COMPANY PROFILE */}
           <div>
-            <h4 className="font-semibold mb-6 uppercase tracking-wider">
+            <h4 className="font-semibold mb-6 uppercase tracking-wider text-white">
               {t("companyProfile")}
             </h4>
+
             <ul className="space-y-3 text-sm text-white/80">
               <li>
-                <Link to="/about#vision" className="hover:text-yellow-400 transition">
+                <a href="/about#vision" className="hover:text-[#C6A75E] transition">
                   {t("visionMission")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/about#milestones" className="hover:text-yellow-400 transition">
+                <a href="/about#milestones" className="hover:text-[#C6A75E] transition">
                   {t("milestones")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/about#management" className="hover:text-yellow-400 transition">
+                <a href="/about#management" className="hover:text-[#C6A75E] transition">
                   {t("management")}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -50,40 +50,42 @@ const Footer = () => {
             <h4 className="font-semibold mb-6 uppercase tracking-wider">
               {t("investorRelations")}
             </h4>
+
             <ul className="space-y-3 text-sm text-white/80">
               <li>
-                <Link to="/investor/financial" className="hover:text-yellow-400 transition">
+                <a href="/investor/financial" className="hover:text-[#C6A75E] transition">
                   {t("financialStatements")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/investor/annual" className="hover:text-yellow-400 transition">
-                  {t("annualReports")}
-                </Link>
+                <a href="/investor/annual" className="hover:text-[#C6A75E] transition">
+                  {t("annualReportsTitle")}
+                </a>
               </li>
               <li>
-                <Link to="/investor/stock" className="hover:text-yellow-400 transition">
+                <a href="/investor/stock" className="hover:text-[#C6A75E] transition">
                   {t("stockPerformance")}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* GOOD CORPORATE GOVERNANCE */}
+          {/* GCG */}
           <div>
             <h4 className="font-semibold mb-6 uppercase tracking-wider">
               {t("goodCorporateGovernance")}
             </h4>
+
             <ul className="space-y-3 text-sm text-white/80">
               <li>
-                <Link to="/governance/committees" className="hover:text-yellow-400 transition">
+                <a href="/governance/committees" className="hover:text-[#C6A75E] transition">
                   {t("committees")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/governance/secretary" className="hover:text-yellow-400 transition">
+                <a href="/governance/secretary" className="hover:text-[#C6A75E] transition">
                   {t("corporateSecretary")}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -93,45 +95,47 @@ const Footer = () => {
             <h4 className="font-semibold mb-6 uppercase tracking-wider">
               {t("sustainability")}
             </h4>
+
             <ul className="space-y-3 text-sm text-white/80">
               <li>
-                <Link to="/csr/policy" className="hover:text-yellow-400 transition">
+                <a href="/csr/policy" className="hover:text-[#C6A75E] transition">
                   {t("policy")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/csr/community" className="hover:text-yellow-400 transition">
+                <a href="/csr/community" className="hover:text-[#C6A75E] transition">
                   {t("communityDevelopment")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/csr/environment" className="hover:text-yellow-400 transition">
+                <a href="/csr/environment" className="hover:text-[#C6A75E] transition">
                   {t("environment")}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* NEWS & DISCLOSURE */}
+          {/* NEWS */}
           <div>
             <h4 className="font-semibold mb-6 uppercase tracking-wider">
               {t("newsDisclosure")}
             </h4>
+
             <ul className="space-y-3 text-sm text-white/80">
               <li>
-                <Link to="/news" className="hover:text-yellow-400 transition">
+                <a href="/news" className="hover:text-[#C6A75E] transition">
                   {t("news")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/announcement" className="hover:text-yellow-400 transition">
+                <a href="/announcement" className="hover:text-[#C6A75E] transition">
                   {t("announcement")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/presentation" className="hover:text-yellow-400 transition">
+                <a href="/presentation" className="hover:text-[#C6A75E] transition">
                   {t("presentation")}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -154,19 +158,19 @@ const Footer = () => {
 
             {/* Social */}
             <div className="flex gap-4 mt-6 text-lg">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+              <a href="#" className="hover:text-[#C6A75E] transition">
                 <FaInstagram />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+              <a href="#" className="hover:text-[#C6A75E] transition">
                 <FaFacebookF />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+              <a href="#" className="hover:text-[#C6A75E] transition">
                 <FaTwitter />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+              <a href="#" className="hover:text-[#C6A75E] transition">
                 <FaLinkedinIn />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+              <a href="#" className="hover:text-[#C6A75E] transition">
                 <FaYoutube />
               </a>
             </div>
@@ -174,8 +178,8 @@ const Footer = () => {
 
         </div>
 
-        {/* Bottom */}
-        <div className="border-t border-yellow-400 mt-16 pt-8 text-center">
+        {/* BOTTOM */}
+        <div className="border-t border-[#C6A75E] mt-16 pt-8 text-center">
           <p className="text-sm text-white/70">
             © {new Date().getFullYear()} PT Andalan Artha Primanusa Tbk.{" "}
             {t("allRightsReserved")}
