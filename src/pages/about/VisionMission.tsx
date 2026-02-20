@@ -53,6 +53,10 @@ const VisionMission = () => {
                 <span className="text-[#C6A75E] font-bold">•</span>
                 <span>{t("mission3")}</span>
               </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#C6A75E] font-bold">•</span>
+                <span>{t("mission4")}</span>
+              </li>
             </ul>
 
             <div className="w-12 h-[2px] bg-[#4A0404] mt-8"></div>
