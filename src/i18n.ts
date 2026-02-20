@@ -57,8 +57,6 @@ i18n
 heroSubtitle: "Driving Sustainable Growth for Indonesia",
 viewAnnualReport: "View Annual Report",
 investorRelations: "Investor Relations",
-companyOverviewTitle: "Company Overview",
-companyOverviewText: "PT Andalan Artha Primanusa Tbk is a leading energy company engaged in coal mining and trading operations across Indonesia. With strong operational excellence and strategic partnerships, the Company continues to deliver sustainable value for shareholders and stakeholders.",
 performanceTitle: "Key Performance Highlights",
 revenue: "Revenue",
 netProfit: "Net Profit",
@@ -98,8 +96,112 @@ footerQuickLinks: "Quick Links",
 footerSecretary: "Corporate Secretary",
 footerDisclaimer: "All information on this website is provided for transparency purposes in accordance with regulatory requirements.",
 footerRights: "All Rights Reserved.",
+companyOverviewTitle: "Company Overview",
+companyOverviewText:
+  "PT Andalan Artha Primanusa Tbk is a leading energy company engaged in coal mining and trading operations across Indonesia...",
+overviewPoint1: "Integrated coal mining & trading operations",
+overviewPoint2: "Strong domestic & international market presence",
+overviewPoint3: "Committed to sustainable & responsible mining",
 
-        }
+established: "Established",
+operationalSites: "Operational Sites",
+employees: "Employees",
+
+
+/* ================= FOOTER MENU ================= */
+footerAbout: "About Us",
+footerVision: "Vision & Mission",
+footerPhilosophy: "Our Philosophy",
+footerMilestones: "Milestones",
+footerManagement: "Management",
+footerContactUs: "Contact Us",
+
+footerInvestor: "Investor Relations",
+footerFinancial: "Financial Statements",
+footerAnnual: "Annual Reports",
+footerStock: "Stock Performance",
+footerCorporateAction: "Corporate Action",
+
+footerBusiness: "Business Info",
+footerOperation: "Operation Map",
+footerCustomers: "Our Customers",
+footerCoal: "Coal Quality",
+footerReserves: "Reserves & Resources",
+
+footerMedia: "Media",
+footerAGM: "Upcoming AGM",
+footerAnnouncement: "Announcement",
+footerPresentation: "Presentations",
+footerNews: "News & Press Release",
+
+/* ================= INVESTOR NEWS ================= */
+irLabel: "Investor Relations",
+irMainTitle: "Andalan Artha Primanusa Wins Two Prestigious ESG Awards",
+irDate: "May 09, 2025",
+
+irNews1: "Andalan Group Receives Award from Ministry of Finance",
+irNews2: "Andalan Wins International Sustainability Recognition",
+irNews3: "Subsidiary Secures National Gold PROPER Award",
+irNews4: "Andalan Earns Integrity Award 2024",
+
+irDetailTitle: "ANDALAN ARTHA PRIMANUSA WINS TWO PRESTIGIOUS ESG AWARDS",
+irDetailText:
+  "PT Andalan Artha Primanusa Tbk received two prestigious awards for its commitment to emission transparency, environmental responsibility, and corporate governance excellence. These recognitions reflect the Company's dedication to responsible mining operations, sustainable development, and long-term stakeholder value creation.",
+/* ================= CORE VALUE ================= */
+coreValue: "Core Value",
+coreValueDesc:
+  "Core values that guide Andalan Group’s work culture in maintaining quality, resilience, and sustainable mining business growth.",
+
+values: {
+  excellence: {
+    title: "Excellence",
+    desc: "Ensuring high quality standards across all operations—from workplace safety to production efficiency."
+  },
+  focus: {
+    title: "Focus",
+    desc: "Ensuring every project meets targets in time, cost, and sustainability."
+  },
+  fortitude: {
+    title: "Fortitude",
+    desc: "Strength and resilience in facing operational challenges in a dynamic industry."
+  },
+  optimism: {
+    title: "Optimism",
+    desc: "Maintaining a positive mindset to create innovative and adaptive solutions."
+  },
+  responsive: {
+    title: "Responsive",
+    desc: "Quick response to risks at mining sites and stakeholder needs."
+  },
+  tenacity: {
+    title: "Tenacity",
+    desc: "Persistence in achieving production targets while ensuring business sustainability."
+  },
+
+},
+media: "Media",
+newsPressTitle: "News & Press Release",
+newsLabel: "News",
+pressRelease: "Press Release",
+download: "Download",
+viewAll: "View All",
+
+newsItem1: "Public Expose 2025",
+newsItem2: "Annual Report 2024 Released",
+newsItem3: "Corporate Action Announcement",
+newsItem4: "Strategic Expansion Plan 2025",
+
+/* ================= ANNUAL REPORT PAGE ================= */
+annualReportsTitle: "Annual Reports",
+annualReportLabel: "Annual Report",
+annualReports: {
+  "2024": "Innovating Today, Sustaining Tomorrow",
+  "2023": "A New Pathway to Future Value",
+  "2022": "Ready for Sustainable Growth",
+  "2021": "Rebounding Stronger"
+},        
+  
+}
       },
 
       id: {
@@ -154,8 +256,6 @@ footerRights: "All Rights Reserved.",
 heroSubtitle: "Mendorong Pertumbuhan Berkelanjutan untuk Indonesia",
 viewAnnualReport: "Lihat Laporan Tahunan",
 investorRelations: "Hubungan Investor",
-companyOverviewTitle: "Sekilas Perusahaan",
-companyOverviewText: "PT Andalan Artha Primanusa Tbk merupakan perusahaan energi terkemuka yang bergerak di bidang pertambangan dan perdagangan batubara di Indonesia. Dengan keunggulan operasional dan kemitraan strategis, Perseroan terus memberikan nilai berkelanjutan bagi pemegang saham dan pemangku kepentingan.",
 performanceTitle: "Kinerja Utama Perusahaan",
 revenue: "Pendapatan",
 netProfit: "Laba Bersih",
@@ -196,8 +296,112 @@ footerQuickLinks: "Tautan Cepat",
 footerSecretary: "Sekretaris Perusahaan",
 footerDisclaimer: "Seluruh informasi dalam situs ini disediakan untuk tujuan transparansi sesuai dengan ketentuan peraturan yang berlaku.",
 footerRights: "Seluruh Hak Cipta Dilindungi.",
+companyOverviewTitle: "Sekilas Perusahaan",
+companyOverviewText:
+  "PT Andalan Artha Primanusa Tbk merupakan perusahaan energi terkemuka yang bergerak di bidang pertambangan dan perdagangan batubara di Indonesia. Dengan keunggulan operasional dan kemitraan strategis, Perseroan terus memberikan nilai berkelanjutan bagi pemegang saham dan pemangku kepentingan.",
+overviewPoint1: "Operasi pertambangan & perdagangan batubara terintegrasi",
+overviewPoint2: "Kehadiran pasar domestik & internasional yang kuat",
+overviewPoint3: "Berkomitmen pada pertambangan berkelanjutan & bertanggung jawab",
 
-        }
+established: "Didirikan",
+operationalSites: "Lokasi Operasional",
+employees: "Karyawan",
+/* ================= FOOTER MENU ================= */
+footerAbout: "Tentang Kami",
+footerVision: "Visi & Misi",
+footerPhilosophy: "Filosofi Perusahaan",
+footerMilestones: "Tonggak Sejarah",
+footerManagement: "Manajemen",
+footerContactUs: "Hubungi Kami",
+
+footerInvestor: "Hubungan Investor",
+footerFinancial: "Laporan Keuangan",
+footerAnnual: "Laporan Tahunan",
+footerStock: "Performa Saham",
+footerCorporateAction: "Aksi Korporasi",
+
+footerBusiness: "Informasi Bisnis",
+footerOperation: "Peta Operasi",
+footerCustomers: "Pelanggan Kami",
+footerCoal: "Kualitas Batubara",
+footerReserves: "Cadangan & Sumber Daya",
+
+footerMedia: "Media",
+footerAGM: "RUPS Mendatang",
+footerAnnouncement: "Pengumuman",
+footerPresentation: "Presentasi",
+footerNews: "Berita & Siaran Pers",
+
+
+/* ================= INVESTOR NEWS ================= */
+irLabel: "Hubungan Investor",
+irMainTitle: "Andalan Artha Primanusa Raih Dua Penghargaan Bergengsi ESG",
+irDate: "09 Mei 2025",
+
+irNews1: "Grup Andalan Terima Penghargaan dari Kementerian Keuangan",
+irNews2: "Andalan Raih Pengakuan Keberlanjutan Internasional",
+irNews3: "Anak Usaha Raih Penghargaan PROPER Emas Nasional",
+irNews4: "Andalan Terima Penghargaan Integritas 2024",
+
+irDetailTitle: "ANDALAN ARTHA PRIMANUSA RAIH DUA PENGHARGAAN BERGENGSI ESG",
+irDetailText:
+  "PT Andalan Artha Primanusa Tbk menerima dua penghargaan bergengsi atas komitmennya terhadap transparansi emisi, tanggung jawab lingkungan, serta tata kelola perusahaan yang unggul. Penghargaan ini mencerminkan dedikasi Perseroan dalam menjalankan praktik pertambangan yang bertanggung jawab dan pembangunan berkelanjutan.",
+/* ================= CORE VALUE ================= */
+coreValue: "Nilai Inti",
+coreValueDesc:
+  "Nilai inti yang menuntun perilaku kerja Andalan Group dalam menjaga kualitas, ketahanan, dan keberlanjutan bisnis pertambangan.",
+
+values: {
+  excellence: {
+    title: "Excellence",
+    desc: "Menjamin standar kualitas tinggi di seluruh operasi—dari keselamatan kerja hingga efisiensi produksi."
+  },
+  focus: {
+    title: "Focus",
+    desc: "Memastikan setiap proyek berjalan sesuai target waktu, biaya, dan keberlanjutan."
+  },
+  fortitude: {
+    title: "Fortitude",
+    desc: "Keteguhan dan ketahanan dalam menghadapi tantangan operasional di industri yang dinamis."
+  },
+  optimism: {
+    title: "Optimism",
+    desc: "Menjaga semangat positif dalam menciptakan solusi inovatif dan adaptif."
+  },
+  responsive: {
+    title: "Responsive",
+    desc: "Cepat tanggap terhadap risiko di lokasi tambang dan kebutuhan pemangku kepentingan."
+  },
+  tenacity: {
+    title: "Tenacity",
+    desc: "Gigih mencapai target produksi sekaligus menjaga keberlanjutan bisnis."
+  },
+    
+},     
+ /* ================= NEWS ================= */
+media: "Media",
+newsPressTitle: "Berita & Siaran Pers",
+newsLabel: "Berita",
+pressRelease: "Siaran Pers",
+download: "Unduh",
+viewAll: "Lihat Semua",
+
+newsItem1: "Public Expose 2025",
+newsItem2: "Laporan Tahunan 2024 Dirilis",
+newsItem3: "Pengumuman Aksi Korporasi",
+newsItem4: "Rencana Ekspansi Strategis 2025",
+
+/* ================= ANNUAL REPORT PAGE ================= */
+annualReportsTitle: "Laporan Tahunan",
+annualReportLabel: "Laporan Tahunan",
+annualReports: {
+  "2024": "Berinovasi Hari Ini, Menjaga Keberlanjutan Esok Hari",
+  "2023": "Jalur Baru Menuju Nilai Masa Depan",
+  "2022": "Siap untuk Pertumbuhan Berkelanjutan",
+  "2021": "Bangkit Lebih Kuat"
+},
+},
+
       }
     },
 

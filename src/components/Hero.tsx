@@ -11,14 +11,15 @@ const Hero = () => {
   const slides = [Slide1, Slide2, Slide3];
   const [current, setCurrent] = useState(0);
 
-  // Auto slide tiap 5 detik
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+      setCurrent((prev) =>
+        prev === slides.length - 1 ? 0 : prev + 1
+      );
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   const prevSlide = () => {
     setCurrent(current === 0 ? slides.length - 1 : current - 1);
@@ -48,16 +49,19 @@ const Hero = () => {
       ))}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+      {/* LEFT MAROON BOX */}
+      <div className="absolute left-0 top-0 h-full w-full md:w-1/2 bg-[#4A0404] z-10 flex flex-col justify-center px-12 md:px-20">
 
-        <h1 className="text-white text-4xl md:text-6xl font-bold tracking-tight leading-tight max-w-4xl">
+        {/* Yellow Accent Line */}
+        <div className="w-24 h-1 bg-yellow-400 mb-8"></div>
+
+        <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
           {t("heroTitle")}
         </h1>
 
-        <p className="text-white/80 mt-6 text-lg md:text-xl max-w-2xl">
+        <p className="text-white/80 mt-6 text-lg md:text-xl max-w-xl">
           {t("heroSubtitle")}
         </p>
 
@@ -78,7 +82,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Navigation Buttons */}
+      {/* Navigation */}
       <button
         onClick={prevSlide}
         className="absolute left-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20"
@@ -102,8 +106,38 @@ const Hero = () => {
             className={`w-3 h-3 rounded-full cursor-pointer ${
               current === index ? "bg-white" : "bg-white/40"
             }`}
-          ></div>
+          />
         ))}
+      </div>
+
+      {/* CAREER BOX (MAROON + DIAGONAL CUT) */}
+      <div className="absolute bottom-10 right-10 z-30">
+        <a
+          href="#career"
+          className="flex items-center gap-4 px-10 py-6 text-white font-semibold tracking-wider shadow-xl transition duration-300 hover:scale-105"
+          style={{
+            backgroundColor: "#4A0404",
+            clipPath: "polygon(0 0, 85% 0, 100% 100%, 0% 100%)",
+          }}
+        >
+          {/* Icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="white"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 7V6a3 3 0 013-3h0a3 3 0 013 3v1m-9 0h12a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2z"
+            />
+          </svg>
+
+          CAREER
+        </a>
       </div>
 
     </section>

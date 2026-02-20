@@ -15,105 +15,97 @@ const sections = [
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState("home");
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  const changeLanguage = (lng: string): void => {
+  const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
 
-  // Scroll detect + active spy
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 80);
-
-      sections.forEach((section) => {
-        const el = document.getElementById(section);
-        if (el) {
-          const top = el.offsetTop - 120;
-          const bottom = top + el.offsetHeight;
-          if (window.scrollY >= top && window.scrollY < bottom) {
-            setActive(section);
-          }
-        }
-      });
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll handler
   const handleClick = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
       window.scrollTo({
-        top: el.offsetTop - 80,
+        top: el.offsetTop - 90,
         behavior: "smooth",
       });
+      setMobileOpen(false);
     }
   };
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-white/80 backdrop-blur-xl shadow-md"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        scrolled ? "bg-white shadow-md" : "bg-[#4A0404]"
       }`}
     >
-      <div className="max-w-[1200px] mx-auto px-6 py-4 grid grid-cols-3 items-center">
-
+      <div className="max-w-[1700px] mx-auto px-6 py-5 flex items-center">
+        
         {/* LEFT - LOGO */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-6">
           <img
             src={CompanyLogo}
-            alt="Logo"
-            className="h-10 w-auto"
+            alt="PT Andalan Artha Primanusa Tbk"
+            className="h-12 w-auto"
           />
-        </div>
 
-        {/* CENTER - MENU */}
-        <div className="hidden xl:flex justify-center gap-8 text-[13px] font-medium uppercase tracking-[0.08em]">
-
-          {sections.map((section) => (
-            <button
-              key={section}
-              onClick={() => handleClick(section)}
-              className={`relative transition ${
-                active === section
-                  ? "text-[#7a0000] font-semibold"
-                  : scrolled
-                  ? "text-gray-700 hover:text-[#7a0000]"
-                  : "text-white hover:text-gray-200"
+          <div className="flex flex-col leading-tight">
+            <span
+              className={`text-[14px] font-bold tracking-[0.15em] ${
+                scrolled ? "text-[#8B0000]" : "text-white"
               }`}
             >
-              {t(section)}
-
-              {active === section && (
-                <span className="absolute -bottom-2 left-0 w-full h-[2px] bg-[#7a0000]"></span>
-              )}
-            </button>
-          ))}
-
+              PT ANDALAN ARTHA
+            </span>
+            <span
+              className={`text-[12px] tracking-[0.2em] ${
+                scrolled ? "text-gray-600" : "text-white/80"
+              }`}
+            >
+              PRIMANUSA TBK
+            </span>
+          </div>
         </div>
 
-        {/* RIGHT - LANGUAGE */}
-        <div className="hidden xl:flex justify-end">
-          <div
-            className={`flex items-center p-1 rounded-md border transition ${
-              scrolled
-                ? "bg-white border-gray-300"
-                : "bg-black/40 border-white/20"
-            }`}
-          >
+        {/* RIGHT SIDE */}
+        <div className="hidden xl:flex items-center gap-12 ml-auto">
+
+          {/* MENU */}
+          <div className="flex items-center gap-10 text-[14px] font-medium uppercase tracking-[0.08em]">
+            {sections.map((section) => (
+              <button
+                key={section}
+                onClick={() => handleClick(section)}
+                className={`transition-all duration-300 ${
+                  scrolled
+                    ? "text-gray-700 hover:text-[#8B0000]"
+                    : "text-white hover:text-white/80"
+                }`}
+              >
+                {t(section)}
+              </button>
+            ))}
+          </div>
+
+          {/* LANGUAGE */}
+          <div className="flex items-center gap-3">
             <button
               onClick={() => changeLanguage("id")}
-              className={`px-3 py-1 text-xs font-semibold rounded ${
+              className={`px-4 py-1 text-xs font-semibold rounded-md transition ${
                 i18n.language === "id"
-                  ? "bg-[#7a0000] text-white"
+                  ? scrolled
+                    ? "bg-[#8B0000] text-white"
+                    : "bg-white text-[#8B0000]"
                   : scrolled
-                  ? "text-gray-600 hover:text-black"
-                  : "text-white/70 hover:text-white"
+                  ? "text-gray-700 hover:text-[#8B0000]"
+                  : "text-white hover:text-white/80"
               }`}
             >
               ID
@@ -121,12 +113,14 @@ const Navbar = () => {
 
             <button
               onClick={() => changeLanguage("en")}
-              className={`px-3 py-1 text-xs font-semibold rounded ${
+              className={`px-4 py-1 text-xs font-semibold rounded-md transition ${
                 i18n.language.startsWith("en")
-                  ? "bg-[#7a0000] text-white"
+                  ? scrolled
+                    ? "bg-[#8B0000] text-white"
+                    : "bg-white text-[#8B0000]"
                   : scrolled
-                  ? "text-gray-600 hover:text-black"
-                  : "text-white/70 hover:text-white"
+                  ? "text-gray-700 hover:text-[#8B0000]"
+                  : "text-white hover:text-white/80"
               }`}
             >
               EN
@@ -134,7 +128,47 @@ const Navbar = () => {
           </div>
         </div>
 
+        {/* MOBILE TOGGLE */}
+        <button
+          className={`xl:hidden ml-auto text-2xl ${
+            scrolled ? "text-[#8B0000]" : "text-white"
+          }`}
+          onClick={() => setMobileOpen(!mobileOpen)}
+        >
+          {mobileOpen ? "✕" : "☰"}
+        </button>
       </div>
+
+      {/* MOBILE MENU */}
+      {mobileOpen && (
+        <div className="xl:hidden bg-white shadow-lg px-8 py-6 space-y-5">
+          {sections.map((section) => (
+            <button
+              key={section}
+              onClick={() => handleClick(section)}
+              className="block w-full text-left uppercase text-sm font-medium text-gray-700 hover:text-[#8B0000]"
+            >
+              {t(section)}
+            </button>
+          ))}
+
+          <div className="pt-4 border-t flex gap-4">
+            <button
+              onClick={() => changeLanguage("id")}
+              className="px-3 py-1 text-xs font-semibold text-gray-700"
+            >
+              ID
+            </button>
+
+            <button
+              onClick={() => changeLanguage("en")}
+              className="px-3 py-1 text-xs font-semibold text-gray-700"
+            >
+              EN
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
