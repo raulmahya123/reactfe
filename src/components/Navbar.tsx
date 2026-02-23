@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
 import CompanyLogo from "../assets/logo-andalan.png";
 
 const menuItems = [
@@ -11,6 +12,7 @@ const menuItems = [
       { name: "visionMission", path: "/about#vision" },
       { name: "milestones", path: "/about#milestones" },
       { name: "management", path: "/about#management" },
+      { name: "businessActivities", path: "/about#business" },
     ],
   },
   {
@@ -18,34 +20,50 @@ const menuItems = [
     path: "/investor",
     submenu: [
       { name: "financialStatements", path: "/investor/financial" },
-      { name: "annualReports", path: "/investor/annual" },
+       { name: "annualReportsMenu", path: "/investor/annual" }, // ✅ BENAR
+      { name: "quarterlyReports", path: "/investor/quarterly" },
+      { name: "publicExpose", path: "/investor/expose" },
+      { name: "dividendInformation", path: "/investor/dividend" },
       { name: "stockPerformance", path: "/investor/stock" },
+      { name: "materialInformation", path: "/investor/material" },
     ],
   },
   {
     name: "governance",
     path: "/governance",
     submenu: [
+      { name: "boardOfDirectors", path: "/governance/directors" },
+      { name: "boardOfCommissioners", path: "/governance/commissioners" },
       { name: "committees", path: "/governance/committees" },
+      { name: "auditCommittee", path: "/governance/audit" },
+      { name: "riskManagement", path: "/governance/risk" },
       { name: "corporateSecretary", path: "/governance/secretary" },
-      { name: "governanceInformation", path: "/governance/information" }, // ← TAMBAHAN
-      { name: "budgetDocument", path: "/governance/budget" }, // ← TAMBAHAN BARU
-    
+      { name: "codeOfConduct", path: "/governance/code" },
+      { name: "whistleblowingSystem", path: "/governance/wbs" },
+      { name: "governanceInformation", path: "/governance/information" },
+      { name: "budgetDocument", path: "/governance/budget" },
     ],
   },
-{
-  name: "csr",
-  path: "/csr",
-  submenu: [
-    { name: "policy", path: "/csr/policy" },
-    { name: "communityDevelopment", path: "/csr/community" },
-    { name: "environment", path: "/csr/environment" },
-    { name: "csrInformation", path: "/csr/information" }, // ← TAMBAHAN
-  ],
-},
+  {
+    name: "csr",
+    path: "/csr",
+    submenu: [
+      { name: "policy", path: "/csr/policy" },
+      { name: "communityDevelopment", path: "/csr/community" },
+      { name: "environment", path: "/csr/environment" },
+      { name: "sustainabilityReport", path: "/csr/sustainability" },
+      { name: "esgCommitment", path: "/csr/esg" },
+      { name: "csrInformation", path: "/csr/information" },
+    ],
+  },
   {
     name: "news",
     path: "/news",
+    submenu: [
+      { name: "pressRelease", path: "/news/press" },
+      { name: "mediaCoverage", path: "/news/media" },
+      { name: "corporateActions", path: "/news/actions" },
+    ],
   },
   {
     name: "contact",
@@ -55,6 +73,8 @@ const menuItems = [
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
+
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -73,10 +93,13 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? "bg-white shadow-md" : "bg-[#4A0404]"
+        scrolled
+          ? "bg-white/90 backdrop-blur-md shadow-md"
+          : "bg-[#4A0404]"
       }`}
     >
       <div className="max-w-[1700px] mx-auto px-6 py-5 flex items-center">
+        
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-6">
           <img
@@ -109,33 +132,36 @@ const Navbar = () => {
               <div key={item.name} className="relative group">
                 <Link
                   to={item.path}
-                  className={`transition-all duration-300 ${
-                    scrolled
+                  className={`flex items-center gap-1 transition-all duration-300 ${
+                    location.pathname.startsWith(item.path)
+                      ? "text-[#C6A75E] font-semibold"
+                      : scrolled
                       ? "text-gray-700 hover:text-[#8B0000]"
                       : "text-white hover:text-white/80"
                   }`}
                 >
                   {t(item.name)}
+                  {item.submenu && <ChevronDown size={14} />}
                 </Link>
 
                 {/* SUBMENU */}
                 {item.submenu && (
                   <div
-                    className="absolute left-0 top-full mt-6 w-64 
+                    className="absolute left-0 top-full mt-6 w-72
                     bg-gradient-to-r from-[#C6A75E] to-[#D4B76A]
                     shadow-xl rounded-md
-                    opacity-0 invisible
-                    group-hover:opacity-100 group-hover:visible
+                    opacity-0 invisible translate-y-3
+                    group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
                     transition-all duration-300 z-50"
                   >
                     {item.submenu.map((sub) => (
-                      <a
+                      <Link
                         key={sub.name}
-                        href={sub.path}
+                        to={sub.path}
                         className="block px-6 py-3 text-sm text-white hover:bg-[#B8954F] transition"
                       >
                         {t(sub.name)}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -143,18 +169,14 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* LANGUAGE */}
+          {/* LANGUAGE SWITCH */}
           <div className="flex items-center gap-3">
             <button
               onClick={() => changeLanguage("id")}
               className={`px-4 py-1 text-xs font-semibold rounded-md transition ${
                 i18n.language === "id"
-                  ? scrolled
-                    ? "bg-[#8B0000] text-white"
-                    : "bg-white text-[#8B0000]"
-                  : scrolled
-                    ? "text-gray-700 hover:text-[#8B0000]"
-                    : "text-white hover:text-white/80"
+                  ? "bg-[#8B0000] text-white"
+                  : "text-gray-700 hover:text-[#8B0000]"
               }`}
             >
               ID
@@ -164,12 +186,8 @@ const Navbar = () => {
               onClick={() => changeLanguage("en")}
               className={`px-4 py-1 text-xs font-semibold rounded-md transition ${
                 i18n.language.startsWith("en")
-                  ? scrolled
-                    ? "bg-[#8B0000] text-white"
-                    : "bg-white text-[#8B0000]"
-                  : scrolled
-                    ? "text-gray-700 hover:text-[#8B0000]"
-                    : "text-white hover:text-white/80"
+                  ? "bg-[#8B0000] text-white"
+                  : "text-gray-700 hover:text-[#8B0000]"
               }`}
             >
               EN
@@ -187,6 +205,36 @@ const Navbar = () => {
           {mobileOpen ? "✕" : "☰"}
         </button>
       </div>
+
+      {/* MOBILE MENU */}
+      {mobileOpen && (
+        <div className="xl:hidden bg-white shadow-md px-6 py-6 space-y-4">
+          {menuItems.map((item) => (
+            <div key={item.name}>
+              <Link
+                to={item.path}
+                className="block font-semibold text-gray-800 mb-2"
+              >
+                {t(item.name)}
+              </Link>
+
+              {item.submenu && (
+                <div className="ml-4 space-y-2">
+                  {item.submenu.map((sub) => (
+                    <Link
+                      key={sub.name}
+                      to={sub.path}
+                      className="block text-gray-600 text-sm"
+                    >
+                      {t(sub.name)}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };

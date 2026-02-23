@@ -49,81 +49,97 @@ const Hero = () => {
       ))}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
-      {/* LEFT MAROON BOX */}
-      <div className="absolute left-0 top-0 h-full w-full md:w-1/2 bg-[#4A0404] z-10 flex flex-col justify-center px-12 md:px-20">
+      {/* FLOATING HERO BOX (SMALL & PREMIUM) */}
+      <div
+        className="
+        absolute 
+        left-6 md:left-20 
+        top-1/2 -translate-y-1/2
+        w-[90%] md:w-[520px]
+        bg-[#4A0404]/95 backdrop-blur-md
+        px-8 md:px-12 py-12 md:py-16
+        rounded-xl shadow-2xl
+        border-l-4 border-yellow-400
+        z-20
+        "
+      >
+        {/* Accent Line */}
+        <div className="w-16 h-1 bg-yellow-400 mb-6"></div>
 
-        {/* Yellow Accent Line */}
-        <div className="w-24 h-1 bg-yellow-400 mb-8"></div>
-
-        <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
+        <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
           {t("heroTitle")}
         </h1>
 
-        <p className="text-white/80 mt-6 text-lg md:text-xl max-w-xl">
+        <p className="text-white/80 mt-6 text-base md:text-lg leading-relaxed">
           {t("heroSubtitle")}
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-6">
+        <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <a
             href="#annual-report"
-            className="px-8 py-3 bg-white text-[#4A0404] font-semibold rounded-md hover:bg-gray-200 transition"
+            className="px-6 py-3 bg-white text-[#4A0404] font-semibold rounded-md hover:bg-gray-200 transition"
           >
             {t("viewAnnualReport")}
           </a>
 
           <a
             href="#investor"
-            className="px-8 py-3 border border-white text-white font-semibold rounded-md hover:bg-white hover:text-[#4A0404] transition"
+            className="px-6 py-3 border border-white text-white font-semibold rounded-md hover:bg-white hover:text-[#4A0404] transition"
           >
             {t("investorRelations")}
           </a>
         </div>
       </div>
 
-      {/* Navigation */}
+      {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20"
+        className="absolute left-6 top-1/2 -translate-y-1/2 text-white text-3xl z-30 hover:scale-110 transition"
       >
         ❮
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20"
+        className="absolute right-6 top-1/2 -translate-y-1/2 text-white text-3xl z-30 hover:scale-110 transition"
       >
         ❯
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-8 w-full flex justify-center gap-3 z-20">
+      <div className="absolute bottom-8 w-full flex justify-center gap-3 z-30">
         {slides.map((_, index) => (
           <div
             key={index}
             onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              current === index ? "bg-white" : "bg-white/40"
+            className={`w-3 h-3 rounded-full cursor-pointer transition ${
+              current === index ? "bg-white scale-110" : "bg-white/40"
             }`}
           />
         ))}
       </div>
 
-      {/* CAREER BOX (MAROON + DIAGONAL CUT) */}
+      {/* CAREER FLOATING BUTTON */}
       <div className="absolute bottom-10 right-10 z-30">
         <a
           href="#career"
-          className="flex items-center gap-4 px-10 py-6 text-white font-semibold tracking-wider shadow-xl transition duration-300 hover:scale-105"
+          className="
+            flex items-center gap-3
+            px-8 py-4
+            text-white font-semibold tracking-wider
+            shadow-xl
+            transition duration-300 hover:scale-105
+            bg-[#4A0404]
+          "
           style={{
-            backgroundColor: "#4A0404",
             clipPath: "polygon(0 0, 85% 0, 100% 100%, 0% 100%)",
           }}
         >
-          {/* Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
+            className="w-5 h-5"
             fill="none"
             viewBox="0 0 24 24"
             stroke="white"

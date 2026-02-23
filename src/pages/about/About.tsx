@@ -3,8 +3,9 @@ import Navbar from "../../components/Navbar";
 import VisionMission from "./VisionMission";
 import Milestones from "./Milestones";
 import Management from "./Management";
+import BusinessActivities from "./BusinessActivities";
 
-const About = () => {
+const   About = () => {
   const { t } = useTranslation();
 
   return (
@@ -44,6 +45,7 @@ const About = () => {
         <VisionMission />
         <Milestones />
         <Management />
+        <BusinessActivities />
 
       </main>
     </>

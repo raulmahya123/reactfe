@@ -5,6 +5,48 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+
+        
+        businessActivities: "Business Activities",
+        businessOverviewTitle: "Our Core Business Activities",
+        businessOverviewText:
+          "PT Andalan Artha Primanusa Tbk operates in integrated mining services, coal trading, and strategic energy development with a focus on operational excellence and sustainability.",
+
+        businessSegment1Title: "Mining Services",
+        businessSegment1Desc:
+          "Comprehensive overburden removal, coal extraction, hauling, and mine support services across multiple operational sites in Indonesia.",
+
+        businessSegment2Title: "Coal Trading",
+        businessSegment2Desc:
+          "Domestic and international coal trading supported by strong logistics infrastructure and long-term customer partnerships.",
+
+        businessSegment3Title: "Logistics & Infrastructure",
+        businessSegment3Desc:
+          "Efficient hauling roads, port facilities, and heavy equipment fleet management to ensure reliable supply chain operations.",
+
+        businessSegment4Title: "Energy Development",
+        businessSegment4Desc:
+          "Strategic expansion into energy and mineral sectors, including nickel development and renewable energy opportunities.",
+
+        operationalExcellence: "Operational Excellence",
+        operationalExcellenceDesc:
+          "We are committed to safety, efficiency, regulatory compliance, and sustainable growth across all operations.",
+        quarterlyReports: "Quarterly Reports",
+        publicExpose: "Public Expose",
+        dividendInformation: "Dividend Information",
+        boardOfDirectors: "Board of Directors",
+        boardOfCommissioners: "Board of Commissioners",
+        auditCommittee: "Audit Committee",
+        riskManagement: "Risk Management",
+        codeOfConduct: "Code of Conduct",
+        whistleblowingSystem: "Whistleblowing System",
+        esgCommitment: "ESG Commitment",
+        pressRelease: "Press Release",
+        mediaCoverage: "Media Coverage",
+        corporateActions: "Corporate Actions",
+        organizationStructure: "Organization Structure",
+        materialInformation: "Material Information",
+
         /* ================= NAVIGATION ================= */
         home: "Home",
         about: "Company Profile",
@@ -25,10 +67,7 @@ i18n.use(initReactI18next).init({
         /* ================= COMPANY PROFILE ================= */
         companyOverview: "Company Overview",
         visionMission: "Vision & Mission",
-        organizationStructure: "Organization Structure",
         shareholdingStructure: "Shareholding Structure",
-        boardOfDirectors: "Board of Directors",
-        boardOfCommissioners: "Board of Commissioners",
         committees: "Committees",
         corporateSecretary: "Corporate Secretary",
 
@@ -41,13 +80,10 @@ i18n.use(initReactI18next).init({
         dividend: "Dividend History",
         dividendPolicy: "Dividend Policy",
         corporateAction: "Corporate Actions",
-        materialInformation: "Material Information / Disclosure",
-
         /* ================= GOVERNANCE (POJK Pasal 6 ayat 3) ================= */
         boardCharter: "Board Charter",
         internalAudit: "Internal Audit Charter",
         ethicsCode: "Code of Conduct",
-        riskManagement: "Risk Management Framework",
         whistleblowing: "Whistleblowing Mechanism",
         antiCorruption: "Anti-Corruption Policy",
         supplierPolicy: "Supplier & Vendor Policy",
@@ -66,6 +102,9 @@ i18n.use(initReactI18next).init({
         revenue: "Revenue",
         netProfit: "Net Profit",
         production: "Production Volume",
+
+        annualReportsMenu: "Annual Reports",
+
         assets: "Total Assets",
         businessTitle: "Our Business Segments",
         mining: "Mining Operations",
@@ -196,7 +235,6 @@ i18n.use(initReactI18next).init({
         media: "Media",
         newsPressTitle: "News & Press Release",
         newsLabel: "News",
-        pressRelease: "Press Release",
         download: "Download",
         viewAll: "View All",
 
@@ -254,7 +292,6 @@ i18n.use(initReactI18next).init({
         nominationRemunerationProcedure:
           "Nomination and remuneration procedures (if no nomination and remuneration committee is established)",
         riskManagementPolicy: "Risk Management Policy",
-        whistleblowingSystem: "Whistleblowing System Policy (if any)",
         antiCorruptionPolicy: "Anti-Corruption Policy (if any)",
         supplierCreditorPolicy:
           "Supplier selection and creditor rights policy (if any)",
@@ -521,7 +558,16 @@ i18n.use(initReactI18next).init({
         csrSupportingDocument: "Laporan Keberlanjutan",
         csrSupportingDocumentDesc:
           "Informasi lengkap mengenai kinerja CSR tersedia dalam Laporan Keberlanjutan Perseroan.",
-
+        quarterlyReports: "Laporan Triwulanan",
+        publicExpose: "Public Expose",
+        dividendInformation: "Informasi Dividen",
+        auditCommittee: "Komite Audit",
+        codeOfConduct: "Kode Etik",
+        esgCommitment: "Komitmen ESG",
+        pressRelease: "Siaran Pers",
+        mediaCoverage: "Liputan Media",
+        corporateActions: "Aksi Korporasi",
+        businessActivities: "Kegiatan Usaha",
         footerInvestor: "Hubungan Investor",
         footerFinancial: "Laporan Keuangan",
         footerAnnual: "Laporan Tahunan",
@@ -539,7 +585,7 @@ i18n.use(initReactI18next).init({
         footerAnnouncement: "Pengumuman",
         footerPresentation: "Presentasi",
         footerNews: "Berita & Siaran Pers",
-
+        annualReportsMenu: "Laporan Tahunan",
         /* ================= INVESTOR NEWS ================= */
         irLabel: "Hubungan Investor",
         irMainTitle:
@@ -590,7 +636,6 @@ i18n.use(initReactI18next).init({
         media: "Media",
         newsPressTitle: "Berita & Siaran Pers",
         newsLabel: "Berita",
-        pressRelease: "Siaran Pers",
         download: "Unduh",
         viewAll: "Lihat Semua",
 
@@ -608,7 +653,29 @@ i18n.use(initReactI18next).init({
           "2022": "Siap untuk Pertumbuhan Berkelanjutan",
           "2021": "Bangkit Lebih Kuat",
         },
+        businessOverviewTitle: "Kegiatan Usaha Perseroan",
+        businessOverviewText:
+          "PT Andalan Artha Primanusa Tbk bergerak dalam jasa pertambangan terintegrasi, perdagangan batubara, dan pengembangan energi strategis dengan fokus pada keunggulan operasional dan keberlanjutan.",
 
+        businessSegment1Title: "Jasa Pertambangan",
+        businessSegment1Desc:
+          "Layanan pengupasan lapisan tanah penutup, penambangan batubara, pengangkutan, dan jasa penunjang tambang di berbagai lokasi operasional di Indonesia.",
+
+        businessSegment2Title: "Perdagangan Batubara",
+        businessSegment2Desc:
+          "Perdagangan batubara domestik dan internasional yang didukung infrastruktur logistik yang kuat dan kemitraan jangka panjang.",
+
+        businessSegment3Title: "Logistik & Infrastruktur",
+        businessSegment3Desc:
+          "Pengelolaan jalan hauling, fasilitas pelabuhan, dan armada alat berat untuk memastikan rantai pasok yang efisien.",
+
+        businessSegment4Title: "Pengembangan Energi",
+        businessSegment4Desc:
+          "Ekspansi strategis ke sektor energi dan mineral, termasuk pengembangan nikel dan peluang energi terbarukan.",
+
+        operationalExcellence: "Keunggulan Operasional",
+        operationalExcellenceDesc:
+          "Kami berkomitmen pada keselamatan kerja, efisiensi, kepatuhan regulasi, dan pertumbuhan berkelanjutan di seluruh lini usaha.",
         companyProfile: "Profil Perusahaan",
         goodCorporateGovernance: "Tata Kelola Perusahaan",
         sustainability: "Keberlanjutan",
@@ -625,8 +692,7 @@ i18n.use(initReactI18next).init({
 
         announcement: "Pengumuman",
         presentation: "Presentasi",
-
-          addressLine1: "PT Andalan Artha Primanusa",
+        addressLine1: "PT Andalan Artha Primanusa",
         addressLine2: "Tanah Andalan Kebon Melati, Tanah Abang",
         addressCountry: "Jakarta Pusat 10230 DKI Jakarta – Indonesia",
         telephone: "Telepon +62 21 6669 2917 | Fax: +62 21 6669 2918",
