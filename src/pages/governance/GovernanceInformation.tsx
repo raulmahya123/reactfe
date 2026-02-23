@@ -23,7 +23,7 @@ const GovernanceInformation = () => {
     <div className="w-full">
 
       {/* HERO */}
-      <section className="bg-[#F1EAD8] text-black pt-44 pb-32">
+      <section className="text-black pt-44 pb-32">
         <div className="max-w-[1400px] mx-auto px-6 text-center">
 
           <h1 className="text-4xl md:text-5xl font-bold tracking-[0.15em] uppercase mb-6">
