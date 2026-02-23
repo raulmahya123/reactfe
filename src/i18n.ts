@@ -685,7 +685,7 @@ investorButton: "Informasi Investor",
         sustainability: "Keberlanjutan",
         newsDisclosure: "Berita & Keterbukaan Informasi",
 
-        milestones: "Tonggak Sejarah",
+        milestones: "Milestone",
         management: "Manajemen",
 
         financialStatements: "Laporan Keuangan",
