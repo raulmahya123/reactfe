@@ -1,9 +1,14 @@
 import { useTranslation } from "react-i18next";
 
+type Member = {
+  name: string;
+  position: string;
+};
+
 const Management = () => {
   const { t } = useTranslation();
 
-  const directors = [
+  const directors: Member[] = [
     {
       name: "Gahari Christine",
       position: t("presidentDirector"),
@@ -14,7 +19,7 @@ const Management = () => {
     },
   ];
 
-  const commissioners = [
+  const commissioners: Member[] = [
     {
       name: "Billy Theristine Lim",
       position: t("commissionerPresident"),
@@ -29,7 +34,7 @@ const Management = () => {
     },
   ];
 
-  const Card = ({ member }) => (
+  const Card = ({ member }: { member: Member }) => (
     <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-500 overflow-hidden">
       <div className="h-2 bg-gradient-to-r from-[#4A0404] to-[#8B0000]"></div>
 
@@ -58,7 +63,6 @@ const Management = () => {
     >
       <div className="max-w-6xl mx-auto px-6">
 
-        {/* Title */}
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-[#4A0404] uppercase tracking-wider">
             {t("management")}
@@ -66,14 +70,12 @@ const Management = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-[#C6A75E] to-[#D4B76A] mx-auto mt-6"></div>
         </div>
 
-        {/* ===== DIREKSI (2 orang di atas) ===== */}
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           {directors.map((member, index) => (
             <Card key={index} member={member} />
           ))}
         </div>
 
-        {/* ===== KOMISARIS (3 orang di bawah - centered) ===== */}
         <div className="grid md:grid-cols-3 gap-12 md:px-24">
           {commissioners.map((member, index) => (
             <Card key={index} member={member} />

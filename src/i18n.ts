@@ -627,7 +627,7 @@ i18n.use(initReactI18next).init({
         presentation: "Presentasi",
 
           addressLine1: "PT Andalan Artha Primanusa",
-        addressLine2: "Tanah Andalan Tanah Andalan Kebon Melati, Tanah Abang",
+        addressLine2: "Tanah Andalan Kebon Melati, Tanah Abang",
         addressCountry: "Jakarta Pusat 10230 DKI Jakarta – Indonesia",
         telephone: "Telepon +62 21 6669 2917 | Fax: +62 21 6669 2918",
         allRightsReserved: "Seluruh Hak Cipta Dilindungi.",

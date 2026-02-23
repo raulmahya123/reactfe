@@ -10,7 +10,7 @@ import Contact from "./pages/kontak/ContactSection";
 import Committees from "./pages/governance/Committees";
 import CorporateSecretary from "./pages/governance/CorporateSecretary";
 import GovernanceInformation from "./pages/governance/GovernanceInformation";
-import BudgetDocument from "./pages/governance/BudgetDocument";
+import BudgetDocument from "./pages/csr/CsrInformation";
 
 // CSR
 import CsrInformation from "./pages/csr/CsrInformation";
