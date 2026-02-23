@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-import Slide1 from "../assets/hero1.png";
-import Slide2 from "../assets/hero2.png";
-import Slide3 from "../assets/hero2.png";
+import Slide1 from "../assets/hero2.png";
+import Slide2 from "../assets/hero3.png";
+import Slide3 from "../assets/hero1.png";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -47,49 +47,6 @@ const Hero = () => {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
-
-      {/* FLOATING HERO BOX (SMALL & PREMIUM) */}
-      <div
-        className="
-  absolute 
-  left-6 md:left-20 
-  top-1/2 -translate-y-1/2
-  w-[90%] md:w-[520px]
-  bg-[#BEC5A4]/95 backdrop-blur-md
-  px-8 md:px-12 py-12 md:py-16
-  rounded-xl shadow-2xl
-  border-l-4 border-[#B59D55]
-  z-20
-  "
-      >
-        {/* Accent Line */}
-        <div className="w-16 h-1 bg-[#B59D55] mb-6"></div>
-
-        <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
-          {t("heroTitle")}
-        </h1>
-
-        <p className="text-white/80 mt-6 text-base md:text-lg leading-relaxed">
-          {t("heroSubtitle")}
-        </p>
-
-        <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <a
-            href="#annual-report"
-            className="px-6 py-3 bg-white text-[#BEC5A4] font-semibold rounded-md hover:bg-gray-200 transition"
-          >
-            {t("viewAnnualReport")}
-          </a>
-
-          <a
-            href="#investor"
-            className="px-6 py-3 border border-white text-white font-semibold rounded-md hover:bg-white hover:text-[#BEC5A4] transition"
-          >
-            {t("investorRelations")}
-          </a>
-        </div>
-      </div>
-
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
@@ -121,7 +78,7 @@ const Hero = () => {
       {/* CAREER FLOATING BUTTON */}
       <div className="absolute bottom-10 right-10 z-30">
         <a
-          href="#career"
+          href="https://karirandalan.com/"
           className="
             flex items-center gap-3
             px-8 py-4

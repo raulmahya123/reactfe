@@ -152,10 +152,11 @@ i18n.use(initReactI18next).init({
         footerRights: "All Rights Reserved.",
         companyOverviewTitle: "Company Overview",
         companyOverviewText:
-          "PT Andalan Artha Primanusa Tbk is a leading energy company engaged in coal mining and trading operations across Indonesia...",
+          "PT Andalan Artha Primanusa Tbk. (AAP) was established in 2018 as a mining contractor committed to delivering the highest standards of safety, productivity, and sustainability. With extensive experience in the mining contracting sector, AAP has become a strategic partner for mining companies seeking strong, transparent, and results‑oriented operational solutions.We believe that project success is not measured solely by production, but also by the values we uphold:",
         overviewPoint1: "Integrated coal mining & trading operations",
         overviewPoint2: "Strong domestic & international market presence",
         overviewPoint3: "Committed to sustainable & responsible mining",
+        overviewPoint4: "Social Commitment – contributing positively to surrounding communities",
 
         established: "Established",
         operationalSites: "Operational Sites",
@@ -512,12 +513,14 @@ i18n.use(initReactI18next).init({
         footerRights: "Seluruh Hak Cipta Dilindungi.",
         companyOverviewTitle: "Sekilas Perusahaan",
         companyOverviewText:
-          "PT Andalan Artha Primanusa Tbk merupakan perusahaan energi terkemuka yang bergerak di bidang pertambangan dan perdagangan batubara di Indonesia. Dengan keunggulan operasional dan kemitraan strategis, Perseroan terus memberikan nilai berkelanjutan bagi pemegang saham dan pemangku kepentingan.",
+          "PT Andalan Artha Primanusa Tbk. (AAP) berdiri sejak tahun 2018 sebagai kontraktor pertambangan yang berkomitmen menghadirkan standar tertinggi dalam keselamatan, produktivitas, dan keberlanjutan. Dengan pengalaman mendalam di sektor kontraktor pertambangan, AAP menjadi mitra strategis bagi perusahaan tambang yang membutuhkan solusi operasional yang kuat, transparan, dan berorientasi hasil.Kami percaya bahwa keberhasilan proyek tidak hanya diukur dari produksi, tetapi juga dari nilai-nilai yang kami junjung tinggi:",
         overviewPoint1:
-          "Operasi pertambangan & perdagangan batubara terintegrasi",
-        overviewPoint2: "Kehadiran pasar domestik & internasional yang kuat",
+          "Integritas – menjalankan operasional dengan kejujuran dan tanggung jawab",
+        overviewPoint2: "Kepatuhan regulasi – memastikan setiap langkah sesuai aturan dan standar industri",
         overviewPoint3:
-          "Berkomitmen pada pertambangan berkelanjutan & bertanggung jawab",
+          "Tanggung jawab lingkungan – menjaga keberlanjutan sumber daya alam",
+        overviewPoint4:
+          "Komitmen sosial – berkontribusi positif bagi masyarakat sekitar",
 
         established: "Didirikan",
         operationalSites: "Lokasi Operasional",
@@ -526,7 +529,7 @@ i18n.use(initReactI18next).init({
         footerAbout: "Tentang Kami",
         footerVision: "Visi & Misi",
         footerPhilosophy: "Filosofi Perusahaan",
-        footerMilestones: "Tonggak Sejarah",
+        footerMilestones: "Milestone",
         footerManagement: "Manajemen",
         footerContactUs: "Hubungi Kami",
         csrInformation: "Informasi Tanggung Jawab Sosial Perusahaan",
@@ -693,7 +696,7 @@ i18n.use(initReactI18next).init({
         announcement: "Pengumuman",
         presentation: "Presentasi",
         addressLine1: "PT Andalan Artha Primanusa",
-        addressLine2: "Tanah Andalan Kebon Melati, Tanah Abang",
+        addressLine2: "Jl. Plaju No.11",
         addressCountry: "Jakarta Pusat 10230 DKI Jakarta – Indonesia",
         telephone: "Telepon +62 21 6669 2917 | Fax: +62 21 6669 2918",
         allRightsReserved: "Seluruh Hak Cipta Dilindungi.",

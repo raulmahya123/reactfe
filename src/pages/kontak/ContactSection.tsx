@@ -5,22 +5,22 @@ const ContactSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white pt-32 pb-24">
+    <section className="bg-white pt-32 pb-28">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-24">
-          <p className="uppercase tracking-[0.35em] text-xs text-[#7A0000] font-semibold mb-6">
+          <p className="uppercase tracking-[0.35em] text-xs font-semibold mb-6 text-[#A77B3F]">
             {t("contactSection.official")}
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#BEC5A4]">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-black">
             {t("contactSection.title")}
           </h2>
 
-          <div className="w-24 h-1 bg-gradient-to-r from-[#C6A75E] to-[#E5C97A] mx-auto mt-8 rounded-full"></div>
+          <div className="w-24 h-[3px] bg-[#A77B3F] mx-auto mt-8 rounded-full"></div>
 
-          <p className="text-gray-600 max-w-2xl mx-auto mt-8 leading-relaxed whitespace-pre-line">
+          <p className="text-black max-w-2xl mx-auto mt-8 leading-relaxed whitespace-pre-line">
             {t("contactSection.description")}
           </p>
         </div>
@@ -28,63 +28,71 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-2 gap-12">
 
           {/* Head Office */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-300">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="p-3 rounded-xl bg-gradient-to-br from-[#C6A75E] to-[#E5C97A]">
-                <Building2 className="text-[#BEC5A4]" size={24} />
+          <div className="bg-white border border-[#A77B3F]/20 rounded-3xl p-12 shadow-md hover:shadow-xl transition-all duration-300">
+
+            <div className="flex items-center gap-4 mb-10">
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#A77B3F]/15">
+                <Building2 className="text-[#A77B3F]" size={24} />
               </div>
-              <h3 className="text-2xl font-bold text-[#7A0000]">
+              <h3 className="text-2xl font-bold text-black">
                 {t("contactSection.headOffice")}
               </h3>
             </div>
 
-            <div className="space-y-6 text-gray-700">
-              <div className="flex gap-4">
-                <MapPin className="text-[#C6A75E]" />
-                <p className="whitespace-pre-line">
-                  {t("contactSection.address")}
-                </p>
-              </div>
+            <div className="space-y-8 text-black">
 
-              <div className="flex gap-4">
-                <Phone className="text-[#C6A75E]" />
-                <p>{t("contactSection.phone")}</p>
-              </div>
+              {[
+                { icon: MapPin, text: t("contactSection.address") },
+                { icon: Phone, text: t("contactSection.phone") },
+                { icon: Mail, text: t("contactSection.email") },
+                { icon: Clock, text: t("contactSection.hours") },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-4 items-start">
+                  <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#A77B3F]/10">
+                    <item.icon className="text-[#A77B3F]" size={18} />
+                  </div>
+                  <p className="leading-relaxed whitespace-pre-line">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
 
-              <div className="flex gap-4">
-                <Mail className="text-[#C6A75E]" />
-                <p>{t("contactSection.email")}</p>
-              </div>
-
-              <div className="flex gap-4">
-                <Clock className="text-[#C6A75E]" />
-                <p>{t("contactSection.hours")}</p>
-              </div>
             </div>
           </div>
 
           {/* Representative Office */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-300">
-            <h3 className="text-2xl font-bold text-[#7A0000] mb-10">
-              {t("contactSection.repOffice")}
-            </h3>
+          <div className="bg-white border border-[#A77B3F]/20 rounded-3xl p-12 shadow-md hover:shadow-xl transition-all duration-300">
 
-            <div className="space-y-10 text-gray-700">
+            <div className="flex items-center gap-4 mb-12">
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#A77B3F]/15">
+                <Building2 className="text-[#A77B3F]" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold text-black">
+                {t("contactSection.repOffice")}
+              </h3>
+            </div>
+
+            <div className="space-y-10 text-black">
 
               {["bgg", "sbs", "dbk", "pos"].map((site) => (
                 <div key={site}>
-                  <div className="flex gap-4 mb-2">
-                    <Building2 className="text-[#C6A75E]" />
+
+                  <div className="flex items-center gap-4 mb-2">
+                    <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-[#A77B3F]/10">
+                      <Building2 className="text-[#A77B3F]" size={16} />
+                    </div>
                     <p className="font-semibold">
                       {t(`contactSection.sites.${site}.name`)}
                     </p>
                   </div>
-                  <div className="flex gap-4">
-                    <MapPin className="text-[#C6A75E]" />
+
+                  <div className="flex gap-4 items-start ml-12">
+                    <MapPin className="text-[#A77B3F]" size={18} />
                     <p>
                       {t(`contactSection.sites.${site}.location`)}
                     </p>
                   </div>
+
                 </div>
               ))}
 

@@ -98,7 +98,6 @@ const Footer = () => {
                 {t("addressLine2")} <br />
                 {t("addressCountry")}
               </p>
-              <p className="text-sm text-white/80 mt-6">{t("telephone")}</p>
 
               <div className="flex gap-4 mt-6 text-lg">
                 <a href="#" className="hover:text-[#C6A75E] transition"><FaInstagram /></a>

@@ -55,7 +55,7 @@ const CompanyOverview = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <p className="text-gray-700 leading-relaxed text-lg">
+            <p className="text-gray-700 leading-relaxed text-lg text-justify">
               {t("companyOverviewText")}
             </p>
 
@@ -74,6 +74,11 @@ const CompanyOverview = () => {
               <li className="flex items-start gap-3">
                 <CheckCircle className="text-[#B59D55] mt-1" size={18} />
                 {t("overviewPoint3")}
+              </li>
+
+              <li className="flex items-start gap-3">
+                <CheckCircle className="text-[#B59D55] mt-1" size={18} />
+                {t("overviewPoint4")}
               </li>
             </ul>
 
