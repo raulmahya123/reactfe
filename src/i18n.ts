@@ -330,9 +330,9 @@ investorButton: "Investor Information",
           "Signed a contract with PT Budi Gema Gempita on August 8, 2018 for coal mining services in Lahat, South Sumatra. This marked AAP’s first operational project and laid the foundation for its operational track record.",
 
         milestone3:
-          "Signed a contract with PT Satria Bahana Sarana on December 30, 2024 for production support services in Tanjung Enim, South Sumatra, strengthening recurring revenue and service diversification.",
+          "Signed a contract with PT Bukit Asam Tbk on December 30, 2024 for production support services in Tanjung Enim, South Sumatra, strengthening recurring revenue and service diversification.",
         milestone4:
-          "On December 1, 2025, AAP obtained a contract addendum from PT Satria Bahana Sarana, including additional production volume and material hauling scope. This reflects the client’s satisfaction and trust in AAP’s performance.",
+          "On December 1, 2025, AAP obtained a contract addendum from PT Bukit Asam Tbk, including additional production volume and material hauling scope. This reflects the client’s satisfaction and trust in AAP’s performance.",
         milestone5:
           "Received a Letter of Award from PT Position dated January 22, 2026 for nickel mining development and operations in Maba Village, East Halmahera, North Maluku, marking AAP’s strategic expansion into the nickel sector.",
         presidentDirector: "President Director",
@@ -365,7 +365,7 @@ investorButton: "Investor Information",
               location: "Lahat, South Sumatera – Indonesia",
             },
             sbs: {
-              name: "Site PT Satria Bahana Sarana (SBS)",
+              name: "Site PT Bukit Asam Tbk (SBS)",
               location: "Tanjung Enim, South Sumatera – Indonesia",
             },
             dbk: {
@@ -722,10 +722,10 @@ investorButton: "Informasi Investor",
           "Penandatanganan kontrak dengan PT Budi Gema Gempita pada 8 Agustus 2018 untuk pekerjaan jasa penambangan batubara di Lahat, Sumatera Selatan. Proyek ini menjadi fondasi awal rekam jejak operasional AAP.",
 
         milestone3:
-          "Penandatanganan kontrak dengan PT Satria Bahana Sarana pada 30 Desember 2024 untuk pengadaan jasa penunjang produksi di Tanjung Enim, Sumatera Selatan, memperkuat keberlanjutan pendapatan dan diversifikasi layanan.",
+          "Penandatanganan kontrak dengan PT Bukit Asam Tbk (SBS Project) pada 30 Desember 2024 untuk pengadaan jasa penunjang produksi di Tanjung Enim, Sumatera Selatan, memperkuat keberlanjutan pendapatan dan diversifikasi layanan.",
 
         milestone4:
-          "Pada 1 Desember 2025, AAP menandatangani addendum kontrak dengan PT Satria Bahana Sarana yang mencakup tambahan volume produksi dan jasa angkutan material. Hal ini mencerminkan kepuasan serta kepercayaan berkelanjutan dari pemberi kerja terhadap kinerja AAP.",
+          "Pada 1 Desember 2025, AAP menandatangani addendum kontrak dengan PT Bukit Asam Tbk yang mencakup tambahan volume produksi dan jasa angkutan material. Hal ini mencerminkan kepuasan serta kepercayaan berkelanjutan dari pemberi kerja terhadap kinerja AAP.",
         milestone5:
           "Perolehan Letter of Award dari PT Position tertanggal 22 Januari 2026 untuk pekerjaan pengembangan dan operasi penambangan nikel di Desa Maba, Halmahera Timur, Maluku Utara, menandai ekspansi strategis AAP ke sektor nikel.",
 
@@ -757,19 +757,19 @@ operationalLocationsDesc:
 
           sites: {
             bgg: {
-              name: "Site PT Budi Gema Gempita (BGG)",
+              name: "Site PT Budi Gema Gempita (BGG Project)",
               location: "Lahat, Sumatera Selatan – Indonesia",
             },
             sbs: {
-              name: "Site PT Satria Bahana Sarana (SBS)",
+              name: "Site PT Bukit Asam Tbk (SBS Project)",
               location: "Tanjung Enim, Sumatera Selatan – Indonesia",
             },
             dbk: {
-              name: "Site PT Daya Bumindo Karunia (DBK)",
+              name: "Site PT Daya Bumindo Karunia (DBK Project)",
               location: "Murung Raya, Kalimantan Tengah – Indonesia",
             },
             pos: {
-              name: "Site PT Position (POS)",
+              name: "Site PT Position (POS Project)",
               location: "Halmahera Timur, Maluku Utara – Indonesia",
             },
           },
