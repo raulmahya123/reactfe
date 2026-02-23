@@ -147,9 +147,9 @@ const CompanyOverview = () => {
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
-            <h3 className="text-3xl font-bold text-[#B59D55]">
-              <CountUp end={1000} duration={2} separator="," />
-            </h3>
+<h3 className="text-3xl font-bold text-[#B59D55]">
+  <CountUp end={700} duration={2} separator="," />+
+</h3>
             <p className="text-gray-600 mt-2">{t("employees")}</p>
           </motion.div>
 
