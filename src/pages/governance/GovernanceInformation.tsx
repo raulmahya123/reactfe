@@ -23,7 +23,7 @@ const GovernanceInformation = () => {
     <div className="w-full">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-[#4A0404] to-[#6B0B0B] text-white py-28">
+      <section className="bg-gradient-to-r from-[#BEC5A4] to-[#6B0B0B] text-white py-28">
         <div className="max-w-[1400px] mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold tracking-[0.2em] uppercase mb-4">
             {t("governanceInformation")}
@@ -58,7 +58,7 @@ const GovernanceInformation = () => {
                     </div>
 
                     <div>
-                      <p className="text-sm font-semibold text-[#4A0404]">
+                      <p className="text-sm font-semibold text-[#BEC5A4]">
                         {t(doc.key)}
                       </p>
                       <p className="text-xs text-gray-500 mt-1">
@@ -73,7 +73,7 @@ const GovernanceInformation = () => {
                     href={doc.file}
                     download
                     className="flex items-center gap-2 px-4 py-2 rounded-lg 
-                    bg-[#4A0404] text-white text-xs font-semibold
+                    bg-[#BEC5A4] text-white text-xs font-semibold
                     hover:bg-[#6B0B0B] transition-all duration-300"
                   >
                     <Download size={16} />

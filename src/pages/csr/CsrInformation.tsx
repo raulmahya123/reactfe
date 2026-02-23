@@ -35,7 +35,7 @@ const CsrInformation = () => {
     <div className="w-full">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-[#4A0404] via-[#5B0606] to-[#6B0B0B] text-white py-32">
+      <section className="bg-gradient-to-r from-[#BEC5A4] via-[#5B0606] to-[#6B0B0B] text-white py-32">
         <div className="max-w-[1400px] mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold tracking-[0.25em] uppercase mb-4">
             {t("csrInformation")}
@@ -61,7 +61,7 @@ const CsrInformation = () => {
                 <div className="bg-[#C6A75E]/15 p-4 rounded-xl">
                   {item.icon}
                 </div>
-                <h2 className="text-xl font-semibold text-[#4A0404] uppercase tracking-wide">
+                <h2 className="text-xl font-semibold text-[#BEC5A4] uppercase tracking-wide">
                   {t(item.title)}
                 </h2>
               </div>
@@ -76,7 +76,7 @@ const CsrInformation = () => {
                 <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">
                   {t("csrBudget")}
                 </p>
-                <p className="text-sm font-semibold text-[#4A0404]">
+                <p className="text-sm font-semibold text-[#BEC5A4]">
                   {t(item.budget)}
                 </p>
               </div>
@@ -84,7 +84,7 @@ const CsrInformation = () => {
           ))}
 
           {/* SUPPORTING DOCUMENT */}
-          <div className="bg-gradient-to-r from-[#4A0404] to-[#6B0B0B] text-white p-10 rounded-3xl flex items-center justify-between">
+          <div className="bg-gradient-to-r from-[#BEC5A4] to-[#6B0B0B] text-white p-10 rounded-3xl flex items-center justify-between">
 
             <div>
               <h3 className="text-lg font-semibold mb-2">
@@ -99,7 +99,7 @@ const CsrInformation = () => {
               href="/documents/sustainability-report.pdf"
               download
               className="flex items-center gap-2 px-6 py-3 rounded-lg 
-              bg-[#C6A75E] text-[#4A0404] text-sm font-semibold
+              bg-[#C6A75E] text-[#BEC5A4] text-sm font-semibold
               hover:bg-[#D4B76A] transition-all duration-300"
             >
               <Download size={18} />

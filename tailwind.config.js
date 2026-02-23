@@ -7,13 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'], // Set Poppins jadi font utama
+        sans: ['Raleway', 'sans-serif'], // 🔥 Semua pakai Raleway
       },
-      colors: {
-        maroon: {
-          900: '#4A0404',
-        }
-      }
     },
   },
   plugins: [],

@@ -12,7 +12,7 @@ const VisionMission = () => {
 
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#4A0404] uppercase tracking-wider">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#BEC5A4] uppercase tracking-wider">
             {t("visionMission")}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#C6A75E] to-[#D4B76A] mx-auto mt-6"></div>
@@ -22,8 +22,8 @@ const VisionMission = () => {
         <div className="grid md:grid-cols-2 gap-16">
 
           {/* Vision Card */}
-          <div className="bg-white rounded-xl shadow-lg p-10 border-t-4 border-[#4A0404] hover:shadow-2xl transition duration-500">
-            <h3 className="text-2xl font-semibold text-[#4A0404] mb-6">
+          <div className="bg-white rounded-xl shadow-lg p-10 border-t-4 border-[#BEC5A4] hover:shadow-2xl transition duration-500">
+            <h3 className="text-2xl font-semibold text-[#BEC5A4] mb-6">
               {t("vision")}
             </h3>
 
@@ -36,7 +36,7 @@ const VisionMission = () => {
 
           {/* Mission Card */}
           <div className="bg-white rounded-xl shadow-lg p-10 border-t-4 border-[#C6A75E] hover:shadow-2xl transition duration-500">
-            <h3 className="text-2xl font-semibold text-[#4A0404] mb-6">
+            <h3 className="text-2xl font-semibold text-[#BEC5A4] mb-6">
               {t("mission")}
             </h3>
 
@@ -59,7 +59,7 @@ const VisionMission = () => {
               </li>
             </ul>
 
-            <div className="w-12 h-[2px] bg-[#4A0404] mt-8"></div>
+            <div className="w-12 h-[2px] bg-[#BEC5A4] mt-8"></div>
           </div>
 
         </div>

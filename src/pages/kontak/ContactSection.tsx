@@ -14,7 +14,7 @@ const ContactSection = () => {
             {t("contactSection.official")}
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#4A0404]">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#BEC5A4]">
             {t("contactSection.title")}
           </h2>
 
@@ -31,7 +31,7 @@ const ContactSection = () => {
           <div className="bg-white border border-gray-200 rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-300">
             <div className="flex items-center gap-3 mb-8">
               <div className="p-3 rounded-xl bg-gradient-to-br from-[#C6A75E] to-[#E5C97A]">
-                <Building2 className="text-[#4A0404]" size={24} />
+                <Building2 className="text-[#BEC5A4]" size={24} />
               </div>
               <h3 className="text-2xl font-bold text-[#7A0000]">
                 {t("contactSection.headOffice")}

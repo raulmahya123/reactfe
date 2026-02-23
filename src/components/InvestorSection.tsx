@@ -15,7 +15,7 @@ const InvestorSection = () => {
     <section className="py-24 bg-white">
       <div className="max-w-[1400px] mx-auto px-8 text-center">
 
-        <h2 className="text-3xl md:text-4xl font-bold text-[#4A0404]">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#BEC5A4]">
           {t("investorAccessTitle")}
         </h2>
 
@@ -29,7 +29,7 @@ const InvestorSection = () => {
             <a
               key={index}
               href={item.href}
-              className="border border-[#4A0404] text-[#4A0404] font-semibold py-6 rounded-lg hover:bg-[#4A0404] hover:text-white transition duration-300"
+              className="border border-[#BEC5A4] text-[#BEC5A4] font-semibold py-6 rounded-lg hover:bg-[#BEC5A4] hover:text-white transition duration-300"
             >
               {item.label}
             </a>

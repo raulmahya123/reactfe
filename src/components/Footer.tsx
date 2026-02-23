@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-[#4A0404] text-white pt-20 pb-10">
+      <footer className="bg-[#BEC5A4] text-white pt-20 pb-10">
         <div className="max-w-[1400px] mx-auto px-8">
 
           {/* Accent Line */}

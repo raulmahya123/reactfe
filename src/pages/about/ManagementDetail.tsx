@@ -14,7 +14,7 @@ const ManagementDetail = () => {
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-[#4A0404] to-[#6E0A0A] text-white py-28 px-6">
+    <section className="min-h-screen bg-gradient-to-br from-[#BEC5A4] to-[#6E0A0A] text-white py-28 px-6">
       <div className="max-w-4xl mx-auto text-center">
 
         <button

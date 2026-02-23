@@ -34,7 +34,7 @@ const BusinessSegments = () => {
     <section className="py-24 bg-white">
       <div className="max-w-[1400px] mx-auto px-8 text-center">
 
-        <h2 className="text-3xl md:text-4xl font-bold text-[#4A0404] mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#BEC5A4] mb-16">
           {t("businessTitle")}
         </h2>
 
@@ -52,7 +52,7 @@ const BusinessSegments = () => {
               />
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#4A0404]">
+                <h3 className="text-xl font-semibold text-[#BEC5A4]">
                   {segment.title}
                 </h3>
 

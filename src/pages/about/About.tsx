@@ -15,10 +15,10 @@ const   About = () => {
       <main>
 
         {/* HERO SECTION */}
-        <section className="relative pt-40 pb-28 bg-[#4A0404] text-white overflow-hidden">
+        <section className="relative pt-40 pb-28 bg-[#BEC5A4] text-white overflow-hidden">
           
           {/* Gold Overlay Accent */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#4A0404] via-[#5a0707] to-[#2e0202] opacity-95"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#BEC5A4] via-[#5a0707] to-[#2e0202] opacity-95"></div>
 
           {/* Decorative Gold Line */}
           <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#C6A75E] via-[#D4B76A] to-[#C6A75E]"></div>

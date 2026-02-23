@@ -8,7 +8,7 @@ const BudgetDocument = () => {
     <div className="w-full">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-[#4A0404] via-[#5B0606] to-[#6B0B0B] text-white py-32">
+      <section className="bg-gradient-to-r from-[#BEC5A4] via-[#5B0606] to-[#6B0B0B] text-white py-32">
         <div className="max-w-[1400px] mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold tracking-[0.25em] uppercase mb-4">
             {t("budgetDocument")}
@@ -37,7 +37,7 @@ const BudgetDocument = () => {
                   <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
                     {t("effectiveDate")}
                   </p>
-                  <p className="text-sm font-semibold text-[#4A0404]">
+                  <p className="text-sm font-semibold text-[#BEC5A4]">
                     31 July 2018
                   </p>
                 </div>
@@ -51,7 +51,7 @@ const BudgetDocument = () => {
                   <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
                     {t("notarialDeed")}
                   </p>
-                  <p className="text-sm font-semibold text-[#4A0404]">
+                  <p className="text-sm font-semibold text-[#BEC5A4]">
                     Deed No. 58 – Ministry Approval
                   </p>
                 </div>
@@ -61,7 +61,7 @@ const BudgetDocument = () => {
 
             {/* DESCRIPTION */}
             <div>
-              <h2 className="text-xl font-semibold text-[#4A0404] mb-4 uppercase tracking-wide">
+              <h2 className="text-xl font-semibold text-[#BEC5A4] mb-4 uppercase tracking-wide">
                 {t("documentOverview")}
               </h2>
               <p className="text-sm text-gray-700 leading-relaxed">
@@ -70,11 +70,11 @@ const BudgetDocument = () => {
             </div>
 
             {/* DOWNLOAD CARD */}
-            <div className="bg-gradient-to-r from-[#4A0404] to-[#6B0B0B] text-white p-8 rounded-2xl flex items-center justify-between">
+            <div className="bg-gradient-to-r from-[#BEC5A4] to-[#6B0B0B] text-white p-8 rounded-2xl flex items-center justify-between">
 
               <div className="flex items-center gap-5">
                 <div className="bg-[#C6A75E] p-4 rounded-xl">
-                  <FileText className="text-[#4A0404]" size={24} />
+                  <FileText className="text-[#BEC5A4]" size={24} />
                 </div>
                 <div>
                   <p className="text-sm font-semibold">
@@ -90,7 +90,7 @@ const BudgetDocument = () => {
                 href="/documents/articles-of-association.pdf"
                 download
                 className="flex items-center gap-2 px-6 py-3 rounded-lg 
-                bg-[#C6A75E] text-[#4A0404] text-sm font-semibold
+                bg-[#C6A75E] text-[#BEC5A4] text-sm font-semibold
                 hover:bg-[#D4B76A] transition-all duration-300"
               >
                 <Download size={18} />

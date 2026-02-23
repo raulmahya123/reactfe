@@ -15,19 +15,19 @@ const AnnualReportsPage = () => {
   ];
 
   return (
-    <section className="bg-[#4A0404] min-h-screen py-24">
+    <section className="bg-[#f3f3f3] min-h-screen py-24">
       <div className="max-w-[1500px] mx-auto px-10">
 
         {/* HEADER */}
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-[2px] bg-[#FACC15]"></div>
-            <p className="text-[#FACC15] uppercase tracking-widest text-sm font-semibold">
+            <div className="w-12 h-[2px] bg-[#B59D55]"></div>
+            <p className="text-[#B59D55] uppercase tracking-widest text-sm font-semibold">
               {t("investorRelations")}
             </p>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#2f3a1f]">
             {t("annualReportsTitle")}
           </h1>
         </div>
@@ -37,7 +37,7 @@ const AnnualReportsPage = () => {
           {reports.map((report, index) => (
             <div
               key={index}
-              className="group border border-[#FACC15]/30 bg-[#3a0000] p-5 rounded-md"
+              className="group border border-[#000000]/20 bg-[#BEC5A4] p-5 rounded-md shadow-sm hover:shadow-xl transition-all duration-300"
             >
               
               {/* IMAGE */}
@@ -45,13 +45,13 @@ const AnnualReportsPage = () => {
                 <img
                   src={report.image}
                   alt={t(`annualReports.${report.year}`)}
-                  className="w-full h-[420px] object-cover"
+                  className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-300"
                 />
               </div>
 
               {/* INFO */}
-              <div className="mt-6 text-white">
-                <p className="text-sm text-white/60">
+              <div className="mt-6 text-[#2f3a1f]">
+                <p className="text-sm text-[#2f3a1f]/70">
                   {t("annualReportLabel")} {report.year}
                 </p>
 
@@ -59,7 +59,7 @@ const AnnualReportsPage = () => {
                   {t(`annualReports.${report.year}`)}
                 </h3>
 
-                <button className="mt-4 text-[#FACC15] font-semibold">
+                <button className="mt-4 text-[#B59D55] font-semibold hover:underline">
                   {t("download")} →
                 </button>
               </div>

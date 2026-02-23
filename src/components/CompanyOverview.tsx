@@ -13,7 +13,7 @@ const CompanyOverview = () => {
       className="py-28 bg-gradient-to-b from-[#ffffff] to-[#f3f3f3] relative overflow-hidden"
     >
       {/* Background Accent */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(122,0,0,0.05),_transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(181,157,85,0.08),_transparent_60%)]"></div>
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         
@@ -25,11 +25,11 @@ const CompanyOverview = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <span className="text-sm tracking-widest text-[#7a0000] font-semibold uppercase">
+          <span className="text-sm tracking-widest text-[#B59D55] font-semibold uppercase">
             Company Profile
           </span>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-[#4A0404] mt-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#B59D55] mt-4">
             {t("companyOverviewTitle")}
           </h2>
 
@@ -39,9 +39,9 @@ const CompanyOverview = () => {
 
           {/* Elegant Divider */}
           <div className="flex items-center justify-center gap-4 mt-8">
-            <div className="w-12 h-[2px] bg-[#7a0000]"></div>
-            <div className="w-3 h-3 bg-[#7a0000] rotate-45"></div>
-            <div className="w-12 h-[2px] bg-[#7a0000]"></div>
+            <div className="w-12 h-[2px] bg-[#B59D55]"></div>
+            <div className="w-3 h-3 bg-[#B59D55] rotate-45"></div>
+            <div className="w-12 h-[2px] bg-[#B59D55]"></div>
           </div>
         </motion.div>
 
@@ -62,17 +62,17 @@ const CompanyOverview = () => {
             {/* Highlight Points */}
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-[#7a0000] mt-1" size={18} />
+                <CheckCircle className="text-[#B59D55] mt-1" size={18} />
                 {t("overviewPoint1")}
               </li>
 
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-[#7a0000] mt-1" size={18} />
+                <CheckCircle className="text-[#B59D55] mt-1" size={18} />
                 {t("overviewPoint2")}
               </li>
 
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-[#7a0000] mt-1" size={18} />
+                <CheckCircle className="text-[#B59D55] mt-1" size={18} />
                 {t("overviewPoint3")}
               </li>
             </ul>
@@ -81,7 +81,7 @@ const CompanyOverview = () => {
             <div className="pt-6">
               <a
                 href="#investor"
-                className="inline-block px-8 py-3 bg-[#7a0000] text-white font-semibold rounded-md hover:bg-[#5f0000] hover:scale-105 transition-all duration-300 shadow-md"
+                className="inline-block px-8 py-3 bg-[#B59D55] text-white font-semibold rounded-md hover:bg-[#9e8748] hover:scale-105 transition-all duration-300 shadow-md"
               >
                 {t("investor")}
               </a>
@@ -96,8 +96,8 @@ const CompanyOverview = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-[#7a0000]/10 rounded-xl"></div>
-            <div className="absolute -top-6 -left-6 w-full h-full border-2 border-[#7a0000] rounded-xl"></div>
+            <div className="absolute inset-0 bg-[#B59D55]/10 rounded-xl"></div>
+            <div className="absolute -top-6 -left-6 w-full h-full border-2 border-[#B59D55] rounded-xl"></div>
 
             <img
               src={OverviewImage}
@@ -117,7 +117,7 @@ const CompanyOverview = () => {
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
-            <h3 className="text-3xl font-bold text-[#7a0000]">
+            <h3 className="text-3xl font-bold text-[#B59D55]">
               <CountUp end={2010} duration={2} />
             </h3>
             <p className="text-gray-600 mt-2">{t("established")}</p>
@@ -127,7 +127,7 @@ const CompanyOverview = () => {
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
-            <h3 className="text-3xl font-bold text-[#7a0000]">
+            <h3 className="text-3xl font-bold text-[#B59D55]">
               <CountUp end={3} duration={2} />+
             </h3>
             <p className="text-gray-600 mt-2">{t("operationalSites")}</p>
@@ -137,7 +137,7 @@ const CompanyOverview = () => {
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
-            <h3 className="text-3xl font-bold text-[#7a0000]">
+            <h3 className="text-3xl font-bold text-[#B59D55]">
               <CountUp end={1500} duration={2} />+
             </h3>
             <p className="text-gray-600 mt-2">{t("employees")}</p>

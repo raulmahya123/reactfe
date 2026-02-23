@@ -31,7 +31,7 @@ const Sustainability = () => {
     <section className="py-24 bg-[#f5f5f5]">
       <div className="max-w-[1400px] mx-auto px-8 text-center">
 
-        <h2 className="text-3xl md:text-4xl font-bold text-[#4A0404]">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#BEC5A4]">
           {t("sustainTitle")}
         </h2>
 
@@ -53,7 +53,7 @@ const Sustainability = () => {
               />
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#4A0404]">
+                <h3 className="text-xl font-semibold text-[#BEC5A4]">
                   {item.title}
                 </h3>
 
@@ -70,7 +70,7 @@ const Sustainability = () => {
         <div className="mt-16">
           <a
             href="#sustainability-report"
-            className="px-10 py-3 bg-[#4A0404] text-white font-semibold rounded-md hover:bg-[#600505] transition"
+            className="px-10 py-3 bg-[#BEC5A4] text-white font-semibold rounded-md hover:bg-[#600505] transition"
           >
             {t("viewSustainReport")}
           </a>

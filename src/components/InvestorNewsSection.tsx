@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import InvestorImg from "../assets/hero1.png";
+
 const InvestorNewsSection = () => {
   const { t } = useTranslation();
 
@@ -20,13 +21,13 @@ const InvestorNewsSection = () => {
 
         <div className="relative z-10 h-full flex items-center">
 
-          {/* Maroon Panel */}
-          <div className="bg-[#4A0404]/90 backdrop-blur-sm text-white p-12 max-w-3xl ml-16 shadow-2xl">
+          {/* Gold Panel */}
+          <div className="bg-[#BEC5A4]/90 backdrop-blur-sm text-white p-12 max-w-3xl ml-16 shadow-2xl">
 
             {/* Gold Accent Line */}
-            <div className="w-12 h-1 bg-yellow-400 mb-4"></div>
+            <div className="w-12 h-1 bg-[#B59D55] mb-4"></div>
 
-            <p className="uppercase text-xs tracking-widest text-yellow-400 mb-2">
+            <p className="uppercase text-xs tracking-widest text-[#B59D55] mb-2">
               {t("irLabel")}
             </p>
 
@@ -35,21 +36,21 @@ const InvestorNewsSection = () => {
             </h2>
 
             <div className="space-y-4 text-sm">
-              <div className="border-b border-yellow-400 pb-2 hover:text-yellow-400 transition">
+              <div className="border-b border-[#B59D55] pb-2 hover:text-[#B59D55] transition">
                 {t("irNews1")}
               </div>
-              <div className="border-b border-yellow-400 pb-2 hover:text-yellow-400 transition">
+              <div className="border-b border-[#B59D55] pb-2 hover:text-[#B59D55] transition">
                 {t("irNews2")}
               </div>
-              <div className="border-b border-yellow-400 pb-2 hover:text-yellow-400 transition">
+              <div className="border-b border-[#B59D55] pb-2 hover:text-[#B59D55] transition">
                 {t("irNews3")}
               </div>
-              <div className="border-b border-yellow-400 pb-2 hover:text-yellow-400 transition">
+              <div className="border-b border-[#B59D55] pb-2 hover:text-[#B59D55] transition">
                 {t("irNews4")}
               </div>
             </div>
 
-            <button className="mt-6 bg-yellow-400 text-[#4A0404] px-6 py-2 text-sm font-semibold hover:bg-yellow-300 transition">
+            <button className="mt-6 bg-[#B59D55] text-white px-6 py-2 text-sm font-semibold hover:bg-[#9e8748] transition">
               {t("investorButton")}
             </button>
 
@@ -58,10 +59,10 @@ const InvestorNewsSection = () => {
       </section>
 
       {/* ================= DETAIL SECTION ================= */}
-      <section className="bg-[#4A0404] text-white py-20 px-10">
+      <section className="bg-[#BEC5A4] text-white py-20 px-10">
         <div className="max-w-[1400px] mx-auto">
 
-          <div className="w-12 h-1 bg-yellow-400 mb-6"></div>
+          <div className="w-12 h-1 bg-[#B59D55] mb-6"></div>
 
           <h2 className="text-3xl font-bold mb-8 text-white">
             {t("irDetailTitle")}
@@ -71,7 +72,7 @@ const InvestorNewsSection = () => {
             {t("irDetailText")}
           </p>
 
-          <p className="text-sm text-yellow-400 mt-8">
+          <p className="text-sm text-[#B59D55] mt-8">
             {t("irDate")}
           </p>
 

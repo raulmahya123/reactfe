@@ -20,7 +20,7 @@ const menuItems = [
     path: "/investor",
     submenu: [
       { name: "financialStatements", path: "/investor/financial" },
-       { name: "annualReportsMenu", path: "/investor/annual" }, // ✅ BENAR
+      { name: "annualReportsMenu", path: "/investor/annual" },
       { name: "quarterlyReports", path: "/investor/quarterly" },
       { name: "publicExpose", path: "/investor/expose" },
       { name: "dividendInformation", path: "/investor/dividend" },
@@ -95,7 +95,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
           ? "bg-white/90 backdrop-blur-md shadow-md"
-          : "bg-[#4A0404]"
+          : "bg-[#BEC5A4]"
       }`}
     >
       <div className="max-w-[1700px] mx-auto px-6 py-5 flex items-center">
@@ -105,38 +105,24 @@ const Navbar = () => {
           <img
             src={CompanyLogo}
             alt="PT Andalan Artha Primanusa Tbk"
-            className="h-12 w-auto"
+            className="h-20 w-auto"
           />
           <div className="flex flex-col leading-tight">
-            <span
-              className={`text-[14px] font-bold tracking-[0.15em] ${
-                scrolled ? "text-[#8B0000]" : "text-white"
-              }`}
-            >
-              PT ANDALAN ARTHA
-            </span>
-            <span
-              className={`text-[12px] tracking-[0.2em] ${
-                scrolled ? "text-gray-600" : "text-white/80"
-              }`}
-            >
-              PRIMANUSA TBK
-            </span>
           </div>
         </Link>
 
         {/* DESKTOP MENU */}
         <div className="hidden xl:flex items-center gap-12 ml-auto">
-          <div className="flex items-center gap-10 text-[14px] font-medium uppercase tracking-[0.08em]">
+          <div className="flex items-center gap-10 text-[11px] font-normal uppercase tracking-[0.12em]">
             {menuItems.map((item) => (
               <div key={item.name} className="relative group">
                 <Link
                   to={item.path}
                   className={`flex items-center gap-1 transition-all duration-300 ${
                     location.pathname.startsWith(item.path)
-                      ? "text-[#C6A75E] font-semibold"
+                      ? "text-[#B59D55] font-semibold"
                       : scrolled
-                      ? "text-gray-700 hover:text-[#8B0000]"
+                      ? "text-gray-700 hover:text-[#B59D55]"
                       : "text-white hover:text-white/80"
                   }`}
                 >
@@ -148,7 +134,7 @@ const Navbar = () => {
                 {item.submenu && (
                   <div
                     className="absolute left-0 top-full mt-6 w-72
-                    bg-gradient-to-r from-[#C6A75E] to-[#D4B76A]
+                    bg-[#B59D55]
                     shadow-xl rounded-md
                     opacity-0 invisible translate-y-3
                     group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
@@ -158,7 +144,7 @@ const Navbar = () => {
                       <Link
                         key={sub.name}
                         to={sub.path}
-                        className="block px-6 py-3 text-sm text-white hover:bg-[#B8954F] transition"
+                        className="block px-6 py-3 text-sm text-white hover:bg-[#a68d4a] transition"
                       >
                         {t(sub.name)}
                       </Link>
@@ -175,8 +161,8 @@ const Navbar = () => {
               onClick={() => changeLanguage("id")}
               className={`px-4 py-1 text-xs font-semibold rounded-md transition ${
                 i18n.language === "id"
-                  ? "bg-[#8B0000] text-white"
-                  : "text-gray-700 hover:text-[#8B0000]"
+                  ? "bg-[#B59D55] text-white"
+                  : "text-[#B59D55] hover:bg-[#B59D55] hover:text-white"
               }`}
             >
               ID
@@ -186,8 +172,8 @@ const Navbar = () => {
               onClick={() => changeLanguage("en")}
               className={`px-4 py-1 text-xs font-semibold rounded-md transition ${
                 i18n.language.startsWith("en")
-                  ? "bg-[#8B0000] text-white"
-                  : "text-gray-700 hover:text-[#8B0000]"
+                  ? "bg-[#B59D55] text-white"
+                  : "text-[#B59D55] hover:bg-[#B59D55] hover:text-white"
               }`}
             >
               EN
@@ -198,7 +184,7 @@ const Navbar = () => {
         {/* MOBILE TOGGLE */}
         <button
           className={`xl:hidden ml-auto text-2xl ${
-            scrolled ? "text-[#8B0000]" : "text-white"
+            scrolled ? "text-[#B59D55]" : "text-white"
           }`}
           onClick={() => setMobileOpen(!mobileOpen)}
         >

@@ -53,7 +53,7 @@ const Management = () => {
               className="w-36 h-36 object-cover rounded-md"
             />
           ) : (
-            <div className="w-36 h-36 bg-gray-200 rounded-md flex items-center justify-center text-3xl font-bold text-[#4A0404]">
+            <div className="w-36 h-36 bg-gray-200 rounded-md flex items-center justify-center text-3xl font-bold text-[#BEC5A4]">
               {member.name.charAt(0)}
             </div>
           )}
@@ -61,7 +61,7 @@ const Management = () => {
 
         {/* INFO */}
         <div className="w-full md:w-2/3 p-8 relative flex flex-col justify-center">
-          <h3 className="text-xl font-semibold text-[#4A0404]">
+          <h3 className="text-xl font-semibold text-[#BEC5A4]">
             {member.name}
           </h3>
 
@@ -85,7 +85,7 @@ const Management = () => {
 
         {/* TITLE */}
         <div className="mb-16">
-          <h2 className="text-4xl font-bold text-[#4A0404]">
+          <h2 className="text-4xl font-bold text-[#BEC5A4]">
             {t("management")}
           </h2>
           <div className="w-full h-[2px] bg-[#C6A75E] mt-4"></div>
@@ -93,7 +93,7 @@ const Management = () => {
 
         {/* DIREKTUR */}
         <div className="mb-20">
-          <h3 className="text-2xl font-semibold text-[#4A0404] mb-6">
+          <h3 className="text-2xl font-semibold text-[#BEC5A4] mb-6">
             {t("boardOfDirectors")}
           </h3>
           <div className="w-20 h-[2px] bg-[#C6A75E] mb-10"></div>
@@ -109,7 +109,7 @@ const Management = () => {
 
         {/* KOMISARIS */}
         <div>
-          <h3 className="text-2xl font-semibold text-[#4A0404] mb-6">
+          <h3 className="text-2xl font-semibold text-[#BEC5A4] mb-6">
             {t("boardOfCommissioners")}
           </h3>
           <div className="w-20 h-[2px] bg-[#C6A75E] mb-10"></div>

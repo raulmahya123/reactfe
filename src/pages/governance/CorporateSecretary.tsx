@@ -19,7 +19,7 @@ const CorporateSecretary = () => {
         <div className="bg-gray-50 shadow-xl rounded-xl p-12 grid md:grid-cols-3 gap-10 items-center">
 
           {/* PHOTO PLACEHOLDER */}
-          <div className="w-full h-72 bg-gradient-to-br from-[#8B0000] to-[#4A0404] rounded-xl"></div>
+          <div className="w-full h-72 bg-gradient-to-br from-[#8B0000] to-[#BEC5A4] rounded-xl"></div>
 
           {/* INFO */}
           <div className="md:col-span-2">

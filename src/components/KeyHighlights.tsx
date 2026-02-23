@@ -24,16 +24,16 @@ const KeyHighlights = () => {
     <section className="py-20 md:py-28 bg-gradient-to-b from-white to-[#f4f4f4] relative overflow-hidden">
       
       {/* Subtle Background Accent */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(122,0,0,0.05),_transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(181,157,85,0.08),_transparent_60%)]"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
         {/* Title */}
-        <p className="uppercase tracking-[0.3em] text-xs text-[#7a0000] font-semibold">
+        <p className="uppercase tracking-[0.3em] text-xs text-[#B59D55] font-semibold">
           {t("coreValue")}
         </p>
 
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#4A0404] mt-3">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#B59D55] mt-3">
           EFFORT
         </h2>
 
@@ -76,14 +76,14 @@ const KeyHighlights = () => {
                       md:w-16 md:h-16
                       rounded-2xl 
                       bg-gradient-to-br 
-                      from-[#7a0000]/10 
-                      to-yellow-100
+                      from-[#B59D55]/10 
+                      to-[#B59D55]/5
                       flex items-center justify-center
                       transition-all duration-300
                       group-hover:scale-110
-                      group-hover:from-[#7a0000]
-                      group-hover:to-[#4A0404]
-                      group-hover:shadow-[0_0_25px_rgba(122,0,0,0.35)]
+                      group-hover:from-[#B59D55]
+                      group-hover:to-[#9e8748]
+                      group-hover:shadow-[0_0_25px_rgba(181,157,85,0.35)]
                     "
                   >
                     <Icon
@@ -91,16 +91,16 @@ const KeyHighlights = () => {
                         w-5 h-5 
                         sm:w-6 sm:h-6 
                         md:w-7 md:h-7
-                        text-[#7a0000] 
+                        text-[#B59D55] 
                         transition-all duration-300
-                        group-hover:text-yellow-400
+                        group-hover:text-white
                       "
                     />
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg sm:text-xl font-bold text-[#7a0000]">
+                <h3 className="text-lg sm:text-xl font-bold text-[#B59D55]">
                   {t(`values.${item.key}.title`)}
                 </h3>
 

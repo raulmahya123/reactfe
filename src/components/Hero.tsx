@@ -13,9 +13,7 @@ const Hero = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) =>
-        prev === slides.length - 1 ? 0 : prev + 1
-      );
+      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     }, 5000);
 
     return () => clearInterval(interval);
@@ -31,7 +29,6 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-screen overflow-hidden">
-
       {/* Background Slides */}
       {slides.map((slide, index) => (
         <div
@@ -54,19 +51,19 @@ const Hero = () => {
       {/* FLOATING HERO BOX (SMALL & PREMIUM) */}
       <div
         className="
-        absolute 
-        left-6 md:left-20 
-        top-1/2 -translate-y-1/2
-        w-[90%] md:w-[520px]
-        bg-[#4A0404]/95 backdrop-blur-md
-        px-8 md:px-12 py-12 md:py-16
-        rounded-xl shadow-2xl
-        border-l-4 border-yellow-400
-        z-20
-        "
+  absolute 
+  left-6 md:left-20 
+  top-1/2 -translate-y-1/2
+  w-[90%] md:w-[520px]
+  bg-[#BEC5A4]/95 backdrop-blur-md
+  px-8 md:px-12 py-12 md:py-16
+  rounded-xl shadow-2xl
+  border-l-4 border-[#B59D55]
+  z-20
+  "
       >
         {/* Accent Line */}
-        <div className="w-16 h-1 bg-yellow-400 mb-6"></div>
+        <div className="w-16 h-1 bg-[#B59D55] mb-6"></div>
 
         <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
           {t("heroTitle")}
@@ -79,14 +76,14 @@ const Hero = () => {
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <a
             href="#annual-report"
-            className="px-6 py-3 bg-white text-[#4A0404] font-semibold rounded-md hover:bg-gray-200 transition"
+            className="px-6 py-3 bg-white text-[#BEC5A4] font-semibold rounded-md hover:bg-gray-200 transition"
           >
             {t("viewAnnualReport")}
           </a>
 
           <a
             href="#investor"
-            className="px-6 py-3 border border-white text-white font-semibold rounded-md hover:bg-white hover:text-[#4A0404] transition"
+            className="px-6 py-3 border border-white text-white font-semibold rounded-md hover:bg-white hover:text-[#BEC5A4] transition"
           >
             {t("investorRelations")}
           </a>
@@ -131,7 +128,7 @@ const Hero = () => {
             text-white font-semibold tracking-wider
             shadow-xl
             transition duration-300 hover:scale-105
-            bg-[#4A0404]
+            bg-[#BEC5A4]
           "
           style={{
             clipPath: "polygon(0 0, 85% 0, 100% 100%, 0% 100%)",
@@ -151,11 +148,9 @@ const Hero = () => {
               d="M9 7V6a3 3 0 013-3h0a3 3 0 013 3v1m-9 0h12a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2z"
             />
           </svg>
-
           CAREER
         </a>
       </div>
-
     </section>
   );
 };
