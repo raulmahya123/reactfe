@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import type { LatLngTuple } from "leaflet";
 
 /* =============================
    GOLD MARKER ICON
@@ -16,12 +17,21 @@ const goldIcon = new L.Icon({
 });
 
 /* =============================
+   TYPES
+============================= */
+type Site = {
+  name: string;
+  location: string;
+  position: LatLngTuple;
+};
+
+/* =============================
    COMPONENT
 ============================= */
 const BusinessActivities = () => {
   const { t } = useTranslation();
 
-  const sites = [
+  const sites: Site[] = [
     {
       name: "PT Budi Gema Gempita (BGG Project)",
       location: "Lahat, Sumatera Selatan",
@@ -54,9 +64,7 @@ const BusinessActivities = () => {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C6A75E]/10 blur-3xl rounded-full"></div>
       </div>
 
-      {/* =============================
-          TITLE
-      ============================= */}
+      {/* TITLE */}
       <div className="relative max-w-[1200px] mx-auto px-6 text-center mb-24">
         <h2 className="text-5xl font-bold tracking-tight text-[#1a1a1a]">
           {t("operationalLocations")}
@@ -69,9 +77,7 @@ const BusinessActivities = () => {
         </p>
       </div>
 
-      {/* =============================
-          MAP SECTION
-      ============================= */}
+      {/* MAP */}
       <div className="relative max-w-[1400px] mx-auto px-6">
         <div
           className="relative w-full h-[600px] rounded-[32px] overflow-hidden
@@ -80,14 +86,13 @@ const BusinessActivities = () => {
           bg-white"
         >
           <MapContainer
-            center={[-2.5, 118]}
+            center={[-2.5, 118] as LatLngTuple}
             zoom={5}
             scrollWheelZoom={false}
             className="w-full h-full"
           >
-            {/* LIGHT MAP (NO BLUE DOMINANT) */}
             <TileLayer
-              attribution='&copy; OpenStreetMap contributors & CartoDB'
+              attribution="&copy; OpenStreetMap contributors & CartoDB"
               url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
             />
 
@@ -109,9 +114,7 @@ const BusinessActivities = () => {
         </div>
       </div>
 
-      {/* =============================
-          LOCATION CARDS
-      ============================= */}
+      {/* LOCATION CARDS */}
       <div className="relative max-w-[1200px] mx-auto px-6 mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {sites.map((site, index) => (
           <div
