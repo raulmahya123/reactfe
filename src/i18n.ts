@@ -736,7 +736,9 @@ investorButton: "Informasi Investor",
         commissionerPresident: "Komisaris Utama",
         commissioner: "Komisaris",
         independentCommissioner: "Komisaris Independen",
-
+operationalLocations: "Lokasi Proyek",
+operationalLocationsDesc:
+  "Kami menjalankan operasi pertambangan di beberapa lokasi strategis di Indonesia, termasuk Lahat, Tanjung Enim, Murung Raya, dan Halmahera Timur, dengan fokus pada keselamatan, efisiensi, dan keberlanjutan.",
         /* ================= CONTACT PAGE ================= */
         contactSection: {
           official: "Informasi Resmi",

@@ -1,87 +1,140 @@
 import { useTranslation } from "react-i18next";
-import { Briefcase, Truck, BarChart3, Zap } from "lucide-react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 
-const SegmentCard = ({
-  icon,
-  title,
-  desc,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  desc: string;
-}) => (
-  <div className="group bg-white p-10 rounded-2xl shadow-md hover:shadow-2xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-    <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-[#B2AC88]/10 text-[#BEC5A4] mb-6 group-hover:bg-[#BEC5A4] group-hover:text-white transition">
-      {icon}
-    </div>
-    <h3 className="text-xl font-semibold text-[#B2AC88] mb-4">
-      {title}
-    </h3>
-    <p className="text-gray-600 leading-relaxed">
-      {desc}
-    </p>
-  </div>
-);
+/* =============================
+   GOLD MARKER ICON
+============================= */
+const goldIcon = new L.Icon({
+  iconUrl:
+    "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-gold.png",
+  shadowUrl:
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  iconSize: [28, 45],
+  iconAnchor: [14, 45],
+});
 
+/* =============================
+   COMPONENT
+============================= */
 const BusinessActivities = () => {
   const { t } = useTranslation();
+
+  const sites = [
+    {
+      name: "PT Budi Gema Gempita (BGG Project)",
+      location: "Lahat, Sumatera Selatan",
+      position: [-3.876265, 103.0132169],
+    },
+    {
+      name: "PT Bukit Asam Tbk (SBS Project)",
+      location: "Tanjung Enim, Sumatera Selatan",
+      position: [-3.7093903468670226, 103.75147600097807],
+    },
+    {
+      name: "PT Position (POS Project)",
+      location: "Halmahera Timur, Maluku Utara",
+      position: [0.7324381216724647, 128.10151397129096],
+    },
+    {
+      name: "PT Daya Bumindo Karunia (DBK Project)",
+      location: "Murung Raya, Kalimantan Tengah",
+      position: [-0.14799017580602936, 113.87193915831443],
+    },
+  ];
 
   return (
     <section
       id="business"
-      className="py-24 bg-gradient-to-b from-gray-50 to-white scroll-mt-32"
+      className="relative py-32 bg-[#f8f6f1] scroll-mt-32 overflow-hidden"
     >
-      <div className="max-w-[1200px] mx-auto px-6 text-center mb-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#BEC5A4]">
-          {t("businessActivities")}
+      {/* GOLD SOFT GLOW */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C6A75E]/10 blur-3xl rounded-full"></div>
+      </div>
+
+      {/* =============================
+          TITLE
+      ============================= */}
+      <div className="relative max-w-[1200px] mx-auto px-6 text-center mb-24">
+        <h2 className="text-5xl font-bold tracking-tight text-[#1a1a1a]">
+          {t("operationalLocations")}
         </h2>
-        <div className="w-24 h-1 bg-[#C6A75E] mx-auto mt-6"></div>
-        <p className="mt-8 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-          {t("businessOverviewText")}
+
+        <div className="w-24 h-[3px] bg-[#C6A75E] mx-auto mt-6 rounded-full"></div>
+
+        <p className="mt-8 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
+          {t("operationalLocationsDesc")}
         </p>
       </div>
 
-      <div className="max-w-[1300px] mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12">
+      {/* =============================
+          MAP SECTION
+      ============================= */}
+      <div className="relative max-w-[1400px] mx-auto px-6">
+        <div
+          className="relative w-full h-[600px] rounded-[32px] overflow-hidden
+          shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+          border border-[#C6A75E]/30
+          bg-white"
+        >
+          <MapContainer
+            center={[-2.5, 118]}
+            zoom={5}
+            scrollWheelZoom={false}
+            className="w-full h-full"
+          >
+            {/* LIGHT MAP (NO BLUE DOMINANT) */}
+            <TileLayer
+              attribution='&copy; OpenStreetMap contributors & CartoDB'
+              url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+            />
 
-          <SegmentCard
-            icon={<Briefcase size={26} />}
-            title={t("businessSegment1Title")}
-            desc={t("businessSegment1Desc")}
-          />
-
-          <SegmentCard
-            icon={<BarChart3 size={26} />}
-            title={t("businessSegment2Title")}
-            desc={t("businessSegment2Desc")}
-          />
-
-          <SegmentCard
-            icon={<Truck size={26} />}
-            title={t("businessSegment3Title")}
-            desc={t("businessSegment3Desc")}
-          />
-
-          <SegmentCard
-            icon={<Zap size={26} />}
-            title={t("businessSegment4Title")}
-            desc={t("businessSegment4Desc")}
-          />
-
+            {sites.map((site, index) => (
+              <Marker key={index} position={site.position} icon={goldIcon}>
+                <Popup>
+                  <div className="text-sm font-medium">
+                    <div className="text-black font-semibold mb-1">
+                      {site.name}
+                    </div>
+                    <div className="text-gray-600">
+                      {site.location}
+                    </div>
+                  </div>
+                </Popup>
+              </Marker>
+            ))}
+          </MapContainer>
         </div>
       </div>
 
-      {/* Operational Excellence */}
-      <div className="mt-28 bg-[#BEC5A4] text-white py-20">
-        <div className="max-w-[1000px] mx-auto px-6 text-center">
-          <h3 className="text-2xl md:text-3xl font-semibold mb-6">
-            {t("operationalExcellence")}
-          </h3>
-          <p className="text-white/80 leading-relaxed text-lg">
-            {t("operationalExcellenceDesc")}
-          </p>
-          <div className="mt-10 w-24 h-1 bg-[#C6A75E] mx-auto"></div>
-        </div>
+      {/* =============================
+          LOCATION CARDS
+      ============================= */}
+      <div className="relative max-w-[1200px] mx-auto px-6 mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {sites.map((site, index) => (
+          <div
+            key={index}
+            className="group p-6 rounded-2xl bg-white
+                       border border-gray-200
+                       hover:border-[#C6A75E]
+                       hover:shadow-xl
+                       transition-all duration-300"
+          >
+            <div className="text-xs tracking-widest text-gray-500 mb-3 uppercase">
+              Operational Site
+            </div>
+
+            <div className="text-lg font-semibold text-[#1a1a1a] group-hover:text-[#C6A75E] transition">
+              {site.name}
+            </div>
+
+            <div className="text-gray-600 text-sm mt-2">
+              {site.location}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
