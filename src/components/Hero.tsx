@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
 
 import Slide1 from "../assets/hero2.png";
 import Slide2 from "../assets/hero3.png";
 import Slide3 from "../assets/hero1.png";
 
 const Hero = () => {
-  const { t } = useTranslation();
-
   const slides = [Slide1, Slide2, Slide3];
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+      setCurrent((prev) =>
+        prev === slides.length - 1 ? 0 : prev + 1
+      );
     }, 5000);
 
     return () => clearInterval(interval);
@@ -29,6 +28,7 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-screen overflow-hidden">
+      
       {/* Background Slides */}
       {slides.map((slide, index) => (
         <div
@@ -45,8 +45,9 @@ const Hero = () => {
         </div>
       ))}
 
-      {/* Overlay */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
+
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
@@ -62,20 +63,22 @@ const Hero = () => {
         ❯
       </button>
 
-      {/* Dots */}
+      {/* Dots Indicator */}
       <div className="absolute bottom-8 w-full flex justify-center gap-3 z-30">
         {slides.map((_, index) => (
           <div
             key={index}
             onClick={() => setCurrent(index)}
             className={`w-3 h-3 rounded-full cursor-pointer transition ${
-              current === index ? "bg-white scale-110" : "bg-white/40"
+              current === index
+                ? "bg-white scale-110"
+                : "bg-white/40"
             }`}
           />
         ))}
       </div>
 
-      {/* CAREER FLOATING BUTTON */}
+      {/* Career Floating Button */}
       <div className="absolute bottom-10 right-10 z-30">
         <a
           href="https://karirandalan.com/"
@@ -85,10 +88,11 @@ const Hero = () => {
             text-white font-semibold tracking-wider
             shadow-xl
             transition duration-300 hover:scale-105
-            bg-[#BEC5A4]
+            bg-[#A7B08A]
           "
           style={{
-            clipPath: "polygon(0 0, 85% 0, 100% 100%, 0% 100%)",
+            clipPath:
+              "polygon(0 0, 85% 0, 100% 100%, 0% 100%)",
           }}
         >
           <svg
@@ -108,6 +112,7 @@ const Hero = () => {
           CAREER
         </a>
       </div>
+
     </section>
   );
 };
