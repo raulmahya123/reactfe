@@ -91,7 +91,7 @@ const CompanyOverview = () => {
             </div>
           </motion.div>
 
-          {/* RIGHT IMAGE (DIKECILKAN) */}
+          {/* RIGHT IMAGE */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -120,32 +120,35 @@ const CompanyOverview = () => {
         {/* STATS */}
         <div className="grid md:grid-cols-3 gap-8">
 
+          {/* Established */}
           <motion.div
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
             <h3 className="text-3xl font-bold text-[#B59D55]">
-              <CountUp end={2010} duration={2} />
-            </h3>
+  2018
+</h3>
             <p className="text-gray-600 mt-2">{t("established")}</p>
           </motion.div>
 
+          {/* Operational Sites */}
           <motion.div
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
             <h3 className="text-3xl font-bold text-[#B59D55]">
-              <CountUp end={3} duration={2} />+
+              <CountUp end={4} duration={2} />
             </h3>
             <p className="text-gray-600 mt-2">{t("operationalSites")}</p>
           </motion.div>
 
+          {/* Employees */}
           <motion.div
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
             <h3 className="text-3xl font-bold text-[#B59D55]">
-              <CountUp end={1500} duration={2} />+
+              <CountUp end={1000} duration={2} separator="," />
             </h3>
             <p className="text-gray-600 mt-2">{t("employees")}</p>
           </motion.div>
