@@ -23,42 +23,48 @@ const GovernanceInformation = () => {
     <div className="w-full">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-[#BEC5A4] to-[#6B0B0B] text-white py-28">
+      <section className="bg-[#F1EAD8] text-black pt-44 pb-32">
         <div className="max-w-[1400px] mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold tracking-[0.2em] uppercase mb-4">
+
+          <h1 className="text-4xl md:text-5xl font-bold tracking-[0.15em] uppercase mb-6">
             {t("governanceInformation")}
           </h1>
-          <div className="w-24 h-1 bg-[#C6A75E] mx-auto mb-6 rounded-full"></div>
-          <p className="text-white/80 max-w-3xl mx-auto text-sm tracking-wide">
+
+          <div className="w-24 h-[3px] bg-black mx-auto mb-8 rounded-full"></div>
+
+          <p className="text-black/90 max-w-3xl mx-auto text-sm tracking-wide leading-relaxed">
             {t("governanceInformationDesc")}
           </p>
+
         </div>
       </section>
 
       {/* CONTENT */}
-      <section className="py-24 bg-[#F9F6F1]">
+      <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6">
 
-          <div className="bg-white shadow-2xl rounded-2xl p-12 border-t-4 border-[#C6A75E]">
+          <div className="bg-white shadow-lg rounded-2xl p-12 border border-[#A77B3F]/20">
 
             <div className="grid md:grid-cols-2 gap-8">
 
               {documents.map((doc, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between p-6 rounded-xl border border-gray-200 
-                  hover:shadow-lg hover:border-[#C6A75E] transition-all duration-300 bg-white group"
+                  className="flex items-center justify-between p-6 rounded-xl 
+                  border border-gray-200 
+                  hover:shadow-md hover:border-[#A77B3F] 
+                  transition-all duration-300 bg-white group"
                 >
 
                   {/* LEFT */}
                   <div className="flex items-center gap-5">
 
-                    <div className="bg-[#C6A75E]/20 p-4 rounded-xl group-hover:bg-[#C6A75E]/30 transition">
-                      <FileText className="text-[#C6A75E]" size={22} />
+                    <div className="bg-[#A77B3F]/15 p-4 rounded-xl group-hover:bg-[#A77B3F]/25 transition">
+                      <FileText className="text-[#A77B3F]" size={22} />
                     </div>
 
                     <div>
-                      <p className="text-sm font-semibold text-[#BEC5A4]">
+                      <p className="text-sm font-semibold text-black">
                         {t(doc.key)}
                       </p>
                       <p className="text-xs text-gray-500 mt-1">
@@ -73,8 +79,8 @@ const GovernanceInformation = () => {
                     href={doc.file}
                     download
                     className="flex items-center gap-2 px-4 py-2 rounded-lg 
-                    bg-[#BEC5A4] text-white text-xs font-semibold
-                    hover:bg-[#6B0B0B] transition-all duration-300"
+                    bg-[#A77B3F] text-white text-xs font-semibold
+                    hover:bg-[#8f662f] transition-all duration-300"
                   >
                     <Download size={16} />
                     {t("download")}

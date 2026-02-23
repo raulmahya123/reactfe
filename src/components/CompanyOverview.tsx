@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import OverviewImage from "../assets/hero1.png";
+import OverviewImage from "../assets/company.png";
 import { CheckCircle } from "lucide-react";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
@@ -37,7 +37,6 @@ const CompanyOverview = () => {
             Building sustainable mining operations with innovation and integrity.
           </p>
 
-          {/* Elegant Divider */}
           <div className="flex items-center justify-center gap-4 mt-8">
             <div className="w-12 h-[2px] bg-[#B59D55]"></div>
             <div className="w-3 h-3 bg-[#B59D55] rotate-45"></div>
@@ -45,7 +44,8 @@ const CompanyOverview = () => {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        {/* CONTENT GRID */}
+        <div className="grid md:grid-cols-2 gap-16 items-start">
 
           {/* LEFT CONTENT */}
           <motion.div
@@ -55,12 +55,11 @@ const CompanyOverview = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <p className="text-gray-700 leading-relaxed text-lg text-justify">
+            <p className="text-gray-700 leading-relaxed text-sm text-justify">
               {t("companyOverviewText")}
             </p>
 
-            {/* Highlight Points */}
-            <ul className="space-y-4 text-gray-700">
+            <ul className="space-y-4 text-gray-700 text-sm leading-relaxed">
               <li className="flex items-start gap-3">
                 <CheckCircle className="text-[#B59D55] mt-1" size={18} />
                 {t("overviewPoint1")}
@@ -82,7 +81,6 @@ const CompanyOverview = () => {
               </li>
             </ul>
 
-            {/* CTA */}
             <div className="pt-6">
               <a
                 href="#investor"
@@ -93,29 +91,33 @@ const CompanyOverview = () => {
             </div>
           </motion.div>
 
-          {/* RIGHT IMAGE */}
+          {/* RIGHT IMAGE (DIKECILKAN) */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="relative"
+            className="relative flex justify-center"
           >
-            <div className="absolute inset-0 bg-[#B59D55]/10 rounded-xl"></div>
-            <div className="absolute -top-6 -left-6 w-full h-full border-2 border-[#B59D55] rounded-xl"></div>
+            <div className="relative w-[85%]">
 
-            <img
-              src={OverviewImage}
-              alt="Mining Operations"
-              className="relative rounded-xl shadow-2xl w-full"
-            />
+              <div className="absolute inset-0 bg-[#B59D55]/10 rounded-xl"></div>
+              <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#B59D55] rounded-xl"></div>
+
+              <img
+                src={OverviewImage}
+                alt="Mining Operations"
+                className="relative rounded-xl shadow-2xl w-full max-h-[480px] object-cover"
+              />
+            </div>
           </motion.div>
+
         </div>
 
-        {/* Divider Before Stats */}
+        {/* Divider */}
         <div className="border-t border-gray-200 my-24"></div>
 
-        {/* STATS SECTION */}
+        {/* STATS */}
         <div className="grid md:grid-cols-3 gap-8">
 
           <motion.div
@@ -149,6 +151,7 @@ const CompanyOverview = () => {
           </motion.div>
 
         </div>
+
       </div>
     </section>
   );

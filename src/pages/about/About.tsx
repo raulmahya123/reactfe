@@ -18,7 +18,7 @@ const   About = () => {
         <section className="relative pt-40 pb-28 bg-[#BEC5A4] text-black overflow-hidden">
           
           {/* Gold Overlay Accent */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#F1EAD8] via-[#F1EAD8] to-[#F1EAD8] opacity-95"></div>
+          <div className="absolute inset-0 bg-[#FFFFFF] opacity-95"></div>
 
           {/* Decorative Gold Line */}
           <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#F1EAD8] via-[#D4B76A] to-[#C6A75E]"></div>

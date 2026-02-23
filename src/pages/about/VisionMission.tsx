@@ -12,7 +12,7 @@ const VisionMission = () => {
 
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#BEC5A4] uppercase tracking-wider">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-wider">
             {t("visionMission")}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#C6A75E] to-[#D4B76A] mx-auto mt-6"></div>

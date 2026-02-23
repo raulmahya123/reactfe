@@ -157,7 +157,7 @@ i18n.use(initReactI18next).init({
         overviewPoint2: "Strong domestic & international market presence",
         overviewPoint3: "Committed to sustainable & responsible mining",
         overviewPoint4: "Social Commitment – contributing positively to surrounding communities",
-
+investorButton: "Investor Information",
         established: "Established",
         operationalSites: "Operational Sites",
         employees: "Employees",
@@ -551,6 +551,7 @@ i18n.use(initReactI18next).init({
         csrSocialDesc:
           "Program pemberdayaan masyarakat, dukungan pendidikan, pembangunan infrastruktur, dan investasi sosial.",
         csrSocialBudget: "Total Alokasi: Rp 4.200.000.000 (Tahun Buku 2025)",
+investorButton: "Informasi Investor",
 
         csrProduct: "Tanggung Jawab Produk & Layanan",
         csrProductDesc:
