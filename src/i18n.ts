@@ -190,18 +190,19 @@ investorButton: "Investor Information",
 
         /* ================= INVESTOR NEWS ================= */
         irLabel: "Investor Relations",
-        irMainTitle: "Andalan Artha Primanusa Wins Two Prestigious ESG Awards",
-        irDate: "May 09, 2025",
+       irMainTitle: "Elegant Exploration, Reliable Execution",
+irDate: "23 Feb 2026",
 
-        irNews1: "Andalan Group Receives Award from Ministry of Finance",
-        irNews2: "Andalan Wins International Sustainability Recognition",
-        irNews3: "Subsidiary Secures National Gold PROPER Award",
-        irNews4: "Andalan Earns Integrity Award 2024",
+irNews1: "AAP Secures Nickel Mining Contract at the Beginning of 2026",
+irNews2: "Additional Production Volume Awarded by Existing Bowheer at the End of 2025",
+irNews3: "AAP Secures Coking Coal Mining Contract in June 2025",
+irNews4: "Closing 2024, AAP Wins Tender at PTBA Site",
 
-        irDetailTitle:
-          "ANDALAN ARTHA PRIMANUSA WINS TWO PRESTIGIOUS ESG AWARDS",
-        irDetailText:
-          "PT Andalan Artha Primanusa Tbk received two prestigious awards for its commitment to emission transparency, environmental responsibility, and corporate governance excellence. These recognitions reflect the Company's dedication to responsible mining operations, sustainable development, and long-term stakeholder value creation.",
+       irDetailTitle:
+  "AAP Secures Nickel Ore Mining Contract at the Beginning of 2026",
+
+irDetailText:
+  "PT Andalan Artha Primanusa marks the beginning of 2026 with a significant strategic achievement, securing a new nickel mining contract. This milestone reinforces the Company’s commitment to operational excellence and its proactive role in meeting the growing demand for minerals that support the global energy transition.",
         /* ================= CORE VALUE ================= */
         coreValue: "Core Value",
         coreValueDesc:
@@ -593,18 +594,18 @@ investorButton: "Informasi Investor",
         /* ================= INVESTOR NEWS ================= */
         irLabel: "Hubungan Investor",
         irMainTitle:
-          "Andalan Artha Primanusa Raih Dua Penghargaan Bergengsi ESG",
-        irDate: "09 Mei 2025",
+          "Explorasi Elegan,Exsekusi Andal",
+        irDate: "23 Februari 2026",
 
-        irNews1: "Grup Andalan Terima Penghargaan dari Kementerian Keuangan",
-        irNews2: "Andalan Raih Pengakuan Keberlanjutan Internasional",
-        irNews3: "Anak Usaha Raih Penghargaan PROPER Emas Nasional",
-        irNews4: "Andalan Terima Penghargaan Integritas 2024",
+        irNews1: "AAP Raih Kontrak Kerja Penambangan Nikel di Awal Tahun 2026",
+        irNews2: "Kepercayaan Tambahan Volume Produksi dari Bowheer Eksisting Di Akhir Tahun 2025",
+        irNews3: "AAP Peroleh Kontak Kerja Penambangan Coking Coal di Juni 2025",
+        irNews4: "Menutup Tahun 2024, AAP Memenangkan Tender di Site PTBA ",
 
         irDetailTitle:
-          "ANDALAN ARTHA PRIMANUSA RAIH DUA PENGHARGAAN BERGENGSI ESG",
+          "AAP RAIH KONTRAK PENAMBANGAN BIJIH NIKEL DI AWAL TAHUN 2026",
         irDetailText:
-          "PT Andalan Artha Primanusa Tbk menerima dua penghargaan bergengsi atas komitmennya terhadap transparansi emisi, tanggung jawab lingkungan, serta tata kelola perusahaan yang unggul. Penghargaan ini mencerminkan dedikasi Perseroan dalam menjalankan praktik pertambangan yang bertanggung jawab dan pembangunan berkelanjutan.",
+          "PT Andalan Artha Primanusa memulai 2026 dengan pencapaian strategis: kontrak kerja baru di sektor nikel. Langkah ini menegaskan komitmen perusahaan untuk terus beradaptasi dengan kebutuhan industri mineral yang mendukung transisi energi global.",
         /* ================= CORE VALUE ================= */
         coreValue: "Nilai Inti",
         coreValueDesc:
