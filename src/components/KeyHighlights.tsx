@@ -2,7 +2,6 @@ import {
   Trophy, 
   Crosshair, 
   Shield, 
-  Sparkles, 
   Gauge,
   Mountain,
   TrendingUp
