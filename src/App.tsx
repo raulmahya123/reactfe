@@ -12,14 +12,6 @@ import CorporateSecretary from "./pages/governance/CorporateSecretary";
 import GovernanceInformation from "./pages/governance/GovernanceInformation";
 import BudgetDocument from "./pages/governance/budgetDocument";
 
-// CSR
-import Policy from "./pages/csr/Policy";
-import Community from "./pages/csr/Community";
-import Environment from "./pages/csr/Environment";
-import Sustainability from "./pages/csr/Sustainability";
-import ESG from "./pages/csr/ESG";
-import CSRInformation from "./pages/csr/CsrInformation"; // kalau ada
-
 import CSR from "./pages/csr/Csr";
 export default function App() {
   return (
