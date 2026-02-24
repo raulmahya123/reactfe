@@ -12,7 +12,14 @@ import CorporateSecretary from "./pages/governance/CorporateSecretary";
 import GovernanceInformation from "./pages/governance/GovernanceInformation";
 import BudgetDocument from "./pages/governance/budgetDocument";
 
+// CSR
 import CSR from "./pages/csr/Csr";
+
+// NEWS
+import News from "./pages/news/News";
+
+import Investor from "./pages/investor/Investor";
+
 export default function App() {
   return (
     <>
@@ -31,16 +38,12 @@ export default function App() {
         <Route path="/governance/budget" element={<BudgetDocument />} />
 
         {/* ================= CSR ================= */}
+        <Route path="/csr/*" element={<CSR />} />
 
-{/* ================= CSR ================= */}
-<Route path="/csr" element={<CSR />}>
-  <Route path="policy" element={<CSR />} />
-  <Route path="community" element={<CSR />} />
-  <Route path="environment" element={<CSR />} />
-  <Route path="sustainability" element={<CSR />} />
-  <Route path="esg" element={<CSR />} />
-</Route>
-
+        {/* ================= NEWS ================= */}
+        <Route path="/news/*" element={<News />} />
+        {/* ================= INVESTOR ================= */}
+        <Route path="/investor/*" element={<Investor />} />
       </Routes>
 
       <Footer />
