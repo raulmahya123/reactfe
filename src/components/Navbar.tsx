@@ -82,25 +82,27 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-md"
+          ? "bg-white/95 backdrop-blur-md shadow-md"
           : "bg-[#BEC5A4]"
       }`}
     >
-      <div className="max-w-[1500px] mx-auto px-6 py-3 flex items-center justify-between">
-        {/* LOGO */}
+      <div
+        className={`max-w-[1500px] mx-auto px-6 flex items-center justify-between transition-all duration-500 ${
+          scrolled ? "py-1.5" : "py-2"
+        }`}
+      >
 <Link to="/" className="flex items-center">
-  <div className="h-20 md:h-24 flex items-center overflow-hidden">
-    <img
-      src={CompanyLogo}
-      alt="PT Andalan Artha Primanusa Tbk"
-      className="h-full w-auto object-contain scale-[2.1]"
-    />
-  </div>
+  <img
+    src={CompanyLogo}
+    alt="PT Andalan Artha Primanusa Tbk"
+    className={`w-auto transition-all duration-500 ${
+      scrolled ? "h-14 md:h-16" : "h-16 md:h-20"
+    }`}
+  />
 </Link>
+
         {/* DESKTOP MENU */}
         <div className="hidden xl:flex items-center gap-8">
-          
-          {/* MENU ITEMS */}
           <div className="flex items-center gap-6 text-[11px] font-normal uppercase tracking-[0.1em]">
             {menuItems.map((item) => (
               <div key={item.name} className="relative group">
