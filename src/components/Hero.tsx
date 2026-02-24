@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 
 import Slide1 from "../assets/hero2.png";
 import Slide2 from "../assets/hero3.png";
-import Slide3 from "../assets/hero1.png";
 
 const Hero = () => {
-  const slides = [Slide1, Slide2, Slide3];
+  const slides = [Slide1, Slide2];
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
