@@ -45,16 +45,16 @@ const menuItems = [
     ],
   },
   {
-  name: "csr",
-  path: "/csr",
-  submenu: [
-    { name: "policy", path: "/csr/policy" },
-    { name: "communityDevelopment", path: "/csr/community" },
-    { name: "environment", path: "/csr/environment" },
-    { name: "sustainabilityReport", path: "/csr/sustainability" },
-    { name: "esgCommitment", path: "/csr/esg" },
-  ],
-},
+    name: "csr",
+    path: "/csr",
+    submenu: [
+      { name: "policy", path: "/csr/policy" },
+      { name: "communityDevelopment", path: "/csr/community" },
+      { name: "environment", path: "/csr/environment" },
+      { name: "sustainabilityReport", path: "/csr/sustainability" },
+      { name: "esgCommitment", path: "/csr/esg" },
+    ],
+  },
   {
     name: "news",
     path: "/news",
@@ -97,18 +97,18 @@ const Navbar = () => {
           : "bg-[#BEC5A4]"
       }`}
     >
-      <div className="max-w-[1700px] mx-auto px-6 py-5 flex items-center">
-        
+      <div className="max-w-[1700px] mx-auto px-6 py-4 flex items-center">
+
         {/* LOGO */}
-        <Link to="/" className="flex items-center gap-6">
-          <img
-            src={CompanyLogo}
-            alt="PT Andalan Artha Primanusa Tbk"
-            className="h-20 w-auto"
-          />
-          <div className="flex flex-col leading-tight">
-          </div>
-        </Link>
+       <Link to="/" className="flex items-center">
+  <div className="h-20 md:h-24 flex items-center overflow-hidden">
+    <img
+      src={CompanyLogo}
+      alt="PT Andalan Artha Primanusa Tbk"
+      className="h-full w-auto object-contain scale-[2.2]"
+    />
+  </div>
+</Link>
 
         {/* DESKTOP MENU */}
         <div className="hidden xl:flex items-center gap-12 ml-auto">
@@ -129,7 +129,6 @@ const Navbar = () => {
                   {item.submenu && <ChevronDown size={14} />}
                 </Link>
 
-                {/* SUBMENU */}
                 {item.submenu && (
                   <div
                     className="absolute left-0 top-full mt-6 w-72
