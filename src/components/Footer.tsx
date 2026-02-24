@@ -28,9 +28,9 @@ const Footer = () => {
                 {t("about")}
               </h4>
               <ul className="space-y-3 text-sm text-white/80">
-                <li><Link to="/about#vision" className="hover:text-[#C6A75E] transition">{t("visionMission")}</Link></li>
-                <li><Link to="/about#milestones" className="hover:text-[#C6A75E] transition">{t("milestones")}</Link></li>
-                <li><Link to="/about#management" className="hover:text-[#C6A75E] transition">{t("management")}</Link></li>
+                <li><Link to="/about/vision" className="hover:text-[#C6A75E] transition">{t("visionMission")}</Link></li>
+                <li><Link to="/about/milestones" className="hover:text-[#C6A75E] transition">{t("milestones")}</Link></li>
+                <li><Link to="/about/management" className="hover:text-[#C6A75E] transition">{t("management")}</Link></li>
                 <li><Link to="/about/structure" className="hover:text-[#C6A75E] transition">{t("organizationStructure")}</Link></li>
               </ul>
             </div>
@@ -59,6 +59,11 @@ const Footer = () => {
                 <li><Link to="/governance/commissioners" className="hover:text-[#C6A75E] transition">{t("boardOfCommissioners")}</Link></li>
                 <li><Link to="/governance/committees" className="hover:text-[#C6A75E] transition">{t("committees")}</Link></li>
                 <li><Link to="/governance/secretary" className="hover:text-[#C6A75E] transition">{t("corporateSecretary")}</Link></li>
+
+                {/* Tambahan sesuai komponen GovernanceInformation */}
+                <li><Link to="/governance/information#information" className="hover:text-[#C6A75E] transition">{t("governanceInformation")}</Link></li>
+                <li><Link to="/governance/information" className="hover:text-[#C6A75E] transition">{t("governanceDocuments")}</Link></li>
+
                 <li><Link to="/governance/wbs" className="hover:text-[#C6A75E] transition">{t("whistleblowingSystem")}</Link></li>
               </ul>
             </div>
@@ -120,31 +125,31 @@ const Footer = () => {
         </div>
       </footer>
 
-{/* RUNNING FRAUD WARNING BAR */}
-<div className="bg-black py-2 overflow-hidden">
-  <div
-    className="whitespace-nowrap text-xs text-white font-medium"
-    style={{
-      display: "inline-block",
-      paddingLeft: "100%",
-      animation: "marquee 25s linear infinite",
-    }}
-  >
-    ⚠️ Hati-hati terhadap penipuan yang mengatasnamakan PT Andalan Artha Primanusa Tbk.
-    Perusahaan tidak pernah meminta pembayaran dalam bentuk apapun di luar komunikasi resmi.
-    Beware of fraud conducted under the name of PT Andalan Artha Primanusa Tbk.
-    The Company never requests any form of payment outside official communication channels.
-  </div>
+      {/* RUNNING FRAUD WARNING BAR */}
+      <div className="bg-black py-2 overflow-hidden">
+        <div
+          className="whitespace-nowrap text-xs text-white font-medium"
+          style={{
+            display: "inline-block",
+            paddingLeft: "100%",
+            animation: "marquee 25s linear infinite",
+          }}
+        >
+          ⚠️ Hati-hati terhadap penipuan yang mengatasnamakan PT Andalan Artha Primanusa Tbk.
+          Perusahaan tidak pernah meminta pembayaran dalam bentuk apapun di luar komunikasi resmi.
+          Beware of fraud conducted under the name of PT Andalan Artha Primanusa Tbk.
+          The Company never requests any form of payment outside official communication channels.
+        </div>
 
-  <style>
-    {`
-      @keyframes marquee {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-100%); }
-      }
-    `}
-  </style>
-</div>
+        <style>
+          {`
+            @keyframes marquee {
+              0% { transform: translateX(0%); }
+              100% { transform: translateX(-100%); }
+            }
+          `}
+        </style>
+      </div>
     </>
   );
 };
