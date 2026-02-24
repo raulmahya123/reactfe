@@ -87,18 +87,16 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-[1500px] mx-auto px-6 py-3 flex items-center justify-between">
-        
         {/* LOGO */}
-        <Link to="/" className="flex items-center">
-          <div className="h-16 md:h-20 flex items-center overflow-hidden">
-            <img
-              src={CompanyLogo}
-              alt="PT Andalan Artha Primanusa Tbk"
-              className="h-full w-auto object-contain scale-[1.9]"
-            />
-          </div>
-        </Link>
-
+<Link to="/" className="flex items-center">
+  <div className="h-20 md:h-24 flex items-center overflow-hidden">
+    <img
+      src={CompanyLogo}
+      alt="PT Andalan Artha Primanusa Tbk"
+      className="h-full w-auto object-contain scale-[2.1]"
+    />
+  </div>
+</Link>
         {/* DESKTOP MENU */}
         <div className="hidden xl:flex items-center gap-8">
           
