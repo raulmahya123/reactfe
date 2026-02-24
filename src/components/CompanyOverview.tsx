@@ -16,7 +16,6 @@ const CompanyOverview = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(181,157,85,0.08),_transparent_60%)]"></div>
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
-        
         {/* SECTION TITLE */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -34,7 +33,8 @@ const CompanyOverview = () => {
           </h2>
 
           <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
-            Building sustainable mining operations with innovation and integrity.
+            Building sustainable mining operations with innovation and
+            integrity.
           </p>
 
           <div className="flex items-center justify-center gap-4 mt-8">
@@ -46,7 +46,6 @@ const CompanyOverview = () => {
 
         {/* CONTENT GRID */}
         <div className="grid md:grid-cols-2 gap-16 items-start">
-
           {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -100,7 +99,6 @@ const CompanyOverview = () => {
             className="relative flex justify-center"
           >
             <div className="relative w-[85%]">
-
               <div className="absolute inset-0 bg-[#B59D55]/10 rounded-xl"></div>
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#B59D55] rounded-xl"></div>
 
@@ -111,7 +109,6 @@ const CompanyOverview = () => {
               />
             </div>
           </motion.div>
-
         </div>
 
         {/* Divider */}
@@ -119,15 +116,12 @@ const CompanyOverview = () => {
 
         {/* STATS */}
         <div className="grid md:grid-cols-3 gap-8">
-
           {/* Established */}
           <motion.div
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
-            <h3 className="text-3xl font-bold text-[#B59D55]">
-  2018
-</h3>
+            <h3 className="text-3xl font-bold text-[#B59D55]">2018</h3>
             <p className="text-gray-600 mt-2">{t("established")}</p>
           </motion.div>
 
@@ -147,14 +141,12 @@ const CompanyOverview = () => {
             whileHover={{ y: -8 }}
             className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
           >
-<h3 className="text-3xl font-bold text-[#B59D55]">
-  <CountUp end={700} duration={2} separator="," />+
-</h3>
+            <h3 className="text-3xl font-bold text-[#B59D55]">
+              <CountUp end={700} duration={2} separator="," />+
+            </h3>
             <p className="text-gray-600 mt-2">{t("employees")}</p>
           </motion.div>
-
         </div>
-
       </div>
     </section>
   );

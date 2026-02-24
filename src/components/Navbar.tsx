@@ -45,17 +45,16 @@ const menuItems = [
     ],
   },
   {
-    name: "csr",
-    path: "/csr",
-    submenu: [
-      { name: "policy", path: "/csr/policy" },
-      { name: "communityDevelopment", path: "/csr/community" },
-      { name: "environment", path: "/csr/environment" },
-      { name: "sustainabilityReport", path: "/csr/sustainability" },
-      { name: "esgCommitment", path: "/csr/esg" },
-      { name: "csrInformation", path: "/csr/information" },
-    ],
-  },
+  name: "csr",
+  path: "/csr",
+  submenu: [
+    { name: "policy", path: "/csr/policy" },
+    { name: "communityDevelopment", path: "/csr/community" },
+    { name: "environment", path: "/csr/environment" },
+    { name: "sustainabilityReport", path: "/csr/sustainability" },
+    { name: "esgCommitment", path: "/csr/esg" },
+  ],
+},
   {
     name: "news",
     path: "/news",

@@ -5,8 +5,39 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        csrInformation: "CSR Information",
+        csrInformationDesc:
+          "PT Andalan Artha Primanusa is committed to conducting sustainable business activities through structured Corporate Social Responsibility (CSR) programs that create measurable impact for communities, employees, and the environment.",
 
-        
+        csrEnvironment: "Environment",
+        csrEnvironmentDesc:
+          "Environmental CSR programs focus on responsible waste management, land reclamation, reforestation initiatives, and emission reduction to support sustainable operations.",
+        csrEnvironmentBudget:
+          "The realized environmental program budget for the current year amounts to IDR 2,500,000,000.",
+
+        csrLabor: "Labor & Occupational Safety",
+        csrLaborDesc:
+          "The Company ensures employee rights, promotes a safe and healthy working environment, and consistently implements Occupational Health and Safety standards.",
+        csrLaborBudget:
+          "The realized labor and occupational safety program budget amounts to IDR 1,750,000,000.",
+
+        csrSocial: "Social & Community Empowerment",
+        csrSocialDesc:
+          "Social programs include educational assistance, healthcare support, village infrastructure development, and economic empowerment initiatives for communities surrounding operational areas.",
+        csrSocialBudget:
+          "The realized social and community empowerment program budget amounts to IDR 3,000,000,000.",
+
+        csrProduct: "Product Responsibility",
+        csrProductDesc:
+          "The Company ensures product quality meets industry standards, maintains secure distribution processes, and provides transparent information to stakeholders.",
+        csrProductBudget:
+          "The realized quality control and product supervision budget amounts to IDR 1,200,000,000.",
+
+        csrBudget: "Budget Realization",
+        csrSupportingDocument: "Supporting Document",
+        csrSupportingDocumentDesc:
+          "Download the Company's sustainability report for comprehensive information regarding CSR implementation.",
+        download: "Download",
         businessActivities: "Business Activities",
         businessOverviewTitle: "Our Core Business Activities",
         businessOverviewText:
@@ -156,8 +187,9 @@ i18n.use(initReactI18next).init({
         overviewPoint1: "Integrated coal mining & trading operations",
         overviewPoint2: "Strong domestic & international market presence",
         overviewPoint3: "Committed to sustainable & responsible mining",
-        overviewPoint4: "Social Commitment – contributing positively to surrounding communities",
-investorButton: "Investor Information",
+        overviewPoint4:
+          "Social Commitment – contributing positively to surrounding communities",
+        investorButton: "Investor Information",
         established: "Established",
         operationalSites: "Operational Sites",
         employees: "Employees",
@@ -190,19 +222,20 @@ investorButton: "Investor Information",
 
         /* ================= INVESTOR NEWS ================= */
         irLabel: "Investor Relations",
-       irMainTitle: "Elegant Exploration, Reliable Execution",
-irDate: "23 Feb 2026",
+        irMainTitle: "Elegant Exploration, Reliable Execution",
+        irDate: "23 Feb 2026",
 
-irNews1: "AAP Secures Nickel Mining Contract at the Beginning of 2026",
-irNews2: "Additional Production Volume Awarded by Existing Bowheer at the End of 2025",
-irNews3: "AAP Secures Coking Coal Mining Contract in June 2025",
-irNews4: "Closing 2024, AAP Wins Tender at PTBA Site",
+        irNews1: "AAP Secures Nickel Mining Contract at the Beginning of 2026",
+        irNews2:
+          "Additional Production Volume Awarded by Existing Bowheer at the End of 2025",
+        irNews3: "AAP Secures Coking Coal Mining Contract in June 2025",
+        irNews4: "Closing 2024, AAP Wins Tender at PTBA Site",
 
-       irDetailTitle:
-  "AAP Secures Nickel Ore Mining Contract at the Beginning of 2026",
+        irDetailTitle:
+          "AAP Secures Nickel Ore Mining Contract at the Beginning of 2026",
 
-irDetailText:
-  "PT Andalan Artha Primanusa marks the beginning of 2026 with a significant strategic achievement, securing a new nickel mining contract. This milestone reinforces the Company’s commitment to operational excellence and its proactive role in meeting the growing demand for minerals that support the global energy transition.",
+        irDetailText:
+          "PT Andalan Artha Primanusa marks the beginning of 2026 with a significant strategic achievement, securing a new nickel mining contract. This milestone reinforces the Company’s commitment to operational excellence and its proactive role in meeting the growing demand for minerals that support the global energy transition.",
         /* ================= CORE VALUE ================= */
         coreValue: "Core Value",
         coreValueDesc:
@@ -237,7 +270,6 @@ irDetailText:
         media: "Media",
         newsPressTitle: "News & Press Release",
         newsLabel: "News",
-        download: "Download",
         viewAll: "View All",
 
         newsItem1: "Public Expose 2025",
@@ -264,25 +296,6 @@ irDetailText:
         governanceInformationDesc:
           "The Company is committed to implementing Good Corporate Governance (GCG) principles consistently and sustainably in accordance with applicable regulations.",
         governanceDocumentList: "Corporate Governance Documents",
-        csrInformation: "Corporate Social Responsibility Information",
-        csrInformationDesc:
-          "Disclosure of CSR policies, program types, and expenditures in accordance with regulatory requirements.",
-
-        csrEnvironment: "Environmental Responsibility",
-        csrEnvironmentDesc:
-          "Policies, programs, and expenditures related to environmental management, emissions control, land rehabilitation, and sustainable mining practices.",
-
-        csrLabor: "Labor Practices, Health & Safety",
-        csrLaborDesc:
-          "Employee welfare programs, occupational health and safety initiatives, training development, and workforce protection measures.",
-
-        csrSocial: "Social & Community Development",
-        csrSocialDesc:
-          "Community empowerment programs, local infrastructure development, education support, and social investment initiatives.",
-
-        csrProduct: "Product & Service Responsibility",
-        csrProductDesc:
-          "Quality assurance standards, customer protection policies, responsible service delivery, and compliance with industry regulations.",
         boardManual: "Board of Directors and Board of Commissioners Charter",
         corporateSecretaryAppointment:
           "Appointment, dismissal, and/or vacancy of the Corporate Secretary",
@@ -384,6 +397,39 @@ irDetailText:
 
     id: {
       translation: {
+        csrInformation: "Informasi CSR",
+        csrInformationDesc:
+          "PT Andalan Artha Primanusa berkomitmen menjalankan kegiatan usaha yang berkelanjutan melalui program Tanggung Jawab Sosial dan Lingkungan (CSR) yang terstruktur dan memberikan dampak nyata bagi masyarakat, karyawan, serta lingkungan sekitar.",
+
+        csrEnvironment: "Lingkungan",
+        csrEnvironmentDesc:
+          "Program CSR lingkungan difokuskan pada pengelolaan limbah yang bertanggung jawab, reklamasi lahan, penghijauan, serta pengurangan emisi guna mendukung keberlanjutan operasional perusahaan.",
+        csrEnvironmentBudget:
+          "Realisasi anggaran program lingkungan tahun berjalan sebesar Rp 2.500.000.000.",
+
+        csrLabor: "Ketenagakerjaan & K3",
+        csrLaborDesc:
+          "Perusahaan menjamin hak tenaga kerja, menciptakan lingkungan kerja yang aman dan sehat, serta menerapkan standar Keselamatan dan Kesehatan Kerja (K3) secara konsisten.",
+        csrLaborBudget:
+          "Realisasi anggaran program ketenagakerjaan dan K3 sebesar Rp 1.750.000.000.",
+
+        csrSocial: "Sosial & Pemberdayaan Masyarakat",
+        csrSocialDesc:
+          "Program sosial meliputi bantuan pendidikan, kesehatan, pembangunan infrastruktur desa, serta pemberdayaan ekonomi masyarakat di sekitar wilayah operasional.",
+        csrSocialBudget:
+          "Realisasi anggaran program sosial dan pemberdayaan sebesar Rp 3.000.000.000.",
+
+        csrProduct: "Tanggung Jawab Produk",
+        csrProductDesc:
+          "Perusahaan memastikan kualitas produk memenuhi standar industri, keamanan distribusi terjaga, serta transparansi informasi kepada seluruh pemangku kepentingan.",
+        csrProductBudget:
+          "Realisasi anggaran pengendalian mutu dan pengawasan produk sebesar Rp 1.200.000.000.",
+
+        csrBudget: "Realisasi Anggaran",
+        csrSupportingDocument: "Dokumen Pendukung",
+        csrSupportingDocumentDesc:
+          "Unduh laporan keberlanjutan perusahaan untuk informasi lengkap mengenai implementasi program CSR.",
+        download: "Unduh",
         /* ================= NAVIGATION ================= */
         home: "Beranda",
         about: "Profil Perusahaan",
@@ -517,7 +563,8 @@ irDetailText:
           "PT Andalan Artha Primanusa Tbk. (AAP) berdiri sejak tahun 2018 sebagai kontraktor pertambangan yang berkomitmen menghadirkan standar tertinggi dalam keselamatan, produktivitas, dan keberlanjutan. Dengan pengalaman mendalam di sektor kontraktor pertambangan, AAP menjadi mitra strategis bagi perusahaan tambang yang membutuhkan solusi operasional yang kuat, transparan, dan berorientasi hasil.Kami percaya bahwa keberhasilan proyek tidak hanya diukur dari produksi, tetapi juga dari nilai-nilai yang kami junjung tinggi:",
         overviewPoint1:
           "Integritas – menjalankan operasional dengan kejujuran dan tanggung jawab",
-        overviewPoint2: "Kepatuhan regulasi – memastikan setiap langkah sesuai aturan dan standar industri",
+        overviewPoint2:
+          "Kepatuhan regulasi – memastikan setiap langkah sesuai aturan dan standar industri",
         overviewPoint3:
           "Tanggung jawab lingkungan – menjaga keberlanjutan sumber daya alam",
         overviewPoint4:
@@ -533,36 +580,6 @@ irDetailText:
         footerMilestones: "Milestone",
         footerManagement: "Manajemen",
         footerContactUs: "Hubungi Kami",
-        csrInformation: "Informasi Tanggung Jawab Sosial Perusahaan",
-        csrInformationDesc:
-          "Pengungkapan kebijakan, jenis program, dan biaya yang dikeluarkan Perseroan terkait Tanggung Jawab Sosial sesuai peraturan yang berlaku.",
-
-        csrEnvironment: "Aspek Lingkungan Hidup",
-        csrEnvironmentDesc:
-          "Kebijakan pengelolaan lingkungan, program pengendalian emisi, reklamasi lahan, dan inisiatif pertambangan berkelanjutan.",
-        csrEnvironmentBudget:
-          "Total Alokasi: Rp 5.000.000.000 (Tahun Buku 2025)",
-
-        csrLabor: "Praktik Ketenagakerjaan, K3",
-        csrLaborDesc:
-          "Program kesejahteraan karyawan, inisiatif kesehatan dan keselamatan kerja, pelatihan, dan perlindungan tenaga kerja.",
-        csrLaborBudget: "Total Alokasi: Rp 3.500.000.000 (Tahun Buku 2025)",
-
-        csrSocial: "Pengembangan Sosial & Kemasyarakatan",
-        csrSocialDesc:
-          "Program pemberdayaan masyarakat, dukungan pendidikan, pembangunan infrastruktur, dan investasi sosial.",
-        csrSocialBudget: "Total Alokasi: Rp 4.200.000.000 (Tahun Buku 2025)",
-investorButton: "Informasi Investor",
-
-        csrProduct: "Tanggung Jawab Produk & Layanan",
-        csrProductDesc:
-          "Standar jaminan mutu, kebijakan perlindungan pelanggan, dan kepatuhan terhadap regulasi industri.",
-        csrProductBudget: "Total Alokasi: Rp 1.800.000.000 (Tahun Buku 2025)",
-
-        csrBudget: "Biaya Program",
-        csrSupportingDocument: "Laporan Keberlanjutan",
-        csrSupportingDocumentDesc:
-          "Informasi lengkap mengenai kinerja CSR tersedia dalam Laporan Keberlanjutan Perseroan.",
         quarterlyReports: "Laporan Triwulanan",
         publicExpose: "Public Expose",
         dividendInformation: "Informasi Dividen",
@@ -593,13 +610,14 @@ investorButton: "Informasi Investor",
         annualReportsMenu: "Laporan Tahunan",
         /* ================= INVESTOR NEWS ================= */
         irLabel: "Hubungan Investor",
-        irMainTitle:
-          "Explorasi Elegan,Exsekusi Andal",
+        irMainTitle: "Explorasi Elegan,Eksekusi Andal",
         irDate: "23 Februari 2026",
 
         irNews1: "AAP Raih Kontrak Kerja Penambangan Nikel di Awal Tahun 2026",
-        irNews2: "Kepercayaan Tambahan Volume Produksi dari Bowheer Eksisting Di Akhir Tahun 2025",
-        irNews3: "AAP Peroleh Kontak Kerja Penambangan Coking Coal di Juni 2025",
+        irNews2:
+          "Kepercayaan Tambahan Volume Produksi dari Bowheer Eksisting Di Akhir Tahun 2025",
+        irNews3:
+          "AAP Peroleh Kontak Kerja Penambangan Coking Coal di Juni 2025",
         irNews4: "Menutup Tahun 2024, AAP Memenangkan Tender di Site PTBA ",
 
         irDetailTitle:
@@ -641,7 +659,6 @@ investorButton: "Informasi Investor",
         media: "Media",
         newsPressTitle: "Berita & Siaran Pers",
         newsLabel: "Berita",
-        download: "Unduh",
         viewAll: "Lihat Semua",
 
         newsItem1: "Public Expose 2025",
@@ -737,9 +754,9 @@ investorButton: "Informasi Investor",
         commissionerPresident: "Komisaris Utama",
         commissioner: "Komisaris",
         independentCommissioner: "Komisaris Independen",
-operationalLocations: "Lokasi Proyek",
-operationalLocationsDesc:
-  "Kami menjalankan operasi pertambangan di beberapa lokasi strategis di Indonesia, termasuk Lahat, Tanjung Enim, Murung Raya, dan Halmahera Timur, dengan fokus pada keselamatan, efisiensi, dan keberlanjutan.",
+        operationalLocations: "Lokasi Proyek",
+        operationalLocationsDesc:
+          "Kami menjalankan operasi pertambangan di beberapa lokasi strategis di Indonesia, termasuk Lahat, Tanjung Enim, Murung Raya, dan Halmahera Timur, dengan fokus pada keselamatan, efisiensi, dan keberlanjutan.",
         /* ================= CONTACT PAGE ================= */
         contactSection: {
           official: "Informasi Resmi",
