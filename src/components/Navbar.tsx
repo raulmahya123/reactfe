@@ -9,10 +9,10 @@ const menuItems = [
     name: "about",
     path: "/about",
     submenu: [
-      { name: "visionMission", path: "/about#vision" },
-      { name: "milestones", path: "/about#milestones" },
-      { name: "management", path: "/about#management" },
-      { name: "businessActivities", path: "/about#business" },
+      { name: "visionMission", path: "/about/vision" },
+      { name: "milestones", path: "/about/milestones" },
+      { name: "management", path: "/about/management" },
+      { name: "businessActivities", path: "/about/business" },
     ],
   },
   {

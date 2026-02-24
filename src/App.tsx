@@ -28,15 +28,11 @@ export default function App() {
       <Routes>
         {/* MAIN */}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about/*" element={<About />} />
         <Route path="/contact" element={<Contact />} />
 
         {/* GOVERNANCE */}
-        <Route path="/governance/committees" element={<Committees />} />
-        <Route path="/governance/secretary" element={<CorporateSecretary />} />
-        <Route path="/governance/information" element={<GovernanceInformation />} />
-        <Route path="/governance/budget" element={<BudgetDocument />} />
-
+        <Route path="/governance/*" element={<Committees />} />
         {/* ================= CSR ================= */}
         <Route path="/csr/*" element={<CSR />} />
 
