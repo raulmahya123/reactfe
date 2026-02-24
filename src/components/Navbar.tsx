@@ -44,17 +44,17 @@ const menuItems = [
       { name: "budgetDocument", path: "/governance/budget" },
     ],
   },
-  {
-    name: "csr",
-    path: "/csr",
-    submenu: [
-      { name: "policy", path: "/csr/policy" },
-      { name: "communityDevelopment", path: "/csr/community" },
-      { name: "environment", path: "/csr/environment" },
-      { name: "sustainabilityReport", path: "/csr/sustainability" },
-      { name: "esgCommitment", path: "/csr/esg" },
-    ],
-  },
+  // {
+  //   name: "csr",
+  //   path: "/csr",
+  //   submenu: [
+  //     { name: "policy", path: "/csr/policy" },
+  //     { name: "communityDevelopment", path: "/csr/community" },
+  //     { name: "environment", path: "/csr/environment" },
+  //     { name: "sustainabilityReport", path: "/csr/sustainability" },
+  //     { name: "esgCommitment", path: "/csr/esg" },
+  //   ],
+  // },
   {
     name: "news",
     path: "/news",
