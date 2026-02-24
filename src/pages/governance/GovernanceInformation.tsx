@@ -20,83 +20,68 @@ const GovernanceInformation = () => {
   ];
 
   return (
-    <div className="w-full">
+    <section
+      id="information"
+      className="scroll-mt-32 py-24 bg-gray-50 border-b"
+    >
+      <div className="max-w-6xl mx-auto px-6">
 
-      {/* HERO */}
-      <section className="text-black pt-44 pb-32">
-        <div className="max-w-[1400px] mx-auto px-6 text-center">
+        {/* TITLE */}
+        <h2 className="text-3xl font-bold text-[#B59D55] mb-12">
+          {t("governanceInformation")}
+        </h2>
 
-          <h1 className="text-4xl md:text-5xl font-bold tracking-[0.15em] uppercase mb-6">
-            {t("governanceInformation")}
-          </h1>
+        {/* DOCUMENT CARD CONTAINER */}
+        <div className="bg-white shadow-lg rounded-2xl p-12 border border-[#C6A75E]/20">
 
-          <div className="w-24 h-[3px] bg-black mx-auto mb-8 rounded-full"></div>
+          <div className="grid md:grid-cols-2 gap-8">
 
-          <p className="text-black/90 max-w-3xl mx-auto text-sm tracking-wide leading-relaxed">
-            {t("governanceInformationDesc")}
-          </p>
+            {documents.map((doc, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-between p-6 rounded-xl 
+                border border-gray-200 
+                hover:shadow-md hover:border-[#C6A75E] 
+                transition-all duration-300 bg-white group"
+              >
 
-        </div>
-      </section>
-
-      {/* CONTENT */}
-      <section className="py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-6">
-
-          <div className="bg-white shadow-lg rounded-2xl p-12 border border-[#A77B3F]/20">
-
-            <div className="grid md:grid-cols-2 gap-8">
-
-              {documents.map((doc, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between p-6 rounded-xl 
-                  border border-gray-200 
-                  hover:shadow-md hover:border-[#A77B3F] 
-                  transition-all duration-300 bg-white group"
-                >
-
-                  {/* LEFT */}
-                  <div className="flex items-center gap-5">
-
-                    <div className="bg-[#A77B3F]/15 p-4 rounded-xl group-hover:bg-[#A77B3F]/25 transition">
-                      <FileText className="text-[#A77B3F]" size={22} />
-                    </div>
-
-                    <div>
-                      <p className="text-sm font-semibold text-black">
-                        {t(doc.key)}
-                      </p>
-                      <p className="text-xs text-gray-500 mt-1">
-                        PDF Document
-                      </p>
-                    </div>
-
+                {/* LEFT */}
+                <div className="flex items-center gap-5">
+                  <div className="bg-[#C6A75E]/15 p-4 rounded-xl group-hover:bg-[#C6A75E]/25 transition">
+                    <FileText className="text-[#C6A75E]" size={22} />
                   </div>
 
-                  {/* DOWNLOAD BUTTON */}
-                  <a
-                    href={doc.file}
-                    download
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg 
-                    bg-[#A77B3F] text-white text-xs font-semibold
-                    hover:bg-[#8f662f] transition-all duration-300"
-                  >
-                    <Download size={16} />
-                    {t("download")}
-                  </a>
-
+                  <div>
+                    <p className="text-sm font-semibold text-gray-800">
+                      {t(doc.key)}
+                    </p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      PDF Document
+                    </p>
+                  </div>
                 </div>
-              ))}
 
-            </div>
+                {/* DOWNLOAD BUTTON */}
+                <a
+                  href={doc.file}
+                  download
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg 
+                  bg-[#C6A75E] text-white text-xs font-semibold
+                  hover:bg-[#b8964f] transition-all duration-300"
+                >
+                  <Download size={16} />
+                  {t("download")}
+                </a>
+
+              </div>
+            ))}
 
           </div>
 
         </div>
-      </section>
 
-    </div>
+      </div>
+    </section>
   );
 };
 

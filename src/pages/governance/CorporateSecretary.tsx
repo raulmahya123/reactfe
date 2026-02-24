@@ -1,49 +1,98 @@
 import { useTranslation } from "react-i18next";
+import { Mail, Phone } from "lucide-react";
+
+const PRIMARY = "#AEB596"; // hijau logo
+const CREAM = "#FFFFFF";   // cream soft
 
 const CorporateSecretary = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="pt-40 pb-24 bg-white min-h-screen">
+    <section
+      id="secretary"
+      className="scroll-mt-32 py-24 border-b"
+      style={{ backgroundColor: CREAM }}
+    >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* TITLE */}
-        <div className="mb-16">
-          <h1 className="text-4xl font-bold text-[#8B0000] uppercase tracking-[0.1em]">
+        <div className="mb-14">
+          <h2
+            className="text-4xl font-bold"
+            style={{ color: PRIMARY }}
+          >
             {t("corporateSecretary")}
-          </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#C6A75E] to-[#D4B76A] mt-6"></div>
+          </h2>
+          <div
+            className="w-20 h-1 mt-4 rounded-full"
+            style={{ backgroundColor: PRIMARY }}
+          />
         </div>
 
         {/* PROFILE CARD */}
-        <div className="bg-gray-50 shadow-xl rounded-xl p-12 grid md:grid-cols-3 gap-10 items-center">
+        <div
+          className="bg-white shadow-xl rounded-3xl p-12 grid md:grid-cols-3 gap-12 items-center"
+          style={{ border: `1px solid ${PRIMARY}30` }}
+        >
 
-          {/* PHOTO PLACEHOLDER */}
-          <div className="w-full h-72 bg-gradient-to-br from-[#8B0000] to-[#BEC5A4] rounded-xl"></div>
+          {/* PHOTO */}
+          <div className="w-full h-80 rounded-2xl overflow-hidden">
+            <img
+              src="/images/corporate-secretary.jpg"
+              alt="Corporate Secretary"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
           {/* INFO */}
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h3
+              className="text-2xl font-semibold mb-4"
+              style={{ color: PRIMARY }}
+            >
               Corporate Secretary
-            </h2>
+            </h3>
 
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed mb-8">
               The Corporate Secretary ensures the Company’s compliance with
               capital market regulations and facilitates communication between
               the Company, shareholders, regulators, and the public.
             </p>
 
-            <div className="space-y-3 text-gray-700">
-              <p><strong>Name:</strong> John Doe</p>
-              <p><strong>Email:</strong> corporate.secretary@company.com</p>
-              <p><strong>Phone:</strong> +62 21 0000 0000</p>
+            {/* CONTACT INFO */}
+            <div className="space-y-4 text-sm">
+
+              <div className="flex items-center gap-3">
+                <div
+                  className="p-2 rounded-lg"
+                  style={{ backgroundColor: `${PRIMARY}20` }}
+                >
+                  <Mail size={16} style={{ color: PRIMARY }} />
+                </div>
+                <span className="text-gray-700">
+                  corporate.secretary@company.com
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div
+                  className="p-2 rounded-lg"
+                  style={{ backgroundColor: `${PRIMARY}20` }}
+                >
+                  <Phone size={16} style={{ color: PRIMARY }} />
+                </div>
+                <span className="text-gray-700">
+                  +62 21 0000 0000
+                </span>
+              </div>
+
             </div>
           </div>
 
         </div>
 
       </div>
-    </div>
+    </section>
   );
 };
 

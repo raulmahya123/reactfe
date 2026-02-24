@@ -7,11 +7,7 @@ import About from "./pages/about/About";
 import Contact from "./pages/kontak/ContactSection";
 
 // GOVERNANCE
-import Committees from "./pages/governance/Committees";
-import CorporateSecretary from "./pages/governance/CorporateSecretary";
-import GovernanceInformation from "./pages/governance/GovernanceInformation";
-import BudgetDocument from "./pages/governance/budgetDocument";
-
+import Governance from "./pages/governance/Governance";
 // CSR
 import CSR from "./pages/csr/Csr";
 
@@ -32,7 +28,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
 
         {/* GOVERNANCE */}
-        <Route path="/governance/*" element={<Committees />} />
+        <Route path="/governance/*" element={<Governance />} />
         {/* ================= CSR ================= */}
         <Route path="/csr/*" element={<CSR />} />
 
