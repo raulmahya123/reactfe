@@ -44,17 +44,6 @@ const menuItems = [
       { name: "budgetDocument", path: "/governance/budget" },
     ],
   },
-  // {
-  //   name: "csr",
-  //   path: "/csr",
-  //   submenu: [
-  //     { name: "policy", path: "/csr/policy" },
-  //     { name: "communityDevelopment", path: "/csr/community" },
-  //     { name: "environment", path: "/csr/environment" },
-  //     { name: "sustainabilityReport", path: "/csr/sustainability" },
-  //     { name: "esgCommitment", path: "/csr/esg" },
-  //   ],
-  // },
   {
     name: "news",
     path: "/news",
@@ -97,22 +86,24 @@ const Navbar = () => {
           : "bg-[#BEC5A4]"
       }`}
     >
-      <div className="max-w-[1700px] mx-auto px-6 py-4 flex items-center">
-
+      <div className="max-w-[1500px] mx-auto px-6 py-3 flex items-center justify-between">
+        
         {/* LOGO */}
-       <Link to="/" className="flex items-center">
-  <div className="h-20 md:h-24 flex items-center overflow-hidden">
-    <img
-      src={CompanyLogo}
-      alt="PT Andalan Artha Primanusa Tbk"
-      className="h-full w-auto object-contain scale-[2.2]"
-    />
-  </div>
-</Link>
+        <Link to="/" className="flex items-center">
+          <div className="h-16 md:h-20 flex items-center overflow-hidden">
+            <img
+              src={CompanyLogo}
+              alt="PT Andalan Artha Primanusa Tbk"
+              className="h-full w-auto object-contain scale-[1.9]"
+            />
+          </div>
+        </Link>
 
         {/* DESKTOP MENU */}
-        <div className="hidden xl:flex items-center gap-12 ml-auto">
-          <div className="flex items-center gap-10 text-[11px] font-normal uppercase tracking-[0.12em]">
+        <div className="hidden xl:flex items-center gap-8">
+          
+          {/* MENU ITEMS */}
+          <div className="flex items-center gap-6 text-[11px] font-normal uppercase tracking-[0.1em]">
             {menuItems.map((item) => (
               <div key={item.name} className="relative group">
                 <Link
@@ -131,10 +122,10 @@ const Navbar = () => {
 
                 {item.submenu && (
                   <div
-                    className="absolute left-0 top-full mt-6 w-72
+                    className="absolute left-0 top-full mt-4 w-64
                     bg-[#B59D55]
                     shadow-xl rounded-md
-                    opacity-0 invisible translate-y-3
+                    opacity-0 invisible translate-y-2
                     group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
                     transition-all duration-300 z-50"
                   >
@@ -142,7 +133,7 @@ const Navbar = () => {
                       <Link
                         key={sub.name}
                         to={sub.path}
-                        className="block px-6 py-3 text-sm text-white hover:bg-[#a68d4a] transition"
+                        className="block px-5 py-2.5 text-sm text-white hover:bg-[#a68d4a] transition"
                       >
                         {t(sub.name)}
                       </Link>
@@ -154,10 +145,10 @@ const Navbar = () => {
           </div>
 
           {/* LANGUAGE SWITCH */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <button
               onClick={() => changeLanguage("id")}
-              className={`px-4 py-1 text-xs font-semibold rounded-md transition ${
+              className={`px-3 py-1 text-xs font-semibold rounded-md transition ${
                 i18n.language === "id"
                   ? "bg-[#B59D55] text-white"
                   : "text-[#B59D55] hover:bg-[#B59D55] hover:text-white"
@@ -168,7 +159,7 @@ const Navbar = () => {
 
             <button
               onClick={() => changeLanguage("en")}
-              className={`px-4 py-1 text-xs font-semibold rounded-md transition ${
+              className={`px-3 py-1 text-xs font-semibold rounded-md transition ${
                 i18n.language.startsWith("en")
                   ? "bg-[#B59D55] text-white"
                   : "text-[#B59D55] hover:bg-[#B59D55] hover:text-white"
@@ -181,7 +172,7 @@ const Navbar = () => {
 
         {/* MOBILE TOGGLE */}
         <button
-          className={`xl:hidden ml-auto text-2xl ${
+          className={`xl:hidden text-2xl ${
             scrolled ? "text-[#B59D55]" : "text-white"
           }`}
           onClick={() => setMobileOpen(!mobileOpen)}
