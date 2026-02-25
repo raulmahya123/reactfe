@@ -5,6 +5,138 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        /* ================= CORPORATE ACTIONS ================= */
+corporateActionsSection: {
+  title: "Corporate Actions",
+  subtitle:
+    "Information regarding the Company's latest corporate actions as part of its transparency and commitment to shareholders.",
+  viewDetails: "View Details",
+
+  status: {
+    approved: "Approved",
+    completed: "Completed",
+  },
+
+  items: {
+    dividend2025: {
+      title: "Dividend Distribution 2025",
+      date: "March 2025",
+      status: "approved",
+      description:
+        "The Company approved dividend distribution as part of its commitment to shareholders and enhancement of investment value.",
+    },
+
+    shareBuyback: {
+      title: "Share Buyback Program",
+      date: "January 2025",
+      status: "completed",
+      description:
+        "Share buyback program implemented to maintain stock price stability and strengthen investor confidence.",
+    },
+
+    rightsIssue: {
+      title: "Rights Issue",
+      date: "September 2024",
+      status: "completed",
+      description:
+        "Capital increase through rights issue to support business expansion and strategic project development.",
+    },
+  },
+},
+        /* ================= MEDIA COVERAGE ================= */
+mediaCoverageSection: {
+  title: "Media Coverage",
+  subtitle:
+    "Publications and media coverage highlighting the Company's developments and achievements at national and international levels.",
+  readMore: "Read More",
+
+  items: {
+    nationalMagazine: {
+      title: "Featured in National Business Magazine",
+      source: "Business Today Indonesia",
+      date: "February 2026",
+      description:
+        "National media coverage highlighting the Company’s ESG achievements and strategic project expansion in 2026.",
+      image:
+        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200",
+    },
+
+    investorConfidence: {
+      title: "Mining Expansion Gains Investor Confidence",
+      source: "Indonesia Energy Review",
+      date: "January 2026",
+      description:
+        "The Company is recognized for maintaining operational stability and sustainable revenue growth.",
+      image:
+        "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1200",
+    },
+
+    sustainabilityHighlight: {
+      title: "Sustainability Commitment Highlighted",
+      source: "Global ESG Report",
+      date: "December 2025",
+      description:
+        "The Company’s commitment to sustainable mining practices receives international recognition.",
+      image:
+        "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200",
+    },
+  },
+},
+        /* ================= PRESS RELEASE ================= */
+        press: {
+          title: "Press Release",
+          subtitle:
+            "Official information and latest company announcements regarding business developments and strategic initiatives.",
+          readMore: "Read Full Release",
+          close: "Close",
+
+          items: {
+            expansion: {
+              date: "March 2026",
+              category: "Expansion",
+              title: "PT Andalan Artha Primanusa Announces Strategic Expansion",
+              description:
+                "The Company announces a strategic expansion to strengthen its industry position and sustainable growth.",
+              content: `
+PT Andalan Artha Primanusa Tbk announces a strategic expansion as part of its long-term corporate strategy.
+
+The expansion includes the development of new operational projects, asset optimization, and enhancement of operational capacity to meet growing market demand.
+
+Management remains committed to implementing strong corporate governance principles while delivering sustainable value creation for shareholders and stakeholders.
+      `,
+            },
+
+            financial: {
+              date: "February 2026",
+              category: "Financial",
+              title: "Company Reports Strong Financial Performance FY2025",
+              description:
+                "Revenue and net profit recorded significant growth compared to the previous year.",
+              content: `
+The Company reported solid financial performance for fiscal year 2025, with significant growth in revenue and net profit.
+
+This performance was supported by operational efficiency improvements, stable commodity prices, and disciplined cost management.
+
+The Company remains optimistic about maintaining sustainable growth momentum in the coming years.
+      `,
+            },
+
+            esg: {
+              date: "January 2026",
+              category: "ESG",
+              title: "Commitment to ESG and Sustainable Mining Practices",
+              description:
+                "Strengthening ESG implementation across all operational activities.",
+              content: `
+The Company continues to strengthen its Environmental, Social, and Governance (ESG) implementation across all operational areas.
+
+Key initiatives include responsible waste management, land reclamation, community development programs, and transparent governance practices.
+
+The Company believes that long-term business sustainability must align with environmental responsibility and social contribution.
+      `,
+            },
+          },
+        },
         csrInformation: "CSR Information",
         supportingProfessionals: "Supporting Professionals",
         perusahaanKami: "Our Company",
@@ -223,7 +355,11 @@ i18n.use(initReactI18next).init({
         footerAnnouncement: "Announcement",
         footerPresentation: "Presentations",
         footerNews: "News & Press Release",
-
+        csrHero: {
+          title: "Social Commitment & Sustainability",
+          introduction:
+            "PT Andalan Artha Primanusa Tbk believes that sustainable business growth must go hand in hand with meaningful contributions to society and the environment. Through its Corporate Social and Environmental Responsibility programs, the Company is committed to creating sustainable added value, strengthening relationships with surrounding communities, and supporting inclusive and responsible social development.",
+        },
         /* ================= INVESTOR NEWS ================= */
         irLabel: "Investor Relations",
         irMainTitle: "Elegant Exploration, Reliable Execution",
@@ -620,7 +756,45 @@ i18n.use(initReactI18next).init({
         irLabel: "Hubungan Investor",
         irMainTitle: "Explorasi Elegan,Eksekusi Andal",
         irDate: "23 Februari 2026",
+/* ================= LIPUTAN MEDIA ================= */
+mediaCoverageSection: {
+  title: "Liputan Media",
+  subtitle:
+    "Publikasi dan liputan media terkait perkembangan serta pencapaian Perseroan di tingkat nasional maupun internasional.",
+  readMore: "Baca Selengkapnya",
 
+  items: {
+    nationalMagazine: {
+      title: "Tampil di Majalah Bisnis Nasional",
+      source: "Business Today Indonesia",
+      date: "Februari 2026",
+      description:
+        "Liputan media nasional mengenai pencapaian ESG Perseroan serta ekspansi proyek strategis di tahun 2026.",
+      image:
+        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200",
+    },
+
+    investorConfidence: {
+      title: "Ekspansi Tambang Tingkatkan Kepercayaan Investor",
+      source: "Indonesia Energy Review",
+      date: "Januari 2026",
+      description:
+        "Perseroan dinilai berhasil menjaga stabilitas operasional dan pertumbuhan pendapatan secara berkelanjutan.",
+      image:
+        "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1200",
+    },
+
+    sustainabilityHighlight: {
+      title: "Komitmen Keberlanjutan Mendapat Sorotan Internasional",
+      source: "Global ESG Report",
+      date: "Desember 2025",
+      description:
+        "Komitmen Perseroan terhadap praktik pertambangan berkelanjutan mendapatkan apresiasi internasional.",
+      image:
+        "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200",
+    },
+  },
+},
         irNews1: "AAP Raih Kontrak Kerja Penambangan Nikel di Awal Tahun 2026",
         irNews2:
           "Kepercayaan Tambahan Volume Produksi dari Bowheer Eksisting Di Akhir Tahun 2025",
@@ -668,7 +842,44 @@ i18n.use(initReactI18next).init({
         newsPressTitle: "Berita & Siaran Pers",
         newsLabel: "Berita",
         viewAll: "Lihat Semua",
+/* ================= AKSI KORPORASI ================= */
+corporateActionsSection: {
+  title: "Aksi Korporasi",
+  subtitle:
+    "Informasi terkait aksi korporasi terbaru yang dilakukan Perseroan sebagai bentuk transparansi dan komitmen kepada pemegang saham.",
+  viewDetails: "Lihat Detail",
 
+  status: {
+    approved: "Disetujui",
+    completed: "Selesai",
+  },
+
+  items: {
+    dividend2025: {
+      title: "Pembagian Dividen Tahun 2025",
+      date: "Maret 2025",
+      status: "approved",
+      description:
+        "Perseroan menyetujui pembagian dividen sebagai bagian dari komitmen terhadap pemegang saham serta peningkatan nilai investasi.",
+    },
+
+    shareBuyback: {
+      title: "Program Pembelian Kembali Saham",
+      date: "Januari 2025",
+      status: "completed",
+      description:
+        "Program pembelian kembali saham untuk menjaga stabilitas harga saham dan meningkatkan kepercayaan investor.",
+    },
+
+    rightsIssue: {
+      title: "Penawaran Umum Terbatas (Rights Issue)",
+      date: "September 2024",
+      status: "completed",
+      description:
+        "Penambahan modal melalui rights issue guna mendukung ekspansi usaha dan pengembangan proyek strategis.",
+    },
+  },
+},
         newsItem1: "Public Expose 2025",
         newsItem2: "Laporan Tahunan 2024 Dirilis",
         newsItem3: "Pengumuman Aksi Korporasi",
@@ -727,6 +938,11 @@ i18n.use(initReactI18next).init({
         addressCountry: "Jakarta Pusat 10230 DKI Jakarta – Indonesia",
         telephone: "Telepon +62 21 6669 2917 | Fax: +62 21 6669 2918",
         allRightsReserved: "Seluruh Hak Cipta Dilindungi.",
+        csrHero: {
+          title: "Komitmen Sosial & Keberlanjutan",
+          introduction:
+            "PT Andalan Artha Primanusa Tbk meyakini bahwa pertumbuhan usaha yang berkelanjutan harus berjalan seiring dengan kontribusi nyata terhadap masyarakat dan lingkungan. Melalui program Tanggung Jawab Sosial dan Lingkungan, Perseroan berkomitmen untuk menciptakan nilai tambah yang berkelanjutan, memperkuat hubungan dengan masyarakat sekitar, serta mendukung pembangunan sosial yang inklusif dan bertanggung jawab.",
+        },
         visionText:
           "Menjadi kontraktor pertambangan yang terkemuka dan terpercaya di Indonesia dengan kredibilitas dan komitmen yang unggul dalam memberikan hasil, didukung oleh fondasi operasi pertambangan yang solid, sistem terintegrasi, dan kerja tim yang luar biasa.",
 
@@ -758,7 +974,62 @@ i18n.use(initReactI18next).init({
         presidentDirector: "Direktur Utama",
         financeDirector: "Direktur Keuangan",
         operationsDirector: "Direktur Operasional",
+        /* ================= SIARAN PERS ================= */
+        press: {
+          title: "Siaran Pers",
+          subtitle:
+            "Informasi resmi dan pengumuman terbaru Perseroan terkait perkembangan usaha dan inisiatif strategis.",
+          readMore: "Baca Selengkapnya",
+          close: "Tutup",
 
+          items: {
+            expansion: {
+              date: "Maret 2026",
+              category: "Ekspansi",
+              title: "PT Andalan Artha Primanusa Umumkan Ekspansi Strategis",
+              description:
+                "Perseroan mengumumkan langkah ekspansi strategis untuk memperkuat posisi industri dan pertumbuhan berkelanjutan.",
+              content: `
+PT Andalan Artha Primanusa Tbk mengumumkan langkah ekspansi strategis sebagai bagian dari strategi jangka panjang Perseroan.
+
+Ekspansi ini mencakup pengembangan proyek operasional baru, optimalisasi aset, serta peningkatan kapasitas produksi guna menjawab permintaan pasar yang terus meningkat.
+
+Manajemen berkomitmen untuk terus menerapkan prinsip tata kelola perusahaan yang baik serta menciptakan nilai berkelanjutan bagi pemegang saham dan seluruh pemangku kepentingan.
+      `,
+            },
+
+            financial: {
+              date: "Februari 2026",
+              category: "Keuangan",
+              title: "Kinerja Keuangan Tahun Buku 2025 Tumbuh Signifikan",
+              description:
+                "Pendapatan dan laba bersih mengalami pertumbuhan signifikan dibandingkan tahun sebelumnya.",
+              content: `
+Perseroan mencatatkan kinerja keuangan yang solid pada tahun buku 2025 dengan pertumbuhan signifikan pada pendapatan dan laba bersih.
+
+Pencapaian ini didukung oleh peningkatan efisiensi operasional, stabilitas harga komoditas, serta pengelolaan biaya yang disiplin.
+
+Perseroan optimis dapat mempertahankan momentum pertumbuhan yang berkelanjutan pada tahun-tahun mendatang.
+      `,
+            },
+
+            esg: {
+              date: "Januari 2026",
+              category: "ESG",
+              title:
+                "Komitmen terhadap ESG dan Praktik Pertambangan Berkelanjutan",
+              description:
+                "Memperkuat implementasi ESG dalam seluruh aktivitas operasional.",
+              content: `
+Perseroan terus memperkuat penerapan prinsip Environmental, Social, and Governance (ESG) dalam seluruh kegiatan operasional.
+
+Inisiatif utama meliputi pengelolaan limbah yang bertanggung jawab, reklamasi lahan, program pemberdayaan masyarakat, serta tata kelola yang transparan dan akuntabel.
+
+Perseroan meyakini bahwa keberlanjutan usaha harus berjalan seiring dengan tanggung jawab lingkungan dan kontribusi sosial.
+      `,
+            },
+          },
+        },
         commissionerPresident: "Komisaris Utama",
         commissioner: "Komisaris",
         independentCommissioner: "Komisaris Independen",
