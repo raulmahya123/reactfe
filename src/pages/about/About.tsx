@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import VisionMission from "./VisionMission";
 import Milestones from "./Milestones";
 import Management from "./Management";
-import BusinessActivities from "./BusinessActivities";
 
 const About = () => {
   const { t } = useTranslation();
@@ -54,10 +53,6 @@ const About = () => {
 
       <section id="management" className="scroll-mt-32">
         <Management />
-      </section>
-
-      <section id="business" className="scroll-mt-32">
-        <BusinessActivities />
       </section>
 
     </main>
