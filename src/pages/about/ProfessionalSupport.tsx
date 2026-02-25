@@ -1,4 +1,3 @@
-import React from "react";
 import { Building2, Landmark } from "lucide-react";
 
 export default function ProfessionalSupport() {

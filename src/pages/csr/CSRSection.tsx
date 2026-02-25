@@ -1,4 +1,3 @@
-import React from "react";
 import Csr1 from "../../assets/csr1.png"
 import Csr2 from "../../assets/csr2.png"
 import Csr3 from "../../assets/csr3.png"
