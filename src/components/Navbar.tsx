@@ -9,15 +9,17 @@ const menuItems = [
     name: "about",
     path: "/about",
     submenu: [
+      { name: "perusahaanKami", path: "/about/perusahaan-kami" },
       { name: "visionMission", path: "/about/vision" },
       { name: "milestones", path: "/about/milestones" },
       { name: "management", path: "/about/management" },
-      {name:"strukturOrganisasi", path:"/about/struktur-organisasi"},
-      {name:"strukturKepemilikan", path:"/about/struktur-kepemilikan"}
-    ],
+      { name: "strukturOrganisasi", path: "/about/struktur-organisasi" },
+      { name: "strukturKepemilikan", path: "/about/struktur-kepemilikan" },
+      { name: "supportingProfessionals", path: "/about/supporting-professionals" }
+    ],  
   },
-   {
-    name: "Project",
+  {
+    name: "Projek",
     path: "/proyek",
     submenu: [
       { name: "ProyekActivities", path: "/proyek/financial" },
@@ -29,21 +31,22 @@ const menuItems = [
     name: "investor",
     path: "/investor",
     submenu: [
+      { name: "prospectus", path: "/investor/prospectus" },
       { name: "financialStatements", path: "/investor/financial" },
       { name: "annualReportsMenu", path: "/investor/annual" },
       { name: "quarterlyReports", path: "/investor/rups" },
       { name: "publicExpose", path: "/investor/expose" },
       { name: "dividendInformation", path: "/investor/dividend" },
       { name: "stockPerformance", path: "/investor/stock" },
+      {name: "corporateAction", path: "/investor/governance" },
+      { name: "materialInformation", path: "/investor/material" },
     ],
   },
-  
   {
     name: "governance",
     path: "/governance",
     submenu: [
       { name: "boardOfDirectors", path: "/governance/directors" },
-      { name: "boardOfCommissioners", path: "/governance/commissioners" },
       { name: "auditCommittee", path: "/governance/audit" },
       { name: "corporateSecretary", path: "/governance/secretary" },
       { name: "codeOfConduct", path: "/governance/code" },
@@ -51,6 +54,10 @@ const menuItems = [
       { name: "governanceInformation", path: "/governance/information" },
       { name: "budgetDocument", path: "/governance/budget" },
     ],
+  },
+  {
+    name: "csr",
+    path: "/csr",
   },
   {
     name: "news",
@@ -89,9 +96,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+        scrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
       <div
@@ -99,15 +104,15 @@ const Navbar = () => {
           scrolled ? "py-1.5" : "py-2"
         }`}
       >
-<Link to="/" className="flex items-center">
-  <img
-    src={CompanyLogo}
-    alt="PT Andalan Artha Primanusa Tbk"
-    className={`w-auto transition-all duration-500 ${
-      scrolled ? "h-14 md:h-16" : "h-16 md:h-20"
-    }`}
-  />
-</Link>
+        <Link to="/" className="flex items-center">
+          <img
+            src={CompanyLogo}
+            alt="PT Andalan Artha Primanusa Tbk"
+            className={`w-auto transition-all duration-500 ${
+              scrolled ? "h-14 md:h-16" : "h-16 md:h-20"
+            }`}
+          />
+        </Link>
 
         {/* DESKTOP MENU */}
         <div className="hidden xl:flex items-center gap-8">
@@ -120,8 +125,8 @@ const Navbar = () => {
                     location.pathname.startsWith(item.path)
                       ? "text-[#B59D55] font-semibold"
                       : scrolled
-                      ? "text-gray-700 hover:text-[#B59D55]"
-                      : "text-white hover:text-white/80"
+                        ? "text-gray-700 hover:text-[#B59D55]"
+                        : "text-white hover:text-white/80"
                   }`}
                 >
                   {t(item.name)}

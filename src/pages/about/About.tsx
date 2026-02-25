@@ -7,6 +7,7 @@ import Milestones from "./Milestones";
 import Management from "./Management";
 import StrukturOrganisasi from "./StruktuOrganisasi";
 import StrukturKepelikan from "./StrukturKepelikan";
+import ProfessionalSupport from "./ProfessionalSupport";
 
 const About = () => {
   const { t } = useTranslation();
@@ -63,6 +64,10 @@ const About = () => {
 
       <section id="strukturKepemilikan" className="scroll-mt-32">
         <StrukturKepelikan  />
+      </section>
+
+      <section id="professionalSupport" className="scroll-mt-32">
+        <ProfessionalSupport />
       </section>
 
     </main>

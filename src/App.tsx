@@ -31,12 +31,12 @@ export default function App() {
         {/* GOVERNANCE */}
         <Route path="/governance/*" element={<Governance />} />
         {/* ================= CSR ================= */}
-        <Route path="/csr/*" element={<CSR />} />
 
         {/* ================= NEWS ================= */}
         <Route path="/news/*" element={<News />} />
         {/* ================= INVESTOR ================= */}
         <Route path="/investor/*" element={<Investor />} />
+        <Route path="/csr/*" element={<CSR />} />
         <Route path="/proyek/*" element={<ProyekActivities />} />
      
       </Routes>

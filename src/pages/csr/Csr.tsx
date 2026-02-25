@@ -2,11 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import Policy from "./Policy";
-import Community from "./Community";
-import Environment from "./Environment";
-import Sustainability from "./Sustainability";
-import ESG from "./ESG";
+import CSRSection from "./CSRSection";
 
 const CSR = () => {
   const { t } = useTranslation();
@@ -43,26 +39,7 @@ const CSR = () => {
 
       {/* ================= CONTENT SECTIONS ================= */}
       <section className="py-24 space-y-32">
-
-        <div id="policy" className="max-w-6xl mx-auto px-6 scroll-mt-32">
-          <Policy />
-        </div>
-
-        <div id="community" className="max-w-6xl mx-auto px-6 scroll-mt-32">
-          <Community />
-        </div>
-
-        <div id="environment" className="max-w-6xl mx-auto px-6 scroll-mt-32">
-          <Environment />
-        </div>
-
-        <div id="sustainability" className="max-w-6xl mx-auto px-6 scroll-mt-32">
-          <Sustainability />
-        </div>
-
-        <div id="esg" className="max-w-6xl mx-auto px-6 scroll-mt-32">
-          <ESG />
-        </div>
+        <CSRSection />
       </section>
     </main>
   );

@@ -6,6 +6,8 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         csrInformation: "CSR Information",
+        supportingProfessionals: "Supporting Professionals",
+        perusahaanKami: "Our Company",
         csrInformationDesc:
           "PT Andalan Artha Primanusa is committed to conducting sustainable business activities through structured Corporate Social Responsibility (CSR) programs that create measurable impact for communities, employees, and the environment.",
 
@@ -38,6 +40,7 @@ i18n.use(initReactI18next).init({
         csrSupportingDocumentDesc:
           "Download the Company's sustainability report for comprehensive information regarding CSR implementation.",
         download: "Download",
+        prospectus: "Prospectus",
         businessActivities: "Business Activities",
         businessOverviewTitle: "Our Core Business Activities",
         businessOverviewText:
@@ -83,7 +86,7 @@ i18n.use(initReactI18next).init({
         about: "About Us",
         investor: "Investor Relations",
         governance: "Good Corporate Governance",
-        csr: "Investor",
+        csr: "Sustainability",
         news: "News & Disclosure",
         strukturOrganisasi: "Organization Structure",
         contact: "Contact",
@@ -105,7 +108,6 @@ i18n.use(initReactI18next).init({
         corporateSecretary: "Corporate Secretary",
 
         /* ================= INVESTOR (POJK Pasal 6 ayat 2) ================= */
-        prospectus: "Public Offering Prospectus",
         annualReport: "Annual & Sustainability Reports",
         financialInfo: "Financial Statements",
         generalMeeting: "General Meeting of Shareholders",
@@ -439,7 +441,8 @@ i18n.use(initReactI18next).init({
         about: "Tentang Kami",
         investor: "Hubungan Investor",
         governance: "Tata Kelola Perusahaan",
-        csr: "Investor",
+        csr: "Keberlanjutan",
+        perusahaanKami: "Perusahaan Kami",
         news: "Media",
         contact: "Kontak",
         welcome: "Solusi Energi Terpercaya",
@@ -449,10 +452,10 @@ i18n.use(initReactI18next).init({
         visionMission: "Visi & Misi",
         organizationStructure: "Struktur Organisasi",
         shareholdingStructure: "Struktur Kepemilikan Saham",
-        boardOfDirectors: "Direksi",
+        boardOfDirectors: "Pedoman kerja Direksi & Dewan Komisaris",
         boardOfCommissioners: "Dewan Komisaris",
         committees: "Komite",
-        corporateSecretary: "Sekretaris Perusahaan",
+        corporateSecretary: "Sekretaris Perseroan",
 
         /* ================= INVESTOR (POJK Pasal 6 ayat 2) ================= */
         prospectus: "Prospektus Penawaran Umum",
@@ -587,7 +590,7 @@ i18n.use(initReactI18next).init({
         quarterlyReports: "RUPS",
         publicExpose: "Paparan Publik",
         dividendInformation: "Informasi Dividen",
-        auditCommittee: "Komite Audit",
+        auditCommittee: "Komite Perseroan",
         codeOfConduct: "Kode Etik",
         esgCommitment: "Komitmen ESG",
         pressRelease: "Siaran Pers",
@@ -610,6 +613,7 @@ i18n.use(initReactI18next).init({
         footerAGM: "RUPS Mendatang",
         footerAnnouncement: "Pengumuman",
         footerPresentation: "Presentasi",
+        supportingProfessionals: "Profesional Pendukung",
         footerNews: "Berita & Siaran Pers",
         annualReportsMenu: "Laporan Tahunan",
         /* ================= INVESTOR NEWS ================= */
@@ -690,7 +694,6 @@ i18n.use(initReactI18next).init({
         businessSegment2Title: "Perdagangan Batubara",
         businessSegment2Desc:
           "Perdagangan batubara domestik dan internasional yang didukung infrastruktur logistik yang kuat dan kemitraan jangka panjang.",
-
         businessSegment3Title: "Logistik & Infrastruktur",
         businessSegment3Desc:
           "Pengelolaan jalan hauling, fasilitas pelabuhan, dan armada alat berat untuk memastikan rantai pasok yang efisien.",
