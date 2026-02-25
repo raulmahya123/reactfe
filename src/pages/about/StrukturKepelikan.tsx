@@ -6,7 +6,12 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
+type Ownership = {
+  name: string;
+  value: number;
+};
+
+const data: Ownership[] = [
   { name: "Billy Therstine Lim", value: 30 },
   { name: "PT Bumi Artha Caraka", value: 25 },
   { name: "PT Arkara Danatama Nusantara", value: 25 },
@@ -16,7 +21,7 @@ const data = [
 ];
 
 // 🌿 Sage Harmony Palette (Elegant & Calm)
-const COLORS = [
+const COLORS: string[] = [
   "#2F3E34", // deep sage
   "#4F6F5D", // medium sage
   "#6B8E73", // soft sage
@@ -29,7 +34,9 @@ export default function StrukturKepemilikan() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const activeData =
-    activeIndex !== null ? data[activeIndex] : null;
+    activeIndex !== null && data[activeIndex]
+      ? data[activeIndex]
+      : null;
 
   return (
     <section
@@ -51,8 +58,7 @@ export default function StrukturKepemilikan() {
 
           {/* Donut Chart */}
           <div className="relative h-[500px]">
-
-            <ResponsiveContainer>
+            <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
                   data={data}
@@ -63,13 +69,17 @@ export default function StrukturKepemilikan() {
                   paddingAngle={3}
                   dataKey="value"
                   animationDuration={900}
-                  onMouseEnter={(_, index) => setActiveIndex(index)}
+                  onMouseEnter={(_, index) => {
+                    if (typeof index === "number") {
+                      setActiveIndex(index);
+                    }
+                  }}
                   onMouseLeave={() => setActiveIndex(null)}
                 >
-                  {data.map((entry, index) => (
+                  {data.map((_, index) => (
                     <Cell
-                      key={index}
-                      fill={COLORS[index]}
+                      key={`cell-${index}`}
+                      fill={COLORS[index % COLORS.length]}
                       stroke="#ffffff"
                       strokeWidth={3}
                       style={{
@@ -88,7 +98,7 @@ export default function StrukturKepemilikan() {
             </ResponsiveContainer>
 
             {/* Center Dynamic Info */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center">
+            <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center px-4">
               {activeData ? (
                 <>
                   <span className="text-[#6B8E73] text-sm uppercase tracking-widest">
@@ -115,7 +125,7 @@ export default function StrukturKepemilikan() {
           <div className="space-y-4">
             {data.map((item, index) => (
               <div
-                key={index}
+                key={`legend-${index}`}
                 onMouseEnter={() => setActiveIndex(index)}
                 onMouseLeave={() => setActiveIndex(null)}
                 className="flex items-center justify-between p-5 rounded-2xl bg-white shadow-sm border border-[#E5E7EB] hover:shadow-lg transition cursor-pointer"
@@ -123,7 +133,10 @@ export default function StrukturKepemilikan() {
                 <div className="flex items-center gap-4">
                   <div
                     className="w-4 h-4 rounded-full"
-                    style={{ backgroundColor: COLORS[index] }}
+                    style={{
+                      backgroundColor:
+                        COLORS[index % COLORS.length],
+                    }}
                   />
                   <span className="text-[#2F3E34] font-medium">
                     {item.name}
