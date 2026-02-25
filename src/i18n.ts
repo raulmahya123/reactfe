@@ -281,7 +281,7 @@ i18n.use(initReactI18next).init({
         newsItem2: "Annual Report 2024 Released",
         newsItem3: "Corporate Action Announcement",
         newsItem4: "Strategic Expansion Plan 2025",
-        StrategiKeunggulan: "Strategy & Keunggulan",
+        StrategiKeunggulan: "Strategi & Keunggulan",
         SumberDaya: "Our Resources",
         /* ================= ANNUAL REPORT PAGE ================= */
         annualReportsTitle: "Annual Reports",

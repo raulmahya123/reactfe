@@ -15,7 +15,7 @@ import CSR from "./pages/csr/Csr";
 import News from "./pages/news/News";
 
 import Investor from "./pages/investor/Investor";
-import ProyekActivities from "./pages/Proyek";
+import ProyekActivities from "./pages/proyek/Proyek";
 
 export default function App() {
   return (

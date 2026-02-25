@@ -2,6 +2,21 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { LatLngTuple } from "leaflet";
+import StrategySection from "./StrategySection";
+
+/* =============================
+   FIX DEFAULT ICON (IMPORTANT)
+============================= */
+delete (L.Icon.Default.prototype as any)._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl:
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+  iconUrl:
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+  shadowUrl:
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+});
 
 /* =============================
    GOLD MARKER ICON
@@ -11,8 +26,9 @@ const goldIcon = new L.Icon({
     "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-gold.png",
   shadowUrl:
     "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-  iconSize: [28, 45],
-  iconAnchor: [14, 45],
+  iconSize: [30, 48],
+  iconAnchor: [15, 48],
+  popupAnchor: [0, -45],
 });
 
 /* =============================
@@ -62,13 +78,7 @@ const ProyekActivities = () => {
       id="proyek"
       className="relative py-36 bg-white scroll-mt-32 overflow-hidden"
     >
-      {/* LUXURY LIGHT EFFECT */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-[#C6A75E]/10 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black/5 to-transparent"></div>
-      </div>
-
-      {/* ================= HEADER ================= */}
+      {/* HEADER */}
       <div className="relative max-w-6xl mx-auto px-6 text-center mb-24">
         <div className="text-sm tracking-[0.3em] text-[#C6A75E] uppercase mb-6">
           Our Operations
@@ -85,55 +95,19 @@ const ProyekActivities = () => {
         <p className="mt-10 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
           PT Andalan Artha Primanusa Tbk menjalankan berbagai proyek
           operasional pertambangan di wilayah strategis Indonesia dengan
-          standar profesional, efisiensi operasional, serta komitmen tinggi
-          terhadap keselamatan kerja dan keberlanjutan lingkungan.
+          standar profesional dan komitmen tinggi terhadap keselamatan kerja.
         </p>
       </div>
 
-      {/* ================= STATISTIC BAR ================= */}
-      <div className="max-w-6xl mx-auto px-6 mb-24">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-          <div>
-            <div className="text-4xl font-bold text-[#C6A75E]">4+</div>
-            <div className="text-sm text-gray-500 mt-2">
-              Operational Sites
-            </div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-[#C6A75E]">3</div>
-            <div className="text-sm text-gray-500 mt-2">Provinces</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-[#C6A75E]">100%</div>
-            <div className="text-sm text-gray-500 mt-2">
-              Safety Commitment
-            </div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-[#C6A75E]">
-              Sustainable
-            </div>
-            <div className="text-sm text-gray-500 mt-2">Operations</div>
-          </div>
-        </div>
-      </div>
-
-      {/* ================= MAP SECTION ================= */}
+      {/* MAP */}
       <div className="relative max-w-[1400px] mx-auto px-6">
-        <div
-          className="relative w-full h-[650px]
-          rounded-[40px]
-          overflow-hidden
-          shadow-2xl
-          border border-gray-300"
-        >
-          {/* VIGNETTE EFFECT */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none z-[400]"></div>
-
+        <div className="relative w-full h-[650px] rounded-[40px] overflow-hidden shadow-2xl border border-gray-300">
           <MapContainer
-            center={[-2.5, 118] as LatLngTuple}
+            center={[-2.5, 118]}
             zoom={5}
             scrollWheelZoom={false}
+            preferCanvas={true}
+            zoomControl={false}
             className="w-full h-full"
           >
             <TileLayer
@@ -143,14 +117,8 @@ const ProyekActivities = () => {
 
             {sites.map((site, index) => (
               <Marker key={index} position={site.position} icon={goldIcon}>
-                <Popup maxWidth={320}>
-                  <div
-                    className="relative p-5 rounded-xl bg-white
-                               border border-gray-200
-                               shadow-lg
-                               w-[260px]"
-                  >
-                    {/* GOLD ACCENT LINE */}
+                <Popup maxWidth={300}>
+                  <div className="relative p-5 rounded-xl bg-white border border-gray-200 shadow-lg w-[250px]">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#C6A75E] to-transparent"></div>
 
                     <div className="text-xs tracking-widest text-gray-400 mb-2 uppercase">
@@ -175,6 +143,11 @@ const ProyekActivities = () => {
           </MapContainer>
         </div>
       </div>
+
+      {/* STRATEGY */}
+      <section id="strategiKeunggulan" className="scroll-mt-32 mt-32">
+        <StrategySection />
+      </section>
     </section>
   );
 };

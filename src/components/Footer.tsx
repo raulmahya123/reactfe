@@ -21,7 +21,7 @@ const Footer = () => {
                 <img
                   src={AndalanLogo}
                   alt="PT Andalan Artha Primanusa Tbk"
-                  className="h-20 md:h-24 w-auto object-contain"
+                  className="h-20 md:h-18 w-auto object-contain"
                 />
               </div>
 
@@ -40,22 +40,25 @@ const Footer = () => {
             {/* MIDDLE – MENU */}
             <div className="space-y-4 text-sm">
               <Link to="/about" className="block hover:text-[#C6A75E] transition">
-                {t("About")}
+                {t("Tentang Kami")}
               </Link>
               <Link to="/project" className="block hover:text-[#C6A75E] transition">
                 {t("Projek")}
               </Link>
-              <Link to="/news" className="block hover:text-[#C6A75E] transition">
-                {t("newsDisclosure")}
+              <Link to="/investor" className="block hover:text-[#C6A75E] transition">
+                {t("Hubungan Investor")}
               </Link>
-              <Link to="/governance" className="block hover:text-[#C6A75E] transition">
-                {t("governance")}
+              <Link to="/csr" className="block hover:text-[#C6A75E] transition">
+                {t("Tata Kelola Perusahaan")}
+              </Link>
+              <Link to="/news" className="block hover:text-[#C6A75E] transition">
+                {t("Keberlanjutan")}
               </Link>
               <Link to="/contact" className="block hover:text-[#C6A75E] transition">
-                {t("contact")}
+                {t("Media")}
               </Link>
-              <Link to="/sitemap" className="block hover:text-[#C6A75E] transition">
-                {t("Sitemap")}
+              <Link to="/contact" className="block hover:text-[#C6A75E] transition">
+                {t("Kontak")}
               </Link>
             </div>
 
