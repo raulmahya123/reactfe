@@ -12,7 +12,15 @@ const menuItems = [
       { name: "visionMission", path: "/about/vision" },
       { name: "milestones", path: "/about/milestones" },
       { name: "management", path: "/about/management" },
-      { name: "businessActivities", path: "/about/business" },
+    ],
+  },
+   {
+    name: "Project",
+    path: "/proyek",
+    submenu: [
+      { name: "ProyekActivities", path: "/proyek/financial" },
+      { name: "SumberDaya", path: "/proyek/sumberdaya" },
+      { name: "StrategiKeunggulan", path: "/proyek/strategi-keunggulan" },
     ],
   },
   {
@@ -21,22 +29,20 @@ const menuItems = [
     submenu: [
       { name: "financialStatements", path: "/investor/financial" },
       { name: "annualReportsMenu", path: "/investor/annual" },
-      { name: "quarterlyReports", path: "/investor/quarterly" },
+      { name: "quarterlyReports", path: "/investor/rups" },
       { name: "publicExpose", path: "/investor/expose" },
       { name: "dividendInformation", path: "/investor/dividend" },
       { name: "stockPerformance", path: "/investor/stock" },
-      { name: "materialInformation", path: "/investor/material" },
     ],
   },
+  
   {
     name: "governance",
     path: "/governance",
     submenu: [
       { name: "boardOfDirectors", path: "/governance/directors" },
       { name: "boardOfCommissioners", path: "/governance/commissioners" },
-      { name: "committees", path: "/governance/committees" },
       { name: "auditCommittee", path: "/governance/audit" },
-      { name: "riskManagement", path: "/governance/risk" },
       { name: "corporateSecretary", path: "/governance/secretary" },
       { name: "codeOfConduct", path: "/governance/code" },
       { name: "whistleblowingSystem", path: "/governance/wbs" },
@@ -83,7 +89,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
           ? "bg-white/95 backdrop-blur-md shadow-md"
-          : "bg-[#BEC5A4]"
+          : "bg-transparent"
       }`}
     >
       <div

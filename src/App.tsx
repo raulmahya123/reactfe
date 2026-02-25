@@ -15,6 +15,7 @@ import CSR from "./pages/csr/Csr";
 import News from "./pages/news/News";
 
 import Investor from "./pages/investor/Investor";
+import ProyekActivities from "./pages/Proyek";
 
 export default function App() {
   return (
@@ -36,6 +37,8 @@ export default function App() {
         <Route path="/news/*" element={<News />} />
         {/* ================= INVESTOR ================= */}
         <Route path="/investor/*" element={<Investor />} />
+        <Route path="/proyek/*" element={<ProyekActivities />} />
+     
       </Routes>
 
       <Footer />

@@ -62,7 +62,7 @@ i18n.use(initReactI18next).init({
         operationalExcellence: "Operational Excellence",
         operationalExcellenceDesc:
           "We are committed to safety, efficiency, regulatory compliance, and sustainable growth across all operations.",
-        quarterlyReports: "Quarterly Reports",
+        quarterlyReports: "RUPS",
         publicExpose: "Public Expose",
         dividendInformation: "Dividend Information",
         boardOfDirectors: "Board of Directors",
@@ -80,7 +80,7 @@ i18n.use(initReactI18next).init({
 
         /* ================= NAVIGATION ================= */
         home: "Home",
-        about: "Company Profile",
+        about: "About Us",
         investor: "Investor Relations",
         governance: "Good Corporate Governance",
         csr: "Investor",
@@ -107,7 +107,7 @@ i18n.use(initReactI18next).init({
         annualReport: "Annual & Sustainability Reports",
         financialInfo: "Financial Statements",
         generalMeeting: "General Meeting of Shareholders",
-        stockInfo: "Stock Performance",
+        stockInfo: "Stock Information",
         dividend: "Dividend History",
         dividendPolicy: "Dividend Policy",
         corporateAction: "Corporate Actions",
@@ -267,6 +267,7 @@ i18n.use(initReactI18next).init({
             desc: "Persistence in achieving production targets while ensuring business sustainability.",
           },
         },
+        ProyekActivities: "Business Activities",
         media: "Media",
         newsPressTitle: "News & Press Release",
         newsLabel: "News",
@@ -276,7 +277,8 @@ i18n.use(initReactI18next).init({
         newsItem2: "Annual Report 2024 Released",
         newsItem3: "Corporate Action Announcement",
         newsItem4: "Strategic Expansion Plan 2025",
-
+        StrategiKeunggulan: "Strategy & Keunggulan",
+        SumberDaya: "Our Resources",
         /* ================= ANNUAL REPORT PAGE ================= */
         annualReportsTitle: "Annual Reports",
         annualReportLabel: "Annual Report",
@@ -292,7 +294,7 @@ i18n.use(initReactI18next).init({
         newsDisclosure: "News & Disclosure",
         governanceInformation: "Governance Information",
         milestones: "Milestones",
-        management: "Management",
+        management: "Board of Management",
         governanceInformationDesc:
           "The Company is committed to implementing Good Corporate Governance (GCG) principles consistently and sustainably in accordance with applicable regulations.",
         governanceDocumentList: "Corporate Governance Documents",
@@ -432,14 +434,14 @@ i18n.use(initReactI18next).init({
         download: "Unduh",
         /* ================= NAVIGATION ================= */
         home: "Beranda",
-        about: "Profil Perusahaan",
+        about: "Tentang Kami",
         investor: "Hubungan Investor",
         governance: "Tata Kelola Perusahaan",
         csr: "Investor",
-        news: "Berita & Keterbukaan Informasi",
+        news: "Media",
         contact: "Kontak",
         welcome: "Solusi Energi Terpercaya",
-
+        SumberDaya: "Sumber Daya kami",
         /* ================= COMPANY PROFILE ================= */
         companyOverview: "Sekilas Perusahaan",
         visionMission: "Visi & Misi",
@@ -477,7 +479,7 @@ i18n.use(initReactI18next).init({
           "Uraian prosedur nominasi dan remunerasi (apabila tidak dibentuk komite nominasi dan remunerasi)",
         riskManagementPolicy: "Kebijakan Manajemen Risiko",
         whistleblowingSystem:
-          "Kebijakan mekanisme sistem pelaporan pelanggaran (jika ada)",
+          "Kebijakan mekanisme sistem pelaporan pelanggaran",
         antiCorruptionPolicy: "Kebijakan Anti Korupsi (jika ada)",
         supplierCreditorPolicy:
           "Kebijakan terkait seleksi pemasok dan hak kreditur (jika ada)",
@@ -547,7 +549,7 @@ i18n.use(initReactI18next).init({
         gmsBtn: "RUPS",
         disclosureBtn: "Keterbukaan Informasi",
         stockBtn: "Informasi Saham",
-        newsTitle: "Berita & Keterbukaan Informasi",
+        newsTitle: "Media",
         newsSubtitle:
           "Ikuti perkembangan terbaru dan informasi resmi Perseroan.",
         readMore: "Baca Selengkapnya",
@@ -569,7 +571,7 @@ i18n.use(initReactI18next).init({
           "Tanggung jawab lingkungan – menjaga keberlanjutan sumber daya alam",
         overviewPoint4:
           "Komitmen sosial – berkontribusi positif bagi masyarakat sekitar",
-
+        ProyekActivities: "Kegiatan Usaha",
         established: "Didirikan",
         operationalSites: "Lokasi Operasional",
         employees: "Karyawan",
@@ -580,8 +582,8 @@ i18n.use(initReactI18next).init({
         footerMilestones: "Milestone",
         footerManagement: "Manajemen",
         footerContactUs: "Hubungi Kami",
-        quarterlyReports: "Laporan Triwulanan",
-        publicExpose: "Public Expose",
+        quarterlyReports: "RUPS",
+        publicExpose: "Paparan Publik",
         dividendInformation: "Informasi Dividen",
         auditCommittee: "Komite Audit",
         codeOfConduct: "Kode Etik",
@@ -593,7 +595,7 @@ i18n.use(initReactI18next).init({
         footerInvestor: "Hubungan Investor",
         footerFinancial: "Laporan Keuangan",
         footerAnnual: "Laporan Tahunan",
-        footerStock: "Performa Saham",
+        footerStock: "Informasi Saham",
         footerCorporateAction: "Aksi Korporasi",
 
         footerBusiness: "Informasi Bisnis",
@@ -698,16 +700,16 @@ i18n.use(initReactI18next).init({
         operationalExcellence: "Keunggulan Operasional",
         operationalExcellenceDesc:
           "Kami berkomitmen pada keselamatan kerja, efisiensi, kepatuhan regulasi, dan pertumbuhan berkelanjutan di seluruh lini usaha.",
-        companyProfile: "Profil Perusahaan",
+        companyProfile: "About Us",
         goodCorporateGovernance: "Tata Kelola Perusahaan",
         sustainability: "Keberlanjutan",
-        newsDisclosure: "Berita & Keterbukaan Informasi",
+        newsDisclosure: "Media",
 
         milestones: "Milestone",
-        management: "Manajemen",
+        management: "Susunan Pengurus",
 
         financialStatements: "Laporan Keuangan",
-        stockPerformance: "Performa Saham",
+        stockPerformance: "Informasi Saham",
 
         policy: "Kebijakan Keberlanjutan",
         communityDevelopment: "Pengembangan Masyarakat",

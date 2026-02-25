@@ -31,7 +31,18 @@ const Footer = () => {
                 <li><Link to="/about/vision" className="hover:text-[#C6A75E] transition">{t("visionMission")}</Link></li>
                 <li><Link to="/about/milestones" className="hover:text-[#C6A75E] transition">{t("milestones")}</Link></li>
                 <li><Link to="/about/management" className="hover:text-[#C6A75E] transition">{t("management")}</Link></li>
-                <li><Link to="/about/structure" className="hover:text-[#C6A75E] transition">{t("organizationStructure")}</Link></li>
+              </ul>
+            </div>
+
+             {/* PROJECT */}
+            <div>
+              <h4 className="font-semibold mb-6 uppercase tracking-wider">
+                {t("project")}
+              </h4>
+              <ul className="space-y-3 text-sm text-white/80">
+                <li><Link to="/proyek/financial" className="hover:text-[#C6A75E] transition">{t("ProyekActivities")}</Link></li>
+                <li><Link to="/proyek/sumberdaya" className="hover:text-[#C6A75E] transition">{t("SumberDaya")}</Link></li>
+                <li><Link to="/proyek/strategi-keunggulan" className="hover:text-[#C6A75E] transition">{t("StrategiKeunggulan")}</Link></li>
               </ul>
             </div>
 
@@ -42,10 +53,11 @@ const Footer = () => {
               </h4>
               <ul className="space-y-3 text-sm text-white/80">
                 <li><Link to="/investor/financial" className="hover:text-[#C6A75E] transition">{t("financialStatements")}</Link></li>
-                <li><Link to="/investor/annual" className="hover:text-[#C6A75E] transition">{t("annualReportsTitle")}</Link></li>
-                <li><Link to="/investor/quarterly" className="hover:text-[#C6A75E] transition">{t("financialInfo")}</Link></li>
+                <li><Link to="/investor/annual" className="hover:text-[#C6A75E] transition">{t("annualReportsMenu")}</Link></li>
+                <li><Link to="/investor/rups" className="hover:text-[#C6A75E] transition">{t("quarterlyReports")}</Link></li>
+                <li><Link to="/investor/expose" className="hover:text-[#C6A75E] transition">{t("publicExpose")}</Link></li>
+                <li><Link to="/investor/dividend" className="hover:text-[#C6A75E] transition">{t("dividendInformation")}</Link></li>
                 <li><Link to="/investor/stock" className="hover:text-[#C6A75E] transition">{t("stockPerformance")}</Link></li>
-                <li><Link to="/investor/material" className="hover:text-[#C6A75E] transition">{t("materialInformation")}</Link></li>
               </ul>
             </div>
 
@@ -57,39 +69,24 @@ const Footer = () => {
               <ul className="space-y-3 text-sm text-white/80">
                 <li><Link to="/governance/directors" className="hover:text-[#C6A75E] transition">{t("boardOfDirectors")}</Link></li>
                 <li><Link to="/governance/commissioners" className="hover:text-[#C6A75E] transition">{t("boardOfCommissioners")}</Link></li>
-                <li><Link to="/governance/committees" className="hover:text-[#C6A75E] transition">{t("committees")}</Link></li>
+                <li><Link to="/governance/audit" className="hover:text-[#C6A75E] transition">{t("auditCommittee")}</Link></li>
                 <li><Link to="/governance/secretary" className="hover:text-[#C6A75E] transition">{t("corporateSecretary")}</Link></li>
-
-                {/* Tambahan sesuai komponen GovernanceInformation */}
-                <li><Link to="/governance/information#information" className="hover:text-[#C6A75E] transition">{t("governanceInformation")}</Link></li>
-                <li><Link to="/governance/information" className="hover:text-[#C6A75E] transition">{t("governanceDocuments")}</Link></li>
-
+                <li><Link to="/governance/code" className="hover:text-[#C6A75E] transition">{t("codeOfConduct")}</Link></li>
                 <li><Link to="/governance/wbs" className="hover:text-[#C6A75E] transition">{t("whistleblowingSystem")}</Link></li>
+                <li><Link to="/governance/information" className="hover:text-[#C6A75E] transition">{t("governanceInformation")}</Link></li>
+                <li><Link to="/governance/budget" className="hover:text-[#C6A75E] transition">{t("budgetDocument")}</Link></li>                   
               </ul>
             </div>
-
-            {/* SUSTAINABILITY */}
-            <div>
-              <h4 className="font-semibold mb-6 uppercase tracking-wider">
-                {t("sustainability")}
-              </h4>
-              <ul className="space-y-3 text-sm text-white/80">
-                <li><Link to="/csr/policy" className="hover:text-[#C6A75E] transition">{t("policy")}</Link></li>
-                <li><Link to="/csr/community" className="hover:text-[#C6A75E] transition">{t("communityDevelopment")}</Link></li>
-                <li><Link to="/csr/environment" className="hover:text-[#C6A75E] transition">{t("environment")}</Link></li>
-                <li><Link to="/csr/sustainability" className="hover:text-[#C6A75E] transition">{t("sustainabilityReport")}</Link></li>
-              </ul>
-            </div>
-
+            
             {/* NEWS */}
             <div>
               <h4 className="font-semibold mb-6 uppercase tracking-wider">
                 {t("newsDisclosure")}
               </h4>
               <ul className="space-y-3 text-sm text-white/80">
-                <li><Link to="/news" className="hover:text-[#C6A75E] transition">{t("news")}</Link></li>
-                <li><Link to="/announcement" className="hover:text-[#C6A75E] transition">{t("announcement")}</Link></li>
-                <li><Link to="/presentation" className="hover:text-[#C6A75E] transition">{t("presentation")}</Link></li>
+                <li><Link to="/news/press" className="hover:text-[#C6A75E] transition">{t("pressRelease")}</Link></li>
+                <li><Link to="/news/media" className="hover:text-[#C6A75E] transition">{t("mediaCoverage")}</Link></li>
+                <li><Link to="/news/actions" className="hover:text-[#C6A75E] transition">{t("corporateActions")}</Link></li>
               </ul>
             </div>
 
@@ -99,10 +96,10 @@ const Footer = () => {
                 {t("contact")}
               </h4>
               <p className="text-sm text-white/80 leading-relaxed">
-                {t("addressLine1")} <br />
-                {t("addressLine2")} <br />
-                {t("addressCountry")}
-              </p>
+  <span className="whitespace-nowrap">{t("addressLine1")}</span> <br />
+  {t("addressLine2")} <br />
+  {t("addressCountry")}
+</p>
 
               <div className="flex gap-4 mt-6 text-lg">
                 <a href="#" className="hover:text-[#C6A75E] transition"><FaInstagram /></a>
