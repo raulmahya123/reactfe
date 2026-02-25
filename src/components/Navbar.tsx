@@ -12,6 +12,8 @@ const menuItems = [
       { name: "visionMission", path: "/about/vision" },
       { name: "milestones", path: "/about/milestones" },
       { name: "management", path: "/about/management" },
+      {name:"strukturOrganisasi", path:"/about/struktur-organisasi"},
+      {name:"strukturKepemilikan", path:"/about/struktur-kepemilikan"}
     ],
   },
    {

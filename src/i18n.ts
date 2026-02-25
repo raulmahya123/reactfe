@@ -85,12 +85,14 @@ i18n.use(initReactI18next).init({
         governance: "Good Corporate Governance",
         csr: "Investor",
         news: "News & Disclosure",
+        strukturOrganisasi: "Organization Structure",
         contact: "Contact",
         welcome: "Reliable Energy Solutions",
         budgetDocument: "Articles of Association",
         budgetDocumentDesc:
           "The Articles of Association serve as the legal foundation governing the Company's structure, governance framework, and operational activities.",
         effectiveDate: "Effective Date",
+        strukturKepemilikan: "Shareholding Structure",
         notarialDeed: "Notarial Deed Information",
         documentOverview: "Document Overview",
         budgetDocumentFullDesc:
@@ -694,6 +696,7 @@ i18n.use(initReactI18next).init({
           "Pengelolaan jalan hauling, fasilitas pelabuhan, dan armada alat berat untuk memastikan rantai pasok yang efisien.",
 
         businessSegment4Title: "Pengembangan Energi",
+        strukturKepemilikan: "Struktur Kepemilikan Saham",
         businessSegment4Desc:
           "Ekspansi strategis ke sektor energi dan mineral, termasuk pengembangan nikel dan peluang energi terbarukan.",
 
@@ -757,6 +760,7 @@ i18n.use(initReactI18next).init({
         commissioner: "Komisaris",
         independentCommissioner: "Komisaris Independen",
         operationalLocations: "Lokasi Proyek",
+        strukturOrganisasi: "Struktur Organisasi",
         operationalLocationsDesc:
           "Kami menjalankan operasi pertambangan di beberapa lokasi strategis di Indonesia, termasuk Lahat, Tanjung Enim, Murung Raya, dan Halmahera Timur, dengan fokus pada keselamatan, efisiensi, dan keberlanjutan.",
         /* ================= CONTACT PAGE ================= */
