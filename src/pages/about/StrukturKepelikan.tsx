@@ -48,7 +48,7 @@ export default function StrukturKepemilikan() {
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-[#2F3E34] tracking-tight">
-            Struktur Kepemilikan
+            Struktur Kepemilikan Saham
           </h2>
           <div className="w-28 h-[4px] bg-gradient-to-r from-[#6B8E73] to-[#2F3E34] mx-auto mt-6 rounded-full"></div>
         </div>

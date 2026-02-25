@@ -5,7 +5,7 @@ import type { LatLngTuple } from "leaflet";
 import StrategySection from "./StrategySection";
 
 /* =============================
-   FIX DEFAULT ICON (IMPORTANT)
+   FIX DEFAULT ICON
 ============================= */
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 
@@ -78,19 +78,15 @@ const ProyekActivities = () => {
       id="proyek"
       className="relative py-36 bg-white scroll-mt-32 overflow-hidden"
     >
-      {/* HEADER */}
-      <div className="relative max-w-6xl mx-auto px-6 text-center mb-24">
-        <div className="text-sm tracking-[0.3em] text-[#C6A75E] uppercase mb-6">
-          Our Operations
-        </div>
-
-        <h2 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
+      {/* ================= HEADER ================= */}
+      <div className="relative max-w-6xl mx-auto px-6 text-center mb-28">
+        <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
           <span className="bg-gradient-to-r from-black to-[#C6A75E] bg-clip-text text-transparent">
-            Andalan Operational Projects
+            Kegiatan Usaha
           </span>
         </h2>
 
-        <div className="w-28 h-[3px] bg-[#C6A75E] mx-auto mt-8 rounded-full"></div>
+        <div className="w-32 h-[4px] bg-[#C6A75E] mx-auto mt-8 rounded-full"></div>
 
         <p className="mt-10 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
           PT Andalan Artha Primanusa Tbk menjalankan berbagai proyek
@@ -99,7 +95,7 @@ const ProyekActivities = () => {
         </p>
       </div>
 
-      {/* MAP */}
+      {/* ================= MAP ================= */}
       <div className="relative max-w-[1400px] mx-auto px-6">
         <div className="relative w-full h-[650px] rounded-[40px] overflow-hidden shadow-2xl border border-gray-300">
           <MapContainer
@@ -118,14 +114,14 @@ const ProyekActivities = () => {
             {sites.map((site, index) => (
               <Marker key={index} position={site.position} icon={goldIcon}>
                 <Popup maxWidth={300}>
-                  <div className="relative p-5 rounded-xl bg-white border border-gray-200 shadow-lg w-[250px]">
+                  <div className="relative p-5 rounded-xl bg-white border border-gray-200 shadow-lg w-[260px]">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#C6A75E] to-transparent"></div>
 
                     <div className="text-xs tracking-widest text-gray-400 mb-2 uppercase">
                       Operational Project
                     </div>
 
-                    <h3 className="text-base font-semibold text-[#1a1a1a]">
+                    <h3 className="text-base font-semibold text-gray-900">
                       {site.name}
                     </h3>
 
@@ -144,8 +140,26 @@ const ProyekActivities = () => {
         </div>
       </div>
 
-      {/* STRATEGY */}
-      <section id="strategiKeunggulan" className="scroll-mt-32 mt-32">
+      {/* ================= SUMBER DAYA KAMI ================= */}
+      <section className="relative mt-40 py-32 bg-gradient-to-b from-white to-gray-100 text-center overflow-hidden">
+        <div className="relative max-w-6xl mx-auto px-6">
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900">
+            SUMBER DAYA KAMI
+          </h2>
+
+          <div className="w-32 h-[4px] bg-[#C6A75E] mx-auto mt-8 rounded-full"></div>
+
+          <p className="mt-10 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
+            Komitmen kami didukung oleh sumber daya manusia profesional,
+            peralatan modern, serta sistem operasional terintegrasi yang
+            memastikan efisiensi, keselamatan, dan keberlanjutan di setiap
+            proyek.
+          </p>
+        </div>
+      </section>
+
+      {/* ================= STRATEGY (NO EXTRA GAP) ================= */}
+      <section id="strategiKeunggulan" className="scroll-mt-32">
         <StrategySection />
       </section>
     </section>

@@ -65,13 +65,9 @@ const StrategySection = () => {
     <section className="relative py-32 bg-[#f9f9f7] overflow-hidden">
       {/* HEADER */}
       <div className="max-w-6xl mx-auto px-6 text-center mb-20">
-        <div className="text-sm tracking-[0.3em] text-[#C6A75E] uppercase mb-6">
-          Strategi & Keunggulan
-        </div>
-
         <h2 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
           <span className="bg-gradient-to-r from-black to-[#C6A75E] bg-clip-text text-transparent">
-            Strategi Usaha & Keunggulan Kompetitif
+            Strategi & Keunggulan
           </span>
         </h2>
 

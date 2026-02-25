@@ -11,7 +11,7 @@ export default function ProfessionalSupport() {
         {/* Title */}
         <div className="text-center mb-24">
           <h2 className="text-5xl font-bold text-[#2F3E34] tracking-tight">
-            Profesi Penunjang
+            Profesional Pendukung
           </h2>
           <div className="w-32 h-[4px] bg-gradient-to-r from-[#6B8E73] to-[#2F3E34] mx-auto mt-6 rounded-full"></div>
         </div>

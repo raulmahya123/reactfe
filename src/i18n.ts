@@ -584,7 +584,7 @@ i18n.use(initReactI18next).init({
         footerAbout: "Tentang Kami",
         footerVision: "Visi & Misi",
         footerPhilosophy: "Filosofi Perusahaan",
-        footerMilestones: "Milestone",
+        footerMilestones: "Tonggak Pencapaian",
         footerManagement: "Manajemen",
         footerContactUs: "Hubungi Kami",
         quarterlyReports: "RUPS",
@@ -706,12 +706,12 @@ i18n.use(initReactI18next).init({
         operationalExcellence: "Keunggulan Operasional",
         operationalExcellenceDesc:
           "Kami berkomitmen pada keselamatan kerja, efisiensi, kepatuhan regulasi, dan pertumbuhan berkelanjutan di seluruh lini usaha.",
-        companyProfile: "About Us",
+        companyProfile: "Perusahaan Kami",
         goodCorporateGovernance: "Tata Kelola Perusahaan",
         sustainability: "Keberlanjutan",
         newsDisclosure: "Media",
 
-        milestones: "Milestone",
+        milestones: "Tonggak Pencapaian",
         management: "Susunan Pengurus",
 
         financialStatements: "Laporan Keuangan",
@@ -719,7 +719,7 @@ i18n.use(initReactI18next).init({
 
         policy: "Kebijakan Keberlanjutan",
         communityDevelopment: "Pengembangan Masyarakat",
-
+        boardOfDirectorss: "Direksi",
         announcement: "Pengumuman",
         presentation: "Presentasi",
         addressLine1: "PT Andalan Artha Primanusa",

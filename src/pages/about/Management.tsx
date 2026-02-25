@@ -94,7 +94,7 @@ const Management = () => {
         {/* DIREKTUR */}
         <div className="mb-20">
           <h3 className="text-2xl font-semibold text-[#BEC5A4] mb-6">
-            {t("boardOfDirectors")}
+            {t("boardOfDirectorss")}
           </h3>
           <div className="w-20 h-[2px] bg-[#C6A75E] mb-10"></div>
 
