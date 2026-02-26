@@ -1,20 +1,23 @@
+import { useTranslation } from "react-i18next";
 import Csr1 from "../../assets/csr1.png";
 import Csr2 from "../../assets/csr2.png";
 import Csr3 from "../../assets/csr3.png";
 
 export default function CSRSection() {
+  const { t } = useTranslation();
+
   const csrGallery = [
     {
       src: Csr1,
-      caption: "Perbaikan Gorong-gorong Desa Muara",
+      caption: t("csr.gallery1"),
     },
     {
       src: Csr2,
-      caption: "Bantuan Renovasi Masjid",
+      caption: t("csr.gallery2"),
     },
     {
       src: Csr3,
-      caption: "Pembangunan Mushola",
+      caption: t("csr.gallery3"),
     },
   ];
 
@@ -28,11 +31,11 @@ export default function CSRSection() {
         {/* ================= TITLE ================= */}
         <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl font-bold text-[#2F3E34] tracking-tight">
-            Tanggung Jawab Sosial Perusahaan
+            {t("csr.title")}
           </h2>
 
           <p className="text-[#6B8E73] mt-4 uppercase tracking-[0.3em] text-sm">
-            Corporate Social Responsibility
+            {t("csr.subtitle")}
           </p>
 
           <div className="w-24 h-[3px] bg-gradient-to-r from-[#6B8E73] to-[#2F3E34] mx-auto mt-6 rounded-full"></div>
@@ -41,55 +44,36 @@ export default function CSRSection() {
         {/* ================= CONTENT ================= */}
         <div className="grid lg:grid-cols-2 gap-20 items-start">
 
-          {/* TEXT SECTION */}
+          {/* TEXT */}
           <div className="space-y-6 text-[#2F3E34] leading-relaxed text-[17px]">
-            <p>
-              Tanggung Jawab Sosial Perusahaan (“CSR”) merupakan wujud komitmen
-              Perseroan untuk berperan aktif dalam meningkatkan kualitas hidup
-              masyarakat serta menjaga kelestarian lingkungan di sekitar wilayah
-              operasional Perseroan.
-            </p>
-
-            <p>
-              Salah satu kegiatan yang dilaksanakan adalah bantuan perbaikan
-              gorong-gorong di Desa Muara yang terdampak bencana banjir.
-              Bantuan ini bertujuan untuk mempercepat pemulihan akses utama
-              masyarakat dan mendukung keberlanjutan aktivitas ekonomi serta sosial.
-            </p>
-
-            <p>
-              Selain itu, Perseroan juga memberikan dukungan terhadap kegiatan
-              keagamaan melalui bantuan perbaikan masjid dan pembangunan mushola
-              sebagai sarana ibadah masyarakat sekitar wilayah operasional.
-            </p>
+            <p>{t("csr.paragraph1")}</p>
+            <p>{t("csr.paragraph2")}</p>
+            <p>{t("csr.paragraph3")}</p>
           </div>
 
           {/* HIGHLIGHT CARD */}
           <div className="relative bg-white/80 backdrop-blur-md rounded-3xl p-12 shadow-xl border border-[#E5E7EB] hover:shadow-2xl transition duration-500">
 
             <h3 className="text-2xl font-bold text-[#2F3E34] mb-8">
-              Fokus Program CSR
+              {t("csr.focusTitle")}
             </h3>
 
             <ul className="space-y-5 text-[#4F6F5D] text-[16px]">
               <li className="flex items-start gap-3">
                 <span className="text-[#6B8E73]">✔</span>
-                <span>Pemulihan Infrastruktur Pasca Bencana</span>
+                <span>{t("csr.focus1")}</span>
               </li>
-
               <li className="flex items-start gap-3">
                 <span className="text-[#6B8E73]">✔</span>
-                <span>Dukungan Fasilitas Keagamaan</span>
+                <span>{t("csr.focus2")}</span>
               </li>
-
               <li className="flex items-start gap-3">
                 <span className="text-[#6B8E73]">✔</span>
-                <span>Penguatan Hubungan Sosial Masyarakat</span>
+                <span>{t("csr.focus3")}</span>
               </li>
-
               <li className="flex items-start gap-3">
                 <span className="text-[#6B8E73]">✔</span>
-                <span>Pembangunan Sosial Berkelanjutan</span>
+                <span>{t("csr.focus4")}</span>
               </li>
             </ul>
 
@@ -110,14 +94,12 @@ export default function CSRSection() {
                 className="w-full h-80 object-cover transform group-hover:scale-110 transition duration-700 ease-out"
               />
 
-              {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-8">
                 <span className="text-white text-lg font-semibold tracking-wide">
                   {item.caption}
                 </span>
               </div>
 
-              {/* Subtle Border Glow */}
               <div className="absolute inset-0 rounded-3xl border border-white/10 group-hover:border-[#6B8E73]/40 transition duration-500"></div>
             </div>
           ))}

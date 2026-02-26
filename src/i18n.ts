@@ -25,6 +25,29 @@ i18n.use(initReactI18next).init({
           fraudWarning:
             "⚠️ Beware of fraud conducted under the name of PT Andalan Artha Primanusa Tbk. The Company never requests any form of payment outside official communication channels.",
         },
+        csr: {
+          title: "Corporate Social Responsibility",
+          subtitle: "Corporate Social Responsibility",
+
+          paragraph1:
+            "Corporate Social Responsibility (“CSR”) reflects the Company’s commitment to actively contribute to improving community welfare and preserving the environment in areas surrounding its operational sites.",
+
+          paragraph2:
+            "One of the initiatives carried out was assistance in repairing drainage infrastructure in Muara Village affected by flooding. This support aimed to accelerate the restoration of public access and sustain economic and social activities.",
+
+          paragraph3:
+            "In addition, the Company provided support for religious activities through mosque renovation assistance and the construction of a prayer facility for the surrounding community.",
+
+          focusTitle: "CSR Program Focus",
+          focus1: "Post-Disaster Infrastructure Recovery",
+          focus2: "Religious Facility Support",
+          focus3: "Community Social Engagement Strengthening",
+          focus4: "Sustainable Social Development",
+
+          gallery1: "Drainage Repair in Muara Village",
+          gallery2: "Mosque Renovation Assistance",
+          gallery3: "Prayer Facility Construction",
+        },
         ownership: {
           title: "Share Ownership Structure",
           total: "Total Ownership",
@@ -540,7 +563,6 @@ The Company believes that long-term business sustainability must align with envi
         home: "Home",
         about: "About Us",
         investor: "Investor Relations",
-        csr: "Sustainability",
         news: "News & Disclosure",
         strukturOrganisasi: "Organization Structure",
         contact: "Contact",
@@ -854,6 +876,29 @@ The Company believes that long-term business sustainability must align with envi
 
     id: {
       translation: {
+          csr: {
+          title: "Tanggung Jawab Sosial Perusahaan",
+          subtitle: "Corporate Social Responsibility",
+
+          paragraph1:
+            "Tanggung Jawab Sosial Perusahaan (“CSR”) merupakan wujud komitmen Perseroan untuk berperan aktif dalam meningkatkan kualitas hidup masyarakat serta menjaga kelestarian lingkungan di sekitar wilayah operasional Perseroan.",
+
+          paragraph2:
+            "Salah satu kegiatan yang dilaksanakan adalah bantuan perbaikan gorong-gorong di Desa Muara yang terdampak bencana banjir. Bantuan ini bertujuan untuk mempercepat pemulihan akses utama masyarakat dan mendukung keberlanjutan aktivitas ekonomi serta sosial.",
+
+          paragraph3:
+            "Selain itu, Perseroan juga memberikan dukungan terhadap kegiatan keagamaan melalui bantuan perbaikan masjid dan pembangunan mushola sebagai sarana ibadah masyarakat sekitar wilayah operasional.",
+
+          focusTitle: "Fokus Program CSR",
+          focus1: "Pemulihan Infrastruktur Pasca Bencana",
+          focus2: "Dukungan Fasilitas Keagamaan",
+          focus3: "Penguatan Hubungan Sosial Masyarakat",
+          focus4: "Pembangunan Sosial Berkelanjutan",
+
+          gallery1: "Perbaikan Gorong-gorong Desa Muara",
+          gallery2: "Bantuan Renovasi Masjid",
+          gallery3: "Pembangunan Mushola",
+        },
         csrInformation: "Informasi CSR",
         csrInformationDesc:
           "PT Andalan Artha Primanusa berkomitmen menjalankan kegiatan usaha yang berkelanjutan melalui program Tanggung Jawab Sosial dan Lingkungan (CSR) yang terstruktur dan memberikan dampak nyata bagi masyarakat, karyawan, serta lingkungan sekitar.",
@@ -894,7 +939,6 @@ The Company believes that long-term business sustainability must align with envi
         governance: "Tata Kelola Perusahaan",
         governanceHeroDesc:
           "Perseroan berkomitmen untuk menerapkan prinsip Tata Kelola Perusahaan yang Baik (Good Corporate Governance) secara konsisten dan berkelanjutan guna meningkatkan nilai perusahaan, menjaga kepercayaan pemegang saham, serta melindungi kepentingan seluruh pemangku kepentingan.",
-        csr: "Keberlanjutan",
         perusahaanKami: "Perusahaan Kami",
         news: "Media",
         contact: "Kontak",
@@ -1522,6 +1566,7 @@ The Company believes that long-term business sustainability must align with envi
         milestone5:
           "Perolehan Letter of Award dari PT Position tertanggal 22 Januari 2026 untuk pekerjaan pengembangan dan operasi penambangan nikel di Desa Maba, Halmahera Timur, Maluku Utara, menandai ekspansi strategis AAP ke sektor nikel.",
         /* ================= SIARAN PERS ================= */
+      
         press: {
           title: "Siaran Pers",
           subtitle:
