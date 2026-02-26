@@ -62,8 +62,10 @@ const advantages = [
 
 const StrategySection = () => {
   return (
-    <section className="relative py-32 bg-[#f9f9f7] overflow-hidden">
-      {/* HEADER */}
+     <section
+      id="strategi-keunggulan"
+      className="relative py-32 bg-[#f9f9f7] overflow-hidden scroll-mt-32"
+    >
       <div className="max-w-6xl mx-auto px-6 text-center mb-20">
         <h2 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
           <span className="bg-gradient-to-r from-black to-[#C6A75E] bg-clip-text text-transparent">

@@ -15,7 +15,7 @@ import CSR from "./pages/csr/Csr";
 import News from "./pages/news/News";
 
 import Investor from "./pages/investor/Investor";
-import ProyekActivities from "./pages/proyek/Proyek";
+import ProyekAll from "./pages/proyek/Proyekall";
 
 export default function App() {
   return (
@@ -37,7 +37,7 @@ export default function App() {
         {/* ================= INVESTOR ================= */}
         <Route path="/investor/*" element={<Investor />} />
         <Route path="/csr/*" element={<CSR />} />
-        <Route path="/proyek/*" element={<ProyekActivities />} />
+        <Route path="/proyek/*" element={<ProyekAll />} />
      
       </Routes>
 

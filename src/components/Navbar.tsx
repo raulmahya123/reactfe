@@ -22,8 +22,8 @@ const menuItems = [
     name: "Projek",
     path: "/proyek",
     submenu: [
-      { name: "ProyekActivities", path: "/proyek/financial" },
-      { name: "SumberDaya", path: "/proyek/sumberdaya" },
+      { name: "ProyekActivities", path: "/proyek/proyek" },
+      { name: "SumberDaya", path: "/proyek/sumber-daya" },
       { name: "StrategiKeunggulan", path: "/proyek/strategi-keunggulan" },
     ],
   },
