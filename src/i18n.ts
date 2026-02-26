@@ -5,32 +5,64 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        corporateAction: "Corporate Action",
+
+        corporateActionDesc:
+          "Corporate Actions are strategic measures undertaken by the Company to enhance corporate value and provide benefits to shareholders and stakeholders.",
+
+        dividendTitle: "Dividend Distribution",
+        dividendDesc:
+          "The Company may distribute dividends to shareholders based on the resolution of the General Meeting of Shareholders and financial performance.",
+
+        rightsIssueTitle: "Rights Issue",
+        rightsIssueDesc:
+          "The Company may increase its capital through the issuance of new shares in accordance with capital market regulations.",
+
+        mergerTitle: "Merger & Acquisition",
+        mergerDesc:
+          "The Company may conduct mergers or acquisitions to strengthen its business structure and expand market share.",
+        gmsTitle: "General Meeting of Shareholders (GMS)",
+
+        gmsDesc:
+          "The General Meeting of Shareholders (GMS) is the highest governing body within the Company's corporate governance structure, holding authority not granted to the Board of Directors or the Board of Commissioners in accordance with the Articles of Association and applicable laws.",
+
+        gmsTypesTitle: "Types of GMS",
+        gmsTypesDesc:
+          "The GMS consists of the Annual GMS and Extraordinary GMS. The Annual GMS is held at least once a year, while the Extraordinary GMS may be convened as needed by the Company.",
+
+        gmsImplementationTitle: "Implementation of GMS",
+        gmsImplementationDesc:
+          "The GMS is conducted transparently and accountably in compliance with capital market regulations and applicable laws.",
+
+        gmsAuthorityTitle: "Authority of GMS",
+        gmsAuthorityDesc:
+          "The GMS has authority to approve annual reports, appoint external auditors, and appoint or dismiss members of the Board of Directors and Board of Commissioners.",
         whistleblowingTitle: "Whistleblowing System Policy",
 
-whistleblowingDesc:
-  "The Whistleblowing System is a mechanism provided by the Company for employees and stakeholders to report alleged violations of laws, ethics, or company regulations in a safe and confidential manner.",
+        whistleblowingDesc:
+          "The Whistleblowing System is a mechanism provided by the Company for employees and stakeholders to report alleged violations of laws, ethics, or company regulations in a safe and confidential manner.",
 
-reportChannel: "Reporting Channel",
+        reportChannel: "Reporting Channel",
 
-reportConfidential:
-  "The identity of the whistleblower will be kept confidential and protected from any form of retaliation.",
+        reportConfidential:
+          "The identity of the whistleblower will be kept confidential and protected from any form of retaliation.",
 
-reportProcedure: "Reporting Procedure",
+        reportProcedure: "Reporting Procedure",
 
-wbsStep1:
-  "The whistleblower submits a written report through the official reporting channel provided by the Company.",
+        wbsStep1:
+          "The whistleblower submits a written report through the official reporting channel provided by the Company.",
 
-wbsStep2:
-  "The report will be verified and reviewed independently by the authorized team.",
+        wbsStep2:
+          "The report will be verified and reviewed independently by the authorized team.",
 
-wbsStep3:
-  "An investigation will be conducted if sufficient indications of violation are found.",
-governance: "Good Corporate Governance",
+        wbsStep3:
+          "An investigation will be conducted if sufficient indications of violation are found.",
+        governance: "Good Corporate Governance",
 
-governanceHeroDesc:
-  "The Company is committed to consistently implementing Good Corporate Governance principles to enhance corporate value, maintain shareholders’ trust, and protect the interests of all stakeholders.",
-wbsStep4:
-  "The investigation results will be reported to Management and/or the Board of Commissioners for further action in accordance with applicable regulations.",
+        governanceHeroDesc:
+          "The Company is committed to consistently implementing Good Corporate Governance principles to enhance corporate value, maintain shareholders’ trust, and protect the interests of all stakeholders.",
+        wbsStep4:
+          "The investigation results will be reported to Management and/or the Board of Commissioners for further action in accordance with applicable regulations.",
         /* ================= CORPORATE ACTIONS ================= */
         corporateActionsSection: {
           title: "Corporate Actions",
@@ -196,6 +228,21 @@ The Company believes that long-term business sustainability must align with envi
         financeDirector: "Finance Director",
         operationsDirector: "Operations Director",
         csrProduct: "Product Responsibility",
+        prospectusTitle: "Prospectus",
+
+        prospectusDesc:
+          "The Prospectus is an official document containing comprehensive information about the Company, including business activities, financial condition, risk factors, and the planned use of proceeds from the public offering.",
+
+        prospectusOverviewTitle: "Company Overview",
+        prospectusOverviewDesc:
+          "Contains information regarding the company profile, organizational structure, business activities, and financial performance.",
+
+        prospectusUseOfFundsTitle: "Use of Proceeds",
+        prospectusUseOfFundsDesc:
+          "Explains the planned allocation of funds from the public offering to support business expansion and capital strengthening.",
+
+        prospectusDownloadTitle: "Download Prospectus Document",
+        downloadProspectus: "Download Prospectus",
         csrProductDesc:
           "The Company ensures product quality meets industry standards, maintains secure distribution processes, and provides transparent information to stakeholders.",
         csrProductBudget:
@@ -242,20 +289,20 @@ The Company believes that long-term business sustainability must align with envi
         dividendInformation: "Dividend Information",
         boardOfDirectors: "Board of Directors",
         codeOfEthics: "Code of Ethics",
-codeOfEthicsDesc:
-  "The Company’s Code of Ethics serves as a guideline for the Board of Directors, Board of Commissioners, and all employees in conducting business activities in accordance with good corporate governance principles.",
+        codeOfEthicsDesc:
+          "The Company’s Code of Ethics serves as a guideline for the Board of Directors, Board of Commissioners, and all employees in conducting business activities in accordance with good corporate governance principles.",
 
-integrityTitle: "Integrity",
-integrityDesc:
-  "Upholding honesty, transparency, and accountability in every business decision and action.",
+        integrityTitle: "Integrity",
+        integrityDesc:
+          "Upholding honesty, transparency, and accountability in every business decision and action.",
 
-complianceTitle: "Compliance",
-complianceDesc:
-  "Complying with all applicable laws, capital market regulations, and internal company policies.",
+        complianceTitle: "Compliance",
+        complianceDesc:
+          "Complying with all applicable laws, capital market regulations, and internal company policies.",
 
-professionalismTitle: "Professionalism",
-professionalismDesc:
-  "Acting professionally and objectively while avoiding conflicts of interest in all corporate activities.",
+        professionalismTitle: "Professionalism",
+        professionalismDesc:
+          "Acting professionally and objectively while avoiding conflicts of interest in all corporate activities.",
         boardOfCommissioners: "Board of Commissioners",
         riskManagement: "Risk Management",
         codeOfConduct: "Code of Conduct",
@@ -299,7 +346,6 @@ professionalismDesc:
         stockInfo: "Stock Information",
         dividend: "Dividend History",
         dividendPolicy: "Dividend Policy",
-        corporateAction: "Corporate Actions",
         /* ================= GOVERNANCE (POJK Pasal 6 ayat 3) ================= */
         boardCharter: "Board Charter",
         internalAudit: "Internal Audit Charter",
@@ -472,7 +518,6 @@ professionalismDesc:
         newsItem4: "Strategic Expansion Plan 2025",
         StrategiKeunggulan: "Strategi & Keunggulan",
         SumberDaya: "Our Resources",
-        /* ================= ANNUAL REPORT PAGE ================= */
         annualReportsTitle: "Annual Reports",
         annualReportLabel: "Annual Report",
         annualReports: {
@@ -626,13 +671,30 @@ professionalismDesc:
         about: "Tentang Kami",
         investor: "Hubungan Investor",
         governance: "Tata Kelola Perusahaan",
-        governanceHeroDesc:"Perseroan berkomitmen untuk menerapkan prinsip Tata Kelola Perusahaan yang Baik (Good Corporate Governance) secara konsisten dan berkelanjutan guna meningkatkan nilai perusahaan, menjaga kepercayaan pemegang saham, serta melindungi kepentingan seluruh pemangku kepentingan.",
+        governanceHeroDesc:
+          "Perseroan berkomitmen untuk menerapkan prinsip Tata Kelola Perusahaan yang Baik (Good Corporate Governance) secara konsisten dan berkelanjutan guna meningkatkan nilai perusahaan, menjaga kepercayaan pemegang saham, serta melindungi kepentingan seluruh pemangku kepentingan.",
         csr: "Keberlanjutan",
         perusahaanKami: "Perusahaan Kami",
         news: "Media",
         contact: "Kontak",
         welcome: "Solusi Energi Terpercaya",
         SumberDaya: "Sumber Daya kami",
+        gmsTitle: "Rapat Umum Pemegang Saham (RUPS)",
+
+        gmsDesc:
+          "Rapat Umum Pemegang Saham (RUPS) merupakan organ tertinggi dalam struktur tata kelola Perseroan yang memiliki kewenangan yang tidak diberikan kepada Direksi maupun Dewan Komisaris sesuai dengan Anggaran Dasar dan peraturan perundang-undangan yang berlaku.",
+
+        gmsTypesTitle: "Jenis RUPS",
+        gmsTypesDesc:
+          "RUPS terdiri dari RUPS Tahunan dan RUPS Luar Biasa. RUPS Tahunan diselenggarakan paling sedikit satu kali dalam setahun, sedangkan RUPS Luar Biasa dapat diadakan sesuai kebutuhan Perseroan.",
+
+        gmsImplementationTitle: "Pelaksanaan RUPS",
+        gmsImplementationDesc:
+          "Pelaksanaan RUPS dilakukan secara transparan dan akuntabel dengan memperhatikan ketentuan pasar modal dan peraturan yang berlaku.",
+
+        gmsAuthorityTitle: "Kewenangan RUPS",
+        gmsAuthorityDesc:
+          "RUPS memiliki kewenangan antara lain mengesahkan laporan tahunan, menunjuk auditor eksternal, mengangkat dan memberhentikan Direksi serta Dewan Komisaris.",
         /* ================= COMPANY PROFILE ================= */
         companyOverview: "Sekilas Perusahaan",
         visionMission: "Visi & Misi",
@@ -786,20 +848,48 @@ professionalismDesc:
         corporateCommittees: "Komite Perseroan",
         corporateCommitteesDesc:
           "Komite Perseroan dibentuk untuk membantu Dewan Komisaris dan Direksi dalam menjalankan fungsi pengawasan, manajemen risiko, serta penerapan tata kelola perusahaan yang baik.",
-codeOfEthicsDesc:
-  "Kode Etik Perseroan merupakan pedoman perilaku bagi Direksi, Dewan Komisaris, dan seluruh karyawan dalam menjalankan kegiatan usaha sesuai dengan prinsip tata kelola perusahaan yang baik.",
+        codeOfEthicsDesc:
+          "Kode Etik Perseroan merupakan pedoman perilaku bagi Direksi, Dewan Komisaris, dan seluruh karyawan dalam menjalankan kegiatan usaha sesuai dengan prinsip tata kelola perusahaan yang baik.",
 
-integrityTitle: "Integritas",
-integrityDesc:
-  "Menjunjung tinggi kejujuran, transparansi, dan tanggung jawab dalam setiap pengambilan keputusan dan tindakan bisnis.",
+        integrityTitle: "Integritas",
+        integrityDesc:
+          "Menjunjung tinggi kejujuran, transparansi, dan tanggung jawab dalam setiap pengambilan keputusan dan tindakan bisnis.",
 
-complianceTitle: "Kepatuhan",
-complianceDesc:
-  "Mematuhi seluruh peraturan perundang-undangan, ketentuan pasar modal, serta kebijakan internal Perseroan.",
+        complianceTitle: "Kepatuhan",
+        complianceDesc:
+          "Mematuhi seluruh peraturan perundang-undangan, ketentuan pasar modal, serta kebijakan internal Perseroan.",
+        prospectusTitle: "Prospektus",
 
-professionalismTitle: "Profesionalisme",
-professionalismDesc:
-  "Bekerja secara profesional, objektif, dan menghindari benturan kepentingan dalam setiap aktivitas perusahaan.",
+        prospectusDesc:
+          "Prospektus merupakan dokumen resmi yang memuat informasi lengkap mengenai Perseroan, termasuk kegiatan usaha, kondisi keuangan, risiko usaha, serta rencana penggunaan dana hasil penawaran umum.",
+
+        prospectusOverviewTitle: "Ringkasan Perseroan",
+        prospectusOverviewDesc:
+          "Memuat informasi mengenai profil perusahaan, struktur organisasi, kegiatan usaha, serta kinerja keuangan.",
+
+        prospectusUseOfFundsTitle: "Penggunaan Dana",
+        prospectusUseOfFundsDesc:
+          "Menjelaskan rencana penggunaan dana hasil penawaran umum untuk mendukung ekspansi usaha dan penguatan struktur permodalan.",
+
+        prospectusDownloadTitle: "Unduh Dokumen Prospektus",
+        downloadProspectus: "Download Prospektus",
+        corporateActionDesc:
+          "Aksi Korporasi merupakan tindakan strategis yang dilakukan Perseroan untuk meningkatkan nilai perusahaan serta memberikan manfaat bagi pemegang saham dan pemangku kepentingan lainnya.",
+
+        dividendTitle: "Pembagian Dividen",
+        dividendDesc:
+          "Perseroan dapat membagikan dividen kepada pemegang saham berdasarkan keputusan RUPS dan kinerja keuangan Perseroan.",
+
+        rightsIssueTitle: "Penawaran Umum Terbatas (Right Issue)",
+        rightsIssueDesc:
+          "Perseroan dapat melakukan penambahan modal melalui penerbitan saham baru sesuai dengan ketentuan pasar modal.",
+
+        mergerTitle: "Merger & Akuisisi",
+        mergerDesc:
+          "Perseroan dapat melakukan penggabungan usaha atau akuisisi untuk memperkuat struktur bisnis dan memperluas pangsa pasar.",
+        professionalismTitle: "Profesionalisme",
+        professionalismDesc:
+          "Bekerja secara profesional, objektif, dan menghindari benturan kepentingan dalam setiap aktivitas perusahaan.",
         riskCommittee: "Komite Manajemen Risiko",
         publicExpose: "Paparan Publik",
         dividendInformation: "Informasi Dividen",
@@ -980,27 +1070,27 @@ professionalismDesc:
         allRightsReserved: "Seluruh Hak Cipta Dilindungi.",
         whistleblowingTitle: "Kebijakan Mekanisme Sistem Pelaporan Pelanggaran",
 
-whistleblowingDesc:
-  "Sistem Pelaporan Pelanggaran (Whistleblowing System) merupakan mekanisme yang disediakan Perseroan bagi karyawan dan pemangku kepentingan untuk melaporkan dugaan pelanggaran hukum, etika, atau peraturan perusahaan secara aman dan rahasia.",
+        whistleblowingDesc:
+          "Sistem Pelaporan Pelanggaran (Whistleblowing System) merupakan mekanisme yang disediakan Perseroan bagi karyawan dan pemangku kepentingan untuk melaporkan dugaan pelanggaran hukum, etika, atau peraturan perusahaan secara aman dan rahasia.",
 
-reportChannel: "Saluran Pelaporan",
+        reportChannel: "Saluran Pelaporan",
 
-reportConfidential:
-  "Identitas pelapor akan dijaga kerahasiaannya dan dilindungi dari segala bentuk tekanan atau tindakan balasan.",
+        reportConfidential:
+          "Identitas pelapor akan dijaga kerahasiaannya dan dilindungi dari segala bentuk tekanan atau tindakan balasan.",
 
-reportProcedure: "Prosedur Pelaporan",
+        reportProcedure: "Prosedur Pelaporan",
 
-wbsStep1:
-  "Pelapor menyampaikan laporan secara tertulis melalui saluran resmi yang telah disediakan Perseroan.",
+        wbsStep1:
+          "Pelapor menyampaikan laporan secara tertulis melalui saluran resmi yang telah disediakan Perseroan.",
 
-wbsStep2:
-  "Laporan akan diverifikasi dan dikaji oleh tim yang berwenang secara independen.",
+        wbsStep2:
+          "Laporan akan diverifikasi dan dikaji oleh tim yang berwenang secara independen.",
 
-wbsStep3:
-  "Dilakukan investigasi apabila ditemukan indikasi pelanggaran yang cukup.",
+        wbsStep3:
+          "Dilakukan investigasi apabila ditemukan indikasi pelanggaran yang cukup.",
 
-wbsStep4:
-  "Hasil investigasi dilaporkan kepada manajemen dan/atau Dewan Komisaris untuk ditindaklanjuti sesuai ketentuan yang berlaku.",  
+        wbsStep4:
+          "Hasil investigasi dilaporkan kepada manajemen dan/atau Dewan Komisaris untuk ditindaklanjuti sesuai ketentuan yang berlaku.",
         csrHero: {
           title: "Komitmen Sosial & Keberlanjutan",
           introduction:

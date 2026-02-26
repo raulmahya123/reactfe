@@ -38,7 +38,7 @@ const menuItems = [
       { name: "publicExpose", path: "/investor/expose" },
       { name: "dividendInformation", path: "/investor/dividend" },
       { name: "stockPerformance", path: "/investor/stock" },
-      {name: "corporateAction", path: "/investor/governance" },
+      {name: "corporateAction", path: "/investor/corporate-action" },
       { name: "materialInformation", path: "/investor/material" },
     ],
   },

@@ -8,6 +8,9 @@ import Expose from "./Expose";
 import Dividend from "./Dividend";
 import Stock from "./Stock";
 import Material from "./Material";
+import GeneralMeeting from "./GeneralMeeting";
+import CorporateAction from "./CorporateAction";
+import Prospectus from "./Prospectus";
 
 const Investor = () => {
   const location = useLocation();
@@ -50,6 +53,10 @@ const Investor = () => {
       {/* CONTENT */}
       <section className="py-24 bg-gray-50 space-y-32">
 
+      <div id="prospectus" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+          <Prospectus />
+        </div>
+
         <div id="financial" className="max-w-6xl mx-auto px-6 scroll-mt-40">
           <Financial />
         </div>
@@ -62,6 +69,10 @@ const Investor = () => {
           <Quarterly />
         </div>
 
+        <div id="rups" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+          <GeneralMeeting />
+        </div>
+
         <div id="expose" className="max-w-6xl mx-auto px-6 scroll-mt-40">
           <Expose />
         </div>
@@ -72,6 +83,10 @@ const Investor = () => {
 
         <div id="stock" className="max-w-6xl mx-auto px-6 scroll-mt-40">
           <Stock />
+        </div>
+
+        <div id="corporate-action" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+          <CorporateAction />
         </div>
 
         <div id="material" className="max-w-6xl mx-auto px-6 scroll-mt-40">
