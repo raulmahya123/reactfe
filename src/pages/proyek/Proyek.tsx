@@ -2,8 +2,6 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { LatLngTuple } from "leaflet";
-import StrategySection from "./StrategySection";
-import ResourcesSection from "./ResourcesSection";
 
 /* =============================
    FIX DEFAULT ICON

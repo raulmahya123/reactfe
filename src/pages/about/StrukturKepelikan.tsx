@@ -40,7 +40,7 @@ export default function StrukturKepemilikan() {
 
   return (
     <section
-      id="strukturKepemilikan"
+      id="struktur-kepemilikan"
       className="relative w-full py-28 px-6 bg-gradient-to-br from-[#F4F6F3] via-[#EEF2ED] to-[#F7F8F6] scroll-mt-32"
     >
       <div className="max-w-7xl mx-auto">

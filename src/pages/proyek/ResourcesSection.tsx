@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Users, Truck, Cpu, ShieldCheck } from "lucide-react";
+import { Users, Truck, Cpu } from "lucide-react";
 
 const PRIMARY = "#C6A75E";
 

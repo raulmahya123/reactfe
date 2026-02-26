@@ -25,7 +25,7 @@ const Box = ({
 export default function StrukturOrganisasi() {
   return (
     <section
-      id="strukturOrganisasi"
+      id="struktur-organisasi"
       className="w-full py-28 px-6 bg-gradient-to-br from-[#F4F6F3] via-[#EEF2ED] to-[#F7F8F6] overflow-x-auto scroll-mt-32"
     >
       <div className="max-w-[1500px] mx-auto flex flex-col items-center">
