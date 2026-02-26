@@ -5,6 +5,30 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        footer: {
+          addressLine1: "Prudential Tower, 17th Floor",
+          addressLine2: "Jl. Jendral Sudirman Kav 79, Jakarta 12910",
+          addressCountry: "Indonesia",
+
+          about: "About Us",
+          project: "Projects",
+          investor: "Investor Relations",
+          governance: "Corporate Governance",
+          sustainability: "Sustainability",
+          media: "Media",
+          contact: "Contact",
+
+          phone: "Phone",
+          fax: "Fax",
+          rights: "All Rights Reserved",
+
+          fraudWarning:
+            "⚠️ Beware of fraud conducted under the name of PT Andalan Artha Primanusa Tbk. The Company never requests any form of payment outside official communication channels.",
+        },
+        ownership: {
+          title: "Share Ownership Structure",
+          total: "Total Ownership",
+        },
         proyek: {
           title: "Business Activities",
           description:
@@ -18,6 +42,30 @@ i18n.use(initReactI18next).init({
             "Mining infrastructure development project with high safety standards.",
           dbkDesc:
             "Integrated mining operations management with modern monitoring systems.",
+        },
+        support: {
+          title: "Supporting Professionals",
+          accountant: "Public Accountant",
+          bae: "Share Registrar",
+        },
+        struktur: {
+          title: "Organizational Structure",
+          gms: "General Meeting of Shareholders",
+          boc: "Board of Commissioners",
+          audit: "Audit Committee",
+          cs: "Corporate Secretary",
+          bod: "Board of Directors",
+          internalAudit: "Internal Audit",
+          gmOperational: "General Manager Operational",
+
+          op1: "Operational Supervisor",
+          op2: "Operational Manager",
+          op3: "Plant Manager",
+          op4: "Asset Manager",
+          op5: "Supply Chain Manager",
+          op6: "SHE Manager",
+          op7: "HRGA Manager",
+          op8: "Finance & Accounting Manager",
         },
         strategy: {
           title: "Strategy & Competitive Advantages",
@@ -886,12 +934,39 @@ The Company believes that long-term business sustainability must align with envi
         stockInfo: "Informasi Saham",
         dividendPolicy: "Kebijakan Dividen",
         corporateAction: "Aksi Korporasi",
+        support: {
+          title: "Profesional Pendukung",
+          accountant: "Akuntan Publik",
+          bae: "Biro Administrasi Efek (BAE)",
+        },
         materialInformation: "Keterbukaan Informasi / Fakta Material",
         governanceInformation: "Informasi Tata Kelola Perusahaan",
         governanceInformationDesc:
           "Perseroan berkomitmen menerapkan prinsip Tata Kelola Perusahaan yang Baik (Good Corporate Governance) secara konsisten dan berkelanjutan sesuai dengan ketentuan peraturan yang berlaku.",
         governanceDocumentList: "Daftar Dokumen Tata Kelola",
+        ownership: {
+          title: "Struktur Kepemilikan Saham",
+          total: "Total Kepemilikan",
+        },
+        struktur: {
+          title: "Struktur Organisasi",
+          gms: "Rapat Umum Pemegang Saham",
+          boc: "Dewan Komisaris",
+          audit: "Komite Audit",
+          cs: "Sekretaris Perusahaan",
+          bod: "Direksi",
+          internalAudit: "Internal Audit",
+          gmOperational: "General Manager Operational",
 
+          op1: "Penanggung Jawab Operational",
+          op2: "Operational Manager",
+          op3: "Plant Manager",
+          op4: "Asset Manager",
+          op5: "Supply Chain Manager",
+          op6: "SHE Manager",
+          op7: "HRGA Manager",
+          op8: "Finance & Accounting Manager",
+        },
         boardManual: "Pedoman kerja Direksi dan Dewan Komisaris",
         corporateSecretaryAppointment:
           "Pengangkatan, pemberhentian, dan/atau kekosongan Sekretaris Perusahaan",
@@ -969,6 +1044,26 @@ The Company believes that long-term business sustainability must align with envi
           q2Title: "Laporan Keuangan Interim Q2 2025",
           q1Title: "Laporan Keuangan Interim Q1 2025",
           q4Title: "Laporan Keuangan Interim Q4 2024",
+        },
+        footer: {
+          addressLine1: "Prudential Tower, 17th Floor",
+          addressLine2: "Jl. Jendral Sudirman Kav 79, Jakarta 12910",
+          addressCountry: "Indonesia",
+
+          about: "Tentang Kami",
+          project: "Proyek",
+          investor: "Hubungan Investor",
+          governance: "Tata Kelola Perusahaan",
+          sustainability: "Keberlanjutan",
+          media: "Media",
+          contact: "Kontak",
+
+          phone: "Telepon",
+          fax: "Fax",
+          rights: "Seluruh Hak Dilindungi",
+
+          fraudWarning:
+            "⚠️ Hati-hati terhadap penipuan yang mengatasnamakan PT Andalan Artha Primanusa Tbk. Perusahaan tidak pernah meminta pembayaran dalam bentuk apapun di luar komunikasi resmi.",
         },
         laborTitle: "Kesehatan, Keselamatan & SDM",
         socialTitle: "Pengembangan Masyarakat",

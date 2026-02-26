@@ -16,68 +16,62 @@ const Footer = () => {
 
             {/* LEFT – LOGO & ADDRESS */}
             <div>
-              {/* Logo Besar */}
               <div className="mb-6">
                 <img
                   src={AndalanLogo}
                   alt="PT Andalan Artha Primanusa Tbk"
-                  className="h-20 md:h-18 w-auto object-contain"
+                  className="h-20 w-auto object-contain"
                 />
               </div>
 
-              {/* Address (i18next) */}
               <p className="text-sm text-black/80 leading-relaxed">
-                <span className="whitespace-nowrap">
-                  {t("addressLine1")}
-                </span>
-                <br />
-                {t("addressLine2")}
-                <br />
-                {t("addressCountry")}
+                {t("footer.addressLine1")} <br />
+                {t("footer.addressLine2")} <br />
+                {t("footer.addressCountry")}
               </p>
             </div>
 
             {/* MIDDLE – MENU */}
             <div className="space-y-4 text-sm">
               <Link to="/about" className="block hover:text-[#C6A75E] transition">
-                {t("Tentang Kami")}
+                {t("footer.about")}
               </Link>
-              <Link to="/project" className="block hover:text-[#C6A75E] transition">
-                {t("Projek")}
+              <Link to="/proyek" className="block hover:text-[#C6A75E] transition">
+                {t("footer.project")}
               </Link>
               <Link to="/investor" className="block hover:text-[#C6A75E] transition">
-                {t("Hubungan Investor")}
+                {t("footer.investor")}
               </Link>
-              <Link to="/csr" className="block hover:text-[#C6A75E] transition">
-                {t("Tata Kelola Perusahaan")}
+              <Link to="/governance" className="block hover:text-[#C6A75E] transition">
+                {t("footer.governance")}
               </Link>
-              <Link to="/news" className="block hover:text-[#C6A75E] transition">
-                {t("Keberlanjutan")}
+              <Link to="/sustainability" className="block hover:text-[#C6A75E] transition">
+                {t("footer.sustainability")}
+              </Link>
+              <Link to="/media" className="block hover:text-[#C6A75E] transition">
+                {t("footer.media")}
               </Link>
               <Link to="/contact" className="block hover:text-[#C6A75E] transition">
-                {t("Media")}
-              </Link>
-              <Link to="/contact" className="block hover:text-[#C6A75E] transition">
-                {t("Kontak")}
+                {t("footer.contact")}
               </Link>
             </div>
 
-            {/* RIGHT – CONTACT INFO */}
+            {/* RIGHT – CONTACT */}
             <div className="text-sm space-y-6">
               <div>
-                <p className="font-semibold">Telepon</p>
+                <p className="font-semibold">{t("footer.phone")}</p>
                 <p>(62 21) 2357 9812</p>
               </div>
 
               <div>
-                <p className="font-semibold">Fax</p>
+                <p className="font-semibold">{t("footer.fax")}</p>
                 <p>(62 21) 2357 9812</p>
               </div>
             </div>
 
           </div>
 
-          {/* BACK TO TOP BUTTON */}
+          {/* BACK TO TOP */}
           <div className="flex justify-center mt-24">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -89,10 +83,9 @@ const Footer = () => {
 
           {/* COPYRIGHT */}
           <div className="text-center mt-12 text-xs text-black/60">
-            HAK CIPTA © {new Date().getFullYear()} PT Andalan Artha Primanusa Tbk.{" "}
-            {t("allRightsReserved")}
+            © {new Date().getFullYear()} PT Andalan Artha Primanusa Tbk.{" "}
+            {t("footer.rights")}
           </div>
-
         </div>
       </footer>
 
@@ -106,10 +99,7 @@ const Footer = () => {
             animation: "marquee 25s linear infinite",
           }}
         >
-          ⚠️ Hati-hati terhadap penipuan yang mengatasnamakan PT Andalan Artha Primanusa Tbk.
-          Perusahaan tidak pernah meminta pembayaran dalam bentuk apapun di luar komunikasi resmi.
-          Beware of fraud conducted under the name of PT Andalan Artha Primanusa Tbk.
-          The Company never requests any form of payment outside official communication channels.
+          {t("footer.fraudWarning")}
         </div>
 
         <style>

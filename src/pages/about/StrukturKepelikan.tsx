@@ -5,33 +5,34 @@ import {
   Cell,
   ResponsiveContainer,
 } from "recharts";
+import { useTranslation } from "react-i18next";
 
 type Ownership = {
   name: string;
   value: number;
 };
 
-const data: Ownership[] = [
-  { name: "Billy Therstine Lim", value: 30 },
-  { name: "PT Bumi Artha Caraka", value: 25 },
-  { name: "PT Arkara Danatama Nusantara", value: 25 },
-  { name: "PT Bhumi Caraka Persada", value: 10 },
-  { name: "PT Tambang Lancar Indonesia", value: 5 },
-  { name: "Arief Ramon", value: 5 },
-];
-
-// 🌿 Sage Harmony Palette (Elegant & Calm)
 const COLORS: string[] = [
-  "#2F3E34", // deep sage
-  "#4F6F5D", // medium sage
-  "#6B8E73", // soft sage
-  "#8FAF97", // muted light sage
-  "#C2B280", // warm sand accent
-  "#A3B18A", // moss tone
+  "#2F3E34",
+  "#4F6F5D",
+  "#6B8E73",
+  "#8FAF97",
+  "#C2B280",
+  "#A3B18A",
 ];
 
 export default function StrukturKepemilikan() {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const data: Ownership[] = [
+    { name: "Billy Therstine Lim", value: 30 },
+    { name: "PT Bumi Artha Caraka", value: 25 },
+    { name: "PT Arkara Danatama Nusantara", value: 25 },
+    { name: "PT Bhumi Caraka Persada", value: 10 },
+    { name: "PT Tambang Lancar Indonesia", value: 5 },
+    { name: "Arief Ramon", value: 5 },
+  ];
 
   const activeData =
     activeIndex !== null && data[activeIndex]
@@ -48,15 +49,14 @@ export default function StrukturKepemilikan() {
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-[#2F3E34] tracking-tight">
-            Struktur Kepemilikan Saham
+            {t("ownership.title")}
           </h2>
           <div className="w-28 h-[4px] bg-gradient-to-r from-[#6B8E73] to-[#2F3E34] mx-auto mt-6 rounded-full"></div>
         </div>
 
-        {/* Layout */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* Donut Chart */}
+          {/* Chart */}
           <div className="relative h-[500px]">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
@@ -69,16 +69,14 @@ export default function StrukturKepemilikan() {
                   paddingAngle={3}
                   dataKey="value"
                   animationDuration={900}
-                  onMouseEnter={(_, index) => {
-                    if (typeof index === "number") {
-                      setActiveIndex(index);
-                    }
-                  }}
+                  onMouseEnter={(_, index) =>
+                    typeof index === "number" && setActiveIndex(index)
+                  }
                   onMouseLeave={() => setActiveIndex(null)}
                 >
                   {data.map((_, index) => (
                     <Cell
-                      key={`cell-${index}`}
+                      key={index}
                       fill={COLORS[index % COLORS.length]}
                       stroke="#ffffff"
                       strokeWidth={3}
@@ -97,7 +95,7 @@ export default function StrukturKepemilikan() {
               </PieChart>
             </ResponsiveContainer>
 
-            {/* Center Dynamic Info */}
+            {/* Center Info */}
             <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center px-4">
               {activeData ? (
                 <>
@@ -111,9 +109,9 @@ export default function StrukturKepemilikan() {
               ) : (
                 <>
                   <span className="text-[#8FAF97] text-sm uppercase tracking-widest">
-                    Total Ownership
+                    {t("ownership.total")}
                   </span>
-                  <span className="text-xl font-semibold text-[#2F3E34] mt-2 max-w-[250px]">
+                  <span className="text-xl font-semibold text-[#2F3E34] mt-2">
                     PT Andalan Artha Primanusa
                   </span>
                 </>
@@ -121,11 +119,11 @@ export default function StrukturKepemilikan() {
             </div>
           </div>
 
-          {/* Legend Cards */}
+          {/* Legend */}
           <div className="space-y-4">
             {data.map((item, index) => (
               <div
-                key={`legend-${index}`}
+                key={index}
                 onMouseEnter={() => setActiveIndex(index)}
                 onMouseLeave={() => setActiveIndex(null)}
                 className="flex items-center justify-between p-5 rounded-2xl bg-white shadow-sm border border-[#E5E7EB] hover:shadow-lg transition cursor-pointer"
