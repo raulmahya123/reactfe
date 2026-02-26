@@ -5,83 +5,109 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        whistleblowingTitle: "Whistleblowing System Policy",
+
+whistleblowingDesc:
+  "The Whistleblowing System is a mechanism provided by the Company for employees and stakeholders to report alleged violations of laws, ethics, or company regulations in a safe and confidential manner.",
+
+reportChannel: "Reporting Channel",
+
+reportConfidential:
+  "The identity of the whistleblower will be kept confidential and protected from any form of retaliation.",
+
+reportProcedure: "Reporting Procedure",
+
+wbsStep1:
+  "The whistleblower submits a written report through the official reporting channel provided by the Company.",
+
+wbsStep2:
+  "The report will be verified and reviewed independently by the authorized team.",
+
+wbsStep3:
+  "An investigation will be conducted if sufficient indications of violation are found.",
+governance: "Good Corporate Governance",
+
+governanceHeroDesc:
+  "The Company is committed to consistently implementing Good Corporate Governance principles to enhance corporate value, maintain shareholders’ trust, and protect the interests of all stakeholders.",
+wbsStep4:
+  "The investigation results will be reported to Management and/or the Board of Commissioners for further action in accordance with applicable regulations.",
         /* ================= CORPORATE ACTIONS ================= */
-corporateActionsSection: {
-  title: "Corporate Actions",
-  subtitle:
-    "Information regarding the Company's latest corporate actions as part of its transparency and commitment to shareholders.",
-  viewDetails: "View Details",
+        corporateActionsSection: {
+          title: "Corporate Actions",
+          subtitle:
+            "Information regarding the Company's latest corporate actions as part of its transparency and commitment to shareholders.",
+          viewDetails: "View Details",
 
-  status: {
-    approved: "Approved",
-    completed: "Completed",
-  },
+          status: {
+            approved: "Approved",
+            completed: "Completed",
+          },
 
-  items: {
-    dividend2025: {
-      title: "Dividend Distribution 2025",
-      date: "March 2025",
-      status: "approved",
-      description:
-        "The Company approved dividend distribution as part of its commitment to shareholders and enhancement of investment value.",
-    },
+          items: {
+            dividend2025: {
+              title: "Dividend Distribution 2025",
+              date: "March 2025",
+              status: "approved",
+              description:
+                "The Company approved dividend distribution as part of its commitment to shareholders and enhancement of investment value.",
+            },
 
-    shareBuyback: {
-      title: "Share Buyback Program",
-      date: "January 2025",
-      status: "completed",
-      description:
-        "Share buyback program implemented to maintain stock price stability and strengthen investor confidence.",
-    },
+            shareBuyback: {
+              title: "Share Buyback Program",
+              date: "January 2025",
+              status: "completed",
+              description:
+                "Share buyback program implemented to maintain stock price stability and strengthen investor confidence.",
+            },
 
-    rightsIssue: {
-      title: "Rights Issue",
-      date: "September 2024",
-      status: "completed",
-      description:
-        "Capital increase through rights issue to support business expansion and strategic project development.",
-    },
-  },
-},
+            rightsIssue: {
+              title: "Rights Issue",
+              date: "September 2024",
+              status: "completed",
+              description:
+                "Capital increase through rights issue to support business expansion and strategic project development.",
+            },
+          },
+        },
         /* ================= MEDIA COVERAGE ================= */
-mediaCoverageSection: {
-  title: "Media Coverage",
-  subtitle:
-    "Publications and media coverage highlighting the Company's developments and achievements at national and international levels.",
-  readMore: "Read More",
+        mediaCoverageSection: {
+          title: "Media Coverage",
+          subtitle:
+            "Publications and media coverage highlighting the Company's developments and achievements at national and international levels.",
+          readMore: "Read More",
 
-  items: {
-    nationalMagazine: {
-      title: "Featured in National Business Magazine",
-      source: "Business Today Indonesia",
-      date: "February 2026",
-      description:
-        "National media coverage highlighting the Company’s ESG achievements and strategic project expansion in 2026.",
-      image:
-        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200",
-    },
+          items: {
+            nationalMagazine: {
+              title: "Featured in National Business Magazine",
+              source: "Business Today Indonesia",
+              date: "February 2026",
+              description:
+                "National media coverage highlighting the Company’s ESG achievements and strategic project expansion in 2026.",
+              image:
+                "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200",
+            },
 
-    investorConfidence: {
-      title: "Mining Expansion Gains Investor Confidence",
-      source: "Indonesia Energy Review",
-      date: "January 2026",
-      description:
-        "The Company is recognized for maintaining operational stability and sustainable revenue growth.",
-      image:
-        "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1200",
-    },
+            investorConfidence: {
+              title: "Mining Expansion Gains Investor Confidence",
+              source: "Indonesia Energy Review",
+              date: "January 2026",
+              description:
+                "The Company is recognized for maintaining operational stability and sustainable revenue growth.",
+              image:
+                "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1200",
+            },
 
-    sustainabilityHighlight: {
-      title: "Sustainability Commitment Highlighted",
-      source: "Global ESG Report",
-      date: "December 2025",
-      description:
-        "The Company’s commitment to sustainable mining practices receives international recognition.",
-      image:
-        "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200",
-    },
-  },
-},
+            sustainabilityHighlight: {
+              title: "Sustainability Commitment Highlighted",
+              source: "Global ESG Report",
+              date: "December 2025",
+              description:
+                "The Company’s commitment to sustainable mining practices receives international recognition.",
+              image:
+                "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200",
+            },
+          },
+        },
         /* ================= PRESS RELEASE ================= */
         press: {
           title: "Press Release",
@@ -160,7 +186,15 @@ The Company believes that long-term business sustainability must align with envi
           "Social programs include educational assistance, healthcare support, village infrastructure development, and economic empowerment initiatives for communities surrounding operational areas.",
         csrSocialBudget:
           "The realized social and community empowerment program budget amounts to IDR 3,000,000,000.",
+        boardOfDirectorsDesc:
+          "The Board of Directors is responsible for managing and overseeing the Company's operations in alignment with its vision, mission, corporate strategy, and long-term sustainability objectives.",
 
+        presidentDirector: "President Director",
+        presidentDirectorDesc:
+          "As President Director, he leads the Company’s strategic direction, operational excellence, and value creation initiatives to ensure sustainable growth.",
+
+        financeDirector: "Finance Director",
+        operationsDirector: "Operations Director",
         csrProduct: "Product Responsibility",
         csrProductDesc:
           "The Company ensures product quality meets industry standards, maintains secure distribution processes, and provides transparent information to stakeholders.",
@@ -193,7 +227,13 @@ The Company believes that long-term business sustainability must align with envi
         businessSegment4Title: "Energy Development",
         businessSegment4Desc:
           "Strategic expansion into energy and mineral sectors, including nickel development and renewable energy opportunities.",
+        corporateCommittees: "Corporate Committees",
+        corporateCommitteesDesc:
+          "The Corporate Committees are established to support the Board of Commissioners and the Board of Directors in overseeing governance, risk management, and compliance practices.",
 
+        auditCommittee: "Audit Committee",
+        nominationCommittee: "Nomination & Remuneration Committee",
+        riskCommittee: "Risk Management Committee",
         operationalExcellence: "Operational Excellence",
         operationalExcellenceDesc:
           "We are committed to safety, efficiency, regulatory compliance, and sustainable growth across all operations.",
@@ -201,8 +241,22 @@ The Company believes that long-term business sustainability must align with envi
         publicExpose: "Public Expose",
         dividendInformation: "Dividend Information",
         boardOfDirectors: "Board of Directors",
+        codeOfEthics: "Code of Ethics",
+codeOfEthicsDesc:
+  "The Company’s Code of Ethics serves as a guideline for the Board of Directors, Board of Commissioners, and all employees in conducting business activities in accordance with good corporate governance principles.",
+
+integrityTitle: "Integrity",
+integrityDesc:
+  "Upholding honesty, transparency, and accountability in every business decision and action.",
+
+complianceTitle: "Compliance",
+complianceDesc:
+  "Complying with all applicable laws, capital market regulations, and internal company policies.",
+
+professionalismTitle: "Professionalism",
+professionalismDesc:
+  "Acting professionally and objectively while avoiding conflicts of interest in all corporate activities.",
         boardOfCommissioners: "Board of Commissioners",
-        auditCommittee: "Audit Committee",
         riskManagement: "Risk Management",
         codeOfConduct: "Code of Conduct",
         whistleblowingSystem: "Whistleblowing System",
@@ -217,7 +271,6 @@ The Company believes that long-term business sustainability must align with envi
         home: "Home",
         about: "About Us",
         investor: "Investor Relations",
-        governance: "Good Corporate Governance",
         csr: "Sustainability",
         news: "News & Disclosure",
         strukturOrganisasi: "Organization Structure",
@@ -442,7 +495,6 @@ The Company believes that long-term business sustainability must align with envi
         corporateSecretaryAppointment:
           "Appointment, dismissal, and/or vacancy of the Corporate Secretary",
         internalAuditCharter: "Internal Audit Charter",
-        codeOfEthics: "Code of Ethics",
         committeeGuidelines: "Committee Charter",
         auditCommitteeAppointment:
           "Appointment and dismissal of Audit Committee members",
@@ -491,9 +543,6 @@ The Company believes that long-term business sustainability must align with envi
           "On December 1, 2025, AAP obtained a contract addendum from PT Bukit Asam Tbk, including additional production volume and material hauling scope. This reflects the client’s satisfaction and trust in AAP’s performance.",
         milestone5:
           "Received a Letter of Award from PT Position dated January 22, 2026 for nickel mining development and operations in Maba Village, East Halmahera, North Maluku, marking AAP’s strategic expansion into the nickel sector.",
-        presidentDirector: "President Director",
-        financeDirector: "Finance Director",
-        operationsDirector: "Operations Director",
 
         commissionerPresident: "President Commissioner",
         commissioner: "Commissioner",
@@ -577,6 +626,7 @@ The Company believes that long-term business sustainability must align with envi
         about: "Tentang Kami",
         investor: "Hubungan Investor",
         governance: "Tata Kelola Perusahaan",
+        governanceHeroDesc:"Perseroan berkomitmen untuk menerapkan prinsip Tata Kelola Perusahaan yang Baik (Good Corporate Governance) secara konsisten dan berkelanjutan guna meningkatkan nilai perusahaan, menjaga kepercayaan pemegang saham, serta melindungi kepentingan seluruh pemangku kepentingan.",
         csr: "Keberlanjutan",
         perusahaanKami: "Perusahaan Kami",
         news: "Media",
@@ -683,6 +733,15 @@ The Company believes that long-term business sustainability must align with envi
           "Memberdayakan masyarakat sekitar melalui program CSR strategis.",
         viewSustainReport: "Lihat Laporan Keberlanjutan",
         investorAccessTitle: "Hubungan Investor",
+        boardOfDirectorsDesc:
+          "Direksi bertanggung jawab atas pengelolaan dan pengawasan operasional Perseroan sesuai dengan visi, misi, strategi perusahaan, serta tujuan keberlanjutan jangka panjang.",
+
+        presidentDirector: "Direktur Utama",
+        presidentDirectorDesc:
+          "Sebagai Direktur Utama, beliau memimpin arah strategis Perseroan, memastikan keunggulan operasional, serta menciptakan nilai jangka panjang yang berkelanjutan.",
+
+        financeDirector: "Direktur Keuangan",
+        operationsDirector: "Direktur Operasional",
         investorAccessSubtitle:
           "Menyediakan informasi yang transparan dan tepat waktu bagi pemegang saham.",
         annualReportBtn: "Laporan Tahunan",
@@ -724,9 +783,26 @@ The Company believes that long-term business sustainability must align with envi
         footerManagement: "Manajemen",
         footerContactUs: "Hubungi Kami",
         quarterlyReports: "RUPS",
+        corporateCommittees: "Komite Perseroan",
+        corporateCommitteesDesc:
+          "Komite Perseroan dibentuk untuk membantu Dewan Komisaris dan Direksi dalam menjalankan fungsi pengawasan, manajemen risiko, serta penerapan tata kelola perusahaan yang baik.",
+codeOfEthicsDesc:
+  "Kode Etik Perseroan merupakan pedoman perilaku bagi Direksi, Dewan Komisaris, dan seluruh karyawan dalam menjalankan kegiatan usaha sesuai dengan prinsip tata kelola perusahaan yang baik.",
+
+integrityTitle: "Integritas",
+integrityDesc:
+  "Menjunjung tinggi kejujuran, transparansi, dan tanggung jawab dalam setiap pengambilan keputusan dan tindakan bisnis.",
+
+complianceTitle: "Kepatuhan",
+complianceDesc:
+  "Mematuhi seluruh peraturan perundang-undangan, ketentuan pasar modal, serta kebijakan internal Perseroan.",
+
+professionalismTitle: "Profesionalisme",
+professionalismDesc:
+  "Bekerja secara profesional, objektif, dan menghindari benturan kepentingan dalam setiap aktivitas perusahaan.",
+        riskCommittee: "Komite Manajemen Risiko",
         publicExpose: "Paparan Publik",
         dividendInformation: "Informasi Dividen",
-        auditCommittee: "Komite Perseroan",
         codeOfConduct: "Kode Etik",
         esgCommitment: "Komitmen ESG",
         pressRelease: "Siaran Pers",
@@ -756,45 +832,46 @@ The Company believes that long-term business sustainability must align with envi
         irLabel: "Hubungan Investor",
         irMainTitle: "Explorasi Elegan,Eksekusi Andal",
         irDate: "23 Februari 2026",
-/* ================= LIPUTAN MEDIA ================= */
-mediaCoverageSection: {
-  title: "Liputan Media",
-  subtitle:
-    "Publikasi dan liputan media terkait perkembangan serta pencapaian Perseroan di tingkat nasional maupun internasional.",
-  readMore: "Baca Selengkapnya",
 
-  items: {
-    nationalMagazine: {
-      title: "Tampil di Majalah Bisnis Nasional",
-      source: "Business Today Indonesia",
-      date: "Februari 2026",
-      description:
-        "Liputan media nasional mengenai pencapaian ESG Perseroan serta ekspansi proyek strategis di tahun 2026.",
-      image:
-        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200",
-    },
+        /* ================= LIPUTAN MEDIA ================= */
+        mediaCoverageSection: {
+          title: "Liputan Media",
+          subtitle:
+            "Publikasi dan liputan media terkait perkembangan serta pencapaian Perseroan di tingkat nasional maupun internasional.",
+          readMore: "Baca Selengkapnya",
 
-    investorConfidence: {
-      title: "Ekspansi Tambang Tingkatkan Kepercayaan Investor",
-      source: "Indonesia Energy Review",
-      date: "Januari 2026",
-      description:
-        "Perseroan dinilai berhasil menjaga stabilitas operasional dan pertumbuhan pendapatan secara berkelanjutan.",
-      image:
-        "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1200",
-    },
+          items: {
+            nationalMagazine: {
+              title: "Tampil di Majalah Bisnis Nasional",
+              source: "Business Today Indonesia",
+              date: "Februari 2026",
+              description:
+                "Liputan media nasional mengenai pencapaian ESG Perseroan serta ekspansi proyek strategis di tahun 2026.",
+              image:
+                "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200",
+            },
 
-    sustainabilityHighlight: {
-      title: "Komitmen Keberlanjutan Mendapat Sorotan Internasional",
-      source: "Global ESG Report",
-      date: "Desember 2025",
-      description:
-        "Komitmen Perseroan terhadap praktik pertambangan berkelanjutan mendapatkan apresiasi internasional.",
-      image:
-        "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200",
-    },
-  },
-},
+            investorConfidence: {
+              title: "Ekspansi Tambang Tingkatkan Kepercayaan Investor",
+              source: "Indonesia Energy Review",
+              date: "Januari 2026",
+              description:
+                "Perseroan dinilai berhasil menjaga stabilitas operasional dan pertumbuhan pendapatan secara berkelanjutan.",
+              image:
+                "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1200",
+            },
+
+            sustainabilityHighlight: {
+              title: "Komitmen Keberlanjutan Mendapat Sorotan Internasional",
+              source: "Global ESG Report",
+              date: "Desember 2025",
+              description:
+                "Komitmen Perseroan terhadap praktik pertambangan berkelanjutan mendapatkan apresiasi internasional.",
+              image:
+                "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200",
+            },
+          },
+        },
         irNews1: "AAP Raih Kontrak Kerja Penambangan Nikel di Awal Tahun 2026",
         irNews2:
           "Kepercayaan Tambahan Volume Produksi dari Bowheer Eksisting Di Akhir Tahun 2025",
@@ -842,44 +919,7 @@ mediaCoverageSection: {
         newsPressTitle: "Berita & Siaran Pers",
         newsLabel: "Berita",
         viewAll: "Lihat Semua",
-/* ================= AKSI KORPORASI ================= */
-corporateActionsSection: {
-  title: "Aksi Korporasi",
-  subtitle:
-    "Informasi terkait aksi korporasi terbaru yang dilakukan Perseroan sebagai bentuk transparansi dan komitmen kepada pemegang saham.",
-  viewDetails: "Lihat Detail",
 
-  status: {
-    approved: "Disetujui",
-    completed: "Selesai",
-  },
-
-  items: {
-    dividend2025: {
-      title: "Pembagian Dividen Tahun 2025",
-      date: "Maret 2025",
-      status: "approved",
-      description:
-        "Perseroan menyetujui pembagian dividen sebagai bagian dari komitmen terhadap pemegang saham serta peningkatan nilai investasi.",
-    },
-
-    shareBuyback: {
-      title: "Program Pembelian Kembali Saham",
-      date: "Januari 2025",
-      status: "completed",
-      description:
-        "Program pembelian kembali saham untuk menjaga stabilitas harga saham dan meningkatkan kepercayaan investor.",
-    },
-
-    rightsIssue: {
-      title: "Penawaran Umum Terbatas (Rights Issue)",
-      date: "September 2024",
-      status: "completed",
-      description:
-        "Penambahan modal melalui rights issue guna mendukung ekspansi usaha dan pengembangan proyek strategis.",
-    },
-  },
-},
         newsItem1: "Public Expose 2025",
         newsItem2: "Laporan Tahunan 2024 Dirilis",
         newsItem3: "Pengumuman Aksi Korporasi",
@@ -938,6 +978,29 @@ corporateActionsSection: {
         addressCountry: "Jakarta Pusat 10230 DKI Jakarta – Indonesia",
         telephone: "Telepon +62 21 6669 2917 | Fax: +62 21 6669 2918",
         allRightsReserved: "Seluruh Hak Cipta Dilindungi.",
+        whistleblowingTitle: "Kebijakan Mekanisme Sistem Pelaporan Pelanggaran",
+
+whistleblowingDesc:
+  "Sistem Pelaporan Pelanggaran (Whistleblowing System) merupakan mekanisme yang disediakan Perseroan bagi karyawan dan pemangku kepentingan untuk melaporkan dugaan pelanggaran hukum, etika, atau peraturan perusahaan secara aman dan rahasia.",
+
+reportChannel: "Saluran Pelaporan",
+
+reportConfidential:
+  "Identitas pelapor akan dijaga kerahasiaannya dan dilindungi dari segala bentuk tekanan atau tindakan balasan.",
+
+reportProcedure: "Prosedur Pelaporan",
+
+wbsStep1:
+  "Pelapor menyampaikan laporan secara tertulis melalui saluran resmi yang telah disediakan Perseroan.",
+
+wbsStep2:
+  "Laporan akan diverifikasi dan dikaji oleh tim yang berwenang secara independen.",
+
+wbsStep3:
+  "Dilakukan investigasi apabila ditemukan indikasi pelanggaran yang cukup.",
+
+wbsStep4:
+  "Hasil investigasi dilaporkan kepada manajemen dan/atau Dewan Komisaris untuk ditindaklanjuti sesuai ketentuan yang berlaku.",  
         csrHero: {
           title: "Komitmen Sosial & Keberlanjutan",
           introduction:
@@ -970,10 +1033,6 @@ corporateActionsSection: {
           "Pada 1 Desember 2025, AAP menandatangani addendum kontrak dengan PT Bukit Asam Tbk yang mencakup tambahan volume produksi dan jasa angkutan material. Hal ini mencerminkan kepuasan serta kepercayaan berkelanjutan dari pemberi kerja terhadap kinerja AAP.",
         milestone5:
           "Perolehan Letter of Award dari PT Position tertanggal 22 Januari 2026 untuk pekerjaan pengembangan dan operasi penambangan nikel di Desa Maba, Halmahera Timur, Maluku Utara, menandai ekspansi strategis AAP ke sektor nikel.",
-
-        presidentDirector: "Direktur Utama",
-        financeDirector: "Direktur Keuangan",
-        operationsDirector: "Direktur Operasional",
         /* ================= SIARAN PERS ================= */
         press: {
           title: "Siaran Pers",

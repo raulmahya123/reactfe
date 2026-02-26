@@ -1,33 +1,36 @@
 import { Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const PRIMARY = "#AEB596";
 const CREAM = "#FFFFFF";
 
-const commissionersData = [
-  {
-    name: "Michael Hartono",
-    position: "President Commissioner",
-    email: "michael@company.com",
-    image: "/images/commissioner1.jpg",
-  },
-  {
-    name: "Andi Wijaya",
-    position: "Independent Commissioner",
-    email: "andi@company.com",
-    image: "/images/commissioner2.jpg",
-  },
-  {
-    name: "Sarah Pratama",
-    position: "Commissioner",
-    email: "sarah@company.com",
-    image: "/images/commissioner3.jpg",
-  },
-];
+const Committees = () => {
+  const { t } = useTranslation();
 
-const Commissioners = () => {
+  const committeesData = [
+    {
+      name: "Audit Committee",
+      position: t("auditCommittee"),
+      email: "audit@company.com",
+      image: "/images/committee1.jpg",
+    },
+    {
+      name: "Nomination & Remuneration Committee",
+      position: t("nominationCommittee"),
+      email: "nomination@company.com",
+      image: "/images/committee2.jpg",
+    },
+    {
+      name: "Risk Management Committee",
+      position: t("riskCommittee"),
+      email: "risk@company.com",
+      image: "/images/committee3.jpg",
+    },
+  ];
+
   return (
     <section
-      id="commissioners"
+      id="committees"
       className="scroll-mt-32 py-24 border-b"
       style={{ backgroundColor: CREAM }}
     >
@@ -39,22 +42,22 @@ const Commissioners = () => {
             className="text-4xl font-bold"
             style={{ color: PRIMARY }}
           >
-            Board of Commissioners
+            {t("corporateCommittees")}
           </h2>
+
           <div
             className="w-20 h-1 mt-4 rounded-full"
             style={{ backgroundColor: PRIMARY }}
           />
+
           <p className="text-gray-600 mt-6 max-w-2xl leading-relaxed">
-            The Board of Commissioners supervises and provides strategic
-            guidance to the Board of Directors to ensure effective corporate
-            governance, risk management, and long-term sustainability.
+            {t("corporateCommitteesDesc")}
           </p>
         </div>
 
         {/* GRID */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {commissionersData.map((item, index) => (
+          {committeesData.map((item, index) => (
             <div
               key={index}
               className="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
@@ -96,4 +99,4 @@ const Commissioners = () => {
   );
 };
 
-export default Commissioners;
+export default Committees;

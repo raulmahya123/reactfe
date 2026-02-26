@@ -47,10 +47,10 @@ const menuItems = [
     path: "/governance",
     submenu: [
       { name: "boardOfDirectors", path: "/governance/directors" },
-      { name: "auditCommittee", path: "/governance/audit" },
+      { name: "auditCommittee", path: "/governance/committees" },
       { name: "corporateSecretary", path: "/governance/secretary" },
-      { name: "codeOfConduct", path: "/governance/code" },
-      { name: "whistleblowingSystem", path: "/governance/wbs" },
+      { name: "codeOfEthics", path: "/governance/codeetik" },
+      { name: "whistleblowingSystem", path: "/governance/whistleblowing" },
       { name: "governanceInformation", path: "/governance/information" },
       { name: "budgetDocument", path: "/governance/budget" },
     ],

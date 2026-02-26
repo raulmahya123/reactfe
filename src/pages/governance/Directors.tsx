@@ -1,31 +1,35 @@
 import { Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const PRIMARY = "#AEB596";
 const CREAM = "#FFFFFF";
 
-const directorsData = [
-  {
-    name: "David Santoso",
-    position: "President Director",
-    email: "david@company.com",
-    image: "/images/director1.jpg",
-    highlight: true,
-  },
-  {
-    name: "Rina Kurniawati",
-    position: "Finance Director",
-    email: "rina@company.com",
-    image: "/images/director2.jpg",
-  },
-  {
-    name: "Arief Nugroho",
-    position: "Operations Director",
-    email: "arief@company.com",
-    image: "/images/director3.jpg",
-  },
-];
-
 const Directors = () => {
+  const { t } = useTranslation();
+
+  const directorsData = [
+    {
+      name: "David Santoso",
+      position: t("presidentDirector"),
+      email: "david@company.com",
+      image: "/images/director1.jpg",
+      highlight: true,
+      description: t("presidentDirectorDesc"),
+    },
+    {
+      name: "Rina Kurniawati",
+      position: t("financeDirector"),
+      email: "rina@company.com",
+      image: "/images/director2.jpg",
+    },
+    {
+      name: "Arief Nugroho",
+      position: t("operationsDirector"),
+      email: "arief@company.com",
+      image: "/images/director3.jpg",
+    },
+  ];
+
   return (
     <section
       id="directors"
@@ -40,20 +44,20 @@ const Directors = () => {
             className="text-4xl font-bold"
             style={{ color: PRIMARY }}
           >
-            Board of Directors
+            {t("boardOfDirectors")}
           </h2>
+
           <div
             className="w-20 h-1 mt-4 rounded-full"
             style={{ backgroundColor: PRIMARY }}
           />
+
           <p className="text-gray-600 mt-6 max-w-2xl leading-relaxed">
-            The Board of Directors is responsible for managing and overseeing
-            the Company’s operations in alignment with its vision, mission,
-            corporate strategy, and long-term sustainability objectives.
+            {t("boardOfDirectorsDesc")}
           </p>
         </div>
 
-        {/* DIRECTORS GRID */}
+        {/* GRID */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {directorsData.map((item, index) => (
             <div
@@ -94,9 +98,7 @@ const Directors = () => {
 
                   {item.highlight && (
                     <p className="text-sm text-gray-600 mt-6 leading-relaxed">
-                      As President Director, he leads the Company’s strategic
-                      direction, operational excellence, and value creation
-                      initiatives to ensure sustainable growth.
+                      {item.description}
                     </p>
                   )}
                 </div>

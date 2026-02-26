@@ -4,12 +4,9 @@ import { useTranslation } from "react-i18next";
 
 import Directors from "./Directors";
 import Commissioners from "./Commissioners";
-import Committees from "./Committees";
-import AuditCommittee from "./AuditCommittee";
-import RiskManagement from "./RiskManagement";
 import CorporateSecretary from "./CorporateSecretary";
-import CodeOfConduct from "./CodeOfConduct";
-import WhistleblowingSystem from "./WhistleblowingSystem";
+import CodeOfEthics from "./CodeOfEthics";
+import WhistleblowingPolicy from "./WhistleblowingPolicy";
 import GovernanceInformation from "./GovernanceInformation";
 import BudgetDocument from "./budgetDocument";
 
@@ -34,16 +31,22 @@ const Governance = () => {
 
   return (
     <main>
-
+      {/* HERO */}
       {/* HERO */}
       <section className="relative pt-40 pb-28 bg-[#BEC5A4] text-black overflow-hidden">
         <div className="absolute inset-0 bg-white opacity-95"></div>
 
-        <div className="relative max-w-6xl mx-auto px-6 text-center">
+        <div className="relative max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider">
             {t("governance")}
           </h1>
+
           <div className="w-24 h-1 bg-[#C6A75E] mx-auto mt-8"></div>
+
+          {/* 🔥 TAMBAHAN PENJELASAN */}
+          <p className="mt-8 text-gray-600 leading-relaxed text-base md:text-lg">
+            {t("governanceHeroDesc")}
+          </p>
         </div>
       </section>
 
@@ -51,15 +54,11 @@ const Governance = () => {
 
       <Directors />
       <Commissioners />
-      <Committees />
-      <AuditCommittee />
-      <RiskManagement />
       <CorporateSecretary />
-      <CodeOfConduct />
-      <WhistleblowingSystem />
+      <CodeOfEthics />
+      <WhistleblowingPolicy />
       <GovernanceInformation />
       <BudgetDocument />
-
     </main>
   );
 };
