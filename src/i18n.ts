@@ -5,6 +5,7 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        csrr : "CSR",
         footer: {
           addressLine1: "Prudential Tower, 17th Floor",
           addressLine2: "Jl. Jendral Sudirman Kav 79, Jakarta 12910",
@@ -1224,6 +1225,7 @@ The Company believes that long-term business sustainability must align with envi
           download: "Unduh",
           downloadDocument: "Unduh Dokumen",
           disclosure: "Keterbukaan Informasi",
+          csrr: "Laporan Keberlanjutan",
           corporateAction: "Aksi Korporasi",
           report: "Laporan",
           item1Title: "Keterbukaan Informasi Penandatanganan Kontrak Baru",

@@ -56,7 +56,7 @@ const menuItems = [
     ],
   },
   {
-    name: "csr",
+    name: "csrr",
     path: "/csr",
   },
   {
