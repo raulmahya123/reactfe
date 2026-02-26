@@ -1,25 +1,34 @@
 import { motion } from "framer-motion";
 import { Users, Truck, Cpu } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const PRIMARY = "#C6A75E";
 
 const ResourcesSection = () => {
+  const { t } = useTranslation();
+
   const resources = [
     {
       icon: <Users size={28} style={{ color: PRIMARY }} />,
-      title: "Sumber Daya Manusia Profesional",
-      desc: "Didukung oleh tenaga kerja berpengalaman, kompeten, dan bersertifikasi yang memiliki komitmen tinggi terhadap keselamatan dan standar operasional perusahaan.",
+      title: t("resources.humanTitle"),
+      desc: t("resources.humanDesc"),
     },
     {
       icon: <Truck size={28} style={{ color: PRIMARY }} />,
-      title: "Peralatan & Infrastruktur Modern",
-      desc: "Menggunakan armada dan peralatan pertambangan modern dengan sistem pemeliharaan terintegrasi untuk memastikan produktivitas dan efisiensi maksimal.",
+      title: t("resources.equipmentTitle"),
+      desc: t("resources.equipmentDesc"),
     },
     {
       icon: <Cpu size={28} style={{ color: PRIMARY }} />,
-      title: "Sistem Operasional Terintegrasi",
-      desc: "Menerapkan sistem monitoring dan manajemen berbasis teknologi untuk meningkatkan kontrol operasional, akurasi data, serta pengambilan keputusan strategis.",
+      title: t("resources.systemTitle"),
+      desc: t("resources.systemDesc"),
     },
+  ];
+
+  const stats = [
+    { value: "500+", label: t("resources.stat1") },
+    { value: "120+", label: t("resources.stat2") },
+    { value: "0", label: t("resources.stat3") },
   ];
 
   return (
@@ -29,7 +38,7 @@ const ResourcesSection = () => {
     >
       <div className="relative max-w-6xl mx-auto px-6">
 
-        {/* ================= TITLE ================= */}
+        {/* TITLE */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +46,7 @@ const ResourcesSection = () => {
           viewport={{ once: true }}
           className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900"
         >
-          SUMBER DAYA KAMI
+          {t("resources.title")}
         </motion.h2>
 
         <div className="w-32 h-[4px] bg-[#C6A75E] mx-auto mt-8 rounded-full"></div>
@@ -49,13 +58,10 @@ const ResourcesSection = () => {
           viewport={{ once: true }}
           className="mt-10 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg"
         >
-          Keunggulan operasional Perseroan didukung oleh kombinasi sumber daya
-          manusia yang kompeten, peralatan modern, serta sistem manajemen
-          terintegrasi yang dirancang untuk menjamin efisiensi, keselamatan,
-          dan keberlanjutan dalam setiap aktivitas pertambangan.
+          {t("resources.description")}
         </motion.p>
 
-        {/* ================= GRID ================= */}
+        {/* GRID */}
         <div className="grid md:grid-cols-3 gap-12 mt-20">
           {resources.map((item, index) => (
             <motion.div
@@ -82,24 +88,25 @@ const ResourcesSection = () => {
           ))}
         </div>
 
-        {/* ================= STATISTICS ================= */}
+        {/* STATISTICS */}
         <div className="grid md:grid-cols-3 gap-12 mt-24">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-[#C6A75E] mb-2">500+</div>
-            <div className="text-gray-600 text-sm">Tenaga Kerja Profesional</div>
-          </div>
-
-          <div className="text-center">
-            <div className="text-4xl font-bold text-[#C6A75E] mb-2">120+</div>
-            <div className="text-gray-600 text-sm">Unit Alat Berat</div>
-          </div>
-
-          <div className="text-center">
-            <div className="text-4xl font-bold text-[#C6A75E] mb-2">0</div>
-            <div className="text-gray-600 text-sm">
-              Fatality Accident Commitment
-            </div>
-          </div>
+          {stats.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="text-4xl font-bold text-[#C6A75E] mb-2">
+                {item.value}
+              </div>
+              <div className="text-gray-600 text-sm">
+                {item.label}
+              </div>
+            </motion.div>
+          ))}
         </div>
 
       </div>

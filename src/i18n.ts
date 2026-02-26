@@ -5,6 +5,161 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        proyek: {
+          title: "Business Activities",
+          description:
+            "PT Andalan Artha Primanusa Tbk operates various mining projects in strategic regions across Indonesia with professional standards and strong commitment to safety.",
+          operationalProject: "Operational Project",
+          bggDesc:
+            "Coal mining operations focusing on production efficiency and sustainability management.",
+          sbsDesc:
+            "Strategic operational partnership with optimized hauling systems and mine management.",
+          posDesc:
+            "Mining infrastructure development project with high safety standards.",
+          dbkDesc:
+            "Integrated mining operations management with modern monitoring systems.",
+        },
+        strategy: {
+          title: "Strategy & Competitive Advantages",
+          description:
+            "The Company implements strategies focused on strengthening fundamentals, business diversification, and enhancing operational competitiveness to maintain performance stability and capture growth opportunities.",
+
+          s1Title: "Fundamental Strengthening & Operational Efficiency",
+          s1Desc:
+            "Optimizing heavy equipment utilization, cost control, and structured maintenance planning to maintain productivity and margins.",
+
+          s2Title: "Customer & Commodity Diversification",
+          s2Desc:
+            "Expansion into nickel commodity to broaden customer base and strengthen revenue structure.",
+
+          s3Title: "Human Capital Development",
+          s3Desc:
+            "Enhancing workforce technical and managerial capabilities with a safety-driven culture.",
+
+          advantagesTitle: "Competitive Advantages",
+
+          a1Title: "Multi-Commodity Capability",
+          a1Desc: "Experienced in coal and nickel mining contracting services.",
+
+          a2Title: "Track Record & Safety Standards",
+          a2Desc:
+            "Consistent production achievement with strong safety implementation.",
+
+          a3Title: "Integrated Operational Services",
+          a3Desc: "Providing overburden removal, mining, and hauling services.",
+
+          a4Title: "Competitive Cost Structure",
+          a4Desc:
+            "Efficient cost control enabling competitive service pricing.",
+
+          a5Title: "Revenue Diversification",
+          a5Desc: "Reducing dependency on a single employer.",
+
+          a6Title: "Compliance & Governance",
+          a6Desc: "Adherence to regulatory and safety standards.",
+        },
+        resources: {
+          title: "OUR RESOURCES",
+          description:
+            "The Company’s operational excellence is supported by competent human resources, modern equipment, and integrated management systems designed to ensure efficiency, safety, and sustainability.",
+
+          humanTitle: "Professional Human Resources",
+          humanDesc:
+            "Supported by experienced and certified personnel with strong commitment to safety and operational standards.",
+
+          equipmentTitle: "Modern Equipment & Infrastructure",
+          equipmentDesc:
+            "Utilizing modern mining fleet and integrated maintenance systems to ensure maximum productivity.",
+
+          systemTitle: "Integrated Operational Systems",
+          systemDesc:
+            "Technology-based monitoring systems to enhance operational control and strategic decision-making accuracy.",
+
+          stat1: "Professional Workforce",
+          stat2: "Heavy Equipment Units",
+          stat3: "Zero Fatality Commitment",
+        },
+        expose: {
+          title: "Public Expose",
+          description:
+            "Public Expose information and materials of PT Andalan Artha Primanusa as part of transparency to investors and stakeholders.",
+          download: "Download",
+          view: "View",
+          title2025: "Public Expose 2025",
+          desc2025:
+            "Presentation of company performance and business strategy to investors and the public.",
+          title2024: "Public Expose 2024",
+          desc2024:
+            "Annual presentation on operational achievements and expansion plans.",
+          title2023: "Public Expose 2023",
+          desc2023:
+            "Public presentation regarding financial performance and corporate governance.",
+        },
+        dividend: {
+          title: "Dividend Information",
+          description:
+            "Dividend distribution information of PT Andalan Artha Primanusa as a commitment to shareholder value.",
+          highlightTitle: "Total Dividend per Share 2024",
+          paidOn: "Paid on",
+          history: "Dividend History",
+          year: "Year",
+          amount: "Amount",
+          paymentDate: "Payment Date",
+          status: "Status",
+          paid: "Paid",
+        },
+        stock: {
+          title: "Stock Performance",
+          description:
+            "Stock performance information of PT Andalan Artha Primanusa as a reference for investors and shareholders.",
+          marketCap: "Market Cap",
+          volume: "Volume",
+          high52: "52W High",
+          low52: "52W Low",
+          chartPlaceholder: "Stock price chart will be displayed here.",
+        },
+        quarterly: {
+          title: "Quarterly Reports",
+          description:
+            "Quarterly financial performance reports of PT Andalan Artha Primanusa as a form of transparency to shareholders and investors.",
+          latest: "Latest Quarter",
+          interim: "Interim Financial Statement",
+          downloadReport: "Download Report",
+          download: "Download",
+          q3Title: "Interim Financial Statement Q3 2025",
+          q2Title: "Interim Financial Statement Q2 2025",
+          q1Title: "Interim Financial Statement Q1 2025",
+          q4Title: "Interim Financial Statement Q4 2024",
+        },
+        material: {
+          title: "Material Information",
+          description:
+            "Material information and public disclosures of PT Andalan Artha Primanusa in compliance with regulations and transparency obligations to investors.",
+          latest: "Latest Disclosure",
+          download: "Download",
+          downloadDocument: "Download Document",
+          disclosure: "Disclosure",
+          corporateAction: "Corporate Action",
+          report: "Report",
+          item1Title: "Disclosure of New Contract Signing",
+          item2Title: "Changes in Board of Directors and Commissioners",
+          item3Title: "Report on IPO Fund Utilization",
+        },
+        annual: {
+          title: "Annual Reports",
+          description:
+            "The Company's annual reports as a form of transparency and accountability to stakeholders.",
+          download: "Download",
+          report2024Title: "Annual Report 2024",
+          report2024Desc:
+            "Annual report of PT Andalan Artha Primanusa for fiscal year 2024.",
+          report2023Title: "Annual Report 2023",
+          report2023Desc:
+            "Annual report of PT Andalan Artha Primanusa for fiscal year 2023.",
+          report2022Title: "Annual Report 2022",
+          report2022Desc:
+            "Annual report of PT Andalan Artha Primanusa for fiscal year 2022.",
+        },
         corporateAction: "Corporate Action",
 
         corporateActionDesc:
@@ -288,6 +443,25 @@ The Company believes that long-term business sustainability must align with envi
         publicExpose: "Public Expose",
         dividendInformation: "Dividend Information",
         boardOfDirectors: "Board of Directors",
+        financial: {
+          title: "Financial Statements",
+          description:
+            "Financial reports of PT Andalan Artha Primanusa as a form of transparency and accountability to shareholders and stakeholders.",
+          latest: "Latest Audited Report",
+          downloadReport: "Download Report",
+          annual: "Annual",
+          quarterly: "Quarterly",
+          download: "Download",
+          annual2024Title: "Audited Financial Statement 2024",
+          annual2024Desc:
+            "Annual financial report audited by a Public Accounting Firm.",
+          annual2023Title: "Audited Financial Statement 2023",
+          annual2023Desc:
+            "Annual financial report audited by an independent auditor.",
+          q3Title: "Interim Financial Statement Q3 2025",
+          q2Title: "Interim Financial Statement Q2 2025",
+          q1Title: "Interim Financial Statement Q1 2025",
+        },
         codeOfEthics: "Code of Ethics",
         codeOfEthicsDesc:
           "The Company’s Code of Ethics serves as a guideline for the Board of Directors, Board of Commissioners, and all employees in conducting business activities in accordance with good corporate governance principles.",
@@ -344,7 +518,6 @@ The Company believes that long-term business sustainability must align with envi
         financialInfo: "Financial Statements",
         generalMeeting: "General Meeting of Shareholders",
         stockInfo: "Stock Information",
-        dividend: "Dividend History",
         dividendPolicy: "Dividend Policy",
         /* ================= GOVERNANCE (POJK Pasal 6 ayat 3) ================= */
         boardCharter: "Board Charter",
@@ -711,7 +884,6 @@ The Company believes that long-term business sustainability must align with envi
         financialInfo: "Laporan Keuangan",
         generalMeeting: "Rapat Umum Pemegang Saham",
         stockInfo: "Informasi Saham",
-        dividend: "Riwayat Dividen",
         dividendPolicy: "Kebijakan Dividen",
         corporateAction: "Aksi Korporasi",
         materialInformation: "Keterbukaan Informasi / Fakta Material",
@@ -785,6 +957,19 @@ The Company believes that long-term business sustainability must align with envi
         sustainSubtitle:
           "Mendorong operasional yang bertanggung jawab untuk penciptaan nilai jangka panjang.",
         environmentTitle: "Tanggung Jawab Lingkungan",
+        quarterly: {
+          title: "Laporan Triwulanan",
+          description:
+            "Laporan kinerja keuangan triwulanan PT Andalan Artha Primanusa sebagai bentuk transparansi kepada pemegang saham dan investor.",
+          latest: "Kuartal Terbaru",
+          interim: "Laporan Keuangan Interim",
+          downloadReport: "Unduh Laporan",
+          download: "Unduh",
+          q3Title: "Laporan Keuangan Interim Q3 2025",
+          q2Title: "Laporan Keuangan Interim Q2 2025",
+          q1Title: "Laporan Keuangan Interim Q1 2025",
+          q4Title: "Laporan Keuangan Interim Q4 2024",
+        },
         laborTitle: "Kesehatan, Keselamatan & SDM",
         socialTitle: "Pengembangan Masyarakat",
         environmentDesc:
@@ -877,13 +1062,52 @@ The Company believes that long-term business sustainability must align with envi
           "Aksi Korporasi merupakan tindakan strategis yang dilakukan Perseroan untuk meningkatkan nilai perusahaan serta memberikan manfaat bagi pemegang saham dan pemangku kepentingan lainnya.",
 
         dividendTitle: "Pembagian Dividen",
+        dividend: {
+          title: "Informasi Dividen",
+          description:
+            "Informasi pembagian dividen PT Andalan Artha Primanusa kepada pemegang saham sebagai bentuk komitmen terhadap nilai pemegang saham.",
+          highlightTitle: "Total Dividen per Saham 2024",
+          paidOn: "Dibayarkan pada",
+          history: "Riwayat Dividen",
+          year: "Tahun",
+          amount: "Jumlah",
+          paymentDate: "Tanggal Pembayaran",
+          status: "Status",
+          paid: "Dibayarkan",
+        },
         dividendDesc:
           "Perseroan dapat membagikan dividen kepada pemegang saham berdasarkan keputusan RUPS dan kinerja keuangan Perseroan.",
-
+        material: {
+          title: "Informasi Material",
+          description:
+            "Informasi material dan keterbukaan informasi PT Andalan Artha Primanusa sebagai bentuk kepatuhan terhadap regulasi dan transparansi kepada investor.",
+          latest: "Keterbukaan Terbaru",
+          download: "Unduh",
+          downloadDocument: "Unduh Dokumen",
+          disclosure: "Keterbukaan Informasi",
+          corporateAction: "Aksi Korporasi",
+          report: "Laporan",
+          item1Title: "Keterbukaan Informasi Penandatanganan Kontrak Baru",
+          item2Title: "Perubahan Susunan Direksi dan Komisaris",
+          item3Title: "Laporan Realisasi Penggunaan Dana IPO",
+        },
         rightsIssueTitle: "Penawaran Umum Terbatas (Right Issue)",
         rightsIssueDesc:
           "Perseroan dapat melakukan penambahan modal melalui penerbitan saham baru sesuai dengan ketentuan pasar modal.",
-
+        proyek: {
+          title: "Kegiatan Usaha",
+          description:
+            "PT Andalan Artha Primanusa Tbk menjalankan berbagai proyek operasional pertambangan di wilayah strategis Indonesia dengan standar profesional dan komitmen tinggi terhadap keselamatan kerja.",
+          operationalProject: "Proyek Operasional",
+          bggDesc:
+            "Operasional pertambangan batubara dengan fokus pada efisiensi produksi dan manajemen keberlanjutan.",
+          sbsDesc:
+            "Kerja sama operasional strategis dengan optimalisasi sistem hauling dan manajemen tambang.",
+          posDesc:
+            "Proyek pengembangan infrastruktur pertambangan dengan standar keselamatan tinggi.",
+          dbkDesc:
+            "Pengelolaan operasional tambang terintegrasi dengan sistem monitoring modern.",
+        },
         mergerTitle: "Merger & Akuisisi",
         mergerDesc:
           "Perseroan dapat melakukan penggabungan usaha atau akuisisi untuk memperkuat struktur bisnis dan memperluas pangsa pasar.",
@@ -918,6 +1142,16 @@ The Company believes that long-term business sustainability must align with envi
         supportingProfessionals: "Profesional Pendukung",
         footerNews: "Berita & Siaran Pers",
         annualReportsMenu: "Laporan Tahunan",
+        stock: {
+          title: "Kinerja Saham",
+          description:
+            "Informasi kinerja saham PT Andalan Artha Primanusa sebagai referensi bagi investor dan pemegang saham.",
+          marketCap: "Kapitalisasi Pasar",
+          volume: "Volume",
+          high52: "Tertinggi 52 Minggu",
+          low52: "Terendah 52 Minggu",
+          chartPlaceholder: "Grafik harga saham akan ditampilkan di sini.",
+        },
         /* ================= INVESTOR NEWS ================= */
         irLabel: "Hubungan Investor",
         irMainTitle: "Explorasi Elegan,Eksekusi Andal",
@@ -1054,10 +1288,79 @@ The Company believes that long-term business sustainability must align with envi
 
         milestones: "Tonggak Pencapaian",
         management: "Susunan Pengurus",
+        financial: {
+          title: "Laporan Keuangan",
+          description:
+            "Laporan keuangan PT Andalan Artha Primanusa sebagai bentuk transparansi dan akuntabilitas kepada pemegang saham dan pemangku kepentingan.",
+          latest: "Laporan Audit Terbaru",
+          downloadReport: "Unduh Laporan",
+          annual: "Tahunan",
+          quarterly: "Triwulanan",
+          download: "Unduh",
+          annual2024Title: "Laporan Keuangan Audit 2024",
+          annual2024Desc:
+            "Laporan keuangan tahunan yang telah diaudit oleh Kantor Akuntan Publik.",
+          annual2023Title: "Laporan Keuangan Audit 2023",
+          annual2023Desc:
+            "Laporan keuangan tahunan yang telah diaudit oleh auditor independen.",
+          q3Title: "Laporan Keuangan Interim Q3 2025",
+          q2Title: "Laporan Keuangan Interim Q2 2025",
+          q1Title: "Laporan Keuangan Interim Q1 2025",
+        },
+        resources: {
+          title: "SUMBER DAYA KAMI",
+          description:
+            "Keunggulan operasional Perseroan didukung oleh kombinasi sumber daya manusia yang kompeten, peralatan modern, serta sistem manajemen terintegrasi yang dirancang untuk menjamin efisiensi, keselamatan, dan keberlanjutan dalam setiap aktivitas pertambangan.",
 
+          humanTitle: "Sumber Daya Manusia Profesional",
+          humanDesc:
+            "Didukung oleh tenaga kerja berpengalaman dan bersertifikasi dengan komitmen tinggi terhadap keselamatan dan standar operasional.",
+
+          equipmentTitle: "Peralatan & Infrastruktur Modern",
+          equipmentDesc:
+            "Menggunakan armada dan peralatan pertambangan modern dengan sistem pemeliharaan terintegrasi untuk memastikan produktivitas maksimal.",
+
+          systemTitle: "Sistem Operasional Terintegrasi",
+          systemDesc:
+            "Penerapan sistem monitoring berbasis teknologi untuk meningkatkan kontrol operasional dan akurasi pengambilan keputusan.",
+
+          stat1: "Tenaga Kerja Profesional",
+          stat2: "Unit Alat Berat",
+          stat3: "Komitmen Zero Fatality",
+        },
+        annual: {
+          title: "Laporan Tahunan",
+          description:
+            "Laporan tahunan perusahaan sebagai bentuk transparansi dan akuntabilitas kepada para pemangku kepentingan.",
+          download: "Unduh",
+          report2024Title: "Laporan Tahunan 2024",
+          report2024Desc:
+            "Laporan tahunan PT Andalan Artha Primanusa tahun buku 2024.",
+          report2023Title: "Laporan Tahunan 2023",
+          report2023Desc:
+            "Laporan tahunan PT Andalan Artha Primanusa tahun buku 2023.",
+          report2022Title: "Laporan Tahunan 2022",
+          report2022Desc:
+            "Laporan tahunan PT Andalan Artha Primanusa tahun buku 2022.",
+        },
         financialStatements: "Laporan Keuangan",
         stockPerformance: "Informasi Saham",
-
+        expose: {
+          title: "Public Expose",
+          description:
+            "Informasi dan materi Public Expose PT Andalan Artha Primanusa sebagai bagian dari keterbukaan informasi kepada investor dan pemangku kepentingan.",
+          download: "Unduh",
+          view: "Lihat",
+          title2025: "Public Expose 2025",
+          desc2025:
+            "Pemaparan kinerja perusahaan dan strategi bisnis kepada investor dan publik.",
+          title2024: "Public Expose 2024",
+          desc2024:
+            "Presentasi tahunan mengenai pencapaian operasional dan rencana ekspansi.",
+          title2023: "Public Expose 2023",
+          desc2023:
+            "Paparan publik terkait kinerja keuangan dan tata kelola perusahaan.",
+        },
         policy: "Kebijakan Keberlanjutan",
         communityDevelopment: "Pengembangan Masyarakat",
         boardOfDirectorss: "Direksi",
@@ -1178,6 +1481,47 @@ Perseroan meyakini bahwa keberlanjutan usaha harus berjalan seiring dengan tangg
       `,
             },
           },
+        },
+        strategy: {
+          title: "Strategi & Keunggulan",
+          description:
+            "Perseroan menerapkan strategi yang berfokus pada penguatan fundamental, diversifikasi usaha, serta peningkatan daya saing operasional guna menjaga stabilitas kinerja dan menangkap peluang pertumbuhan industri.",
+
+          s1Title: "Penguatan Fundamental & Efisiensi Operasional",
+          s1Desc:
+            "Optimalisasi utilisasi alat berat, pengendalian biaya, serta pemeliharaan terstruktur untuk menjaga produktivitas dan margin usaha.",
+
+          s2Title: "Diversifikasi Pelanggan dan Komoditas",
+          s2Desc:
+            "Ekspansi ke komoditas nikel sebagai langkah strategis memperluas basis pelanggan dan memperkuat struktur pendapatan.",
+
+          s3Title: "Pengembangan Sumber Daya Manusia",
+          s3Desc:
+            "Peningkatan kapabilitas teknis dan manajerial tenaga kerja dengan budaya kerja berbasis keselamatan dan kinerja.",
+
+          advantagesTitle: "Keunggulan Kompetitif",
+
+          a1Title: "Kapabilitas Multi-Komoditas",
+          a1Desc:
+            "Berpengalaman dalam jasa kontraktor pertambangan batu bara dan nikel.",
+
+          a2Title: "Rekam Jejak & Standar Keselamatan",
+          a2Desc:
+            "Pencapaian target produksi dengan standar keselamatan konsisten.",
+
+          a3Title: "Layanan Operasional Terintegrasi",
+          a3Desc:
+            "Layanan overburden removal, penambangan, dan pengangkutan terintegrasi.",
+
+          a4Title: "Struktur Biaya Kompetitif",
+          a4Desc:
+            "Pengendalian biaya yang memungkinkan penawaran harga jasa bersaing.",
+
+          a5Title: "Diversifikasi Pendapatan",
+          a5Desc: "Mengurangi ketergantungan pada satu pemberi kerja.",
+
+          a6Title: "Kepatuhan & Tata Kelola",
+          a6Desc: "Kepatuhan terhadap regulasi dan standar keselamatan kerja.",
         },
         commissionerPresident: "Komisaris Utama",
         commissioner: "Komisaris",

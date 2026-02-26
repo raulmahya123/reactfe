@@ -1,51 +1,51 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { useState } from "react";
-
-const annualReports = [
-  {
-    year: "2024",
-    title: "Audited Financial Statement 2024",
-    description:
-      "Laporan keuangan tahunan yang telah diaudit oleh Kantor Akuntan Publik.",
-  },
-  {
-    year: "2023",
-    title: "Audited Financial Statement 2023",
-    description:
-      "Laporan keuangan tahunan yang telah diaudit oleh auditor independen.",
-  },
-];
-
-const quarterlyReports = [
-  {
-    period: "Q3 2025",
-    title: "Interim Financial Statement Q3 2025",
-  },
-  {
-    period: "Q2 2025",
-    title: "Interim Financial Statement Q2 2025",
-  },
-  {
-    period: "Q1 2025",
-    title: "Interim Financial Statement Q1 2025",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Financial = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<"annual" | "quarterly">("annual");
+
+  const annualReports = [
+    {
+      year: "2024",
+      title: t("financial.annual2024Title"),
+      description: t("financial.annual2024Desc"),
+    },
+    {
+      year: "2023",
+      title: t("financial.annual2023Title"),
+      description: t("financial.annual2023Desc"),
+    },
+  ];
+
+  const quarterlyReports = [
+    {
+      period: "Q3 2025",
+      title: t("financial.q3Title"),
+    },
+    {
+      period: "Q2 2025",
+      title: t("financial.q2Title"),
+    },
+    {
+      period: "Q1 2025",
+      title: t("financial.q1Title"),
+    },
+  ];
 
   return (
     <section className="py-16 px-6 md:px-12 bg-[#f9f9f9] min-h-screen">
+      
       {/* Header */}
       <div className="mb-12">
         <h2 className="text-4xl font-bold text-[#B59D55]">
-          Financial Statements
+          {t("financial.title")}
         </h2>
+
         <p className="text-gray-600 mt-3 max-w-2xl">
-          Laporan keuangan PT Andalan Artha Primanusa sebagai bentuk
-          transparansi dan akuntabilitas kepada pemegang saham dan
-          pemangku kepentingan.
+          {t("financial.description")}
         </p>
       </div>
 
@@ -57,14 +57,16 @@ const Financial = () => {
         className="bg-white rounded-2xl shadow-lg p-8 mb-12 border border-gray-100"
       >
         <h3 className="text-lg font-semibold text-gray-700">
-          Latest Audited Report
+          {t("financial.latest")}
         </h3>
+
         <p className="text-3xl font-bold text-[#B59D55] mt-2">
           FY 2024
         </p>
+
         <button className="mt-5 inline-flex items-center gap-2 px-5 py-2 bg-[#B59D55] text-white rounded-xl hover:opacity-90 transition">
           <Download size={16} />
-          Download Report
+          {t("financial.downloadReport")}
         </button>
       </motion.div>
 
@@ -78,7 +80,7 @@ const Financial = () => {
               : "text-gray-500"
           }`}
         >
-          Annual
+          {t("financial.annual")}
         </button>
 
         <button
@@ -89,7 +91,7 @@ const Financial = () => {
               : "text-gray-500"
           }`}
         >
-          Quarterly
+          {t("financial.quarterly")}
         </button>
       </div>
 
@@ -105,15 +107,18 @@ const Financial = () => {
               <span className="text-sm font-semibold text-[#B59D55]">
                 {item.year}
               </span>
+
               <h3 className="text-lg font-bold mt-2">
                 {item.title}
               </h3>
+
               <p className="text-gray-600 text-sm mt-3">
                 {item.description}
               </p>
+
               <button className="mt-5 inline-flex items-center gap-2 px-4 py-2 border border-[#B59D55] text-[#B59D55] rounded-xl hover:bg-[#B59D55] hover:text-white transition text-sm">
                 <Download size={14} />
-                Download
+                {t("financial.download")}
               </button>
             </motion.div>
           ))}
@@ -128,12 +133,14 @@ const Financial = () => {
               <span className="text-sm font-semibold text-[#B59D55]">
                 {item.period}
               </span>
+
               <h3 className="text-lg font-bold mt-2">
                 {item.title}
               </h3>
+
               <button className="mt-5 inline-flex items-center gap-2 px-4 py-2 border border-[#B59D55] text-[#B59D55] rounded-xl hover:bg-[#B59D55] hover:text-white transition text-sm">
                 <Download size={14} />
-                Download
+                {t("financial.download")}
               </button>
             </motion.div>
           ))}

@@ -1,88 +1,81 @@
 import { ShieldCheck, Users, TrendingUp, Pickaxe, Briefcase } from "lucide-react";
-
-const strategies = [
-  {
-    icon: TrendingUp,
-    title: "Penguatan Fundamental & Efisiensi Operasional",
-    description:
-      "Perseroan mengoptimalkan utilisasi alat berat, pengendalian biaya operasional, serta perencanaan pemeliharaan terstruktur guna menjaga produktivitas dan stabilitas margin usaha di tengah dinamika industri.",
-  },
-  {
-    icon: Briefcase,
-    title: "Diversifikasi Pelanggan dan Komoditas",
-    description:
-      "Ekspansi ke komoditas nikel melalui perolehan Letter of Award PT Position pada Januari 2026 menjadi langkah strategis dalam memperluas basis pelanggan dan memperkuat struktur pendapatan.",
-  },
-  {
-    icon: Users,
-    title: "Pengembangan Sumber Daya Manusia",
-    description:
-      "Perseroan meningkatkan kapabilitas teknis dan manajerial tenaga kerja serta menanamkan budaya kerja yang berorientasi pada keselamatan, kepatuhan, dan kinerja berbasis hasil.",
-  },
-];
-
-const advantages = [
-  {
-    icon: Pickaxe,
-    title: "Kapabilitas Multi-Komoditas",
-    description:
-      "Berpengalaman dalam jasa kontraktor pertambangan batu bara dan telah memperluas portofolio ke komoditas nikel.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Rekam Jejak & Standar Keselamatan",
-    description:
-      "Penyelesaian pekerjaan sesuai target produksi dengan penerapan standar keselamatan dan pengendalian operasional yang konsisten.",
-  },
-  {
-    icon: Briefcase,
-    title: "Layanan Operasional Terintegrasi",
-    description:
-      "Menyediakan layanan overburden removal, penambangan, dan pengangkutan untuk mendukung kebutuhan operasional secara menyeluruh.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Struktur Biaya Kompetitif",
-    description:
-      "Optimalisasi utilisasi alat berat dan pengendalian biaya operasional memungkinkan penawaran harga jasa yang bersaing.",
-  },
-  {
-    icon: Users,
-    title: "Diversifikasi Pendapatan",
-    description:
-      "Ekspansi pelanggan dan komoditas memperkuat struktur pendapatan serta mengurangi ketergantungan pada satu pemberi kerja.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Kepatuhan & Tata Kelola",
-    description:
-      "Penerapan standar keselamatan kerja dan kepatuhan terhadap regulasi untuk menjaga kelancaran operasional dan reputasi usaha.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const StrategySection = () => {
+  const { t } = useTranslation();
+
+  const strategies = [
+    {
+      icon: TrendingUp,
+      title: t("strategy.s1Title"),
+      description: t("strategy.s1Desc"),
+    },
+    {
+      icon: Briefcase,
+      title: t("strategy.s2Title"),
+      description: t("strategy.s2Desc"),
+    },
+    {
+      icon: Users,
+      title: t("strategy.s3Title"),
+      description: t("strategy.s3Desc"),
+    },
+  ];
+
+  const advantages = [
+    {
+      icon: Pickaxe,
+      title: t("strategy.a1Title"),
+      description: t("strategy.a1Desc"),
+    },
+    {
+      icon: ShieldCheck,
+      title: t("strategy.a2Title"),
+      description: t("strategy.a2Desc"),
+    },
+    {
+      icon: Briefcase,
+      title: t("strategy.a3Title"),
+      description: t("strategy.a3Desc"),
+    },
+    {
+      icon: TrendingUp,
+      title: t("strategy.a4Title"),
+      description: t("strategy.a4Desc"),
+    },
+    {
+      icon: Users,
+      title: t("strategy.a5Title"),
+      description: t("strategy.a5Desc"),
+    },
+    {
+      icon: ShieldCheck,
+      title: t("strategy.a6Title"),
+      description: t("strategy.a6Desc"),
+    },
+  ];
+
   return (
-     <section
+    <section
       id="strategi-keunggulan"
       className="relative py-32 bg-[#f9f9f7] overflow-hidden scroll-mt-32"
     >
+      {/* HEADER */}
       <div className="max-w-6xl mx-auto px-6 text-center mb-20">
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
           <span className="bg-gradient-to-r from-black to-[#C6A75E] bg-clip-text text-transparent">
-            Strategi & Keunggulan
+            {t("strategy.title")}
           </span>
         </h2>
 
         <div className="w-24 h-[3px] bg-[#C6A75E] mx-auto mt-8 rounded-full"></div>
 
         <p className="mt-8 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
-          Perseroan menerapkan strategi yang berfokus pada penguatan fundamental,
-          diversifikasi usaha, serta peningkatan daya saing operasional guna
-          menjaga stabilitas kinerja dan menangkap peluang pertumbuhan industri.
+          {t("strategy.description")}
         </p>
       </div>
 
-      {/* STRATEGI USAHA */}
+      {/* STRATEGI */}
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 mb-24">
         {strategies.map((item, index) => {
           const Icon = item.icon;
@@ -101,7 +94,7 @@ const StrategySection = () => {
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 leading-relaxed text-sm">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {item.description}
               </p>
             </div>
@@ -109,10 +102,10 @@ const StrategySection = () => {
         })}
       </div>
 
-      {/* KEUNGGULAN KOMPETITIF */}
+      {/* KEUNGGULAN */}
       <div className="max-w-7xl mx-auto px-6">
         <h3 className="text-2xl font-semibold text-center mb-12">
-          Keunggulan Kompetitif
+          {t("strategy.advantagesTitle")}
         </h3>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -121,7 +114,7 @@ const StrategySection = () => {
             return (
               <div
                 key={index}
-                className="relative bg-white p-6 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-white p-6 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#C6A75E]/10 text-[#C6A75E]">
