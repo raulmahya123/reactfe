@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Users, CalendarCheck, FileText } from "lucide-react";
 
 const PRIMARY = "#B7A15A";
-const CREAM = "#FFFFFF";
 
 const GeneralMeeting = () => {
   const { t } = useTranslation();
