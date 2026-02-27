@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 
 import Financial from "./Financial";
 import Annual from "./Annual";
-import Quarterly from "./Quarterly";
 import Expose from "./Expose";
 import Dividend from "./Dividend";
 import Stock from "./Stock";
@@ -64,11 +63,6 @@ const Investor = () => {
         <div id="annual" className="max-w-6xl mx-auto px-6 scroll-mt-40">
           <Annual />
         </div>
-
-        <div id="quarterly" className="max-w-6xl mx-auto px-6 scroll-mt-40">
-          <Quarterly />
-        </div>
-
         <div id="rups" className="max-w-6xl mx-auto px-6 scroll-mt-40">
           <GeneralMeeting />
         </div>

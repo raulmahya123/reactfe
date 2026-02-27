@@ -1,30 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
-import { TrendingUp, FileText, Landmark } from "lucide-react";
 
 const PRIMARY = "#B7A15A";
 const CREAM = "#FFFFFF";
 
 const CorporateAction = () => {
   const { t } = useTranslation();
-
-  const actions = [
-    {
-      icon: <TrendingUp size={26} style={{ color: PRIMARY }} />,
-      title: t("dividendTitle"),
-      desc: t("dividendDesc"),
-    },
-    {
-      icon: <FileText size={26} style={{ color: PRIMARY }} />,
-      title: t("rightsIssueTitle"),
-      desc: t("rightsIssueDesc"),
-    },
-    {
-      icon: <Landmark size={26} style={{ color: PRIMARY }} />,
-      title: t("mergerTitle"),
-      desc: t("mergerDesc"),
-    },
-  ];
 
   return (
     <section
@@ -55,33 +35,6 @@ const CorporateAction = () => {
 
         {/* GRID */}
         <div className="grid md:grid-cols-3 gap-10">
-          {actions.map((item, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ y: -5 }}
-              transition={{ duration: 0.3 }}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl p-10 transition-all"
-              style={{ border: `1px solid ${PRIMARY}25` }}
-            >
-              <div
-                className="w-14 h-14 flex items-center justify-center rounded-xl mb-6"
-                style={{ backgroundColor: `${PRIMARY}20` }}
-              >
-                {item.icon}
-              </div>
-
-              <h3
-                className="text-xl font-semibold mb-4"
-                style={{ color: PRIMARY }}
-              >
-                {item.title}
-              </h3>
-
-              <p className="text-gray-600 leading-relaxed text-sm">
-                {item.desc}
-              </p>
-            </motion.div>
-          ))}
         </div>
 
       </div>

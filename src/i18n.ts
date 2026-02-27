@@ -6,6 +6,14 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         csrr : "CSR",
+        companyDescription: `PT Andalan Artha Primanusa Tbk is a limited liability company duly 
+        established under the laws of the Republic of Indonesia and domiciled 
+        in North Jakarta, as set forth in Deed of Establishment of Limited 
+        Liability Company No. 58 dated 31 July 2018, drawn up before Antonius 
+        Wahono Prawirodirdjo, S.H., Notary in the Administrative City of North 
+        Jakarta, and which has obtained approval from the Minister of Law and 
+        Human Rights of the Republic of Indonesia pursuant to Decree No. 
+        AHU-AH.01.03-0229595 dated 6 August 2018.`,
         footer: {
           addressLine1: "Prudential Tower, 17th Floor",
           addressLine2: "Jl. Jendral Sudirman Kav 79, Jakarta 12910",
@@ -152,18 +160,18 @@ i18n.use(initReactI18next).init({
           stat3: "Zero Fatality Commitment",
         },
         expose: {
-          title: "Public Expose",
+          title: "Paparan Publik",
           description:
-            "Public Expose information and materials of PT Andalan Artha Primanusa as part of transparency to investors and stakeholders.",
+            "Paparan Publik information and materials of PT Andalan Artha Primanusa as part of transparency to investors and stakeholders.",
           download: "Download",
           view: "View",
-          title2025: "Public Expose 2025",
+          title2025: "Paparan Publik 2025",
           desc2025:
             "Presentation of company performance and business strategy to investors and the public.",
-          title2024: "Public Expose 2024",
+          title2024: "Paparan Publik 2024",
           desc2024:
             "Annual presentation on operational achievements and expansion plans.",
-          title2023: "Public Expose 2023",
+          title2023: "Paparan Publik 2023",
           desc2023:
             "Public presentation regarding financial performance and corporate governance.",
         },
@@ -512,7 +520,7 @@ The Company believes that long-term business sustainability must align with envi
         operationalExcellenceDesc:
           "We are committed to safety, efficiency, regulatory compliance, and sustainable growth across all operations.",
         quarterlyReports: "RUPS",
-        publicExpose: "Public Expose",
+        publicExpose: "Paparan Publik",
         dividendInformation: "Dividend Information",
         boardOfDirectors: "Board of Directors",
         financial: {
@@ -756,7 +764,7 @@ The Company believes that long-term business sustainability must align with envi
         newsLabel: "News",
         viewAll: "View All",
 
-        newsItem1: "Public Expose 2025",
+        newsItem1: "Paparan Publik 2025",
         newsItem2: "Annual Report 2024 Released",
         newsItem3: "Corporate Action Announcement",
         newsItem4: "Strategic Expansion Plan 2025",
@@ -963,6 +971,14 @@ The Company believes that long-term business sustainability must align with envi
           "RUPS memiliki kewenangan antara lain mengesahkan laporan tahunan, menunjuk auditor eksternal, mengangkat dan memberhentikan Direksi serta Dewan Komisaris.",
         /* ================= COMPANY PROFILE ================= */
         companyOverview: "Sekilas Perusahaan",
+        companyDescription: `PT Andalan Artha Primanusa Tbk adalah suatu perseroan terbatas 
+        yang didirikan berdasarkan Hukum Negara Republik Indonesia dan 
+        berkedudukan di Jakarta Utara sebagaimana termaktub dalam Akta 
+        Pendirian Perseroan Terbatas No. 58 tanggal 31 Juli 2018, yang dibuat 
+        di hadapan Antonius Wahono Prawirodirdjo, S.H., Notaris di Kota 
+        Administrasi Jakarta Utara dan telah memperoleh pengesahan dari 
+        Menteri Hukum dan Hak Asasi Manusia Republik Indonesia sesuai dengan 
+        Surat Keputusan No. AHU-AH.01.03-0229595 tanggal 6 Agustus 2018.`,
         visionMission: "Visi & Misi",
         organizationStructure: "Struktur Organisasi",
         shareholdingStructure: "Struktur Kepemilikan Saham",
@@ -1170,9 +1186,9 @@ The Company believes that long-term business sustainability must align with envi
         footerManagement: "Manajemen",
         footerContactUs: "Hubungi Kami",
         quarterlyReports: "RUPS",
-        corporateCommittees: "Komite Perseroan",
+        corporateCommittees: "Audit Committee",
         corporateCommitteesDesc:
-          "Komite Perseroan dibentuk untuk membantu Dewan Komisaris dan Direksi dalam menjalankan fungsi pengawasan, manajemen risiko, serta penerapan tata kelola perusahaan yang baik.",
+          "Audit Committee dibentuk untuk membantu Dewan Komisaris dan Direksi dalam menjalankan fungsi pengawasan, manajemen risiko, serta penerapan tata kelola perusahaan yang baik.",
         codeOfEthicsDesc:
           "Kode Etik Perseroan merupakan pedoman perilaku bagi Direksi, Dewan Komisaris, dan seluruh karyawan dalam menjalankan kegiatan usaha sesuai dengan prinsip tata kelola perusahaan yang baik.",
 
@@ -1218,9 +1234,9 @@ The Company believes that long-term business sustainability must align with envi
         dividendDesc:
           "Perseroan dapat membagikan dividen kepada pemegang saham berdasarkan keputusan RUPS dan kinerja keuangan Perseroan.",
         material: {
-          title: "Informasi Material",
+          title: "Keterbukaan Informasi/Fakta Material",
           description:
-            "Informasi material dan keterbukaan informasi PT Andalan Artha Primanusa sebagai bentuk kepatuhan terhadap regulasi dan transparansi kepada investor.",
+            "Keterbukaan Informasi/Fakta Material dan keterbukaan informasi PT Andalan Artha Primanusa sebagai bentuk kepatuhan terhadap regulasi dan transparansi kepada investor.",
           latest: "Keterbukaan Terbaru",
           download: "Unduh",
           downloadDocument: "Unduh Dokumen",
@@ -1284,7 +1300,7 @@ The Company believes that long-term business sustainability must align with envi
         footerNews: "Berita & Siaran Pers",
         annualReportsMenu: "Laporan Tahunan",
         stock: {
-          title: "Kinerja Saham",
+          title: "Informasi Saham",
           description:
             "Informasi kinerja saham PT Andalan Artha Primanusa sebagai referensi bagi investor dan pemegang saham.",
           marketCap: "Kapitalisasi Pasar",
@@ -1385,7 +1401,7 @@ The Company believes that long-term business sustainability must align with envi
         newsLabel: "Berita",
         viewAll: "Lihat Semua",
 
-        newsItem1: "Public Expose 2025",
+        newsItem1: "Paparan Publik 2025",
         newsItem2: "Laporan Tahunan 2024 Dirilis",
         newsItem3: "Pengumuman Aksi Korporasi",
         newsItem4: "Rencana Ekspansi Strategis 2025",
@@ -1487,18 +1503,18 @@ The Company believes that long-term business sustainability must align with envi
         financialStatements: "Laporan Keuangan",
         stockPerformance: "Informasi Saham",
         expose: {
-          title: "Public Expose",
+          title: "Paparan Publik",
           description:
-            "Informasi dan materi Public Expose PT Andalan Artha Primanusa sebagai bagian dari keterbukaan informasi kepada investor dan pemangku kepentingan.",
+            "Informasi dan materi Paparan Publik PT Andalan Artha Primanusa sebagai bagian dari keterbukaan informasi kepada investor dan pemangku kepentingan.",
           download: "Unduh",
           view: "Lihat",
-          title2025: "Public Expose 2025",
+          title2025: "Paparan Publik 2025",
           desc2025:
             "Pemaparan kinerja perusahaan dan strategi bisnis kepada investor dan publik.",
-          title2024: "Public Expose 2024",
+          title2024: "Paparan Publik 2024",
           desc2024:
             "Presentasi tahunan mengenai pencapaian operasional dan rencana ekspansi.",
-          title2023: "Public Expose 2023",
+          title2023: "Paparan Publik 2023",
           desc2023:
             "Paparan publik terkait kinerja keuangan dan tata kelola perusahaan.",
         },

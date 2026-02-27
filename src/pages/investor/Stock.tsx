@@ -86,16 +86,6 @@ const Stock = () => {
           </div>
         </div>
       </motion.div>
-
-      {/* Chart Placeholder */}
-      <motion.div
-        whileHover={{ y: -5 }}
-        className="bg-white rounded-2xl shadow-lg p-12 border border-gray-100 text-center"
-      >
-        <p className="text-gray-500">
-          {t("stock.chartPlaceholder")}
-        </p>
-      </motion.div>
     </section>
   );
 };

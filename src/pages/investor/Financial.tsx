@@ -7,33 +7,6 @@ const Financial = () => {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<"annual" | "quarterly">("annual");
 
-  const annualReports = [
-    {
-      year: "2024",
-      title: t("financial.annual2024Title"),
-      description: t("financial.annual2024Desc"),
-    },
-    {
-      year: "2023",
-      title: t("financial.annual2023Title"),
-      description: t("financial.annual2023Desc"),
-    },
-  ];
-
-  const quarterlyReports = [
-    {
-      period: "Q3 2025",
-      title: t("financial.q3Title"),
-    },
-    {
-      period: "Q2 2025",
-      title: t("financial.q2Title"),
-    },
-    {
-      period: "Q1 2025",
-      title: t("financial.q1Title"),
-    },
-  ];
 
   return (
     <section className="py-16 px-6 md:px-12 bg-[#f9f9f9] min-h-screen">
@@ -93,57 +66,6 @@ const Financial = () => {
         >
           {t("financial.quarterly")}
         </button>
-      </div>
-
-      {/* Content */}
-      <div className="grid md:grid-cols-2 gap-8">
-        {activeTab === "annual" &&
-          annualReports.map((item, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ y: -6 }}
-              className="bg-white p-8 rounded-2xl shadow border border-gray-100 hover:shadow-xl transition"
-            >
-              <span className="text-sm font-semibold text-[#B59D55]">
-                {item.year}
-              </span>
-
-              <h3 className="text-lg font-bold mt-2">
-                {item.title}
-              </h3>
-
-              <p className="text-gray-600 text-sm mt-3">
-                {item.description}
-              </p>
-
-              <button className="mt-5 inline-flex items-center gap-2 px-4 py-2 border border-[#B59D55] text-[#B59D55] rounded-xl hover:bg-[#B59D55] hover:text-white transition text-sm">
-                <Download size={14} />
-                {t("financial.download")}
-              </button>
-            </motion.div>
-          ))}
-
-        {activeTab === "quarterly" &&
-          quarterlyReports.map((item, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ y: -6 }}
-              className="bg-white p-8 rounded-2xl shadow border border-gray-100 hover:shadow-xl transition"
-            >
-              <span className="text-sm font-semibold text-[#B59D55]">
-                {item.period}
-              </span>
-
-              <h3 className="text-lg font-bold mt-2">
-                {item.title}
-              </h3>
-
-              <button className="mt-5 inline-flex items-center gap-2 px-4 py-2 border border-[#B59D55] text-[#B59D55] rounded-xl hover:bg-[#B59D55] hover:text-white transition text-sm">
-                <Download size={14} />
-                {t("financial.download")}
-              </button>
-            </motion.div>
-          ))}
       </div>
     </section>
   );

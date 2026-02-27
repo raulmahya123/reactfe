@@ -24,24 +24,6 @@ const CompanyOverview = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <span className="text-sm tracking-widest text-[#B59D55] font-semibold uppercase">
-            Company Profile
-          </span>
-
-          <h2 className="text-3xl md:text-4xl font-bold text-[#B59D55] mt-4">
-            {t("companyOverviewTitle")}
-          </h2>
-
-          <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
-            Building sustainable mining operations with innovation and
-            integrity.
-          </p>
-
-          <div className="flex items-center justify-center gap-4 mt-8">
-            <div className="w-12 h-[2px] bg-[#B59D55]"></div>
-            <div className="w-3 h-3 bg-[#B59D55] rotate-45"></div>
-            <div className="w-12 h-[2px] bg-[#B59D55]"></div>
-          </div>
         </motion.div>
 
         {/* CONTENT GRID */}
@@ -79,15 +61,6 @@ const CompanyOverview = () => {
                 {t("overviewPoint4")}
               </li>
             </ul>
-
-            <div className="pt-6">
-              <a
-                href="#investor"
-                className="inline-block px-8 py-3 bg-[#B59D55] text-white font-semibold rounded-md hover:bg-[#9e8748] hover:scale-105 transition-all duration-300 shadow-md"
-              >
-                {t("investor")}
-              </a>
-            </div>
           </motion.div>
 
           {/* RIGHT IMAGE */}

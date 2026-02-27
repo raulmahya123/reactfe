@@ -26,11 +26,6 @@ const InvestorNewsSection = () => {
 
             {/* Gold Accent Line */}
             <div className="w-12 h-1 bg-[#B59D55] mb-4"></div>
-
-            <p className="uppercase text-xs tracking-widest text-[#B59D55] mb-2">
-              {t("irLabel")}
-            </p>
-
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
               {t("irMainTitle")}
             </h2>

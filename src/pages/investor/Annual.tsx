@@ -16,11 +16,6 @@ const Annual = () => {
       title: t("annual.report2023Title"),
       description: t("annual.report2023Desc"),
     },
-    {
-      year: "2022",
-      title: t("annual.report2022Title"),
-      description: t("annual.report2022Desc"),
-    },
   ];
 
   return (

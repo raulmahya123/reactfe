@@ -14,18 +14,6 @@ const Committees = () => {
       email: "audit@company.com",
       image: "/images/committee1.jpg",
     },
-    {
-      name: "Nomination & Remuneration Committee",
-      position: t("nominationCommittee"),
-      email: "nomination@company.com",
-      image: "/images/committee2.jpg",
-    },
-    {
-      name: "Risk Management Committee",
-      position: t("riskCommittee"),
-      email: "risk@company.com",
-      image: "/images/committee3.jpg",
-    },
   ];
 
   return (
