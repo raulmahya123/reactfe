@@ -15,64 +15,57 @@ export default function CSRSection() {
   return (
     <section
       id="csr"
-      className="relative w-full py-36 px-6 bg-gradient-to-br from-[#F8F9F6] via-white to-[#EEF2EA] scroll-mt-32 overflow-hidden"
+      className="scroll-mt-24 py-20 bg-white"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6">
 
-        {/* ================= TITLE ================= */}
-        <div className="text-center mb-28">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1E2A22] tracking-tight">
+        {/* TITLE */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("csr.title")}
           </h2>
 
-          <p className="text-[#6B8E73] mt-4 uppercase tracking-[0.4em] text-xs">
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
+
+          <p className="mt-6 text-gray-700 max-w-3xl mx-auto leading-relaxed">
             {t("csr.subtitle")}
           </p>
-
-          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6 rounded-full"></div>
         </div>
 
-        {/* ================= CONTENT (CENTERED CLEAN VERSION) ================= */}
-        <div className="max-w-4xl mx-auto text-center space-y-8 text-[#2F3E34] leading-relaxed text-[17px] mb-32">
+        {/* CONTENT */}
+        <div className="max-w-4xl mx-auto text-center space-y-6 text-gray-700 leading-relaxed mb-16">
 
-          <p className="text-xl md:text-2xl font-medium text-[#1E2A22]">
+          <p className="text-lg font-medium text-[#2F3E34]">
             {t("csr.paragraph1")}
           </p>
 
-          <div className="w-16 h-[2px] bg-[#C6A75E] mx-auto rounded-full"></div>
+          <div className="w-12 h-[2px] bg-[#C6A75E] mx-auto"></div>
 
-          <p>
-            {t("csr.paragraph2")}
-          </p>
-
-          <p>
-            {t("csr.paragraph3")}
-          </p>
+          <p>{t("csr.paragraph2")}</p>
+          <p>{t("csr.paragraph3")}</p>
 
         </div>
 
-        {/* ================= GALLERY ================= */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {/* GALLERY */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {csrGallery.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-3xl shadow-lg bg-black"
+              className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition"
             >
-              <img
-                src={item.src}
-                alt={item.caption}
-                className="w-full h-[420px] object-cover transform group-hover:scale-105 transition duration-700 ease-out opacity-90 group-hover:opacity-100"
-              />
-
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-8">
-                <span className="text-white text-lg font-semibold tracking-wide translate-y-6 group-hover:translate-y-0 transition duration-500">
-                  {item.caption}
-                </span>
+              <div className="h-64 bg-[#F4F6F3] overflow-hidden">
+                <img
+                  src={item.src}
+                  alt={item.caption}
+                  className="w-full h-full object-cover hover:scale-105 transition duration-500"
+                />
               </div>
 
-              {/* Border glow */}
-              <div className="absolute inset-0 rounded-3xl border border-white/10 group-hover:border-[#C6A75E]/60 transition duration-500"></div>
+              <div className="p-6">
+                <p className="text-sm font-semibold text-[#2F3E34]">
+                  {item.caption}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -31,63 +31,68 @@ const Investor = () => {
   }, [location]);
 
   return (
-    <main className="bg-white">
-      {/* HERO */}
-      <section className="relative pt-40 pb-32 bg-gradient-to-b from-white to-gray-50">
+    <main className="bg-white text-gray-800">
+
+      {/* ================= HERO ================= */}
+      <section className="pt-28 pb-20 bg-[#F4F6F3]">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider">
+
+          <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             Investor Relations
           </h1>
 
-          <div className="w-24 h-1 bg-[#B59D55] mx-auto mt-8 rounded-full"></div>
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
 
-          <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-700 mt-6 max-w-2xl mx-auto leading-relaxed">
             Informasi keuangan, laporan tahunan, paparan publik, dan data
             saham PT Andalan Artha Primanusa sebagai bentuk transparansi
             kepada pemegang saham dan investor.
           </p>
+
         </div>
       </section>
 
-      {/* CONTENT */}
-      <section className="py-24 bg-gray-50 space-y-32">
+      {/* ================= CONTENT ================= */}
+      <section className="py-20 bg-white space-y-20">
 
-      <div id="prospectus" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+        <div id="prospectus" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <Prospectus />
         </div>
 
-        <div id="financial" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+        <div id="financial" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <Financial />
         </div>
 
-        <div id="annual" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+        <div id="annual" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <Annual />
         </div>
-        <div id="rups" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+
+        <div id="rups" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <GeneralMeeting />
         </div>
 
-        <div id="expose" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+        <div id="expose" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <Expose />
         </div>
 
-        <div id="dividend" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+        <div id="dividend" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <Dividend />
         </div>
 
-        <div id="stock" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+        <div id="stock" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <Stock />
         </div>
 
-        <div id="corporate-action" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+        <div id="corporate-action" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <CorporateAction />
         </div>
 
-        <div id="material" className="max-w-6xl mx-auto px-6 scroll-mt-40">
+        <div id="material" className="max-w-6xl mx-auto px-6 scroll-mt-24">
           <Material />
         </div>
 
       </section>
+
     </main>
   );
 };

@@ -14,23 +14,25 @@ const Milestones = () => {
   return (
     <section
       id="milestones"
-      className="py-28 bg-white scroll-mt-40"
+      className="py-20 bg-white scroll-mt-28"
     >
       <div className="max-w-6xl mx-auto px-6">
 
-        <div className="text-center mb-24">
-          <h2 className="text-3xl md:text-4xl font-bold text-black uppercase tracking-wider">
+        {/* HEADER */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("milestones")}
           </h2>
-          <div className="w-24 h-[3px] bg-[#A77B3F] mx-auto mt-6"></div>
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
         </div>
 
+        {/* TIMELINE */}
         <div className="relative">
 
           {/* Vertical Line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-[#A7B08A] h-full"></div>
+          <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-[2px] bg-[#C6A75E]/30 h-full"></div>
 
-          <div className="space-y-20">
+          <div className="space-y-14">
             {timeline.map((item, index) => (
               <div
                 key={index}
@@ -39,19 +41,22 @@ const Milestones = () => {
                 }`}
               >
                 <div className="md:w-1/2 px-6">
-                  <div className="bg-white shadow-md rounded-xl p-8 hover:shadow-lg transition duration-300">
-                    <h3 className="text-2xl font-bold text-black">
+                  <div className="bg-[#F8F9F4] rounded-lg p-8 border border-gray-100 hover:shadow-md transition duration-300">
+                    
+                    <h3 className="text-2xl font-bold text-[#2F3E34]">
                       {item.year}
                     </h3>
-                    <p className="text-black mt-4 leading-relaxed">
+
+                    <p className="text-gray-700 mt-4 leading-relaxed text-justify">
                       {item.text}
                     </p>
+
                   </div>
                 </div>
 
-                {/* Circle Indicator */}
-                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
-                  <div className="w-14 h-14 rounded-full bg-[#A7B08A] flex items-center justify-center text-white font-bold shadow-sm">
+                {/* Circle */}
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2">
+                  <div className="w-12 h-12 rounded-full bg-[#C6A75E] flex items-center justify-center text-white font-semibold shadow-sm">
                     {index + 1}
                   </div>
                 </div>
@@ -60,8 +65,8 @@ const Milestones = () => {
               </div>
             ))}
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
   );

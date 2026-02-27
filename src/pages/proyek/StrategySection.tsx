@@ -23,78 +23,50 @@ const StrategySection = () => {
   ];
 
   const advantages = [
-    {
-      icon: Pickaxe,
-      title: t("strategy.a1Title"),
-      description: t("strategy.a1Desc"),
-    },
-    {
-      icon: ShieldCheck,
-      title: t("strategy.a2Title"),
-      description: t("strategy.a2Desc"),
-    },
-    {
-      icon: Briefcase,
-      title: t("strategy.a3Title"),
-      description: t("strategy.a3Desc"),
-    },
-    {
-      icon: TrendingUp,
-      title: t("strategy.a4Title"),
-      description: t("strategy.a4Desc"),
-    },
-    {
-      icon: Users,
-      title: t("strategy.a5Title"),
-      description: t("strategy.a5Desc"),
-    },
-    {
-      icon: ShieldCheck,
-      title: t("strategy.a6Title"),
-      description: t("strategy.a6Desc"),
-    },
+    { icon: Pickaxe, title: t("strategy.a1Title"), description: t("strategy.a1Desc") },
+    { icon: ShieldCheck, title: t("strategy.a2Title"), description: t("strategy.a2Desc") },
+    { icon: Briefcase, title: t("strategy.a3Title"), description: t("strategy.a3Desc") },
+    { icon: TrendingUp, title: t("strategy.a4Title"), description: t("strategy.a4Desc") },
+    { icon: Users, title: t("strategy.a5Title"), description: t("strategy.a5Desc") },
+    { icon: ShieldCheck, title: t("strategy.a6Title"), description: t("strategy.a6Desc") },
   ];
 
   return (
     <section
-      id="strategi-keunggulan"
-      className="relative py-32 bg-[#f9f9f7] overflow-hidden scroll-mt-32"
+      id="strategy"
+      className="py-20 bg-white scroll-mt-24"
     >
       {/* HEADER */}
-      <div className="max-w-6xl mx-auto px-6 text-center mb-20">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-          <span className="bg-gradient-to-r from-black to-[#C6A75E] bg-clip-text text-transparent">
-            {t("strategy.title")}
-          </span>
+      <div className="max-w-6xl mx-auto px-6 text-center mb-14">
+        <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
+          {t("strategy.title")}
         </h2>
 
-        <div className="w-24 h-[3px] bg-[#C6A75E] mx-auto mt-8 rounded-full"></div>
+        <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
 
-        <p className="mt-8 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
+        <p className="mt-6 text-gray-700 max-w-3xl mx-auto leading-relaxed">
           {t("strategy.description")}
         </p>
       </div>
 
       {/* STRATEGI */}
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 mb-24">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-16">
         {strategies.map((item, index) => {
           const Icon = item.icon;
           return (
             <div
               key={index}
-              className="group relative bg-white p-8 rounded-3xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+              className="bg-[#F4F6F3] p-8 rounded-lg border border-gray-200 hover:shadow-md transition"
             >
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#C6A75E] to-transparent rounded-t-3xl"></div>
-
-              <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#C6A75E]/10 text-[#C6A75E] mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Icon size={28} />
+              <div className="w-12 h-12 flex items-center justify-center rounded-md bg-[#C6A75E]/15 text-[#C6A75E] mb-6">
+                <Icon size={24} />
               </div>
 
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-[#2F3E34] mb-3">
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 {item.description}
               </p>
             </div>
@@ -104,7 +76,7 @@ const StrategySection = () => {
 
       {/* KEUNGGULAN */}
       <div className="max-w-7xl mx-auto px-6">
-        <h3 className="text-2xl font-semibold text-center mb-12">
+        <h3 className="text-xl font-semibold text-center text-[#2F3E34] mb-10">
           {t("strategy.advantagesTitle")}
         </h3>
 
@@ -114,18 +86,18 @@ const StrategySection = () => {
             return (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#C6A75E]/10 text-[#C6A75E]">
-                    <Icon size={22} />
+                  <div className="w-10 h-10 flex items-center justify-center rounded-md bg-[#C6A75E]/15 text-[#C6A75E]">
+                    <Icon size={20} />
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">
+                    <h4 className="font-semibold text-[#2F3E34] mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-700 text-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -135,10 +107,6 @@ const StrategySection = () => {
           })}
         </div>
       </div>
-
-      {/* Decorative Accent */}
-      <div className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-[#C6A75E]/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] bg-black/5 rounded-full blur-3xl"></div>
     </section>
   );
 };

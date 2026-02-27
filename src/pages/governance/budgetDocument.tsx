@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { FileText, Download, Calendar, Scale } from "lucide-react";
 
-const PRIMARY = "#AEB596"; // hijau logo
-const CREAM = "#FFFFFF";   // cream soft background
+const PRIMARY = "#C6A75E";
 
 const BudgetDocument = () => {
   const { t } = useTranslation();
@@ -10,61 +9,54 @@ const BudgetDocument = () => {
   return (
     <section
       id="budget"
-      className="scroll-mt-32 py-24 border-b"
+      className="scroll-mt-24 py-20"
     >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* TITLE */}
-        <div className="mb-14">
-          <h2
-            className="text-4xl font-bold"
-            style={{ color: PRIMARY }}
-          >
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("budgetDocument")}
           </h2>
-          <div
-            className="w-20 h-1 mt-4 rounded-full"
-            style={{ backgroundColor: PRIMARY }}
-          />
+
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
         </div>
 
-        <div
-          className="bg-white shadow-xl rounded-3xl p-14 space-y-12"
-          style={{ border: `1px solid ${PRIMARY}30` }}
-        >
+        {/* CARD */}
+        <div className="bg-white border border-gray-200 rounded-lg shadow-md p-12 space-y-10">
 
           {/* INFO GRID */}
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-10">
 
-            <div className="flex items-start gap-5">
+            <div className="flex items-start gap-4">
               <div
-                className="p-4 rounded-xl"
-                style={{ backgroundColor: `${PRIMARY}20` }}
+                className="p-3 rounded-md"
+                style={{ backgroundColor: `${PRIMARY}15` }}
               >
-                <Calendar size={24} style={{ color: PRIMARY }} />
+                <Calendar size={22} style={{ color: PRIMARY }} />
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
                   {t("effectiveDate")}
                 </p>
-                <p className="text-sm font-semibold text-gray-800">
+                <p className="text-sm font-semibold text-[#2F3E34]">
                   31 July 2018
                 </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-5">
+            <div className="flex items-start gap-4">
               <div
-                className="p-4 rounded-xl"
-                style={{ backgroundColor: `${PRIMARY}20` }}
+                className="p-3 rounded-md"
+                style={{ backgroundColor: `${PRIMARY}15` }}
               >
-                <Scale size={24} style={{ color: PRIMARY }} />
+                <Scale size={22} style={{ color: PRIMARY }} />
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
                   {t("notarialDeed")}
                 </p>
-                <p className="text-sm font-semibold text-gray-800">
+                <p className="text-sm font-semibold text-[#2F3E34]">
                   Deed No. 58 – Ministry Approval
                 </p>
               </div>
@@ -74,10 +66,7 @@ const BudgetDocument = () => {
 
           {/* DESCRIPTION */}
           <div>
-            <h3
-              className="text-lg font-semibold mb-4 uppercase tracking-wide"
-              style={{ color: PRIMARY }}
-            >
+            <h3 className="text-lg font-semibold text-[#2F3E34] mb-3 uppercase tracking-wide">
               {t("documentOverview")}
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed">
@@ -85,26 +74,21 @@ const BudgetDocument = () => {
             </p>
           </div>
 
-          {/* DOWNLOAD CARD */}
-          <div
-            className="p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6"
-            style={{
-              backgroundColor: PRIMARY,
-              color: "white"
-            }}
-          >
-            <div className="flex items-center gap-5">
+          {/* DOWNLOAD */}
+          <div className="bg-[#F4F6F3] border border-gray-200 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <div className="flex items-center gap-4">
               <div
-                className="p-4 rounded-xl"
-                style={{ backgroundColor: "rgba(255,255,255,0.2)" }}
+                className="p-3 rounded-md"
+                style={{ backgroundColor: `${PRIMARY}15` }}
               >
-                <FileText size={24} />
+                <FileText size={22} style={{ color: PRIMARY }} />
               </div>
               <div>
-                <p className="text-sm font-semibold">
+                <p className="text-sm font-semibold text-[#2F3E34]">
                   {t("budgetDocument")}
                 </p>
-                <p className="text-xs text-white/80 mt-1">
+                <p className="text-xs text-gray-500 mt-1">
                   PDF Document
                 </p>
               </div>
@@ -113,10 +97,9 @@ const BudgetDocument = () => {
             <a
               href="/documents/articles-of-association.pdf"
               download
-              className="flex items-center gap-2 px-6 py-3 rounded-lg 
-              bg-white text-sm font-semibold
-              transition-all duration-300"
-              style={{ color: PRIMARY }}
+              className="flex items-center gap-2 px-6 py-3 rounded-md 
+              bg-[#C6A75E] text-white text-sm font-semibold 
+              hover:opacity-90 transition"
             >
               <Download size={18} />
               {t("download")}

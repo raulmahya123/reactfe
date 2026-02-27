@@ -15,7 +15,10 @@ const News = () => {
       const element = document.getElementById(section);
       if (element) {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
         }, 100);
       }
     } else {
@@ -24,32 +27,27 @@ const News = () => {
   }, [location]);
 
   return (
-    <main>
+    <main className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="relative pt-40 pb-28 bg-white text-black">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider">
+      <section className="pt-28 pb-20 bg-[#F4F6F3]">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             News
           </h1>
-          <div className="w-24 h-1 bg-[#C6A75E] mx-auto mt-8"></div>
+
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
+
         </div>
       </section>
 
       {/* CONTENT */}
-      <section className="py-24 space-y-32">
+      <section className="py-20 space-y-20">
 
-        <div id="press" className="max-w-6xl mx-auto px-6 scroll-mt-32">
-          <PressRelease />
-        </div>
-
-        <div id="media" className="max-w-6xl mx-auto px-6 scroll-mt-32">
-          <MediaCoverage />
-        </div>
-
-        <div id="actions" className="max-w-6xl mx-auto px-6 scroll-mt-32">
-          <CorporateActions />
-        </div>
+        <PressRelease />
+        <MediaCoverage />
+        <CorporateActions />
 
       </section>
 

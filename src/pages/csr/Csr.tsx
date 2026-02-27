@@ -5,7 +5,6 @@ import CSRSection from "./CSRSection";
 const CSR = () => {
   const location = useLocation();
 
-  // 🔥 Auto scroll based on URL (/csr/policy, dll)
   useEffect(() => {
     const section = location.pathname.split("/")[2];
 
@@ -25,9 +24,7 @@ const CSR = () => {
   }, [location]);
 
   return (
-    <main>
-
-      {/* ================= CONTENT SECTIONS ================= */}
+    <main className="bg-white text-gray-800">
       <CSRSection />
     </main>
   );

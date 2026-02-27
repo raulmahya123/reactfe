@@ -8,7 +8,6 @@ import StrategySection from "./StrategySection";
 const ProyekAll = () => {
   const location = useLocation();
 
-  // AUTO SCROLL BASED ON URL
   useEffect(() => {
     const section = location.pathname.split("/")[2];
 
@@ -25,14 +24,9 @@ const ProyekAll = () => {
   }, [location]);
 
   return (
-    <main>
-      {/* KEGIATAN USAHA */}
+    <main className="bg-white text-gray-800">
       <ProyekActivities />
-
-      {/* SUMBER DAYA */}
       <ResourcesSection />
-
-      {/* STRATEGI & KEUNGGULAN */}
       <StrategySection />
     </main>
   );

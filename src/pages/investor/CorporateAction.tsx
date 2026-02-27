@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 
 const PRIMARY = "#B7A15A";
-const CREAM = "#FFFFFF";
 
 const CorporateAction = () => {
   const { t } = useTranslation();

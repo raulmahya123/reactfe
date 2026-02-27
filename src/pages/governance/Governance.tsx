@@ -30,28 +30,24 @@ const Governance = () => {
   }, [location]);
 
   return (
-    <main>
-      {/* HERO */}
-      {/* HERO */}
-      <section className="relative pt-40 pb-28 bg-[#BEC5A4] text-black overflow-hidden">
-        <div className="absolute inset-0 bg-white opacity-95"></div>
+    <main className="bg-white text-gray-800">
 
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider">
+      {/* HERO */}
+      <section className="pt-28 pb-20 bg-[#F4F6F3]">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("governance")}
           </h1>
 
-          <div className="w-24 h-1 bg-[#C6A75E] mx-auto mt-8"></div>
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
 
-          {/* 🔥 TAMBAHAN PENJELASAN */}
-          <p className="mt-8 text-gray-600 leading-relaxed text-base md:text-lg">
+          <p className="mt-6 text-gray-700 leading-relaxed max-w-3xl mx-auto">
             {t("governanceHeroDesc")}
           </p>
         </div>
       </section>
 
-      {/* ================= REAL SECTIONS ================= */}
-
+      {/* CONTENT */}
       <Directors />
       <Commissioners />
       <CorporateSecretary />
@@ -59,6 +55,7 @@ const Governance = () => {
       <WhistleblowingPolicy />
       <GovernanceInformation />
       <BudgetDocument />
+
     </main>
   );
 };

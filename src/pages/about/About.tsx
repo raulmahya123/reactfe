@@ -13,7 +13,6 @@ const About = () => {
   const { t } = useTranslation();
   const location = useLocation();
 
-  // Scroll otomatis berdasarkan URL /about/vision dll
   useEffect(() => {
     const section = location.pathname.split("/")[2];
 
@@ -30,48 +29,51 @@ const About = () => {
   }, [location]);
 
   return (
-    <main>
-      {/* HERO SECTION */}
-      <section className="relative pt-40 pb-28 bg-[#BEC5A4] text-black overflow-hidden">
-        <div className="absolute inset-0 bg-white opacity-95"></div>
+    <main className="bg-white text-gray-800">
 
-        <div className="relative max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider">
+      {/* ================= HERO ================= */}
+      <section className="pt-28 pb-20 bg-[#F8F9F4]">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <h1 className="text-4xl md:text-5xl font-bold tracking-widest text-[#2F3E34] uppercase">
             {t("companyProfile")}
           </h1>
 
-          <div className="w-24 h-1 bg-[#C6A75E] mx-auto mt-8 mb-10"></div>
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6 mb-8"></div>
 
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg leading-relaxed text-gray-700 text-justify max-w-3xl mx-auto">
             {t("companyDescription")}
           </p>
+
         </div>
       </section>
 
-      {/* CONTENT SECTIONS */}
-      <section id="vision" className="scroll-mt-32">
+      {/* ================= CONTENT ================= */}
+
+      <section id="vision" className="scroll-mt-24">
         <VisionMission />
       </section>
 
-      <section id="milestones" className="scroll-mt-32">
+      <section id="milestones" className="scroll-mt-24">
         <Milestones />
       </section>
 
-      <section id="management" className="scroll-mt-32">
+      <section id="management" className="scroll-mt-24">
         <Management />
       </section>
 
-      <section id="strukturOrganisasi" className="scroll-mt-32">
+      <section id="strukturOrganisasi" className="scroll-mt-24">
         <StrukturOrganisasi />
       </section>
 
-      <section id="strukturKepemilikan" className="scroll-mt-32">
+      <section id="strukturKepemilikan" className="scroll-mt-24">
         <StrukturKepelikan />
       </section>
 
-      <section id="professionalSupport" className="scroll-mt-32">
+      <section id="professionalSupport" className="scroll-mt-24">
         <ProfessionalSupport />
       </section>
+
     </main>
   );
 };

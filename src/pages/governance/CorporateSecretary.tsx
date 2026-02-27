@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Mail, Phone } from "lucide-react";
 
-const PRIMARY = "#AEB596"; // hijau logo
-const CREAM = "#FFFFFF";   // cream soft
+const PRIMARY = "#C6A75E";
 
 const CorporateSecretary = () => {
   const { t } = useTranslation();
@@ -10,32 +9,24 @@ const CorporateSecretary = () => {
   return (
     <section
       id="secretary"
-      className="scroll-mt-32 py-24 border-b"
+      className="scroll-mt-24 py-20"
     >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* TITLE */}
-        <div className="mb-14">
-          <h2
-            className="text-4xl font-bold"
-            style={{ color: PRIMARY }}
-          >
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("corporateSecretary")}
           </h2>
-          <div
-            className="w-20 h-1 mt-4 rounded-full"
-            style={{ backgroundColor: PRIMARY }}
-          />
+
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
         </div>
 
         {/* PROFILE CARD */}
-        <div
-          className="bg-white shadow-xl rounded-3xl p-12 grid md:grid-cols-3 gap-12 items-center"
-          style={{ border: `1px solid ${PRIMARY}30` }}
-        >
+        <div className="bg-white border border-gray-200 rounded-lg shadow-md p-10 grid md:grid-cols-3 gap-10 items-center">
 
           {/* PHOTO */}
-          <div className="w-full h-80 rounded-2xl overflow-hidden">
+          <div className="w-full h-72 rounded-lg overflow-hidden bg-[#F4F6F3]">
             <img
               src="/images/corporate-secretary.jpg"
               alt="Corporate Secretary"
@@ -45,14 +36,11 @@ const CorporateSecretary = () => {
 
           {/* INFO */}
           <div className="md:col-span-2">
-            <h3
-              className="text-2xl font-semibold mb-4"
-              style={{ color: PRIMARY }}
-            >
+            <h3 className="text-xl font-semibold text-[#2F3E34] mb-4">
               Corporate Secretary
             </h3>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
+            <p className="text-gray-700 leading-relaxed mb-8 text-sm">
               The Corporate Secretary ensures the Company’s compliance with
               capital market regulations and facilitates communication between
               the Company, shareholders, regulators, and the public.
@@ -62,11 +50,8 @@ const CorporateSecretary = () => {
             <div className="space-y-4 text-sm">
 
               <div className="flex items-center gap-3">
-                <div
-                  className="p-2 rounded-lg"
-                  style={{ backgroundColor: `${PRIMARY}20` }}
-                >
-                  <Mail size={16} style={{ color: PRIMARY }} />
+                <div className="p-2 rounded-md bg-[#C6A75E]/15">
+                  <Mail size={16} color={PRIMARY} />
                 </div>
                 <span className="text-gray-700">
                   corporate.secretary@company.com
@@ -74,11 +59,8 @@ const CorporateSecretary = () => {
               </div>
 
               <div className="flex items-center gap-3">
-                <div
-                  className="p-2 rounded-lg"
-                  style={{ backgroundColor: `${PRIMARY}20` }}
-                >
-                  <Phone size={16} style={{ color: PRIMARY }} />
+                <div className="p-2 rounded-md bg-[#C6A75E]/15">
+                  <Phone size={16} color={PRIMARY} />
                 </div>
                 <span className="text-gray-700">
                   +62 21 0000 0000

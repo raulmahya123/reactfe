@@ -13,7 +13,8 @@ L.Icon.Default.mergeOptions({
   iconRetinaUrl:
     "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
   iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  shadowUrl:
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
 });
 
 /* =============================
@@ -72,26 +73,24 @@ const ProyekActivities = () => {
   return (
     <section
       id="proyek"
-      className="relative py-36 bg-white scroll-mt-32 overflow-hidden"
+      className="py-20 bg-white scroll-mt-24"
     >
       {/* HEADER */}
-      <div className="relative max-w-6xl mx-auto px-6 text-center mb-28">
-        <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
-          <span className="bg-gradient-to-r from-black to-[#C6A75E] bg-clip-text text-transparent">
-            {t("proyek.title")}
-          </span>
+      <div className="max-w-6xl mx-auto px-6 text-center mb-14">
+        <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
+          {t("proyek.title")}
         </h2>
 
-        <div className="w-32 h-[4px] bg-[#C6A75E] mx-auto mt-8 rounded-full"></div>
+        <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
 
-        <p className="mt-10 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
+        <p className="mt-6 text-gray-700 max-w-3xl mx-auto leading-relaxed">
           {t("proyek.description")}
         </p>
       </div>
 
       {/* MAP */}
-      <div className="relative max-w-[1400px] mx-auto px-6">
-        <div className="relative w-full h-[650px] rounded-[40px] overflow-hidden shadow-2xl border border-gray-300">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="w-full h-[550px] rounded-lg overflow-hidden border border-gray-200 shadow-md">
           <MapContainer
             center={[-2.5, 118]}
             zoom={5}
@@ -107,23 +106,21 @@ const ProyekActivities = () => {
 
             {sites.map((site, index) => (
               <Marker key={index} position={site.position} icon={goldIcon}>
-                <Popup maxWidth={300}>
-                  <div className="relative p-5 rounded-xl bg-white border border-gray-200 shadow-lg w-[260px]">
-                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#C6A75E] to-transparent"></div>
-
-                    <div className="text-xs tracking-widest text-gray-400 mb-2 uppercase">
+                <Popup maxWidth={280}>
+                  <div className="p-4 bg-white border border-gray-200 rounded-lg">
+                    <div className="text-xs uppercase tracking-widest text-[#C6A75E] mb-2">
                       {t("proyek.operationalProject")}
                     </div>
 
-                    <h3 className="text-base font-semibold text-gray-900">
+                    <h3 className="text-sm font-semibold text-[#2F3E34]">
                       {site.name}
                     </h3>
 
-                    <p className="text-gray-500 text-sm mt-1">
+                    <p className="text-gray-500 text-xs mt-1">
                       {site.location}
                     </p>
 
-                    <p className="text-gray-600 mt-3 leading-relaxed text-sm">
+                    <p className="text-gray-700 mt-3 leading-relaxed text-sm">
                       {site.description}
                     </p>
                   </div>

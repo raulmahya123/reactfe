@@ -1,29 +1,24 @@
 import { ShieldCheck, Mail, Phone, Lock } from "lucide-react";
 
-const PRIMARY = "#AEB596";
-const CREAM = "#FFFFFF";
+const PRIMARY = "#C6A75E";
 
 const WhistleblowingSystem = () => {
   return (
     <section
       id="wbs"
-      className="scroll-mt-32 py-24 border-b"
+      className="scroll-mt-24 py-20"
     >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* HEADER */}
-        <div className="mb-14">
-          <h2
-            className="text-4xl font-bold"
-            style={{ color: PRIMARY }}
-          >
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             Whistleblowing System
           </h2>
-          <div
-            className="w-20 h-1 mt-4 rounded-full"
-            style={{ backgroundColor: PRIMARY }}
-          />
-          <p className="text-gray-600 mt-6 max-w-2xl leading-relaxed">
+
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
+
+          <p className="text-gray-700 mt-6 max-w-2xl mx-auto leading-relaxed">
             The Company provides a secure and confidential channel for
             reporting suspected violations of laws, regulations, ethical
             standards, or corporate policies. All reports are handled
@@ -31,25 +26,19 @@ const WhistleblowingSystem = () => {
           </p>
         </div>
 
-        {/* CONTENT GRID */}
-        <div className="grid md:grid-cols-2 gap-12">
+        {/* GRID */}
+        <div className="grid md:grid-cols-2 gap-10">
 
           {/* LEFT - PRINCIPLES */}
-          <div
-            className="bg-white rounded-3xl p-10 shadow-md"
-            style={{ border: `1px solid ${PRIMARY}25` }}
-          >
-            <div className="flex items-center gap-4 mb-6">
-              <ShieldCheck size={24} style={{ color: PRIMARY }} />
-              <h3
-                className="text-xl font-semibold"
-                style={{ color: PRIMARY }}
-              >
+          <div className="bg-[#F4F6F3] border border-gray-200 rounded-lg p-8 hover:shadow-md transition">
+            <div className="flex items-center gap-3 mb-6">
+              <ShieldCheck size={22} color={PRIMARY} />
+              <h3 className="text-lg font-semibold text-[#2F3E34]">
                 Protection & Confidentiality
               </h3>
             </div>
 
-            <ul className="space-y-4 text-sm text-gray-600 leading-relaxed">
+            <ul className="space-y-3 text-sm text-gray-700 leading-relaxed">
               <li>• Confidential handling of all reports</li>
               <li>• Protection against retaliation</li>
               <li>• Independent investigation process</li>
@@ -57,30 +46,23 @@ const WhistleblowingSystem = () => {
             </ul>
           </div>
 
-          {/* RIGHT - REPORTING CHANNELS */}
-          <div
-            className="bg-white rounded-3xl p-10 shadow-md"
-            style={{ border: `1px solid ${PRIMARY}25` }}
-          >
-            <div className="flex items-center gap-4 mb-6">
-              <Lock size={24} style={{ color: PRIMARY }} />
-              <h3
-                className="text-xl font-semibold"
-                style={{ color: PRIMARY }}
-              >
+          {/* RIGHT - CHANNELS */}
+          <div className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-md transition">
+            <div className="flex items-center gap-3 mb-6">
+              <Lock size={22} color={PRIMARY} />
+              <h3 className="text-lg font-semibold text-[#2F3E34]">
                 Reporting Channels
               </h3>
             </div>
 
-            <div className="space-y-5 text-sm text-gray-600">
-
+            <div className="space-y-4 text-sm text-gray-700">
               <div className="flex items-center gap-3">
-                <Mail size={18} style={{ color: PRIMARY }} />
+                <Mail size={16} color={PRIMARY} />
                 whistleblowing@company.com
               </div>
 
               <div className="flex items-center gap-3">
-                <Phone size={18} style={{ color: PRIMARY }} />
+                <Phone size={16} color={PRIMARY} />
                 +62 21 0000 0000
               </div>
 
@@ -88,7 +70,6 @@ const WhistleblowingSystem = () => {
                 Reports may be submitted anonymously and will be reviewed
                 by the designated compliance committee.
               </p>
-
             </div>
           </div>
 

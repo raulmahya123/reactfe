@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { FileText, Download } from "lucide-react";
 
+const PRIMARY = "#C6A75E";
+
 const GovernanceInformation = () => {
   const { t } = useTranslation();
 
@@ -22,37 +24,41 @@ const GovernanceInformation = () => {
   return (
     <section
       id="information"
-      className="scroll-mt-32 py-24 bg-gray-50 border-b"
+      className="scroll-mt-24 py-20"
     >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* TITLE */}
-        <h2 className="text-3xl font-bold text-[#B59D55] mb-12">
-          {t("governanceInformation")}
-        </h2>
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
+            {t("governanceInformation")}
+          </h2>
 
-        {/* DOCUMENT CARD CONTAINER */}
-        <div className="bg-white shadow-lg rounded-2xl p-12 border border-[#C6A75E]/20">
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+        {/* CONTAINER */}
+        <div className="bg-white border border-gray-200 rounded-lg shadow-md p-10">
+
+          <div className="grid md:grid-cols-2 gap-6">
 
             {documents.map((doc, index) => (
               <div
                 key={index}
-                className="flex items-center justify-between p-6 rounded-xl 
+                className="flex items-center justify-between p-5 rounded-lg 
                 border border-gray-200 
-                hover:shadow-md hover:border-[#C6A75E] 
-                transition-all duration-300 bg-white group"
+                hover:shadow-sm hover:border-[#C6A75E]/40
+                transition bg-[#F4F6F3]"
               >
 
                 {/* LEFT */}
-                <div className="flex items-center gap-5">
-                  <div className="bg-[#C6A75E]/15 p-4 rounded-xl group-hover:bg-[#C6A75E]/25 transition">
-                    <FileText className="text-[#C6A75E]" size={22} />
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#C6A75E]/15 p-3 rounded-md">
+                    <FileText size={20} color={PRIMARY} />
                   </div>
 
                   <div>
-                    <p className="text-sm font-semibold text-gray-800">
+                    <p className="text-sm font-semibold text-[#2F3E34]">
                       {t(doc.key)}
                     </p>
                     <p className="text-xs text-gray-500 mt-1">
@@ -65,11 +71,11 @@ const GovernanceInformation = () => {
                 <a
                   href={doc.file}
                   download
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg 
+                  className="flex items-center gap-2 px-4 py-2 rounded-md 
                   bg-[#C6A75E] text-white text-xs font-semibold
-                  hover:bg-[#b8964f] transition-all duration-300"
+                  hover:opacity-90 transition"
                 >
-                  <Download size={16} />
+                  <Download size={14} />
                   {t("download")}
                 </a>
 

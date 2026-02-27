@@ -6,64 +6,66 @@ const VisionMission = () => {
   return (
     <section
       id="vision"
-      className="py-28 bg-gradient-to-b from-white to-gray-50 scroll-mt-40"
+      className="py-20 bg-white scroll-mt-28"
     >
       <div className="max-w-6xl mx-auto px-6">
 
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-wider">
+        {/* ================= SECTION HEADER ================= */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("visionMission")}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#C6A75E] to-[#D4B76A] mx-auto mt-6"></div>
+
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
         </div>
 
-        {/* Content Grid */}
-        <div className="grid md:grid-cols-2 gap-16">
+        {/* ================= CONTENT GRID ================= */}
+        <div className="grid md:grid-cols-2 gap-12">
 
-          {/* Vision Card */}
-          <div className="bg-white rounded-xl shadow-lg p-10 border-t-4 border-[#BEC5A4] hover:shadow-2xl transition duration-500">
-            <h3 className="text-2xl font-semibold text-[#BEC5A4] mb-6">
+          {/* ===== VISION CARD ===== */}
+          <div className="bg-[#F8F9F4] rounded-lg p-10 border border-gray-100 hover:shadow-md transition duration-300">
+            
+            <h3 className="text-2xl font-semibold text-[#2F3E34] mb-6">
               {t("vision")}
             </h3>
 
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="text-gray-700 text-lg leading-relaxed text-justify">
               {t("visionText")}
             </p>
 
             <div className="w-12 h-[2px] bg-[#C6A75E] mt-8"></div>
           </div>
 
-          {/* Mission Card */}
-          <div className="bg-white rounded-xl shadow-lg p-10 border-t-4 border-[#C6A75E] hover:shadow-2xl transition duration-500">
-            <h3 className="text-2xl font-semibold text-[#BEC5A4] mb-6">
+          {/* ===== MISSION CARD ===== */}
+          <div className="bg-[#F8F9F4] rounded-lg p-10 border border-gray-100 hover:shadow-md transition duration-300">
+            
+            <h3 className="text-2xl font-semibold text-[#2F3E34] mb-6">
               {t("mission")}
             </h3>
 
-            <ul className="space-y-4 text-gray-700 text-lg">
+            <ul className="space-y-4 text-gray-700 text-lg leading-relaxed">
               <li className="flex items-start gap-3">
-                <span className="text-[#C6A75E] font-bold">•</span>
+                <span className="text-[#C6A75E] font-bold mt-1">•</span>
                 <span>{t("mission1")}</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#C6A75E] font-bold">•</span>
+                <span className="text-[#C6A75E] font-bold mt-1">•</span>
                 <span>{t("mission2")}</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#C6A75E] font-bold">•</span>
+                <span className="text-[#C6A75E] font-bold mt-1">•</span>
                 <span>{t("mission3")}</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#C6A75E] font-bold">•</span>
+                <span className="text-[#C6A75E] font-bold mt-1">•</span>
                 <span>{t("mission4")}</span>
               </li>
             </ul>
 
-            <div className="w-12 h-[2px] bg-[#BEC5A4] mt-8"></div>
+            <div className="w-12 h-[2px] bg-[#C6A75E] mt-8"></div>
           </div>
 
         </div>
-
       </div>
     </section>
   );
