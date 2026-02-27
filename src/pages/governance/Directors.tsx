@@ -34,7 +34,6 @@ const Directors = () => {
     <section
       id="directors"
       className="scroll-mt-32 py-24 border-b"
-      style={{ backgroundColor: CREAM }}
     >
       <div className="max-w-6xl mx-auto px-6">
 
