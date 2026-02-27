@@ -15,8 +15,8 @@ i18n.use(initReactI18next).init({
         Human Rights of the Republic of Indonesia pursuant to Decree No. 
         AHU-AH.01.03-0229595 dated 6 August 2018.`,
         footer: {
-          addressLine1: "Prudential Tower, 17th Floor",
-          addressLine2: "Jl. Jendral Sudirman Kav 79, Jakarta 12910",
+          addressLine1: "PT Andalan Artha Primanusa",
+          addressLine2: "Tanah Andalan, Jl. Plaju No.11, Kebon Melati, Tanah Abang, Jakarta Pusat 10230, DKI Jakarta",
           addressCountry: "Indonesia",
 
           about: "About Us",
@@ -1107,8 +1107,8 @@ The Company believes that long-term business sustainability must align with envi
           q4Title: "Laporan Keuangan Interim Q4 2024",
         },
         footer: {
-          addressLine1: "Prudential Tower, 17th Floor",
-          addressLine2: "Jl. Jendral Sudirman Kav 79, Jakarta 12910",
+          addressLine1:"PT Andalan Artha Primanusa - Tanah Andalan",
+          addressLine2: "Jl. Plaju No.11, Kebon Melati, Tanah Abang, Jakarta Pusat 10230, DKI Jakarta",
           addressCountry: "Indonesia",
 
           about: "Tentang Kami",
