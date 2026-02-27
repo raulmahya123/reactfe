@@ -18,13 +18,24 @@ const About = () => {
 
     if (section) {
       const el = document.getElementById(section);
+
       if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth" });
-        }, 100);
+        const navbarHeight = 120; // tinggi navbar
+        const y =
+          el.getBoundingClientRect().top +
+          window.pageYOffset -
+          navbarHeight;
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
       }
     } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   }, [location]);
 
@@ -32,7 +43,7 @@ const About = () => {
     <main className="bg-white text-gray-800">
 
       {/* ================= HERO ================= */}
-      <section className="pt-28 pb-20 bg-[#F8F9F4]">
+      <section className="pt-36 pb-24 bg-[#F8F9F4]">
         <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h1 className="text-4xl md:text-5xl font-bold tracking-widest text-[#2F3E34] uppercase">
@@ -50,27 +61,27 @@ const About = () => {
 
       {/* ================= CONTENT ================= */}
 
-      <section id="vision" className="scroll-mt-24">
+      <section id="vision" className="scroll-mt-40">
         <VisionMission />
       </section>
 
-      <section id="milestones" className="scroll-mt-24">
+      <section id="milestones" className="scroll-mt-40">
         <Milestones />
       </section>
 
-      <section id="management" className="scroll-mt-24">
+      <section id="management" className="scroll-mt-40">
         <Management />
       </section>
 
-      <section id="strukturOrganisasi" className="scroll-mt-24">
+      <section id="strukturOrganisasi" className="scroll-mt-40">
         <StrukturOrganisasi />
       </section>
 
-      <section id="strukturKepemilikan" className="scroll-mt-24">
+      <section id="strukturKepemilikan" className="scroll-mt-40">
         <StrukturKepelikan />
       </section>
 
-      <section id="professionalSupport" className="scroll-mt-24">
+      <section id="professionalSupport" className="scroll-mt-40">
         <ProfessionalSupport />
       </section>
 

@@ -16,7 +16,7 @@ const menuItems = [
       { name: "strukturOrganisasi", path: "/about/struktur-organisasi" },
       { name: "strukturKepemilikan", path: "/about/struktur-kepemilikan" },
       { name: "supportingProfessionals", path: "/about/supporting-professionals" }
-    ],  
+    ],
   },
   {
     name: "Projek",
@@ -38,7 +38,7 @@ const menuItems = [
       { name: "publicExpose", path: "/investor/expose" },
       { name: "dividendInformation", path: "/investor/dividend" },
       { name: "stockPerformance", path: "/investor/stock" },
-      {name: "corporateAction", path: "/investor/corporate-action" },
+      { name: "corporateAction", path: "/investor/corporate-action" },
       { name: "materialInformation", path: "/investor/material" },
     ],
   },
@@ -55,10 +55,7 @@ const menuItems = [
       { name: "budgetDocument", path: "/governance/budget" },
     ],
   },
-  {
-    name: "csrr",
-    path: "/csr",
-  },
+  { name: "csrr", path: "/csr" },
   {
     name: "news",
     path: "/news",
@@ -68,10 +65,7 @@ const menuItems = [
       { name: "corporateActions", path: "/news/actions" },
     ],
   },
-  {
-    name: "contact",
-    path: "/contact",
-  },
+  { name: "contact", path: "/contact" },
 ];
 
 const Navbar = () => {
@@ -80,6 +74,8 @@ const Navbar = () => {
 
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const isHome = location.pathname === "/";
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -93,11 +89,26 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navBackground =
+    scrolled || !isHome
+      ? "bg-white/95 backdrop-blur-md shadow-md"
+      : "bg-transparent";
+
+  const textColor = (path: string) => {
+    if (location.pathname.startsWith(path)) {
+      return "text-[#B59D55] font-semibold";
+    }
+
+    if (scrolled || !isHome) {
+      return "text-gray-700 hover:text-[#B59D55]";
+    }
+
+    return "text-white hover:text-white/80";
+  };
+
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${navBackground}`}
     >
       <div
         className={`max-w-[1500px] mx-auto px-6 flex items-center justify-between transition-all duration-500 ${
@@ -121,13 +132,9 @@ const Navbar = () => {
               <div key={item.name} className="relative group">
                 <Link
                   to={item.path}
-                  className={`flex items-center gap-1 transition-all duration-300 ${
-                    location.pathname.startsWith(item.path)
-                      ? "text-[#B59D55] font-semibold"
-                      : scrolled
-                        ? "text-gray-700 hover:text-[#B59D55]"
-                        : "text-white hover:text-white/80"
-                  }`}
+                  className={`flex items-center gap-1 transition-all duration-300 ${textColor(
+                    item.path
+                  )}`}
                 >
                   {t(item.name)}
                   {item.submenu && <ChevronDown size={14} />}
@@ -186,7 +193,7 @@ const Navbar = () => {
         {/* MOBILE TOGGLE */}
         <button
           className={`xl:hidden text-2xl ${
-            scrolled ? "text-[#B59D55]" : "text-white"
+            scrolled || !isHome ? "text-[#B59D55]" : "text-white"
           }`}
           onClick={() => setMobileOpen(!mobileOpen)}
         >
@@ -202,6 +209,7 @@ const Navbar = () => {
               <Link
                 to={item.path}
                 className="block font-semibold text-gray-800 mb-2"
+                onClick={() => setMobileOpen(false)}
               >
                 {t(item.name)}
               </Link>
@@ -213,6 +221,7 @@ const Navbar = () => {
                       key={sub.name}
                       to={sub.path}
                       className="block text-gray-600 text-sm"
+                      onClick={() => setMobileOpen(false)}
                     >
                       {t(sub.name)}
                     </Link>

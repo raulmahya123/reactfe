@@ -13,18 +13,30 @@ const ProyekAll = () => {
 
     if (section) {
       const el = document.getElementById(section);
+
       if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth" });
-        }, 100);
+        const navbarHeight = 120; // sesuaikan dengan tinggi navbar kamu
+        const y =
+          el.getBoundingClientRect().top +
+          window.pageYOffset -
+          navbarHeight;
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
       }
     } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   }, [location]);
 
   return (
-    <main className="bg-white text-gray-800">
+    <main className="bg-white text-gray-800 pt-28">
+      {/* Tambahan padding top biar aman dari navbar */}
       <ProyekActivities />
       <ResourcesSection />
       <StrategySection />

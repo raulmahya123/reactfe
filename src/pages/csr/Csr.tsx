@@ -10,21 +10,30 @@ const CSR = () => {
 
     if (section) {
       const element = document.getElementById(section);
+
       if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }, 100);
+        const navbarHeight = 120; // sesuaikan tinggi navbar kamu
+        const y =
+          element.getBoundingClientRect().top +
+          window.pageYOffset -
+          navbarHeight;
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
       }
     } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   }, [location]);
 
   return (
-    <main className="bg-white text-gray-800">
+    <main className="bg-white text-gray-800 pt-28">
+      {/* pt-28 supaya aman dari navbar saat load biasa */}
       <CSRSection />
     </main>
   );

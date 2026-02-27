@@ -13,16 +13,24 @@ const News = () => {
 
     if (section) {
       const element = document.getElementById(section);
+
       if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }, 100);
+        const navbarHeight = 120; // sesuaikan dengan tinggi navbar kamu
+        const y =
+          element.getBoundingClientRect().top +
+          window.pageYOffset -
+          navbarHeight;
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
       }
     } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   }, [location]);
 
@@ -30,7 +38,7 @@ const News = () => {
     <main className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="pt-28 pb-20 bg-[#F4F6F3]">
+      <section className="pt-36 pb-24 bg-[#F4F6F3]">
         <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
@@ -43,12 +51,10 @@ const News = () => {
       </section>
 
       {/* CONTENT */}
-      <section className="py-20 space-y-20">
-
+      <section className="py-24 space-y-24">
         <PressRelease />
         <MediaCoverage />
         <CorporateActions />
-
       </section>
 
     </main>

@@ -19,13 +19,24 @@ const Governance = () => {
 
     if (section) {
       const el = document.getElementById(section);
+
       if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth" });
-        }, 100);
+        const navbarHeight = 120; // sesuaikan tinggi navbar kamu
+        const y =
+          el.getBoundingClientRect().top +
+          window.pageYOffset -
+          navbarHeight;
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
       }
     } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   }, [location]);
 
@@ -33,7 +44,7 @@ const Governance = () => {
     <main className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="pt-28 pb-20 bg-[#F4F6F3]">
+      <section className="pt-36 pb-24 bg-[#F4F6F3]">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("governance")}

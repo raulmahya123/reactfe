@@ -5,11 +5,14 @@ const ContactSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white pt-28 pb-20 scroll-mt-24">
+    <section
+      id="contact"
+      className="bg-white pt-36 pb-24 scroll-mt-40"
+    >
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("contactSection.title")}
           </h2>
@@ -21,10 +24,10 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-12">
 
           {/* HEAD OFFICE */}
-          <div className="bg-white border border-gray-200 rounded-lg p-10 shadow-md">
+          <div className="bg-white border border-gray-200 rounded-xl p-10 shadow-md hover:shadow-lg transition">
 
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-[#C6A75E]/15">
@@ -57,7 +60,7 @@ const ContactSection = () => {
           </div>
 
           {/* REPRESENTATIVE OFFICE */}
-          <div className="bg-white border border-gray-200 rounded-lg p-10 shadow-md">
+          <div className="bg-white border border-gray-200 rounded-xl p-10 shadow-md hover:shadow-lg transition">
 
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-[#C6A75E]/15">
