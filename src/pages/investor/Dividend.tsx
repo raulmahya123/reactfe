@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+const PRIMARY = "#B59D55";
+
 const Dividend = () => {
   const { t } = useTranslation();
 
@@ -26,89 +28,101 @@ const Dividend = () => {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-12 bg-[#f9f9f9] min-h-screen">
-      
-      {/* Header */}
-      <div className="mb-12">
-        <h2 className="text-4xl font-bold text-[#B59D55]">
-          {t("dividend.title")}
-        </h2>
+    <section className="py-14 scroll-mt-28">
+      <div className="max-w-5xl mx-auto px-6">
 
-        <p className="text-gray-600 mt-3 max-w-2xl">
-          {t("dividend.description")}
-        </p>
-      </div>
+        {/* Header */}
+        <div className="mb-10">
+          <h2
+            className="text-3xl md:text-4xl font-bold"
+            style={{ color: PRIMARY }}
+          >
+            {t("dividend.title")}
+          </h2>
 
-      {/* Highlight Card */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="bg-white rounded-2xl shadow-lg p-8 mb-12 border border-gray-100"
-      >
-        <h3 className="text-lg font-semibold text-gray-700">
-          {t("dividend.highlightTitle")}
-        </h3>
+          <p className="text-gray-600 mt-4 max-w-2xl leading-relaxed">
+            {t("dividend.description")}
+          </p>
+        </div>
 
-        <p className="text-4xl font-bold text-[#B59D55] mt-3">
-          Rp 120
-        </p>
-
-        <p className="text-sm text-gray-500 mt-2">
-          {t("dividend.paidOn")} 25 Juni 2025
-        </p>
-      </motion.div>
-
-      {/* Table */}
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-        
-        <div className="px-8 py-6 border-b">
-          <h3 className="text-lg font-semibold">
-            {t("dividend.history")}
+        {/* Highlight Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="bg-white rounded-2xl shadow-sm p-8 mb-10 border border-gray-200"
+        >
+          <h3 className="text-sm uppercase tracking-wide text-gray-500">
+            {t("dividend.highlightTitle")}
           </h3>
-        </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full text-left">
-            
-            <thead className="bg-[#B59D55]/10 text-[#B59D55] text-sm">
-              <tr>
-                <th className="px-8 py-4">{t("dividend.year")}</th>
-                <th className="px-8 py-4">{t("dividend.amount")}</th>
-                <th className="px-8 py-4">{t("dividend.paymentDate")}</th>
-                <th className="px-8 py-4">{t("dividend.status")}</th>
-              </tr>
-            </thead>
+          <p
+            className="text-3xl font-bold mt-2"
+            style={{ color: PRIMARY }}
+          >
+            Rp 120
+          </p>
 
-            <tbody>
-              {dividends.map((item, index) => (
-                <tr
-                  key={index}
-                  className="border-t hover:bg-gray-50 transition"
-                >
-                  <td className="px-8 py-4 font-semibold">
-                    {item.year}
-                  </td>
+          <p className="text-sm text-gray-500 mt-2">
+            {t("dividend.paidOn")} 25 Juni 2025
+          </p>
+        </motion.div>
 
-                  <td className="px-8 py-4">
-                    {item.amount}
-                  </td>
+        {/* Table */}
+        <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200">
 
-                  <td className="px-8 py-4">
-                    {item.date}
-                  </td>
+          <div className="px-6 py-5 border-b border-gray-200">
+            <h3 className="text-lg font-semibold">
+              {t("dividend.history")}
+            </h3>
+          </div>
 
-                  <td className="px-8 py-4">
-                    <span className="px-3 py-1 text-xs rounded-full bg-green-100 text-green-600">
-                      {item.status}
-                    </span>
-                  </td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-sm">
+
+              <thead
+                className="bg-opacity-10"
+                style={{ backgroundColor: `${PRIMARY}15`, color: PRIMARY }}
+              >
+                <tr>
+                  <th className="px-6 py-4">{t("dividend.year")}</th>
+                  <th className="px-6 py-4">{t("dividend.amount")}</th>
+                  <th className="px-6 py-4">{t("dividend.paymentDate")}</th>
+                  <th className="px-6 py-4">{t("dividend.status")}</th>
                 </tr>
-              ))}
-            </tbody>
+              </thead>
 
-          </table>
+              <tbody>
+                {dividends.map((item, index) => (
+                  <tr
+                    key={index}
+                    className="border-t border-gray-100 hover:bg-gray-50 transition"
+                  >
+                    <td className="px-6 py-4 font-semibold">
+                      {item.year}
+                    </td>
+
+                    <td className="px-6 py-4">
+                      {item.amount}
+                    </td>
+
+                    <td className="px-6 py-4">
+                      {item.date}
+                    </td>
+
+                    <td className="px-6 py-4">
+                      <span className="px-3 py-1 text-xs rounded-full bg-green-100 text-green-600">
+                        {item.status}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+
+            </table>
+          </div>
         </div>
+
       </div>
     </section>
   );

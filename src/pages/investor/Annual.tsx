@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+const PRIMARY = "#B59D55";
+
 const Annual = () => {
   const { t } = useTranslation();
 
@@ -19,46 +21,55 @@ const Annual = () => {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-12 bg-[#f9f9f9] min-h-screen">
-      
-      {/* Header */}
-      <div className="mb-12">
-        <h2 className="text-4xl font-bold text-[#B59D55]">
-          {t("annual.title")}
-        </h2>
+    <section className="py-14 scroll-mt-28">
+      <div className="max-w-5xl mx-auto px-6">
 
-        <p className="text-gray-600 mt-3 max-w-2xl">
-          {t("annual.description")}
-        </p>
-      </div>
+        {/* Header */}
+        <div className="mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold" style={{ color: PRIMARY }}>
+            {t("annual.title")}
+          </h2>
 
-      {/* Cards */}
-      <div className="grid md:grid-cols-3 gap-8">
-        {reports.map((report, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ y: -8 }}
-            transition={{ duration: 0.3 }}
-            className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition"
-          >
-            <span className="text-sm font-semibold text-[#B59D55]">
-              {report.year}
-            </span>
+          <p className="text-gray-600 mt-4 max-w-2xl leading-relaxed">
+            {t("annual.description")}
+          </p>
+        </div>
 
-            <h3 className="text-xl font-bold mt-2">
-              {report.title}
-            </h3>
+        {/* Cards */}
+        <div className="grid sm:grid-cols-2 gap-8">
+          {reports.map((report, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.25 }}
+              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-md transition"
+            >
+              <span
+                className="text-sm font-semibold"
+                style={{ color: PRIMARY }}
+              >
+                {report.year}
+              </span>
 
-            <p className="text-gray-600 mt-3 text-sm">
-              {report.description}
-            </p>
+              <h3 className="text-lg md:text-xl font-bold mt-2">
+                {report.title}
+              </h3>
 
-            <button className="mt-6 inline-flex items-center gap-2 px-5 py-2 bg-[#B59D55] text-white rounded-xl hover:opacity-90 transition">
-              <Download size={16} />
-              {t("annual.download")}
-            </button>
-          </motion.div>
-        ))}
+              <p className="text-gray-600 mt-3 text-sm leading-relaxed">
+                {report.description}
+              </p>
+
+              <button
+                className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-xl text-white transition hover:opacity-90"
+                style={{ backgroundColor: PRIMARY }}
+              >
+                <Download size={16} />
+                {t("annual.download")}
+              </button>
+            </motion.div>
+          ))}
+        </div>
+
       </div>
     </section>
   );

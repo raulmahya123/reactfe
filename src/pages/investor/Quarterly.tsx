@@ -13,7 +13,7 @@ const Quarterly = () => {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-12 bg-[#f9f9f9] min-h-screen">
+    <section className="py-16 px-6 md:px-12  min-h-screen">
       
       {/* Header */}
       <div className="mb-12">

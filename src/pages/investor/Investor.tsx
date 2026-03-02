@@ -34,8 +34,8 @@ const Investor = () => {
     <main className="bg-white text-gray-800">
 
       {/* ================= HERO ================= */}
-      <section className="pt-28 pb-20 bg-[#F4F6F3]">
-        <div className="max-w-6xl mx-auto px-6 text-center">
+      <section className="pt-28 pb-16 bg-[#F4F6F3]">
+        <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             Investor Relations
@@ -53,41 +53,41 @@ const Investor = () => {
       </section>
 
       {/* ================= CONTENT ================= */}
-      <section className="py-20 bg-white space-y-20">
+      <section className="py-16 bg-white space-y-16">
 
-        <div id="prospectus" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="prospectus" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <Prospectus />
         </div>
 
-        <div id="financial" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="financial" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <Financial />
         </div>
 
-        <div id="annual" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="annual" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <Annual />
         </div>
 
-        <div id="rups" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="rups" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <GeneralMeeting />
         </div>
 
-        <div id="expose" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="expose" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <Expose />
         </div>
 
-        <div id="dividend" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="dividend" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <Dividend />
         </div>
 
-        <div id="stock" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="stock" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <Stock />
         </div>
 
-        <div id="corporate-action" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="corporate-action" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <CorporateAction />
         </div>
 
-        <div id="material" className="max-w-6xl mx-auto px-6 scroll-mt-24">
+        <div id="material" className="max-w-5xl mx-auto px-6 scroll-mt-28">
           <Material />
         </div>
 
