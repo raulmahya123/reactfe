@@ -45,10 +45,6 @@ const InvestorNewsSection = () => {
               </div>
             </div>
 
-            <button className="mt-6 bg-[#B59D55] text-white px-6 py-2 text-sm font-semibold hover:bg-[#9e8748] transition">
-              {t("investorButton")}
-            </button>
-
           </div>
         </div>
       </section>
