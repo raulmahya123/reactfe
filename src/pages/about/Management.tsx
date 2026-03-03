@@ -10,35 +10,50 @@ const Management = () => {
   const { t } = useTranslation();
 
   const directors: Member[] = [
-    {
-      name: "Gahari Christine",
-      position: t("presidentDirector"),
-      image: "",
-    },
-    {
-      name: "—",
-      position: t("financeDirector"),
-      image: "",
-    },
-  ];
+  {
+    name: "Gahari Christine",
+    position: t("presidentDirector"),
+    image: "",
+  },
+  {
+    name: "Hanny Irawan",
+    position: t("director"),
+    image: "",
+  },
+  {
+    name: "Christianto Citra",
+    position: t("director"),
+    image: "",
+  },
+];
 
-  const commissioners: Member[] = [
-    {
-      name: "Billy Theristine Lim",
-      position: t("commissionerPresident"),
-      image: "",
-    },
-    {
-      name: "Willy Christine",
-      position: t("commissioner"),
-      image: "",
-    },
-    {
-      name: "—",
-      position: t("independentCommissioner"),
-      image: "",
-    },
-  ];
+const commissioners: Member[] = [
+  {
+    name: "Billy Theristine",
+    position: t("commissionerPresident"),
+    image: "",
+  },
+  {
+    name: "Ivan Victor",
+    position: t("commissioner"),
+    image: "",
+  },
+  {
+    name: "Freddy Hartono",
+    position: t("commissioner"),
+    image: "",
+  },
+  {
+    name: "Yohanes Yudha Indrajati",
+    position: t("independentCommissioner"),
+    image: "",
+  },
+  {
+    name: "Muhammad Soni Lazuardi",
+    position: t("independentCommissioner"),
+    image: "",
+  },
+];
 
   const Card = ({ member }: { member: Member }) => (
     <div className="bg-white rounded-lg border border-gray-100 hover:shadow-md transition duration-300 overflow-hidden">

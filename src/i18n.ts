@@ -16,7 +16,7 @@ i18n.use(initReactI18next).init({
           description:
             "Financial information, annual reports, public disclosures, and stock data of PT Andalan Artha Primanusa as a form of transparency to shareholders and investors.",
         },
-        csrr: "CSR",
+        csrr: "Sustainability",
         companyDescription: `PT Andalan Artha Primanusa Tbk is a limited liability company duly 
         established under the laws of the Republic of Indonesia and domiciled 
         in North Jakarta, as set forth in Deed of Establishment of Limited 
@@ -48,26 +48,27 @@ i18n.use(initReactI18next).init({
         },
         csr: {
           title: "Corporate Social Responsibility",
-          subtitle: "Corporate Social Responsibility",
+          subtitle:
+            "The Company’s commitment to sustainable social development and environmental preservation.",
 
           paragraph1:
-            "Corporate Social Responsibility (“CSR”) reflects the Company’s commitment to actively contribute to improving community welfare and preserving the environment in areas surrounding its operational sites.",
+            "Corporate Social Responsibility (“CSR”) represents the Company’s commitment to actively contribute to improving the quality of life of communities and preserving the environment surrounding its operational areas. Through the implementation of sustainable CSR programs, the Company strives to build harmonious and mutually beneficial relationships with local communities.",
 
           paragraph2:
-            "One of the initiatives carried out was assistance in repairing drainage infrastructure in Muara Village affected by flooding. This support aimed to accelerate the restoration of public access and sustain economic and social activities.",
+            "As part of this commitment, the Company has carried out various social initiatives, including assisting in the repair of drainage infrastructure in Muara Village affected by flooding. The disaster disrupted primary bridge access and hindered the community’s economic and social activities. The Company’s support aimed to alleviate the community’s burden and accelerate the restoration of public access and daily activities.",
 
           paragraph3:
-            "In addition, the Company provided support for religious activities through mosque renovation assistance and the construction of a prayer facility for the surrounding community.",
+            "In addition, the Company supports community religious activities through mosque renovation assistance and the construction of a prayer facility (mushola) for residents surrounding its operational areas. This initiative reflects the Company’s dedication to fostering harmonious community relations and promoting sustainable social development.",
 
           focusTitle: "CSR Program Focus",
           focus1: "Post-Disaster Infrastructure Recovery",
           focus2: "Religious Facility Support",
-          focus3: "Community Social Engagement Strengthening",
+          focus3: "Community Engagement Strengthening",
           focus4: "Sustainable Social Development",
 
           gallery1: "Drainage Repair in Muara Village",
-          gallery2: "Mosque Renovation Assistance",
-          gallery3: "Prayer Facility Construction",
+          gallery2: "Mosque Renovation Support",
+          gallery3: "Community Prayer Facility Construction",
         },
         ownership: {
           title: "Share Ownership Structure",
@@ -90,7 +91,7 @@ i18n.use(initReactI18next).init({
         support: {
           title: "Supporting Professionals",
           accountant: "Public Accountant",
-          bae: "Share Registrar",
+          bae: "Securities Administration Bureau",
         },
         struktur: {
           title: "Organizational Structure",
@@ -287,29 +288,30 @@ i18n.use(initReactI18next).init({
         whistleblowingTitle: "Whistleblowing System Policy",
 
         whistleblowingDesc:
-          "The Whistleblowing System is a mechanism provided by the Company for employees and stakeholders to report alleged violations of laws, ethics, or company regulations in a safe and confidential manner.",
+          "The whistleblowing system policy is a mechanism available to all stakeholders to report any form of misconduct occurring within Andalan Artha Primanusa.",
 
         reportChannel: "Reporting Channel",
 
         reportConfidential:
-          "The identity of the whistleblower will be kept confidential and protected from any form of retaliation.",
+          "The confidentiality of the whistleblower’s identity will be strictly protected by Andalan Artha Primanusa to safeguard the whistleblower from any potential pressure or retaliation.",
 
         reportProcedure: "Reporting Procedure",
 
         wbsStep1:
-          "The whistleblower submits a written report through the official reporting channel provided by the Company.",
+          "Reports may be submitted via email or telephone and addressed to the Compliance Unit of Andalan Artha Primanusa.",
 
         wbsStep2:
-          "The report will be verified and reviewed independently by the authorized team.",
+          "Each report will be reviewed and verified objectively by the Compliance Unit.",
 
         wbsStep3:
-          "An investigation will be conducted if sufficient indications of violation are found.",
+          "If the reported party is proven to have committed a violation, Andalan Artha Primanusa will impose sanctions ranging from reprimand, written warning, suspension, termination of employment, to legal proceedings in accordance with applicable regulations.",
+
+        wbsStep4:
+          "Sanctions shall also apply to any whistleblower who is proven to have submitted a false, fictitious, or bad-faith report.",
         governance: "Good Corporate Governance",
 
         governanceHeroDesc:
           "The Company is committed to consistently implementing Good Corporate Governance principles to enhance corporate value, maintain shareholders’ trust, and protect the interests of all stakeholders.",
-        wbsStep4:
-          "The investigation results will be reported to Management and/or the Board of Commissioners for further action in accordance with applicable regulations.",
         /* ================= CORPORATE ACTIONS ================= */
         corporateActionsSection: {
           title: "Corporate Actions",
@@ -895,6 +897,7 @@ The Company believes that long-term business sustainability must align with envi
 
     id: {
       translation: {
+        csrr: "Laporan Keberlanjutan",
         newsHero: {
           title: "Media",
           subtitle: "Transparansi dan Informasi Terkini Perseroan",
@@ -908,16 +911,17 @@ The Company believes that long-term business sustainability must align with envi
         },
         csr: {
           title: "Tanggung Jawab Sosial Perusahaan",
-          subtitle: "Corporate Social Responsibility",
+          subtitle:
+            "Komitmen Perseroan dalam mendukung pembangunan sosial dan pelestarian lingkungan secara berkelanjutan.",
 
           paragraph1:
-            "Tanggung Jawab Sosial Perusahaan (“CSR”) merupakan wujud komitmen Perseroan untuk berperan aktif dalam meningkatkan kualitas hidup masyarakat serta menjaga kelestarian lingkungan di sekitar wilayah operasional Perseroan.",
+            "Tanggung Jawab Sosial Perusahaan (“CSR”) merupakan komitmen Perseroan untuk berperan aktif dalam meningkatkan kualitas hidup masyarakat serta menjaga kelestarian lingkungan di sekitar wilayah operasional Perseroan. Melalui pelaksanaan program CSR yang berkelanjutan, Perseroan berupaya menciptakan hubungan yang harmonis dan saling mendukung dengan masyarakat setempat.",
 
           paragraph2:
-            "Salah satu kegiatan yang dilaksanakan adalah bantuan perbaikan gorong-gorong di Desa Muara yang terdampak bencana banjir. Bantuan ini bertujuan untuk mempercepat pemulihan akses utama masyarakat dan mendukung keberlanjutan aktivitas ekonomi serta sosial.",
+            "Sebagai bagian dari komitmen tersebut, Perseroan telah melaksanakan berbagai kegiatan sosial, antara lain membantu perbaikan gorong-gorong di lingkungan sekitar yang terdampak bencana banjir di Desa Muara. Bencana tersebut mengakibatkan terputusnya akses jembatan utama serta terganggunya aktivitas ekonomi dan sosial masyarakat. Bantuan yang diberikan Perseroan bertujuan untuk meringankan beban masyarakat serta mendukung percepatan pemulihan akses dan kegiatan sehari-hari.",
 
           paragraph3:
-            "Selain itu, Perseroan juga memberikan dukungan terhadap kegiatan keagamaan melalui bantuan perbaikan masjid dan pembangunan mushola sebagai sarana ibadah masyarakat sekitar wilayah operasional.",
+            "Selain itu, Perseroan juga memberikan dukungan terhadap kegiatan keagamaan masyarakat melalui bantuan perbaikan masjid di lingkungan sekitar wilayah operasional serta pembangunan mushola sebagai sarana ibadah bagi masyarakat setempat. Dukungan ini merupakan wujud kontribusi Perseroan dalam memperkuat hubungan yang harmonis dengan masyarakat serta mendukung pembangunan sosial yang berkelanjutan.",
 
           focusTitle: "Fokus Program CSR",
           focus1: "Pemulihan Infrastruktur Pasca Bencana",
@@ -1262,7 +1266,6 @@ The Company believes that long-term business sustainability must align with envi
           download: "Unduh",
           downloadDocument: "Unduh Dokumen",
           disclosure: "Keterbukaan Informasi",
-          csrr: "Laporan Keberlanjutan",
           corporateAction: "Aksi Korporasi",
           report: "Laporan",
           item1Title: "Keterbukaan Informasi Penandatanganan Kontrak Baru",
@@ -1550,28 +1553,20 @@ The Company believes that long-term business sustainability must align with envi
         telephone: "Telepon +62 21 6669 2917 | Fax: +62 21 6669 2918",
         allRightsReserved: "Seluruh Hak Cipta Dilindungi.",
         whistleblowingTitle: "Kebijakan Mekanisme Sistem Pelaporan Pelanggaran",
-
         whistleblowingDesc:
-          "Sistem Pelaporan Pelanggaran (Whistleblowing System) merupakan mekanisme yang disediakan Perseroan bagi karyawan dan pemangku kepentingan untuk melaporkan dugaan pelanggaran hukum, etika, atau peraturan perusahaan secara aman dan rahasia.",
-
+          "Kebijakan mekanisme sistem pelaporan pelanggaran adalah sistem yang tersedia bagi seluruh pemangku kepentingan untuk melaporkan segala bentuk penyimpangan yang terjadi di lingkungan Andalan Artha Primanusa.",
         reportChannel: "Saluran Pelaporan",
-
         reportConfidential:
-          "Identitas pelapor akan dijaga kerahasiaannya dan dilindungi dari segala bentuk tekanan atau tindakan balasan.",
-
+          "Kerahasiaan identitas pelapor akan dijamin oleh Andalan Artha Primanusa untuk melindungi pelapor dari tekanan atau tindakan balasan dalam bentuk apa pun.",
         reportProcedure: "Prosedur Pelaporan",
-
         wbsStep1:
-          "Pelapor menyampaikan laporan secara tertulis melalui saluran resmi yang telah disediakan Perseroan.",
-
+          "Pelaporan dapat disampaikan melalui surat elektronik atau telepon dan ditujukan kepada Unit Kepatuhan Andalan Artha Primanusa.",
         wbsStep2:
-          "Laporan akan diverifikasi dan dikaji oleh tim yang berwenang secara independen.",
-
+          "Setiap laporan akan ditelaah dan diverifikasi secara objektif oleh Unit Kepatuhan.",
         wbsStep3:
-          "Dilakukan investigasi apabila ditemukan indikasi pelanggaran yang cukup.",
-
+          "Apabila terlapor terbukti melakukan pelanggaran, Andalan Artha Primanusa akan menjatuhkan sanksi berupa teguran, peringatan tertulis, skorsing, pemecatan, hingga proses hukum sesuai ketentuan yang berlaku.",
         wbsStep4:
-          "Hasil investigasi dilaporkan kepada manajemen dan/atau Dewan Komisaris untuk ditindaklanjuti sesuai ketentuan yang berlaku.",
+          "Sanksi juga berlaku bagi pelapor apabila terbukti memberikan laporan yang tidak benar, fiktif, atau dibuat dengan itikad tidak baik.",
         csrHero: {
           title: "Komitmen Sosial & Keberlanjutan",
           introduction:

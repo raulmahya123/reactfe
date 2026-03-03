@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import React from "react";
+
 const Box = ({
   children,
   variant = "default",
@@ -12,8 +13,7 @@ const Box = ({
     board: "bg-[#3E5A4C] text-white shadow-sm",
     director: "bg-[#5F7D6E] text-white shadow-sm",
     manager: "bg-[#8FAF97] text-white shadow-sm",
-    default:
-      "bg-[#F4F6F3] text-[#2F3E34] border border-[#DCE3DD] shadow-sm",
+    default: "bg-[#F4F6F3] text-[#2F3E34] border border-[#DCE3DD] shadow-sm",
   };
 
   return (
@@ -42,10 +42,9 @@ export default function StrukturOrganisasi() {
   return (
     <section
       id="struktur-organisasi"
-      className="w-full py-20 px-6 to-white overflow-x-auto scroll-mt-24"
+      className="w-full py-20 px-6 overflow-x-auto scroll-mt-24"
     >
       <div className="max-w-[1500px] mx-auto flex flex-col items-center">
-
         {/* TITLE */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
@@ -55,69 +54,89 @@ export default function StrukturOrganisasi() {
         </div>
 
         <div className="relative min-w-[1300px] flex flex-col items-center">
-
           {/* LEVEL 1 */}
           <Box variant="top">{t("struktur.gms")}</Box>
           <div className="w-[2px] h-12 bg-[#5F7D6E]/60"></div>
 
           {/* LEVEL 2 */}
-          <div className="relative flex gap-32 items-start">
-
-            <div className="absolute top-0 left-[110px] right-[110px] h-[2px] bg-[#5F7D6E]/60"></div>
-
-            <div className="flex flex-col items-center pt-12">
+          <div className="relative flex flex-col items-center">
+            {/* BOC tetap center */}
+            <div className="relative">
               <Box variant="board">{t("struktur.boc")}</Box>
-            </div>
 
-            <div className="flex flex-col items-center pt-12">
-              <Box variant="board">{t("struktur.audit")}</Box>
+              {/* Garis dashed + Audit */}
+              <div className="absolute top-1/2 left-full -translate-y-1/2 flex items-center">
+                {/* Garis dashed nempel langsung */}
+                <div className="w-24 border-t-2 border-dashed border-[#5F7D6E]/60"></div>
+
+                {/* Audit Committee */}
+                <Box variant="board">{t("struktur.audit")}</Box>
+              </div>
             </div>
+            {/* Garis turun ke bawah */}
+            <div className="w-[2px] h-14 bg-[#5F7D6E]/60"></div>
           </div>
 
-          <div className="w-[2px] h-12 bg-[#5F7D6E]/60"></div>
+          <Box variant="board">{t("struktur.audit")}</Box>
+          <div className="w-[2px] h-14 bg-[#5F7D6E]/60"></div>
 
           {/* LEVEL 3 */}
-          <div className="relative flex gap-28 items-start">
+          <div className="relative flex flex-col items-center justify-center">
+            {/* Garis vertikal dari atas */}
+            <div className="absolute -top-14 w-[2px] h-14 bg-[#5F7D6E]/60"></div>
 
-            <div className="absolute top-0 left-[110px] right-[110px] h-[2px] bg-[#5F7D6E]/60"></div>
-
-            <div className="flex flex-col items-center pt-12">
+            {/* Wrapper */}
+            <div className="flex items-center">
+              {/* Corporate Secretary */}
               <Box variant="director">{t("struktur.cs")}</Box>
-            </div>
 
-            <div className="flex flex-col items-center pt-12">
+              {/* Dashed line kiri */}
+              <div className="w-24 border-t-2 border-dashed border-[#5F7D6E]/60"></div>
+
+              {/* Board of Directors */}
               <Box variant="director">{t("struktur.bod")}</Box>
-            </div>
 
-            <div className="flex flex-col items-center pt-12">
+              {/* Dashed line kanan */}
+              <div className="w-24 border-t-2 border-dashed border-[#5F7D6E]/60"></div>
+
+              {/* Internal Audit */}
               <Box variant="director">{t("struktur.internalAudit")}</Box>
             </div>
+
+            {/* ✅ GARIS KE LEVEL 4 */}
+            <div className="w-[2px] h-16 bg-[#5F7D6E]/60"></div>
+          </div>
+          {/* LEVEL 4 */}
+          <div className="flex flex-col items-center">
+            <Box variant="manager">{t("struktur.gmOperational")}</Box>
+
+            {/* ✅ GARIS TURUN KE LEVEL 5 */}
+            <div className="w-[2px] h-12 bg-[#5F7D6E]/60"></div>
           </div>
 
-          <div className="w-[2px] h-12 bg-[#5F7D6E]/60"></div>
-
-          {/* LEVEL 4 */}
-          <Box variant="manager">{t("struktur.gmOperational")}</Box>
-          <div className="w-[2px] h-12 bg-[#5F7D6E]/60"></div>
-
           {/* LEVEL 5 */}
-          <div className="relative w-full mt-10">
+          <div className="relative w-full">
+            {/* Horizontal Line */}
+            <div className="absolute top-0 left-24 right-24 h-[2px] bg-[#5F7D6E]/60"></div>
 
-            <div className="absolute top-0 left-[110px] right-[110px] h-[2px] bg-[#5F7D6E]/60"></div>
-
-            <div className="flex justify-between pt-12">
+            <div className="flex justify-center gap-16 pt-12">
               {level5.map((item, index) => (
-                <div key={index} className="relative flex flex-col items-center">
-
+                <div
+                  key={index}
+                  className="relative flex flex-col items-center w-[200px]"
+                >
+                  {/* Vertical Line */}
                   <div className="absolute -top-12 w-[2px] h-12 bg-[#5F7D6E]/60"></div>
 
-                  <Box>{item}</Box>
+                  <Box>
+                    <div className="w-full h-[70px] flex items-center justify-center text-center px-3">
+                      {item}
+                    </div>
+                  </Box>
                 </div>
               ))}
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
