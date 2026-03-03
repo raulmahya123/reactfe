@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import Financial from "./Financial";
 import Annual from "./Annual";
@@ -13,6 +14,7 @@ import Prospectus from "./Prospectus";
 
 const Investor = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const section = location.pathname.split("/")[2];
@@ -38,15 +40,13 @@ const Investor = () => {
         <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
-            Investor Relations
+            {t("investorRelations.title")}
           </h1>
 
           <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
 
           <p className="text-gray-700 mt-6 max-w-2xl mx-auto leading-relaxed">
-            Informasi keuangan, laporan tahunan, paparan publik, dan data
-            saham PT Andalan Artha Primanusa sebagai bentuk transparansi
-            kepada pemegang saham dan investor.
+            {t("investorRelations.description")}
           </p>
 
         </div>

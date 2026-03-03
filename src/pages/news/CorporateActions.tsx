@@ -10,26 +10,25 @@ const CorporateActions = () => {
   }) as any;
 
   return (
-    <section id="actions" className="scroll-mt-24 py-20">
-      <div className="max-w-7xl mx-auto px-6 space-y-12">
-
+    <section id="actions" className="scroll-mt-24 py-16">
+      <div className="max-w-7xl mx-auto px-6 space-y-8">
         {/* HEADER */}
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#2F3E34]">
             {t("corporateActionsSection.title")}
           </h2>
-          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-6"></div>
-          <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
+          <div className="w-20 h-[3px] bg-[#C6A75E] mx-auto mt-4"></div>
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
             {t("corporateActionsSection.subtitle")}
           </p>
         </div>
 
         {/* CARDS */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Object.keys(actions).map((key) => {
             const item = actions[key];
             const statusLabel = t(
-              `corporateActionsSection.status.${item.status}`
+              `corporateActionsSection.status.${item.status}`,
             );
 
             return (
@@ -37,24 +36,21 @@ const CorporateActions = () => {
                 key={key}
                 whileHover={{ y: -6 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white rounded-lg p-8 shadow-md border border-gray-200 hover:shadow-lg transition"
+                className="bg-white rounded-lg p-6 shadow-md border border-gray-200 hover:shadow-lg transition"
               >
                 {/* DATE */}
-                <div className="flex items-center text-sm text-gray-500 mb-4">
-                  <CalendarDays
-                    size={16}
-                    className="mr-2 text-[#C6A75E]"
-                  />
+                <div className="flex items-center text-sm text-gray-500 mb-3">
+                  <CalendarDays size={16} className="mr-2 text-[#C6A75E]" />
                   {item.date}
                 </div>
 
                 {/* TITLE */}
-                <h3 className="text-lg font-semibold text-[#2F3E34] mb-3">
+                <h3 className="text-lg font-semibold text-[#2F3E34] mb-2">
                   {item.title}
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <p className="text-gray-600 text-sm leading-relaxed text-justify mb-4">
                   {item.description}
                 </p>
 
@@ -79,7 +75,6 @@ const CorporateActions = () => {
             );
           })}
         </div>
-
       </div>
     </section>
   );

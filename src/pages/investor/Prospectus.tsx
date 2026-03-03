@@ -10,7 +10,7 @@ const Prospectus = () => {
   return (
     <section
       id="prospectus"
-      className="scroll-mt-28 py-14 border-b border-gray-200"
+      className="scroll-mt-28 py-14 border-gray-200"
     >
       <div className="max-w-5xl mx-auto px-6">
 

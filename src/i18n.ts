@@ -5,7 +5,18 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        csrr : "CSR",
+        newsHero: {
+          title: "News",
+          subtitle: "Corporate Transparency & Latest Updates",
+          description:
+            "This page provides official press releases, media coverage, and corporate action information as part of the Company's commitment to transparency and timely disclosure to investors and the public.",
+        },
+        investorRelations: {
+          title: "Investor Relations",
+          description:
+            "Financial information, annual reports, public disclosures, and stock data of PT Andalan Artha Primanusa as a form of transparency to shareholders and investors.",
+        },
+        csrr: "CSR",
         companyDescription: `PT Andalan Artha Primanusa Tbk is a limited liability company duly 
         established under the laws of the Republic of Indonesia and domiciled 
         in North Jakarta, as set forth in Deed of Establishment of Limited 
@@ -16,7 +27,8 @@ i18n.use(initReactI18next).init({
         AHU-AH.01.03-0229595 dated 6 August 2018.`,
         footer: {
           addressLine1: "PT Andalan Artha Primanusa",
-          addressLine2: "Tanah Andalan, Jl. Plaju No.11, Kebon Melati, Tanah Abang, Jakarta Pusat 10230, DKI Jakarta",
+          addressLine2:
+            "Tanah Andalan, Jl. Plaju No.11, Kebon Melati, Tanah Abang, Jakarta Pusat 10230, DKI Jakarta",
           addressCountry: "Indonesia",
 
           about: "About Us",
@@ -572,7 +584,7 @@ The Company believes that long-term business sustainability must align with envi
         home: "Home",
         about: "About Us",
         investor: "Investor Relations",
-        news: "News & Disclosure",
+        news: "News",
         strukturOrganisasi: "Organization Structure",
         contact: "Contact",
         welcome: "Reliable Energy Solutions",
@@ -615,7 +627,6 @@ The Company believes that long-term business sustainability must align with envi
         heroTitle: "Reliable Energy Solutions",
         heroSubtitle: "Driving Sustainable Growth for Indonesia",
         viewAnnualReport: "View Annual Report",
-        investorRelations: "Investor Relations",
         performanceTitle: "Key Performance Highlights",
         revenue: "Revenue",
         netProfit: "Net Profit",
@@ -781,7 +792,7 @@ The Company believes that long-term business sustainability must align with envi
         ompanyProfile: "Company Profile",
         goodCorporateGovernance: "Good Corporate Governance",
         sustainability: "Sustainability",
-        newsDisclosure: "News & Disclosure",
+        newsDisclosure: "News",
         governanceInformation: "Governance Information",
         milestones: "Milestones",
         management: "Board of Management",
@@ -844,7 +855,6 @@ The Company believes that long-term business sustainability must align with envi
         commissionerPresident: "President Commissioner",
         commissioner: "Commissioner",
         independentCommissioner: "Independent Commissioner",
-
         /* ================= CONTACT PAGE ================= */
         contactSection: {
           official: "Official Information",
@@ -885,7 +895,18 @@ The Company believes that long-term business sustainability must align with envi
 
     id: {
       translation: {
-          csr: {
+        newsHero: {
+          title: "Media",
+          subtitle: "Transparansi dan Informasi Terkini Perseroan",
+          description:
+            "Halaman ini menyajikan siaran pers resmi, liputan media, serta informasi aksi korporasi sebagai bentuk komitmen Perseroan dalam menjaga transparansi dan keterbukaan informasi kepada investor dan publik.",
+        },
+        investorRelations: {
+          title: "Hubungan Investor",
+          description:
+            "Informasi keuangan, laporan tahunan, paparan publik, dan data saham PT Andalan Artha Primanusa sebagai bentuk transparansi kepada pemegang saham dan investor.",
+        },
+        csr: {
           title: "Tanggung Jawab Sosial Perusahaan",
           subtitle: "Corporate Social Responsibility",
 
@@ -1070,7 +1091,6 @@ The Company believes that long-term business sustainability must align with envi
         heroTitle: "Solusi Energi Terpercaya",
         heroSubtitle: "Mendorong Pertumbuhan Berkelanjutan untuk Indonesia",
         viewAnnualReport: "Lihat Laporan Tahunan",
-        investorRelations: "Hubungan Investor",
         performanceTitle: "Kinerja Utama Perusahaan",
         revenue: "Pendapatan",
         netProfit: "Laba Bersih",
@@ -1107,8 +1127,9 @@ The Company believes that long-term business sustainability must align with envi
           q4Title: "Laporan Keuangan Interim Q4 2024",
         },
         footer: {
-          addressLine1:"PT Andalan Artha Primanusa - Tanah Andalan",
-          addressLine2: "Jl. Plaju No.11, Kebon Melati, Tanah Abang, Jakarta Pusat 10230, DKI Jakarta",
+          addressLine1: "PT Andalan Artha Primanusa - Tanah Andalan",
+          addressLine2:
+            "Jl. Plaju No.11, Kebon Melati, Tanah Abang, Jakarta Pusat 10230, DKI Jakarta",
           addressCountry: "Indonesia",
 
           about: "Tentang Kami",
@@ -1584,7 +1605,7 @@ The Company believes that long-term business sustainability must align with envi
         milestone5:
           "Perolehan Letter of Award dari PT Position tertanggal 22 Januari 2026 untuk pekerjaan pengembangan dan operasi penambangan nikel di Desa Maba, Halmahera Timur, Maluku Utara, menandai ekspansi strategis AAP ke sektor nikel.",
         /* ================= SIARAN PERS ================= */
-      
+
         press: {
           title: "Siaran Pers",
           subtitle:
