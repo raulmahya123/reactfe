@@ -4,7 +4,7 @@ const Milestones = () => {
   const { t } = useTranslation();
 
   const timeline = [
-    { year: "2018", text: t("milestone1") },
+    { year: "2014", text: t("milestone1") },
     { year: "2018", text: t("milestone2") },
     { year: "2024", text: t("milestone3") },
     { year: "2025", text: t("milestone4") },

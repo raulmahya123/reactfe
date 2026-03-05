@@ -17,14 +17,7 @@ i18n.use(initReactI18next).init({
             "Financial information, annual reports, public disclosures, and stock data of PT Andalan Artha Primanusa as a form of transparency to shareholders and investors.",
         },
         csrr: "Sustainability",
-        companyDescription: `PT Andalan Artha Primanusa Tbk is a limited liability company duly 
-        established under the laws of the Republic of Indonesia and domiciled 
-        in North Jakarta, as set forth in Deed of Establishment of Limited 
-        Liability Company No. 58 dated 31 July 2018, drawn up before Antonius 
-        Wahono Prawirodirdjo, S.H., Notary in the Administrative City of North 
-        Jakarta, and which has obtained approval from the Minister of Law and 
-        Human Rights of the Republic of Indonesia pursuant to Decree No. 
-        AHU-AH.01.03-0229595 dated 6 August 2018.`,
+        companyDescription: `PT Andalan Artha Primanusa Tbk (formerly established under the name PT Nusa Karya Realti) is a limited liability company duly established under the laws of the Republic of Indonesia and domiciled in North Jakarta, as set forth in Deed of Establishment of Limited Liability Company No. 36 dated 16 June 2014, drawn up before Antonius Wahono Prawirodirdjo, S.H., Notary in the Administrative City of North Jakarta, and which has obtained approval from the Minister of Law and Human Rights of the Republic of Indonesia pursuant to Decree No. AHU-17455.AH.01.01.Tahun 2014 dated 12 August 2014 and has been registered in the Company Register under No. AHU-17455.AH.01.01.Tahun 2014 dated 12 August 2014.`,
         footer: {
           addressLine1: "PT Andalan Artha Primanusa",
           addressLine2:
@@ -996,14 +989,7 @@ The Company believes that long-term business sustainability must align with envi
           "RUPS memiliki kewenangan antara lain mengesahkan laporan tahunan, menunjuk auditor eksternal, mengangkat dan memberhentikan Direksi serta Dewan Komisaris.",
         /* ================= COMPANY PROFILE ================= */
         companyOverview: "Sekilas Perusahaan",
-        companyDescription: `PT Andalan Artha Primanusa Tbk adalah suatu perseroan terbatas 
-        yang didirikan berdasarkan Hukum Negara Republik Indonesia dan 
-        berkedudukan di Jakarta Utara sebagaimana termaktub dalam Akta 
-        Pendirian Perseroan Terbatas No. 58 tanggal 31 Juli 2018, yang dibuat 
-        di hadapan Antonius Wahono Prawirodirdjo, S.H., Notaris di Kota 
-        Administrasi Jakarta Utara dan telah memperoleh pengesahan dari 
-        Menteri Hukum dan Hak Asasi Manusia Republik Indonesia sesuai dengan 
-        Surat Keputusan No. AHU-AH.01.03-0229595 tanggal 6 Agustus 2018.`,
+        companyDescription: `PT Andalan Artha Primanusa Tbk (dahulu didirikan dengan nama PT Nusa Karya Realti) adalah suatu perseroan terbatas yang didirikan berdasarkan Hukum Negara Republik Indonesia berkedudukan di Jakarta Utara sebagaimana termaktub dalam Akta Pendirian Perseroan Terbatas No. 36 tanggal 16 Juni 2014, yang dibuat di hadapan Antonius Wahono Prawirodirdjo SH, Notaris di Kota Administrasi Jakarta Utara dan telah memperoleh pengesahan Menkumham sesuai dengan Surat Keputusannya No.  AHU-17455.AH.01.01.Tahun 2014 tanggal 12 Agustus 2014 serta telah didaftarkan dalam Daftar Perseroan No. AHU-17455.AH.01.01.Tahun 2014 tanggal 12 Agustus 2014.`,
         visionMission: "Visi & Misi",
         organizationStructure: "Struktur Organisasi",
         shareholdingStructure: "Struktur Kepemilikan Saham",
@@ -1587,7 +1573,7 @@ The Company believes that long-term business sustainability must align with envi
         mission4:
           "Memaksimalkan produktivitas operasional dengan sistem pemantauan yang unggul.",
         milestone1:
-          "Perseroan didirikan berdasarkan Akta Pendirian No. 58 tanggal 31 Juli 2018 dan telah memperoleh pengesahan dari Menteri Hukum dan Hak Asasi Manusia Republik Indonesia.",
+          "Perseroan didirikan berdasarkan Akta Pendirian Perseroan Terbatas No. 36 tanggal 16 Juni 2014 dan telah memperoleh pengesahan dari Menteri Hukum dan Hak Asasi Manusia Republik Indonesia.",
 
         milestone2:
           "Penandatanganan kontrak dengan PT Budi Gema Gempita pada 8 Agustus 2018 untuk pekerjaan jasa penambangan batubara di Lahat, Sumatera Selatan. Proyek ini menjadi fondasi awal rekam jejak operasional AAP.",
