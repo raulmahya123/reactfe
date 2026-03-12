@@ -60,7 +60,6 @@ const Milestones = () => {
                     {index + 1}
                   </div>
                 </div>
-
                 <div className="md:w-1/2"></div>
               </div>
             ))}

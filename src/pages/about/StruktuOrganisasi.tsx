@@ -77,8 +77,6 @@ export default function StrukturOrganisasi() {
             <div className="w-[2px] h-14 bg-[#5F7D6E]/60"></div>
           </div>
 
-          <Box variant="board">{t("struktur.audit")}</Box>
-          <div className="w-[2px] h-14 bg-[#5F7D6E]/60"></div>
 
           {/* LEVEL 3 */}
           <div className="relative flex flex-col items-center justify-center">
