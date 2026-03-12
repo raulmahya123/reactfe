@@ -77,6 +77,7 @@ export default function StrukturOrganisasi() {
             <div className="w-[2px] h-14 bg-[#5F7D6E]/60"></div>
           </div>
           {/* LEVEL 3 */}
+          
           <div className="relative flex flex-col items-center justify-center">
             {/* Garis vertikal dari atas */}
             <div className="absolute -top-14 w-[2px] h-14 bg-[#5F7D6E]/60"></div>
